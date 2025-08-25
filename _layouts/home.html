@@ -1,0 +1,95 @@
+---
+layout: default
+---
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-45281172-4"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-45281172-4');
+</script>
+
+<div class="section no-pad-bot" id="index-banner">
+  <div class="container">
+    <div class="row">
+      <div class="col l3">
+        <a href="../"><img src="images/logo-200x200.png"></a>
+      </div>
+      <div class="col l7 offset-l1 center">
+        <h3 class="header center">Adam on FIRE</h3>
+        <h5 class="header center">How I reached Financial Independence in 15 years</h5>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+.responsive-iframe {
+  width: 100% !important;
+  min-width: 0 !important;
+  max-width: 100%;
+  border: 0;
+  display: block;
+}
+.mb-4 {
+  margin-bottom: 1.5rem;
+}
+</style>
+
+<!-- MAIN CONTENT CONTAINER -->
+<div class="container">
+  <!-- About Me -->
+  <div class="row">
+    <div class="col s12">
+      <div class="card light-blue lighten-4 mb-4">
+        <div class="card-content">
+          <div class="row" style="margin-bottom:0;">
+            <!-- Text -->
+            <div class="col s12 m9">
+              <span class="card-title">About Me</span>
+              <p>This blog is dedicated to my journey to financial independence. I will share my personal story as well as provide meaningful guidance for those who would like to retire early.</p>
+              <p>Visit the <a href="../blog">Blog section</a> for the posts detailing my FIRE journey.</p>
+              <p>The <a href="../resources">Resources tab</a> contains detailed information on FIRE-related content.</p>
+            </div>
+            <!-- Image -->
+            <div class="col s12 m3 center-align">
+              <img src="images/adam.png"
+                   alt="About Me" 
+                   class="responsive-img" 
+                   style="max-height:200px; object-fit:cover; border-radius:8px;">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Two-column layout for charts -->
+  <div class="row">
+    <!-- LEFT column: 2 charts stacked -->
+    <div class="col s12 m6">
+      <div class="mb-4">
+	  <div class="mb-4">
+        <h5>My FIRE journey (since 2015)</h5>
+        <iframe class="responsive-iframe" src="https://datawrapper.dwcdn.net/eQxCE" height="500"></iframe>
+      </div>
+        <h5>My Portfolio History</h5>
+        <iframe class="responsive-iframe" src="https://datawrapper.dwcdn.net/oK5cm" height="800"></iframe>
+      </div>
+    </div>
+
+    <!-- RIGHT column: 1 chart -->
+    <div class="col s12 m6">
+	  <div class="mb-4">
+        <h5>Current allocation by asset groups</h5>
+        <iframe class="responsive-iframe" src="https://datawrapper.dwcdn.net/tq0GF" height="500"></iframe>
+      </div>
+	  <div class="mb-4">
+        <h5>Current assets by sector weight</h5>
+        <iframe class="responsive-iframe" src="https://datawrapper.dwcdn.net/peTBA" height="800"></iframe>
+      </div>
+    </div>
+  </div>
+</div>
