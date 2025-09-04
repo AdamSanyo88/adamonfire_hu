@@ -52,7 +52,7 @@ permalink: /coaching
           <th scope="row" class="first-col">Írásos anyagok</th>
           <td style="text-align:center; padding:14px 16px;">-</td>
           <td style="text-align:center; padding:14px 16px;">Rövid összefoglaló (benchmarkokkal)</td>
-          <td style="text-align:center; padding:14px 16px;">Teljes riport + alap akicóterv</td>
+          <td style="text-align:center; padding:14px 16px;">Teljes riport + alap akcióterv</td>
           <td style="text-align:center; padding:14px 16px;">Teljes pénzügyi terv készítése</td>
         </tr>
 
