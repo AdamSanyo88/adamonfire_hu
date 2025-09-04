@@ -37,7 +37,7 @@ permalink: /net-worth
       <div class="col-lg-6">
         <div class="card bg-orange">
           <div class="card-body">
-            <h4 class="h5">🏠 Real Estate</h4>
+            <h4 class="h5">🏠 Ingatlanvagyon</h4>
             <label for="propertyCount" class="form-label">Lakóingatlanok száma (maximum 5)</label>
             <input type="number" class="form-control" id="propertyCount" min="0" max="5" value="0" onchange="generatePropertyInputs()"/>
             <div id="propertyInputs"></div>
@@ -83,14 +83,14 @@ permalink: /net-worth
         <div class="card bg-lightblue">
           <div class="card-body">
             <h4 class="h5">📈 Results</h4>
-            <button class="btn btn-primary mb-3" id="calcBtn">Calculate Net Worth</button>
-            <div id="result" class="result mb-3">Click “Calculate Net Worth” to highlight your percentile.</div>
+            <button class="btn btn-primary mb-3" id="calcBtn">Számold ki a vagyonom</button>
+            <div id="result" class="result mb-3">Kattints a “Számold ki a vagyonom” gombra, hogy lásd, hányadik percentilisbe tartozol.</div>
 
             <div class="small muted mb-1">Percentile chart (100 → 1)</div>
             <div class="chart-wrap">
               <canvas id="percentileChart" aria-label="Percentile chart" role="img"></canvas>
             </div>
-            <div class="small mt-2" id="percentileSummary">Your position will be highlighted in blue.</div>
+            <div class="small mt-2" id="percentileSummary">A percentilisedet a kék oszlop jelöli.</div>
           </div>
         </div>
       </div>
