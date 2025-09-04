@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Trump miatt pánikszerűen eladtam
+title: Trump miatt én is pánikoltam
 date: 2025-04-11
 permalink: blog-2
 ---
