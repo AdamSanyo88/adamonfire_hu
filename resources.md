@@ -23,6 +23,6 @@ permalink: /resources
 <h5>Kalkulátorok</h5>
 <h6><a href="net-worth">Nettó vagyon kalkulátor</a> - milyen gazdag voltál 2024-ben Magyarországon?</h6>
 <br/>
-<h6><a href="spending">Háztartási kiadások kalkulátor</a> - hogyan költesz egy átlag magyar háztartáshoz képest?</h6>
+<h6><a href="spending">Egyéni fogyasztás kalkulátor</a> - hogyan költesz egy átlag magyar háztartáshoz képest?</h6>
 
 

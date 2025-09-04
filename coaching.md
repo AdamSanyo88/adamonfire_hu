@@ -14,8 +14,8 @@ permalink: /coaching
 <br/>
 <!-- Service Tiers Table -->
 <section class="pricing-tiers" style="font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; color:#0f172a; padding:24px;">
-  <h2 style="text-align:center; font-size:clamp(1.4rem, 2.5vw, 2rem); margin:0 0 16px;">1-to-1 Coaching Packages</h2>
-  <p style="text-align:center; color:#475569; margin:0 0 24px;">Choose the level of support that meets your goals. Every package builds on the previous one.</p>
+  <h2 style="text-align:center; font-size:clamp(1.4rem, 2.5vw, 2rem); margin:0 0 16px;">Személyes coaching csomagok</h2>
+  <p style="text-align:center; color:#475569; margin:0 0 24px;">Válaszd ki, milyen szintű coaching csomagot szeretnél. Minden csomag az előzőekhez képest további extrákat tartalmaz.</p>
 
   <div style="overflow-x:auto;">
     <table role="table" aria-label="Coaching service tiers" style="width:100%; border-collapse:separate; border-spacing:0; min-width:960px;">
@@ -49,7 +49,7 @@ permalink: /coaching
 
         <!-- Written Deliverable -->
         <tr>
-          <th scope="row" class="first-col">Written Recommendations</th>
+          <th scope="row" class="first-col">Írásos anyagok</th>
           <td style="text-align:center; padding:14px 16px;">-</td>
           <td style="text-align:center; padding:14px 16px;">Rövid összefoglaló (benchmarkokkal)</td>
           <td style="text-align:center; padding:14px 16px;">Teljes riport + alap akicóterv</td>
@@ -88,11 +88,11 @@ permalink: /coaching
 
         <!-- Pricing -->
         <tr>
-          <th scope="row" class="first-col">Price*</th>
-          <td style="text-align:center; padding:14px 16px;">Ingyenes</td>
-          <td style="text-align:center; padding:14px 16px;">60,000 Ft <span style="font-size:0.9em; color:#64748b">+ 30,0000 Ft a további egy alkalom coaching</span></td>
-          <td style="text-align:center; padding:14px 16px;">200,000 Ft</td>
-          <td style="text-align:center; padding:14px 16px;">400,000 Ft</td>
+          <th scope="row" class="first-col">Ár*</th>
+          <td style="text-align:center; padding:14px 16px;"><strong>Ingyenes</strong></td>
+          <td style="text-align:center; padding:14px 16px;"><strong>60,000 Ft</strong> <span style="font-size:0.9em; color:#64748b">+ 30,000 Ft a további egy alkalom coaching</span></td>
+          <td style="text-align:center; padding:14px 16px;"><strong>200,000 Ft</strong></td>
+          <td style="text-align:center; padding:14px 16px;"><strong>400,000 Ft</strong></td>
         </tr>
 
         <!-- CTA -->
