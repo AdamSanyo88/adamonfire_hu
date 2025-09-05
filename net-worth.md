@@ -80,7 +80,7 @@ permalink: /net-worth
       <div class="col-lg-6">
         <div class="card bg-lightblue">
           <div class="card-body">
-            <h4 class="h5">📈 Results</h4>
+            <h4 class="h5">📈 Összesítés</h4>
             <button class="btn btn-primary mb-3" id="calcBtn">Számold ki a vagyonom</button>
             <div id="result" class="result mb-3">Kattints a “Számold ki a vagyonom” gombra...</div>
             <div class="small muted mb-1">Percentilisek (100 → 1)</div>
