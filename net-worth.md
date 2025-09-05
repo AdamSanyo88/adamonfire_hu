@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Net worth calculator
+title: Nettó vagyon kalkulátor
 permalink: /net-worth
 ---
 
@@ -36,7 +36,7 @@ permalink: /net-worth
       <div class="col-lg-6">
         <div class="card bg-orange">
           <div class="card-body">
-            <h4 class="h5">🏠 Ingatnalvagyon</h4>
+            <h4 class="h5">🏠 Ingatlanvagyon</h4>
             <label for="propertyCount" class="form-label">Lakóingatlanok száma (maximum 5)</label>
             <input type="number" class="form-control" id="propertyCount" min="0" max="5" value="0" onchange="generatePropertyInputs()"/>
             <div id="propertyInputs"></div>
@@ -130,14 +130,14 @@ function generatePropertyInputs() {
     const valueCol = document.createElement('div');
     valueCol.classList.add('col-6');
     valueCol.innerHTML = `
-      <label class="form-label">Lakás/ház ${i + 1} Value</label>
+      <label class="form-label">Lakás/ház ${i + 1} piaci értéke</label>
       <input type="number" class="form-control" id="propertyValue${i}" value="0"/>
     `;
 
     const mortgageCol = document.createElement('div');
     mortgageCol.classList.add('col-6');
     mortgageCol.innerHTML = `
-      <label class="form-label">Lakás/ház ${i + 1} Fennálló tőketartozás</label>
+      <label class="form-label">Lakás/ház ${i + 1} fennálló tőketartozás</label>
       <input type="number" class="form-control" id="propertyMortgage${i}" value="0"/>
     `;
 
