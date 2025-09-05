@@ -29,51 +29,51 @@ permalink: /net-worth
 <body>
   <div class="container py-4">
     <div class="d-flex justify-content-between align-items-center mb-4">
-	  <p>This calculator shows you how wealthy your household was at the end of 2024 compared to all household in Hungary. The percentiles are created using the 2023 data collected by the Hungarian Central Bank (MNB) and modified to match the estimated wealth increase between 2023 and 2024. The calculation takes into account the value of your primary residence, so include that as well. All calculations are made in forint (Ft).</p>
+	  <p>Ez a kalkulátor megmutatja, hogy a 2024 végi adatok alapján mennyi nettó vagyonod van a magyar háztartásokhoz képest. A percentilisek (a teljes lakosság 100 egyenlő részre bontva) a Magyar Nemzeti Bank (MNB) 2023-as adatai alapján készültek, és módosítva lettek a 2023 és 2024 közötti becsült vagyonnövekedés figyelembevételével. A számítás tartalmazza az elsődleges lakóingatlan értékét is, ezért azt mindenképpen vedd bele. A számítás forintban történik (400 Ft-os euró-forint árfolyamot figyelembe véve).</p>
     </div>
 
     <div class="row">
       <div class="col-lg-6">
         <div class="card bg-orange">
           <div class="card-body">
-            <h4 class="h5">🏠 Real Estate</h4>
-            <label for="propertyCount" class="form-label">Number of Properties</label>
+            <h4 class="h5">🏠 Ingatnalvagyon</h4>
+            <label for="propertyCount" class="form-label">Lakóingatlanok száma (maximum 5)</label>
             <input type="number" class="form-control" id="propertyCount" min="0" max="5" value="0" onchange="generatePropertyInputs()"/>
             <div id="propertyInputs"></div>
-            <div class="mt-3"><strong>Total Real Estate:</strong> <span id="realEstateTotal">0 Ft</span></div>
+            <div class="mt-3"><strong>Összes ingatlanvagyon:</strong> <span id="realEstateTotal">0 Ft</span></div>
           </div>
         </div>
 
         <div class="card bg-green">
           <div class="card-body">
-            <h4 class="h5">📊 Investments</h4>
-            <label class="form-label">Private Pension</label>
+            <h4 class="h5">📊 Befektetések</h4>
+            <label class="form-label">Nyugdíjpénztári számlák</label>
             <input type="number" class="form-control" id="privatePension" value="0"/>
-            <label class="form-label mt-2">Government Bonds</label>
+            <label class="form-label mt-2">Állampapírok</label>
             <input type="number" class="form-control" id="govBonds" value="0"/>
-            <label class="form-label mt-2">Tax-efficient Investments</label>
+            <label class="form-label mt-2">Tartós befektetési számlák egyenlege</label>
             <input type="number" class="form-control" id="taxInvestments" value="0"/>
-            <label class="form-label mt-2">Other Investments</label>
+            <label class="form-label mt-2">Egyéb befektetések egyenlege</label>
             <input type="number" class="form-control" id="otherInvestments" value="0"/>
-            <div class="mt-3"><strong>Total Investments:</strong> <span id="investmentTotal">0 Ft</span></div>
+            <div class="mt-3"><strong>Összes befektetett vagyon:</strong> <span id="investmentTotal">0 Ft</span></div>
           </div>
         </div>
 
         <div class="card bg-blue">
           <div class="card-body">
-            <h4 class="h5">💶 Other Assets</h4>
-            <label class="form-label">Cars & Other Assets</label>
+            <h4 class="h5">💶 Egyéb vagyontárgyak</h4>
+            <label class="form-label">Autó és más vagyontárgyak</label>
             <input type="number" class="form-control" id="otherAssets" value="0"/>
-            <div class="mt-3"><strong>Total Other Assets:</strong> <span id="otherAssetsTotal">0 Ft</span></div>
+            <div class="mt-3"><strong>Összes egyéb vagyontárgy:</strong> <span id="otherAssetsTotal">0 Ft</span></div>
           </div>
         </div>
 
         <div class="card bg-red">
           <div class="card-body">
-            <h4 class="h5">➖ Liabilities</h4>
-            <label class="form-label">Other Liabilities</label>
+            <h4 class="h5">➖ Hitelek</h4>
+            <label class="form-label">Egyéb hitelek</label>
             <input type="number" class="form-control" id="otherLiabilities" value="0"/>
-            <div class="mt-3"><strong>Total Liabilities:</strong> <span id="liabilitiesTotal">0 Ft</span></div>
+            <div class="mt-3"><strong>Összes egyéb hitel:</strong> <span id="liabilitiesTotal">0 Ft</span></div>
           </div>
         </div>
       </div>
@@ -81,15 +81,15 @@ permalink: /net-worth
       <div class="col-lg-6">
         <div class="card bg-lightblue">
           <div class="card-body">
-            <h4 class="h5">📈 Results</h4>
-            <button class="btn btn-primary mb-3" id="calcBtn">Calculate Net Worth</button>
-            <div id="result" class="result mb-3">Click “Calculate Net Worth” to highlight your percentile.</div>
+            <h4 class="h5">📈 Összesítés</h4>
+            <button class="btn btn-primary mb-3" id="calcBtn">Számítsd ki a vagyonom</button>
+            <div id="result" class="result mb-3">Klikkelj a “Számítsd ki a vagyonom” gombra, hogy lásd, hanyadik percentilisbe tartozol.</div>
 
-            <div class="small muted mb-1">Percentile chart (100 → 1)</div>
+            <div class="small muted mb-1">Percentilisek (100 → 1)</div>
             <div class="chart-wrap">
               <canvas id="percentileChart" aria-label="Percentile chart" role="img"></canvas>
             </div>
-            <div class="small mt-2" id="percentileSummary">Your position will be highlighted in blue.</div>
+            <div class="small mt-2" id="percentileSummary">A saját percentilised kékkel látod majd kiemelve.</div>
           </div>
         </div>
       </div>
@@ -130,14 +130,14 @@ function generatePropertyInputs() {
     const valueCol = document.createElement('div');
     valueCol.classList.add('col-6');
     valueCol.innerHTML = `
-      <label class="form-label">Property ${i + 1} Value</label>
+      <label class="form-label">Lakás/ház ${i + 1} Value</label>
       <input type="number" class="form-control" id="propertyValue${i}" value="0"/>
     `;
 
     const mortgageCol = document.createElement('div');
     mortgageCol.classList.add('col-6');
     mortgageCol.innerHTML = `
-      <label class="form-label">Property ${i + 1} Mortgage</label>
+      <label class="form-label">Lakás/ház ${i + 1} Fennálló tőketartozás</label>
       <input type="number" class="form-control" id="propertyMortgage${i}" value="0"/>
     `;
 
@@ -245,10 +245,10 @@ document.addEventListener("DOMContentLoaded", () => {
     const above = Math.max(0, Math.min(100, 100 - percentile));
 
     document.getElementById("result").textContent =
-      `Estimated Net Worth: ${netWorth.toLocaleString()} Ft\nEstimated Wealth Percentile: Top ${percentile}%`;
+      `Teljes nettó vagyon: ${netWorth.toLocaleString()} Ft\nVagyoni percentilised: Top ${percentile}%`;
 
     document.getElementById("percentileSummary").textContent =
-      `You’re above approximately ${above}% of people (Top ${percentile}%).`;
+      `Gazdagabb vagy az emberek ${above}%-ánál, (Top ${percentile}%).`;
 
     highlightPercentile(percentile);
   });
