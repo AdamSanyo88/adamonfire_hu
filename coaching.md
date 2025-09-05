@@ -90,7 +90,7 @@ permalink: /coaching
         <tr>
           <th scope="row" class="first-col">Ár*</th>
           <td style="text-align:center; padding:14px 16px;"><strong>Ingyenes</strong></td>
-          <td style="text-align:center; padding:14px 16px;"><strong>60,000 Ft</strong> <span style="font-size:0.9em; color:#64748b">+ 30,000 Ft a további egy alkalom coaching</span></td>
+          <td style="text-align:center; padding:14px 16px;"><strong>60,000 Ft</strong> <span style="font-size:1em; color:#64748b">+ 30,000 Ft a további egy alkalom coaching</span></td>
           <td style="text-align:center; padding:14px 16px;"><strong>200,000 Ft</strong></td>
           <td style="text-align:center; padding:14px 16px;"><strong>400,000 Ft</strong></td>
         </tr>
@@ -99,7 +99,7 @@ permalink: /coaching
         <tr>
           <th scope="row" class="first-col">&nbsp;</th>
           <td style="text-align:center; padding:16px;">
-            <a href="https://forms.gle/mXezyjvvhXJp2B4u5" class="cta cta0">Ingyenes beszélgetés foglalása</a>
+            <a href="https://forms.gle/mXezyjvvhXJp2B4u5" class="cta cta0">Beszélgetés foglalása</a>
           </td>
           <td style="text-align:center; padding:16px;">
             <a href="https://forms.gle/mXezyjvvhXJp2B4u5" class="cta cta1">1. szint foglalása</a>
