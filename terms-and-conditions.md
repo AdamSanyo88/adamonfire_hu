@@ -16,7 +16,7 @@ permalink: /terms-and-conditions
     <p><strong>Székhely / levelezési cím:</strong> 1045 Budapest, Chinoin utca 4. 1/4</p>
     <p><strong>Adószám / egyéni vállalkozói nyilvántartási szám:</strong> XXX</p>
     <p><strong>Elérhetőség:</strong> adamgoesfire@gmail.com, +36307681656</p>
-    <p><strong>Weboldal:</strong> adamonfire.eu</p>
+    <p><strong>Weboldal:</strong> adamonfire.hu és adamonfire.eu</p>
   
 
   <h4>2. A szolgáltatás tárgya</h4>
@@ -34,7 +34,7 @@ permalink: /terms-and-conditions
       
         <p>1 × 20 perces ingyenes felmérő hívás</p>
 		<p>A hívás célja felmérni, hogy az Ügyfél az általa választott csomagban foglaltakat megértette és tényleg szüksége van a szolgáltatásra</p>
-		<p>A szolgáltató a hívás eredményétől függően visszautasíthatja a szolgáltatás nyújtását</p>
+		<p>A szolgáltató a hívás eredményétől függően indoklás nélkül visszautasíthatja a szolgáltatás nyújtását</p>
       
     </p>
     <p><strong>1. szint – FIRE Review</strong> (60,000 Ft + 30,000 Ft extra egy további alkalomért)
