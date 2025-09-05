@@ -5,27 +5,7 @@ permalink: /coaching
 ---
 
 <h1 class="page-title">{{ page.title | escape }}</h1>
-    <head>
-	<style>
-  .cta {
-    display: inline-block;
-    width: 180px;
-    text-align: center;
-    padding: 12px 16px;
-    background-color: #007BFF;
-    color: white;
-    text-decoration: none;
-    border-radius: 6px;
-    font-weight: bold;
-    font-family: sans-serif;
-    transition: background-color 0.3s;
-  }
-
-  .cta:hover {
-    background-color: #0056b3;
-  }
-</style>
-</head>
+    
 <div class="section">
     <div class="row">
           <div class="col s12">
@@ -116,21 +96,21 @@ permalink: /coaching
         </tr>
 
         <!-- CTA -->
-       <tr>
-  <th scope="row" class="first-col">&nbsp;</th>
-  <td style="text-align:center; padding:16px;">
-    <a href="https://forms.gle/mXezyjvvhXJp2B4u5" class="cta cta0">Ingyenes beszélgetés foglalása</a>
-  </td>
-  <td style="text-align:center; padding:16px;">
-    <a href="https://forms.gle/mXezyjvvhXJp2B4u5" class="cta cta1">1. szint foglalása</a>
-  </td>
-  <td style="text-align:center; padding:16px;">
-    <a href="https://forms.gle/mXezyjvvhXJp2B4u5" class="cta cta2">2. szint foglalása</a>
-  </td>
-  <td style="text-align:center; padding:16px;">
-    <a href="https://forms.gle/mXezyjvvhXJp2B4u5" class="cta cta3">3. szint foglalása</a>
-  </td>
-</tr>
+        <tr>
+          <th scope="row" class="first-col">&nbsp;</th>
+          <td style="text-align:center; padding:16px;">
+            <a href="https://forms.gle/mXezyjvvhXJp2B4u5" class="cta cta0">Ingyenes beszélgetés foglalása</a>
+          </td>
+          <td style="text-align:center; padding:16px;">
+            <a href="https://forms.gle/mXezyjvvhXJp2B4u5" class="cta cta1">1. szint foglalása</a>
+          </td>
+          <td style="text-align:center; padding:16px;">
+            <a href="https://forms.gle/mXezyjvvhXJp2B4u5" class="cta cta2">2. szint foglalása</a>
+          </td>
+          <td style="text-align:center; padding:16px;">
+            <a href="https://forms.gle/mXezyjvvhXJp2B4u5" class="cta cta3">3. szint foglalása</a>
+          </td>
+        </tr>
       </tbody>
     </table>
   </div>
@@ -181,6 +161,14 @@ permalink: /coaching
     .first-col { max-width:140px; font-size:13px; }
     .pricing-tiers table { font-size:13px; }
   }
+  
+  .cta {
+  display: inline-block;
+  min-width: 180px;
+  text-align: center;
+  padding: 12px 16px;
+  ...
+}
 </style>
 
 
