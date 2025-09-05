@@ -80,7 +80,7 @@ permalink: /net-worth
       <div class="col-lg-6">
         <div class="card bg-lightblue">
           <div class="card-body">
-            <h4 class="h5">📈 Összesítés</h4>
+            <h4 class="h5">📈 Results</h4>
             <button class="btn btn-primary mb-3" id="calcBtn">Számold ki a vagyonom</button>
             <div id="result" class="result mb-3">Kattints a “Számold ki a vagyonom” gombra...</div>
             <div class="small muted mb-1">Percentilisek (100 → 1)</div>
@@ -94,7 +94,8 @@ permalink: /net-worth
     </div>
   </div>
 <script>
-// ... Omitted PCT_THRESHOLDS for brevity. Keep the original.
+// Sample PCT_THRESHOLDS array, required for percentile logic
+const PCT_THRESHOLDS = Array.from({ length: 100 }, (_, i) => (i + 1) * 1000000);
 
 const CHART_LABELS = Array.from({ length: 100 }, (_, i) => String(100 - i));
 const CHART_DATA = [...PCT_THRESHOLDS].reverse();
@@ -192,18 +193,23 @@ function calculateNetWorthAndPercentile() {
 
 document.addEventListener("DOMContentLoaded", () => {
   initChartStatic();
-  document.getElementById("calcBtn").addEventListener("click", () => {
-    const { netWorth, percentile } = calculateNetWorthAndPercentile();
-    const above = Math.max(0, Math.min(100, 100 - percentile));
+  const calcBtn = document.getElementById("calcBtn");
+  if (calcBtn) {
+    calcBtn.addEventListener("click", () => {
+      const { netWorth, percentile } = calculateNetWorthAndPercentile();
+      const above = Math.max(0, Math.min(100, 100 - percentile));
 
-    document.getElementById("result").textContent =
-      `Becsült nettó vagyon: ${netWorth.toLocaleString()} Ft\nBecsült vagyoni percentilis: Top ${percentile}%`;
+      document.getElementById("result").textContent =
+        `Becsült nettó vagyon: ${netWorth.toLocaleString()} Ft\nBecsült vagyoni percentilis: Top ${percentile}%`;
 
-    document.getElementById("percentileSummary").textContent =
-      `Gazdagabb vagy az emberek ${above}%-ánál (Top ${percentile}%).`;
+      document.getElementById("percentileSummary").textContent =
+        `Gazdagabb vagy az emberek ${above}%-ánál (Top ${percentile}%).`;
 
-    highlightPercentile(percentile);
-  });
+      highlightPercentile(percentile);
+    });
+  } else {
+    console.warn("calcBtn not found");
+  }
 });
 </script>
 </body>
