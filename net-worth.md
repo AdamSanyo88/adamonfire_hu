@@ -117,6 +117,36 @@ let percentileChart = null;
 
 const FtFormatter = (val) => `${(val / 1_000_000).toFixed(0)}M`;
 
+// ✅ NEW FUNCTION
+function generatePropertyInputs() {
+  const count = parseInt(document.getElementById("propertyCount").value) || 0;
+  const container = document.getElementById("propertyInputs");
+  container.innerHTML = '';
+
+  for (let i = 0; i < count; i++) {
+    const group = document.createElement('div');
+    group.classList.add('row', 'mb-2');
+
+    const valueCol = document.createElement('div');
+    valueCol.classList.add('col-6');
+    valueCol.innerHTML = `
+      <label class="form-label">Property ${i + 1} Value</label>
+      <input type="number" class="form-control" id="propertyValue${i}" value="0"/>
+    `;
+
+    const mortgageCol = document.createElement('div');
+    mortgageCol.classList.add('col-6');
+    mortgageCol.innerHTML = `
+      <label class="form-label">Property ${i + 1} Mortgage</label>
+      <input type="number" class="form-control" id="propertyMortgage${i}" value="0"/>
+    `;
+
+    group.appendChild(valueCol);
+    group.appendChild(mortgageCol);
+    container.appendChild(group);
+  }
+}
+
 function initChartStatic() {
   const canvas = document.getElementById("percentileChart");
   if (!canvas) return;
@@ -226,3 +256,4 @@ document.addEventListener("DOMContentLoaded", () => {
 </script>
 </body>
 </html>
+
