@@ -6,7 +6,7 @@ permalink: /spending
 
 <h1 class="page-title">{{ page.title | escape }}</h1>
 
-<!doctype html>
+
 <html lang="hu">
 <head>
   <meta charset="utf-8">
@@ -28,11 +28,10 @@ permalink: /spending
     nav.blue.accent-4 .nav-wrapper ul.right.hide-on-med-and-down > li > a:active,
     nav.blue.accent-4 .nav-wrapper ul#nav-mobile.side-nav li > a {
       text-decoration: none !important;
-      border-bottom: 0 !important;   /* handles themes that fake underline as border */
-      box-shadow: none !important;    /* handles themes using bottom shadow */
+      border-bottom: 0 !important;
+      box-shadow: none !important;
     }
 
-    /* Active item variants */
     nav.blue.accent-4 .nav-wrapper ul.right.hide-on-med-and-down > li.active > a,
     nav.blue.accent-4 .nav-wrapper ul.right.hide-on-med-and-down > li > a.active {
       text-decoration: none !important;
@@ -40,14 +39,12 @@ permalink: /spending
       box-shadow: none !important;
     }
 
-    /* Kill any pseudo-element underline decorations */
     nav.blue.accent-4 .nav-wrapper ul.right.hide-on-med-and-down > li > a::after {
       content: none !important;
       border: 0 !important;
       box-shadow: none !important;
     }
 
-    /* Keep icons themselves clean */
     nav.blue.accent-4 .nav-wrapper ul.right.hide-on-med-and-down > li > a .material-icons,
     nav.blue.accent-4 .nav-wrapper ul#nav-mobile.side-nav li > a .material-icons {
       text-decoration: none;
@@ -55,14 +52,18 @@ permalink: /spending
       vertical-align: middle;
     }
 
-    /* --- NEW: fekete szöveg a havi átlagos költés táblázathoz --- */
+    /* --- NEW: minden szöveg fekete --- */
     .spending-table,
     .spending-table h2,
     .spending-table .table,
     .spending-table .table th,
     .spending-table .table td,
-    .spending-table .badge {
+    .spending-table .badge,
+    .form-label,
+    .form-check-label {
       color: #000 !important;
+      font-family: inherit !important;
+      font-weight: normal !important;
     }
   </style>
 </head>
@@ -73,16 +74,8 @@ permalink: /spending
       A kijelölt tételek eltávolításra kerülnek, majd a súlyuk arányosan újraelosztódik a maradék kategóriák között. A kalkulátor lakbért nem számol, ezt érdemes kivonni a teljes költségvetésből.
     </p>
 
-    <!--
-      Új elrendezés:
-      - Bal oszlop: Összefoglaló (fent), Havi átlagos költés (alatta)
-      - Jobb oszlop (>= md): Kategóriák táblázata
-      - < md: oszlopok egymás alatt jelennek meg (mobilon marad, ahogy volt)
-    -->
     <div class="row g-4 align-items-start">
-      <!-- Bal oszlop -->
       <div class="col-md-6">
-        <!-- Összefoglaló KÁRTYA – felülre helyezve -->
         <div class="card shadow-sm mb-4">
           <div class="card-body">
             <h2 class="h6 mb-2">Összefoglaló</h2>
@@ -93,7 +86,6 @@ permalink: /spending
           </div>
         </div>
 
-        <!-- Havi átlagos költés KÁRTYA -->
         <div class="card shadow-sm">
           <div class="card-body">
             <label for="monthlyInput" class="form-label">Havi átlagos költés</label>
@@ -125,7 +117,6 @@ permalink: /spending
         </div>
       </div>
 
-      <!-- Jobb oszlop: Kategóriák táblázat (desktopon mellette, mobilon alatta) -->
       <div class="col-md-6">
         <div class="card mt-md-0 mt-4 shadow-sm spending-table">
           <div class="card-body table-responsive">
@@ -151,14 +142,12 @@ permalink: /spending
             </table>
           </div>
         </div>
-
         <p class="text-muted small mt-2 mb-0">Megjegyzés: a pénznem tetszőleges; a táblázatban szereplő összegek a megadott havi összegből számolódnak.</p>
       </div>
     </div>
   </div>
 
   <script>
-    // Hungarian CPI basket weights (normalized to 1.0)
     const BASE = [
       { key: "elelmiszer", label: "Élelmiszer", weight: 0.2274 },
       { key: "alkohol", label: "Alkohol", weight: 0.0325 },
@@ -185,10 +174,7 @@ permalink: /spending
       const removed = base.filter(c => removedSet.has(c.key));
       const sumKeep = keep.reduce((s, c) => s + c.weight, 0);
       const sumRemoved = removed.reduce((s, c) => s + c.weight, 0);
-
-      if (sumKeep <= 0) {
-        return base.map(c => ({ ...c, adjWeight: 0 }));
-      }
+      if (sumKeep <= 0) return base.map(c => ({ ...c, adjWeight: 0 }));
       const adjusted = base.map(c => {
         if (removedSet.has(c.key)) return { ...c, adjWeight: 0 };
         const share = c.weight / sumKeep;
@@ -205,24 +191,17 @@ permalink: /spending
       if (document.getElementById('noSmoke').checked) removedSet.add('dohanyaru');
       if (document.getElementById('noDrink').checked) removedSet.add('alkohol');
       if (document.getElementById('noHouse').checked) removedSet.add('lakber_karb');
-      if (document.getElementById('noCar').checked) {
-        ['auto_kozlekedes', 'auto_vasarlas'].forEach(item => removedSet.add(item));
-      }
+      if (document.getElementById('noCar').checked) ['auto_kozlekedes', 'auto_vasarlas'].forEach(item => removedSet.add(item));
 
       const adjusted = redistribute(BASE, removedSet);
-
-      // Compute rounded amounts and correct to sum exactly to monthly
       const raw = adjusted.map(r => r.adjWeight * monthly);
       const rounded = raw.map(v => Math.round(v * 100) / 100);
       const sumRounded = rounded.reduce((s, v) => s + v, 0);
       const diff = Math.round((monthly - sumRounded) * 100) / 100;
-
-      // apply diff to the largest kept category
       let idxMax = -1, maxW = -Infinity;
       adjusted.forEach((r, i) => { if (r.adjWeight > maxW) { maxW = r.adjWeight; idxMax = i; } });
       if (idxMax >= 0) rounded[idxMax] = Math.round((rounded[idxMax] + diff) * 100) / 100;
 
-      // Fill table
       const tbody = document.getElementById('tableBody');
       tbody.innerHTML = '';
       adjusted.forEach((r, i) => {
@@ -237,11 +216,8 @@ permalink: /spending
         tbody.appendChild(tr);
       });
 
-      // Removed total percent
       const removedPct = BASE.filter(c => removedSet.has(c.key)).reduce((s, c) => s + c.weight, 0);
       document.getElementById('removedPct').textContent = (removedPct * 100).toFixed(1).replace('.', ',');
-
-      // Total cell
       document.getElementById('totalCell').textContent = fmtAmt(monthly);
     }
 
@@ -255,3 +231,4 @@ permalink: /spending
   </script>
 </body>
 </html>
+
