@@ -10,7 +10,9 @@ permalink: /blog
     <div class="row">
           <div class="col s12">
 		  <h4>Összes korábbi bejegyzés</h4> 
-
+<h5>Megkaptam a zöld lámpát a FIRE-re</h5>
+<p>Az elmúlt néhány hónapban azon gondolkodtam, hogyan tudnám igazán felmérni a portfólióm FIRE-készültségét. Ismerem a számaimat (a 2 éves kiadáskövetési próbám decemberben ér véget), tudom, hogyan kell diverzifikálni a portfóliómat, de még mindig nem vagyok biztos benne, hogy minden a helyén van-e...<a href="blog-6"><strong> olvasd tovább</strong></a>.</p>
+<br/>
 <h5>Új vizualizációk</h5> <p>Nagyon jó visszajelzéseket kaptam a FIRE közösség néhány tagjától. Többen elmagyarázták nekem, hogy az utam igazi értéke a transzparencia, vagyis hogy számszerűen, részletes magyarázatokkal osztom meg a történetemet, arról is, mit vásároltam... <a href="blog-5"><strong> olvasd tovább</strong></a>.</p>
 <br/>
 <h5>Elkezdtem kosarazni</h5> <p>Két hétig küzdöttem valami Covid-szerű betegséggel, majd újabb két hétbe telt, mire teljesen jól lettem. Miután jobban lettem, sikerült találnom egy új hobbit, ez pedig a kosárlabdázás... <a href="blog-4"><strong> olvasd tovább</strong></a>.</p>
