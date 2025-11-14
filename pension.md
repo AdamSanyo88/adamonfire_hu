@@ -100,20 +100,31 @@ input[type="number"] {
 .footer { margin-top: 10px; font-size: 12px; color: var(--muted); }
 .right .card { position: sticky; top: 16px; }
 .btn {
+  display: inline-block;
   cursor: pointer;
-  padding: 10px 14px;
+  padding: 10px 18px;
+  min-width: 130px;
   border-radius: 12px;
   border: 1px solid rgba(0,0,0,0.1);
   background: #fff;
   color: var(--text);
   font-weight: 600;
-  transition: background 0.2s;
+  font-size: 14px;
+  white-space: nowrap;     /* nem törik a sor */
+  text-align: center;
+  transition: background 0.2s, transform 0.1s;
 }
-.btn:hover { background: #f0f0f0; }
-.btn:active { transform: translateY(1px); }
+.btn:hover {
+  background: #f0f0f0;
+}
+
+
 .mono { font-variant-numeric: tabular-nums; }
 
 /* --- SLIDER compact layout --- */
+
+/* --- SLIDER compact layout --- */
+
 .left .row {
   display: flex;
   align-items: center;
@@ -123,13 +134,19 @@ input[type="number"] {
   padding: 0;
   min-height: 0;
 }
-label[for="serviceYears"] { white-space: nowrap; }
+
+label[for="serviceYears"] {
+  white-space: nowrap;
+}
+
 #serviceYearsLabel {
   min-width: 56px;
   text-align: right;
   font-weight: 600;
   white-space: nowrap;
 }
+
+/* Slider alap */
 #serviceYears {
   width: 280px !important;
   flex: 0 0 280px !important;
@@ -138,7 +155,10 @@ label[for="serviceYears"] { white-space: nowrap; }
   background: transparent;
   height: 18px;
   padding: 0;
+  position: relative;
 }
+
+/* Track */
 #serviceYears::-webkit-slider-runnable-track {
   height: 4px;
   background: #ccc;
@@ -149,6 +169,8 @@ label[for="serviceYears"] { white-space: nowrap; }
   background: #ccc;
   border-radius: 999px;
 }
+
+/* Thumb */
 #serviceYears::-webkit-slider-thumb {
   appearance: none;
   width: 16px;
@@ -157,6 +179,8 @@ label[for="serviceYears"] { white-space: nowrap; }
   border-radius: 50%;
   background: var(--accent);
   cursor: pointer;
+  position: relative;
+  z-index: 2;
 }
 #serviceYears::-moz-range-thumb {
   width: 16px;
@@ -164,15 +188,60 @@ label[for="serviceYears"] { white-space: nowrap; }
   border-radius: 50%;
   background: var(--accent);
   cursor: pointer;
+  position: relative;
+  z-index: 2;
 }
+
+/* --- Tooltip / value indicator eltüntetése --- */
+#serviceYears::-webkit-slider-thumb::before,
+#serviceYears::-webkit-slider-thumb::after,
+#serviceYears::-moz-range-thumb::before,
+#serviceYears::-moz-range-thumb::after,
+#serviceYears::before,
+#serviceYears::after {
+  display: none !important;
+  content: none !important;
+}
+
+/* Egyes böngészők (pl. Edge, Chromium) belső tooltipjét kikapcsolja */
+#serviceYears::-ms-tooltip {
+  display: none !important;
+}
+
+/* Mobilon se nőjön meg */
 @media (max-width: 480px) {
-  #serviceYears { width: 240px !important; flex-basis: 240px !important; }
+  #serviceYears {
+    width: 240px !important;
+    flex-basis: 240px !important;
+  }
+}
+
+/* Könyvtár által beszúrt érték-buborék elrejtése */
+#serviceYears + .thumb,
+#serviceYears ~ .thumb,
+#serviceYears + .thumb .value,
+#serviceYears ~ .thumb .value,
+.left .row .thumb,
+.left .row .thumb .value {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
+
+/* Ha a lib más neveket is használ, ezeket is tiltsd le (opcionális) */
+.range-label,
+.value,
+.value-indicator,
+.mdc-slider__value-indicator,
+.noUi-tooltip {
+  display: none !important;
 }
 </style>
 </head>
 <body>
   <div class="wrap">
-    <h1>Nyugdíjkalkulátor</h1>
+    <br/>
     <p class="lead">Add meg az éves nettó járulékköteles kereseteidet minden általad ledolgozott évben. Fontos, hogy a munkabérként és prémiumként kapott bejelentett és leadózott jövedelemmel számolj csak.</p>
 	<p>A kalkulátor figyelembe veszi az adott év <em>valorizációs szorzóját</em>, a <em>szolgálati idő szorzóját</em>, a lépcsőzetes <em>degressziót</em>, és ezek alapján kiszámolja, mi a várható havi nyugdíjad. Egyéb tényezőkkel és kedvezményekkel nem számol a modell, csak a kereseti adatokkal.</p>
 	<p>Az adatok tájékoztató jellegűek, pontosabb számításra a <a href="https://www.allamkincstar.gov.hu/nyugdij/sajat-jogu-ellatasok/az-oregsegi-nyugdij-osszegenek-szamitasa">Magyar Államkincstár nyugdíjkalkulátora</a> javasolt.</p>
@@ -225,12 +294,29 @@ const YEARS = [1988,1989,1990,1991,1992,1993,1994,1995,1996,1997,1998,1999,2000,
 const YEAR_MULTS = [63.115,53.99,44.4,35.378,29.163,24.782,19.468,17.287,14.724,11.867,10.023,8.893,7.982,6.871,5.742,5.028,4.753,4.318,4.013,3.894,3.643,3.576,3.347,3.146,3.083,2.938,2.852,2.735,2.539,2.248,2.019,1.813,1.652,1.52,1.294,1.133,1.0];
 const ANNUAL_NET = [85017, 97676, 119400, 150646, 184594, 215210, 271801, 308088, 365329, 457200, 542400, 601200, 669600, 778800, 931200, 1065600, 1125600, 1237200, 1330800, 1369200, 1464000, 1489200, 1591200, 1693200, 1728000, 1812000, 1868400, 1947600, 2100000, 2370000, 2632800, 2935200, 3220800, 3501600, 4115808, 4701132, 5325576];
 
+const SERVICE_TABLE = {
+  10: 33, 11: 35, 12: 37, 13: 39, 14: 41,
+  15: 43, 16: 45, 17: 47, 18: 49, 19: 51,
+  20: 53, 21: 55, 22: 57, 23: 59, 24: 61,
+  25: 63, 26: 64, 27: 65, 28: 66, 29: 67,
+  30: 68, 31: 69, 32: 70, 33: 71, 34: 72,
+  35: 73, 36: 74, 37: 75.5, 38: 77, 39: 78.5,
+  40: 80, 41: 82, 42: 84, 43: 86, 44: 88,
+  45: 90, 46: 92, 47: 94, 48: 96, 49: 98, 50: 100
+};
 
 
-
+// Szolgálati szorzó (0..1) a fenti táblából
 function serviceMultiplier(years) {
-  const y = Math.max(10, Math.min(50, years));
-  return Math.min(1.00, 0.33 + (y - 10) * 0.02);
+  const y = Math.max(10, Math.min(50, years|0));
+  const pct = SERVICE_TABLE[y];
+  return (typeof pct === 'number') ? (pct / 100) : 1.0;
+}
+
+// Segédfüggvény a % kiírásához: egész vagy 1 tizedes
+function formatPct(mult) {
+  const pct = mult * 100;
+  return (pct % 1 === 0) ? `${pct.toFixed(0)}%` : `${pct.toFixed(1)}%`;
 }
 
 function progressiveDegression(monthly) {
@@ -300,5 +386,3 @@ serviceRange.addEventListener('input',recalc);
 document.getElementById('reset').addEventListener('click',()=>{inputs.forEach(({inp})=>inp.value='');recalc();});
 recalc();
 </script>
-</body>
-</html>
