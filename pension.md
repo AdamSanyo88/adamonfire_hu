@@ -242,9 +242,20 @@ label[for="serviceYears"] {
 <body>
   <div class="wrap">
     <br/>
-    <p class="lead">Add meg az éves nettó járulékköteles kereseteidet minden általad ledolgozott évben. Fontos, hogy a munkabérként és prémiumként kapott bejelentett és leadózott jövedelemmel számolj csak.</p>
+    <p>Add meg az éves nettó járulékköteles kereseteidet minden általad ledolgozott évben. Fontos, hogy a munkabérként és prémiumként kapott bejelentett és leadózott jövedelemmel számolj csak.</p>
 	<p>A kalkulátor figyelembe veszi az adott év <em>valorizációs szorzóját</em>, a <em>szolgálati idő szorzóját</em>, a lépcsőzetes <em>degressziót</em>, és ezek alapján kiszámolja, mi a várható havi nyugdíjad. Egyéb tényezőkkel és kedvezményekkel nem számol a modell, csak a kereseti adatokkal.</p>
-	<p>Az adatok tájékoztató jellegűek, pontosabb számításra a <a href="https://www.allamkincstar.gov.hu/nyugdij/sajat-jogu-ellatasok/az-oregsegi-nyugdij-osszegenek-szamitasa">Magyar Államkincstár nyugdíjkalkulátora</a> javasolt.</p>
+	<p>A kalkulátor nem számol továbbá a 2013 előtti éves járulékplafonnal, de a táblázat megmutatja, hogy milyen éves bruttó bér volt a maximum, amelyre nyugdíjjárulékot kellett fizetni.</p>
+	<p>Mindig egész éves keresetet adj meg, mert törtévvel nem tud számolni a kalkulátor.</p>
+	<h5>Nyugdíjszámítás menete a gyakorlatban</h5>
+	<ol>
+	<li>Az egész élet során szerzett szolgálati évek egész számban, lefelé kerekítve (a törtév elvész).</li>
+	<li>Az 1988 január 1-je óta szerzett jövedelmek nettósított éves értéke (adók és járulékok levonása után).</li>
+	<li>A nettó értékeket minden évben fel kell szorozni az éves valorizációs szorzóval. Ez megmutatja, hogy mai áron számolva az akkori kereset mennyit ért. Gyakorlatban a fő szempont az, hogy az adott éves jövedelem az adott év nettó átlagkeresete alatt vagy felett volt-e (ez határozza meg a relatív értékét).</li>
+	<li>A kapott összegeket el kell osztani a teljes szolgálati idővel (napokban számolva). Ezt az összeget utána fel kell szorozni 365-tel, majd osztani 12-vel, így megkapva a nettó életpálya átlagkeresetet. </li>
+	<li>Ha az így kapott összeg meghaladja a 372 ezer Ft-ot havonta, akkor degresszálni kell (először 90%-kal, majd 421 ezer Ft felett 80%-kal). </li>
+	<li>Végül az így kapott összeget meg kell szorozni a szolgálati évekre eső szorzóval (20 év után ez 53%, 30 évnél 68%, 40 évnél 80%, stb.). A maximális szolgálati idő 50 év, a minimális 15 év (de a kalkulátor 10-15 év közötti időszakra is tud számítást végezni).</li>
+	</ol>
+	<p>Az adatok tájékoztató jellegűek, pontosabb számításra a <a href="https://www.allamkincstar.gov.hu/nyugdij/sajat-jogu-ellatasok/oregsegi-nyugdij/onkiszolgalo-nyugdijkalkulator">Magyar Államkincstár nyugdíjkalkulátora</a> javasolt.</p>
 
     <div class="grid">
       <div class="left card">
@@ -260,7 +271,7 @@ label[for="serviceYears"] {
               <tr>
                 <th>Év</th>
                 <th>Szorzó</th>
-                <th>Éves kereset (Ft)</th>
+                <th>Éves nettó kereset (Ft)</th>
                 <th>Valorizált éves kereset</th>
                 <th>Éves átlag nettó kereset (irányadó)</th>
               </tr>
@@ -278,7 +289,6 @@ label[for="serviceYears"] {
         <div class="card">
           <div class="row" style="justify-content:space-between">
             <div>
-              <div class="muted">[(összes × szorzó) ÷ szolgálati évek] × szolgálati szorzó ÷ 12, majd degresszió</div>
               <div class="result" id="result">— <small>havi várható nyugdíj</small></div>
             </div>
             <div>
@@ -305,20 +315,38 @@ const SERVICE_TABLE = {
   45: 90, 46: 92, 47: 94, 48: 96, 49: 98, 50: 100
 };
 
+// ------- Segédfüggvények -------
 
-// Szolgálati szorzó (0..1) a fenti táblából
+// Szolgálati szorzó (0..1) a fenti táblából + 40 év felett +2%/év, max 100%
 function serviceMultiplier(years) {
   const y = Math.max(10, Math.min(50, years|0));
-  const pct = SERVICE_TABLE[y];
-  return (typeof pct === 'number') ? (pct / 100) : 1.0;
+
+  // Tábla szerinti érték, ha van
+  let pct = SERVICE_TABLE[y];
+
+  // Ha nincs, számoljuk szabállyal 40 felett
+  if (typeof pct !== 'number') {
+    const baseAt40 = SERVICE_TABLE[40] ?? 80; // 40 év = 80%
+    const extra = Math.max(0, y - 40) * 2;    // 40 felett +2%/év
+    pct = Math.min(100, baseAt40 + extra);    // plafon 100%
+  }
+
+  // 40 felett a szabály legyen az irányadó
+  if (y > 40) {
+    const baseAt40 = SERVICE_TABLE[40] ?? 80;
+    pct = Math.min(100, baseAt40 + (y - 40) * 2);
+  }
+
+  return pct / 100;
 }
 
-// Segédfüggvény a % kiírásához: egész vagy 1 tizedes
+// % formázó
 function formatPct(mult) {
   const pct = mult * 100;
   return (pct % 1 === 0) ? `${pct.toFixed(0)}%` : `${pct.toFixed(1)}%`;
 }
 
+// Degresszió (2025-ös sávok)
 function progressiveDegression(monthly) {
   const a = 372000, b = 421000;
   let res = 0, parts = [];
@@ -337,14 +365,22 @@ function progressiveDegression(monthly) {
 }
 
 function formatFt(x){return new Intl.NumberFormat('hu-HU').format(Math.round(x))+' Ft';}
-const rowsEl=document.getElementById('rows');
-const serviceRange=document.getElementById('serviceYears');
-const serviceLabel=document.getElementById('serviceYearsLabel');
-const resultEl=document.getElementById('result');
-const infoEl=document.getElementById('serviceInfo');
-const breakdownEl=document.getElementById('breakdown');
 
-const inputs=[];
+// ------- DOM elemek -------
+const rowsEl = document.getElementById('rows');
+const serviceRange = document.getElementById('serviceYears');
+const serviceLabel = document.getElementById('serviceYearsLabel');
+const resultEl = document.getElementById('result');
+const infoEl = document.getElementById('serviceInfo');
+const breakdownEl = document.getElementById('breakdown');
+
+// Védőkorlát: ha kritikus elemek hiányoznak, ne fusson tovább
+if (!rowsEl || !serviceRange || !serviceLabel || !resultEl || !infoEl || !breakdownEl) {
+  console.error('Hiányzó DOM elemek: ellenőrizd az #rows, #serviceYears, #serviceYearsLabel, #result, #serviceInfo, #breakdown elemeket.');
+}
+
+// ------- Sorok és inputok felépítése -------
+const inputs = [];
 YEARS.forEach((y,i)=>{
   const tr=document.createElement('tr');
   const tdY=document.createElement('td'); tdY.textContent=y;
@@ -361,28 +397,64 @@ YEARS.forEach((y,i)=>{
   inputs.push({inp,tdVal});
 });
 
+// ------- Számítás (új sorrend: degresszió -> szolgálati szorzó) -------
 function recalc(){
-  let sumValorizalt=0;
+  let sumValorizalt = 0;
+
   inputs.forEach(({inp,tdVal},i)=>{
-    const raw=parseFloat(inp.value||'0');
-    const valor=raw*YEAR_MULTS[i];
-    tdVal.textContent=raw?formatFt(valor):'—';
-    tdVal.className=raw?'':'muted';
-    sumValorizalt+=valor;
+    const raw = parseFloat(inp.value || '0');
+    const valor = raw * YEAR_MULTS[i];
+    tdVal.textContent = raw ? formatFt(valor) : '—';
+    tdVal.className = raw ? '' : 'muted';
+    sumValorizalt += (isFinite(valor) ? valor : 0);
   });
-  const years=parseInt(serviceRange.value,10);
-  const sMult=serviceMultiplier(years);
-  const avgPerServiceYear=sumValorizalt/Math.max(1,years);
-  const afterServiceMult=avgPerServiceYear*sMult;
-  const grossMonthly=afterServiceMult/12;
-  const prog=progressiveDegression(grossMonthly);
-  resultEl.innerHTML=`${formatFt(prog.value)} <small>havi várható nyugdíj</small>`;
-  serviceLabel.textContent=`${years} év`;
-  infoEl.textContent=`Szolgálati szorzó: ${Math.round(sMult*100)}% | Éves valorizált összes: ${formatFt(sumValorizalt)} | / ${years} év = ${formatFt(avgPerServiceYear)}`;
-  breakdownEl.innerHTML=`Összes valorizált kereset: <strong>${formatFt(sumValorizalt)}</strong><br/>Osztás szolgálati évekkel: ÷<strong>${years}</strong> = <strong>${formatFt(avgPerServiceYear)}</strong><br/>Szolgálati szorzó: ×<strong>${Math.round(sMult*100)}%</strong> → <strong>${formatFt(afterServiceMult)}</strong><br/>Havi osztás: ÷12 = <strong>${formatFt(grossMonthly)}</strong><br/>Degresszió:<br/>- ${prog.parts.join('<br/>- ')}<br/><strong>Eredmény: ${formatFt(prog.value)}</strong>`;
+
+  const years = parseInt(serviceRange.value || '0', 10) || 0;
+  const sMult = serviceMultiplier(years);                // %-os szorzó (később alkalmazzuk)
+  const sMultPct = (sMult * 100).toFixed(1);
+
+  // 1) Éves → szolgálati évek szerinti átlag
+  const avgPerServiceYear = sumValorizalt / Math.max(1, years);
+
+  // 2) Havi bruttó (SZORZÓ NÉLKÜL)
+  const grossMonthlyBeforeDeg = avgPerServiceYear / 12;
+
+  // 3) Degresszió ALKALMAZÁSA először
+  const prog = progressiveDegression(grossMonthlyBeforeDeg);
+  const monthlyAfterDegression = prog.value;
+
+  // 4) Szolgálati szorzó ALKALMAZÁSA a degresszió után
+  const finalMonthly = monthlyAfterDegression * sMult;
+
+  // Kiírások
+  resultEl.innerHTML = `${formatFt(finalMonthly)} <small>havi várható nyugdíj</small>`;
+  serviceLabel.textContent = `${years} év`;
+  infoEl.textContent =
+    `Szolgálati szorzó: ${sMultPct}% | Éves valorizált összes: ${formatFt(sumValorizalt)} | / ${years} év = ${formatFt(avgPerServiceYear)}`;
+
+  breakdownEl.innerHTML =
+    `Összes valorizált kereset: <strong>${formatFt(sumValorizalt)}</strong><br/>
+     Osztás szolgálati évekkel: ÷<strong>${years}</strong> = <strong>${formatFt(avgPerServiceYear)}</strong><br/>
+     Havi osztás (szorzó nélkül): ÷12 = <strong>${formatFt(grossMonthlyBeforeDeg)}</strong><br/>
+     Degresszió:<br/>
+     - ${prog.parts.join('<br/>- ')}<br/>
+     Degresszió utáni havi: <strong>${formatFt(monthlyAfterDegression)}</strong><br/>
+     Szolgálati szorzó alkalmazása: ×<strong>${sMultPct}%</strong> → <strong>${formatFt(finalMonthly)}</strong>`;
 }
-inputs.forEach(({inp})=>inp.addEventListener('input',recalc));
-serviceRange.addEventListener('input',recalc);
-document.getElementById('reset').addEventListener('click',()=>{inputs.forEach(({inp})=>inp.value='');recalc();});
+
+// ------- Események és inicializálás -------
+inputs.forEach(({inp})=> inp.addEventListener('input', recalc));
+if (serviceRange) serviceRange.addEventListener('input', recalc);
+
+// Opcionális reset gomb — csak ha létezik
+const resetBtn = document.getElementById('reset');
+if (resetBtn) {
+  resetBtn.addEventListener('click', ()=>{
+    inputs.forEach(({inp})=> inp.value = '');
+    recalc();
+  });
+}
+
+// Első kalkuláció
 recalc();
 </script>
