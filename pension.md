@@ -509,24 +509,26 @@ if (serviceRange) serviceRange.addEventListener('input', recalc);
 // Első kalkuláció
 recalc();
 
-// ------- Összes mező törlése gomb -------
-// (űrlapban lévő gombnál előzzük meg az esetleges submitot)
+// ------- Reset gomb (CSAK EZ MÓDOSULT) -------
 const resetBtn = document.getElementById('reset');
 if (resetBtn) {
-  resetBtn.addEventListener('click', (e) => {
-    e.preventDefault();
+  const onReset = (ev) => {
+    // Ne fusson böngésző-RESET / form submit
+    if (ev) ev.preventDefault();
 
-    // Minden év mező törlése
-    inputs.forEach(({ inp }) => {
-      inp.value = '';
-    });
+    // Csak a keresetmezőket ürítjük (szolgálati évekhez nem nyúlunk)
+    inputs.forEach(({ inp }) => { inp.value = ''; });
 
-    // (OPCIONÁLIS) Szolgálati évek csúszka nullázása:
-    // Ha ezt is szeretnéd törölni, vedd ki a kommentet a következő két sor elől
-    // serviceRange.value = '';
-    // serviceLabel.textContent = '0 év';
-
-    // Újraszámolás azonnal
+    // Azonnali újraszámolás és UI-frissítés
     recalc();
-  });
+  };
+
+  // Ha a gomb formban van és type="reset", a form 'reset' eseményét is elkapjuk
+  if (resetBtn.form) {
+    resetBtn.form.addEventListener('reset', onReset);
+  }
+
+  // Kattintás kezelése minden esetben
+  resetBtn.addEventListener('click', onReset);
+}
 </script>
