@@ -508,4 +508,25 @@ if (serviceRange) serviceRange.addEventListener('input', recalc);
 
 // Első kalkuláció
 recalc();
+
+// ------- Összes mező törlése gomb -------
+// (űrlapban lévő gombnál előzzük meg az esetleges submitot)
+const resetBtn = document.getElementById('reset');
+if (resetBtn) {
+  resetBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+
+    // Minden év mező törlése
+    inputs.forEach(({ inp }) => {
+      inp.value = '';
+    });
+
+    // (OPCIONÁLIS) Szolgálati évek csúszka nullázása:
+    // Ha ezt is szeretnéd törölni, vedd ki a kommentet a következő két sor elől
+    // serviceRange.value = '';
+    // serviceLabel.textContent = '0 év';
+
+    // Újraszámolás azonnal
+    recalc();
+  });
 </script>
