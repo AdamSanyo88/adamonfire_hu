@@ -206,10 +206,11 @@ input[type="number"] {
 <body>
   <div class="wrap">
     <br/>
-    <p>Add meg az <strong>éves bruttó kereseteidet minden általad ledolgozott évben</strong>. Fontos, hogy a munkabérként és prémiumként kapott bejelentett és leadózott jövedelemmel számolj csak.</p>
-	<p>A kalkulátor figyelembe veszi az adott év <em>valorizációs szorzóját</em>, a <em>szolgálati idő szorzóját</em>, a lépcsőzetes <em>degressziót</em>, és ezek alapján kiszámolja, mi a várható havi nyugdíjad. Egyéb tényezőkkel és kedvezményekkel nem számol a modell, csak a kereseti adatokkal.</p>
-	<p>A kalkulátor nem számol továbbá a 2013 előtti éves járulékplafonnal, de a táblázat megmutatja, hogy milyen éves bruttó bér volt a maximum, amelyre nyugdíjjárulékot kellett fizetni. Ennél nagyobb bruttó éves összeget ne adj meg az adott sorban.</p>
-	<p>Mindig egész éves keresetet adj meg, mert törtévvel nem tud számolni a kalkulátor.</p>
+	<h5>Hogyan használd a kalkulátort?</h5>
+    <p>Add meg az <strong>éves bruttó kereseteidet minden általad ledolgozott évben</strong>. Csak a munkabérként és prémiumként kapott bejelentett és leadózott jövedelemmel számolj.</p>
+	<p>A kalkulátor figyelembe veszi az adott év <em>valorizációs szorzóját</em>, a <em>szolgálati idő szorzóját</em>, a lépcsőzetes <em>degressziót</em>, és ezek alapján kiszámolja, mi a várható havi nyugdíjad.</p>
+	<p><strong>Fontos:</strong> A kalkulátor nem számol a 2013 előtti éves járulékplafonnal, de a táblázat megmutatja, hogy milyen éves bruttó bér volt a maximum, amelyre nyugdíjjárulékot kellett fizetni. Ennél nagyobb bruttó éves összeget ne adj meg az adott években.</p>
+	<p>Mindig egész éves keresetet adj meg. A kalkulátor folyamatosan újrakalkulálja az átlagos életkeresetet, szóval ha csak pár évet dolgoztál, azt feltételezi, hogy a jövőben is ilyen bérszinten fogsz keresni. Ezért fontos, hogy minden éves adatot adj meg a pontosabb kalkulációhoz.</p>
 	<br/>
 	<h5>Nyugdíjszámítás menete a gyakorlatban</h5>
 	<ol>
