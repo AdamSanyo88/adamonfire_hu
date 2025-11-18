@@ -28,40 +28,40 @@ input[type=number]{width:100%;padding:6px 8px;border:1px solid #ced4da;border-ra
   <table class="table table-bordered bg-white" id="nw-table">
     <thead class="table-light">
       <tr>
-        <th style="width:15%">Categories</th>
+        <th style="width:15%">Kategóriák</th>
         <th>Items</th>
-        <th class="text-end" style="width:15%">Market value (Ft)</th>
-        <th class="text-end" style="width:15%">Mortgage (Ft)</th>
-        <th class="text-end" style="width:15%">Net value</th>
+        <th class="text-end" style="width:15%">Piaci ár (Ft)</th>
+        <th class="text-end" style="width:15%">Hitel összege (Ft)</th>
+        <th class="text-end" style="width:15%">Nettó érték</th>
         <th style="width:4%"></th>
       </tr>
     </thead>
     <tbody id="rows">
-      <tr class="table-secondary"><td colspan="6">🏠 Real estate</td></tr>
+      <tr class="table-secondary"><td colspan="6">🏠 Ingatlanok</td></tr>
       <tr id="prop-anchor"></tr>
-      <tr><td colspan="6"><button class="btn btn-outline-secondary" id="add-prop" type="button">➕ Add property</button></td></tr>
+      <tr><td colspan="6"><button class="btn btn-outline-secondary" id="add-prop" type="button">➕ Ingatlan hozzáadása</button></td></tr>
 
-      <tr class="table-secondary"><td colspan="6">📊 Investments</td></tr>
-      <tr data-type="inv"><td>📦</td><td>Private pension</td>
+      <tr class="table-secondary"><td colspan="6">📊 Befektetések</td></tr>
+      <tr data-type="inv"><td>📦</td><td>Nyugdíjpénztár</td>
         <td><input type="number" data-field="value" value="0"></td><td><input type="number" data-field="debt" value="0" disabled></td>
         <td class="text-end mono" data-cell="net">Ft 0</td><td></td></tr>
-      <tr data-type="inv"><td>🏛️</td><td>Government bonds</td>
+      <tr data-type="inv"><td>🏛️</td><td>Állampapírok</td>
         <td><input type="number" data-field="value" value="0"></td><td><input type="number" data-field="debt" value="0" disabled></td>
         <td class="text-end mono" data-cell="net">Ft 0</td><td></td></tr>
-      <tr data-type="inv"><td>🧾</td><td>Tax-efficient investments</td>
+      <tr data-type="inv"><td>🧾</td><td>Tartós befektetési számla</td>
         <td><input type="number" data-field="value" value="0"></td><td><input type="number" data-field="debt" value="0" disabled></td>
         <td class="text-end mono" data-cell="net">Ft 0</td><td></td></tr>
-      <tr data-type="inv"><td>📈</td><td>Other investments</td>
-        <td><input type="number" data-field="value" value="0"></td><td><input type="number" data-field="debt" value="0" disabled></td>
-        <td class="text-end mono" data-cell="net">Ft 0</td><td></td></tr>
-
-      <tr class="table-secondary"><td colspan="6">💶 Other assets</td></tr>
-      <tr data-type="asset"><td>🚗</td><td>Cars and other assets</td>
+      <tr data-type="inv"><td>📈</td><td>Egyéb befektetések</td>
         <td><input type="number" data-field="value" value="0"></td><td><input type="number" data-field="debt" value="0" disabled></td>
         <td class="text-end mono" data-cell="net">Ft 0</td><td></td></tr>
 
-      <tr class="table-secondary"><td colspan="6">➖ Liabilities</td></tr>
-      <tr data-type="liab"><td>💳</td><td>Other liabilities</td>
+      <tr class="table-secondary"><td colspan="6">💶 Egyéb vagyontárgyak</td></tr>
+      <tr data-type="asset"><td>🚗</td><td>Autó- és egyéb vagyontárgyak</td>
+        <td><input type="number" data-field="value" value="0"></td><td><input type="number" data-field="debt" value="0" disabled></td>
+        <td class="text-end mono" data-cell="net">Ft 0</td><td></td></tr>
+
+      <tr class="table-secondary"><td colspan="6">➖ Hitelek</td></tr>
+      <tr data-type="liab"><td>💳</td><td>Egyéb hitelek</td>
         <td><input type="number" data-field="value" value="0" disabled></td>
         <td><input type="number" data-field="debt" value="0"></td>
         <td class="text-end mono" data-cell="net">Ft 0</td><td></td></tr>
@@ -78,11 +78,11 @@ input[type=number]{width:100%;padding:6px 8px;border:1px solid #ced4da;border-ra
 
   <div class="result mb-3">
     <strong>Net worth:</strong> <span id="nw-ft">Ft 0</span>
-    <span class="badge text-bg-primary" id="pct-chip">Percentile: –</span>
+    <span class="badge text-bg-primary" id="pct-chip">Percentilis: –</span>
   </div>
 
   <div class="chart-wrap"><canvas id="percentileChart"></canvas></div>
-  <div id="pct-text" class="mt-2 small text-muted">Your totals are automatically updated when entering new values.</div>
+  <div id="pct-text" class="mt-2 small text-muted">Az értékek automatikusan frissülnek, ha új adatot adsz meg.</div>
 </div>
 
 <script>
@@ -168,7 +168,7 @@ input[type=number]{width:100%;padding:6px 8px;border:1px solid #ced4da;border-ra
   function addProperty(){
     const anchor=document.getElementById("prop-anchor");
     const tr=document.createElement("tr"); tr.dataset.type="prop";
-    tr.innerHTML=`<td>🏠</td><td>Real estate</td>
+    tr.innerHTML=`<td>🏠</td><td>Ingatlan</td>
       <td><input type="number" data-field="value" value="0"></td>
       <td><input type="number" data-field="debt" value="0"></td>
       <td class="text-end mono" data-cell="net">Ft 0</td>
@@ -203,7 +203,7 @@ input[type=number]{width:100%;padding:6px 8px;border:1px solid #ced4da;border-ra
 
     document.getElementById("pct-chip").textContent = "Top "+pct+"%";
     document.getElementById("pct-text").textContent =
-      `Your estimated net worth is ${fmtFt(sumN)}, which places you ${100-pct}% higher than others (Top ${pct}%).`;
+      `A nettó becsült vagyonod ${fmtFt(sumN)}, amivel a háztartások ${100-pct}%-ánál vagyonosabb vagy (Top ${pct}%).`;
 
     highlight(pct);
   }
