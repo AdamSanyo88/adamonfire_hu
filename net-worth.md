@@ -29,7 +29,7 @@ input[type=number]{width:100%;padding:6px 8px;border:1px solid #ced4da;border-ra
     <thead class="table-light">
       <tr>
         <th style="width:15%">Kategóriák</th>
-        <th>Items</th>
+        <th>Vagyonelemek</th>
         <th class="text-end" style="width:15%">Piaci ár (Ft)</th>
         <th class="text-end" style="width:15%">Hitel összege (Ft)</th>
         <th class="text-end" style="width:15%">Nettó érték</th>
@@ -77,7 +77,7 @@ input[type=number]{width:100%;padding:6px 8px;border:1px solid #ced4da;border-ra
   </table>
 
   <div class="result mb-3">
-    <strong>Net worth:</strong> <span id="nw-ft">Ft 0</span>
+    <strong>Nettó vagyon:</strong> <span id="nw-ft">Ft 0</span>
     <span class="badge text-bg-primary" id="pct-chip">Percentilis: –</span>
   </div>
 
