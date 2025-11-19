@@ -162,7 +162,7 @@ permalink: /spending
       { key: "tavkozles", label: "Távközlés", weight: 0.0422 },
       { key: "oktatas", label: "Oktatás", weight: 0.0222 },
       { key: "szabadido", label: "Szabadidő és hobbi", weight: 0.0734 },
-      { key: "vendeglatas", label: "Vendéglátás", weight: 0.0495 },
+      { key: "vendeglatas", label: "Vendéglátás és szálláshely", weight: 0.0495 },
       { key: "egyeb_szolg", label: "Egyéb szolgáltatás (pl. biztosítások, banki díjak)", weight: 0.0733 },
     ];
 
