@@ -28,4 +28,6 @@ permalink: /resources
 <h6><a href="spending">Egyéni fogyasztás kalkulátor</a> - hogyan költesz egy átlag magyar háztartáshoz képest?</h6>
 <br/>
 <h6><a href="pension">Állami nyugdíj kalkulátor</a> - mennyi lesz az állami nyugdíjad a jelenlegi szabályozás szerint?</h6>
+<br/>
+<h6><a href="inflation">Personal inflation calculator</a> - milyen magas a személyes inflációd a fogyasztói kosarad összetétele alapján?</h6>
 
