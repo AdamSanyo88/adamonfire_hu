@@ -126,7 +126,7 @@ input[type=number]{width:100%;padding:6px 8px;border:1px solid #ced4da;border-ra
           legend:{display:false},
           tooltip:{
             callbacks:{
-              title: items => items && items[0] ? ("Percentile "+items[0].label) : "",
+              title: items => items && items[0] ? ("Percentilis "+items[0].label) : "",
               label:  item  => "Medián vagyon " + fmtFt(item.raw)
             }
           }
