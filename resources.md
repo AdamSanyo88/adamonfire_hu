@@ -23,11 +23,11 @@ permalink: /resources
 <h6><a href="https://www.youtube.com/watch?v=i6TT_x7nPZ4">10 tévhit a FIRE mozgalommal kapcsolatban, 2025 szeptember</a>.</h6>
 <br/>
 <h5>Kalkulátorok</h5>
-<h6><a href="net-worth"><strong>Nettó vagyon kalkulátor</a></strong> - milyen gazdag voltál 2024-ben Magyarországon?</h6>
+<h6><strong><a href="net-worth">Nettó vagyon kalkulátor</a></strong> - milyen gazdag voltál 2024-ben Magyarországon?</h6>
 <br/>
-<h6><a href="spending"><strong>Egyéni fogyasztás kalkulátor</a></strong> - hogyan költesz egy átlag magyar háztartáshoz képest?</h6>
+<h6><strong><a href="spending">Egyéni fogyasztás kalkulátor</a></strong> - hogyan költesz egy átlag magyar háztartáshoz képest?</h6>
 <br/>
-<h6><a href="pension"><strong>Állami nyugdíjkalkulátor</a></strong> - mennyi lesz az állami nyugdíjad a jelenlegi szabályozás szerint?</h6>
+<h6><strong><a href="pension">Állami nyugdíjkalkulátor</a></strong> - mennyi lesz az állami nyugdíjad a jelenlegi szabályozás szerint?</h6>
 <br/>
-<h6><a href="inflation"><strong>Személyes infláció kalkulátor</a></strong> - milyen magas a személyes inflációd a fogyasztói kosarad összetétele alapján?</h6>
+<h6><strong><a href="inflation">Személyes infláció kalkulátor</a></strong> - milyen magas a személyes inflációd a fogyasztói kosarad összetétele alapján?</h6>
 
