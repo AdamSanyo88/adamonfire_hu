@@ -127,6 +127,11 @@ input[type="number"] {
 }
 .btn:hover { background: #f0f0f0; }
 
+/* === QUICK FILL (new) === */
+.btn.sm { padding: 8px 12px; font-size: 13px; min-width: auto; }
+.btn-group { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+.inline-label { font-weight: 600; margin-right: 6px; white-space: nowrap; }
+
 .mono { font-variant-numeric: tabular-nums; }
 
 /* --- SLIDER compact layout --- */
@@ -229,6 +234,19 @@ input[type="number"] {
         <label for="serviceYears"><strong>Szolgálati évek száma</strong></label>
         <input id="serviceYears" type="range" min="10" max="50" step="1" value="15" />
         <strong id="serviceYearsLabel">15 év</strong>
+      </div>
+
+      <!-- === QUICK FILL (new) === -->
+      <div class="row" style="margin-bottom:12px; align-items:flex-start;">
+        <div class="btn-group" aria-label="Gyors kitöltés gombok a bruttó átlagkereset arányaihoz">
+          <span class="inline-label">Gyors kitöltés a bruttó átlagbérhez viszonyított bérszintekkel:</span>
+          <button class="btn sm" type="button" id="fill40">40% (~minimálbér)</button>
+          <button class="btn sm" type="button" id="fill60">60%</button>
+          <button class="btn sm" type="button" id="fill80">80% (mediánbér)</button>
+          <button class="btn sm" type="button" id="fill100">100% (átlagbér)</button>
+          <button class="btn sm" type="button" id="fill150">150% (felső 15%)</button>
+          <button class="btn sm" type="button" id="fill275">275% (felső 5%)</button>
+        </div>
       </div>
 
       <div style="max-height:55vh; overflow:auto; border-radius:12px; border:1px solid rgba(0,0,0,.06)">
@@ -639,9 +657,27 @@ function recalc(){
      Szolgálati szorzó: ×<strong>${sMultPct}</strong> → <strong>${formatFt(finalMonthly)}</strong>`;
 }
 
+/* === QUICK FILL logic (new) === */
+function quickFillByPct(p){
+  inputs.forEach(({inp}, i)=>{
+    const base = ANNUAL_NET[i] || 0; // irányadó: Éves bruttó átlagkereset oszlop
+    inp.value = base ? Math.round(base * p) : '';
+  });
+  recalc();
+}
+
 /* Események + init */
 inputs.forEach(({inp})=>inp.addEventListener('input', recalc));
 document.getElementById('serviceYears').addEventListener('input', recalc);
+
+/* Quick fill buttons */
+document.getElementById('fill40').addEventListener('click', ()=>quickFillByPct(0.40));
+document.getElementById('fill60').addEventListener('click', ()=>quickFillByPct(0.60));
+document.getElementById('fill80').addEventListener('click', ()=>quickFillByPct(0.80));
+document.getElementById('fill100').addEventListener('click', ()=>quickFillByPct(1.00));
+document.getElementById('fill150').addEventListener('click', ()=>quickFillByPct(1.50));
+document.getElementById('fill275').addEventListener('click', ()=>quickFillByPct(2.75));
+
 recalc();
 
 /* Reset */
