@@ -241,7 +241,7 @@ input[type="number"] {
         <div class="btn-group" aria-label="Gyors kitöltés gombok a bruttó átlagkereset arányaihoz">
           <span class="inline-label">Gyors kitöltés a bruttó átlagbérhez viszonyított bérszintekkel:</span>
           <button class="btn sm" type="button" id="fill40">40% (~minimálbér)</button>
-          <button class="btn sm" type="button" id="fill60">60%</button>
+          <button class="btn sm" type="button" id="fill60">60% (alsó ~30%)</button>
           <button class="btn sm" type="button" id="fill80">80% (mediánbér)</button>
           <button class="btn sm" type="button" id="fill100">100% (átlagbér)</button>
           <button class="btn sm" type="button" id="fill150">150% (felső 15%)</button>
