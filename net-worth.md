@@ -22,7 +22,7 @@ input[type=number]{width:100%;padding:6px 8px;border:1px solid #ced4da;border-ra
 
 <div class="container py-4">
   <div class="d-flex justify-content-between align-items-center mb-4">
-     <p>Ez a kalkulátor megmutatja, hogy a 2025 végi adatok alapján mennyi nettó vagyonod van a magyar háztartásokhoz képest. A percentilisek (a teljes lakosság 100 egyenlő részre bontva) a Magyar Nemzeti Bank (MNB) 2023-as adatai alapján készültek, és módosítva lettek a 2023 és 2025 közötti becsült vagyonnövekedés figyelembevételével. A számítás tartalmazza az elsődleges lakóingatlan értékét is, ezért azt mindenképpen vedd bele. A számítás forintban történik (400 Ft-os euró-forint árfolyamot figyelembe véve).</p>
+     <p>Ez a kalkulátor megmutatja, hogy az MNB adatai alapján mennyi nettó vagyonod van a magyar háztartásokhoz képest. A percentilisek (a teljes lakosság 100 egyenlő részre bontva) a Magyar Nemzeti Bank (MNB) 2014, 2017, 2020, és 2023-as adatai alapján készültek, és módosítva lettek a 2023 és 2025 közötti becsült vagyonnövekedéssel. A számítás tartalmazza az elsődleges lakóingatlan értékét is, ezért azt mindenképpen vedd bele. A számítás forintban történik (400 Ft-os euró-forint árfolyamot figyelembe véve). A lenti grafikában több időszak vagyoni szintjeit is megnézheted, és ahhoz hasonlíthatod a vagyonod szintjét (de értelemszerűen a 2025-ös táblázat tükrözi a jelenlegi vagyoni szinteket).</p>
   </div>
 
   <table class="table table-bordered bg-white" id="nw-table">
@@ -43,28 +43,45 @@ input[type=number]{width:100%;padding:6px 8px;border:1px solid #ced4da;border-ra
 
       <tr class="table-secondary"><td colspan="6">📊 Befektetések</td></tr>
       <tr data-type="inv"><td>📦</td><td>Nyugdíjpénztár</td>
-        <td><input type="number" data-field="value" value="0"></td><td><input type="number" data-field="debt" value="0" disabled></td>
-        <td class="text-end mono" data-cell="net">Ft 0</td><td></td></tr>
+        <td><input type="number" data-field="value" value="0"></td>
+        <td><input type="number" data-field="debt" value="0" disabled></td>
+        <td class="text-end mono" data-cell="net">Ft 0</td>
+        <td></td>
+      </tr>
       <tr data-type="inv"><td>🏛️</td><td>Állampapírok</td>
-        <td><input type="number" data-field="value" value="0"></td><td><input type="number" data-field="debt" value="0" disabled></td>
-        <td class="text-end mono" data-cell="net">Ft 0</td><td></td></tr>
+        <td><input type="number" data-field="value" value="0"></td>
+        <td><input type="number" data-field="debt" value="0" disabled></td>
+        <td class="text-end mono" data-cell="net">Ft 0</td>
+        <td></td>
+      </tr>
       <tr data-type="inv"><td>🧾</td><td>Tartós befektetési számla</td>
-        <td><input type="number" data-field="value" value="0"></td><td><input type="number" data-field="debt" value="0" disabled></td>
-        <td class="text-end mono" data-cell="net">Ft 0</td><td></td></tr>
+        <td><input type="number" data-field="value" value="0"></td>
+        <td><input type="number" data-field="debt" value="0" disabled></td>
+        <td class="text-end mono" data-cell="net">Ft 0</td>
+        <td></td>
+      </tr>
       <tr data-type="inv"><td>📈</td><td>Egyéb befektetések</td>
-        <td><input type="number" data-field="value" value="0"></td><td><input type="number" data-field="debt" value="0" disabled></td>
-        <td class="text-end mono" data-cell="net">Ft 0</td><td></td></tr>
+        <td><input type="number" data-field="value" value="0"></td>
+        <td><input type="number" data-field="debt" value="0" disabled></td>
+        <td class="text-end mono" data-cell="net">Ft 0</td>
+        <td></td>
+      </tr>
 
       <tr class="table-secondary"><td colspan="6">💶 Egyéb vagyontárgyak</td></tr>
       <tr data-type="asset"><td>🚗</td><td>Autó- és egyéb vagyontárgyak</td>
-        <td><input type="number" data-field="value" value="0"></td><td><input type="number" data-field="debt" value="0" disabled></td>
-        <td class="text-end mono" data-cell="net">Ft 0</td><td></td></tr>
+        <td><input type="number" data-field="value" value="0"></td>
+        <td><input type="number" data-field="debt" value="0" disabled></td>
+        <td class="text-end mono" data-cell="net">Ft 0</td>
+        <td></td>
+      </tr>
 
       <tr class="table-secondary"><td colspan="6">➖ Hitelek</td></tr>
       <tr data-type="liab"><td>💳</td><td>Egyéb hitelek</td>
         <td><input type="number" data-field="value" value="0" disabled></td>
         <td><input type="number" data-field="debt" value="0"></td>
-        <td class="text-end mono" data-cell="net">Ft 0</td><td></td></tr>
+        <td class="text-end mono" data-cell="net">Ft 0</td>
+        <td></td>
+      </tr>
 
       <tr class="fw-bold table-light">
         <td colspan="2">Total</td>
@@ -81,20 +98,73 @@ input[type=number]{width:100%;padding:6px 8px;border:1px solid #ced4da;border-ra
     <span class="badge text-bg-primary" id="pct-chip">Percentilis: –</span>
   </div>
 
+  <!-- Skála év választó -->
+  <div class="d-flex align-items-center gap-2 mb-1">
+    <label for="scale-year" class="form-label mb-0 small text-muted">
+      Skála éve a grafikonhoz:
+    </label>
+    <select id="scale-year" class="form-select form-select-sm" style="width:auto">
+      <option value="2014">2014</option>
+      <option value="2017">2017</option>
+      <option value="2020">2020</option>
+      <option value="2023">2023</option>
+      <option value="2025" selected>2025</option>
+    </select>
+  </div>
+
   <div class="chart-wrap"><canvas id="percentileChart"></canvas></div>
   <div id="pct-text" class="mt-2 small text-muted">Az értékek automatikusan frissülnek, ha új adatot adsz meg.</div>
 </div>
 
 <script>
 (function(){
-  // === Percentile thresholds in Ft (descending, 100 -> 1) ===
-  const PCT_THRESHOLDS = [
-   1676853000, 550492000, 415747000, 335403000, 292117000, 256893000, 231566000, 206454000, 191107000, 186789000, 176518000, 168390000, 160261000, 153367000, 145173000, 141660000, 137846000, 132889000, 127933000, 123960000, 118963000, 113967000, 109835000, 104800000, 99763000, 97165000, 94506000, 91847000, 89188000, 86529000, 83871000, 81212000, 78553000, 75894000, 73237000, 72511000, 70577000, 68644000, 66710000, 64776000, 62843000, 60909000, 58975000, 57042000, 55108000, 54237000, 52884000, 51532000, 50178000, 48824000, 47470000, 46116000, 44764000, 43410000, 42057000, 41573000, 40365000, 39156000, 37948000, 36739000, 35530000, 34322000, 33113000, 31904000, 30697000, 30213000, 29004000, 27796000, 26587000, 25379000, 24171000, 22962000, 21753000, 20545000, 19336000, 18612000, 17644000, 16677000, 15711000, 14744000, 13777000, 12811000, 11844000, 10877000, 9910000, 9547000, 8701000, 7856000, 7009000, 6164000, 5318000, 4471000, 3626000, 2780000, 1933000, 1547000, 1160000, 774000, 386000, 0
-  ];
+  // === Percentilis küszöbök Ft-ban (1..100; 1 = leggazdagabb, 100 = legszegényebb) ===
+  const PCT_DATA = {
+    "2014": [
+      428491000, 125133000, 89270000, 72937000, 63705000, 55200000, 49602000, 45677000, 41848000, 40127000,
+      37656700, 35362300, 33207700, 31184300, 29284300, 27500000, 26445400, 25431300, 24456100, 23518200,
+      22616400, 21749100, 20915000, 20113000, 19341700, 18600000, 17972900, 17367000, 16781500, 16215800,
+      15669100, 15140800, 14630400, 14137100, 13660500, 13200000, 12825700, 12462000, 12108600, 11765200,
+      11431500, 11107400, 10792400, 10486300, 10188900, 9900000, 9628900, 9365300, 9108800, 8859400,
+      8616800, 8380900, 8151400, 7928200, 7711100, 7500000, 7257600, 7023100, 6796100, 6576500,
+      6364000, 6158300, 5959300, 5766700, 5580300, 5400000, 5155900, 4922800, 4700200, 4487700,
+      4284900, 4091100, 3906200, 3729600, 3561000, 3400000, 3153100, 2924200, 2711900, 2515000,
+      2332400, 2163000, 2006000, 1860300, 1725300, 1600000, 1212600, 919000, 696400, 527800,
+      400000, 303100, 229700, 174100, 132000, 100000, 70000, 40000, 20000, 0
+    ],
+    "2017": [
+      647184000, 191334000, 137200000, 104003000, 83914000, 73398000, 64335000, 58422000, 55636000, 49800000,
+      47286800, 44900400, 42634500, 40482900, 38439900, 36500000, 35059200, 33675400, 32346100, 31069300,
+      29842900, 28664900, 27533500, 26446600, 25402700, 24400000, 23708100, 23035700, 22382500, 21747700,
+      21131000, 20531800, 19949500, 19383800, 18834100, 18300000, 17829000, 17370200, 16923200, 16487600,
+      16063300, 15649900, 15247200, 14854800, 14472500, 14100000, 13703400, 13317900, 12943300, 12579200,
+      12225400, 11881500, 11547300, 11222500, 10906800, 10600000, 10266500, 9943600, 9630800, 9327800,
+      9034400, 8750200, 8474900, 8208300, 7950100, 7700000, 7374600, 7063000, 6764500, 6478600,
+      6204800, 5942600, 5691500, 5451000, 5220600, 5000000, 4605900, 4242900, 3908500, 3600400,
+      3316600, 3055200, 2814400, 2592600, 2388200, 2200000, 1855200, 1564400, 1319200, 1112400,
+      938100, 791100, 667100, 562500, 474300, 400000, 300000, 200000, 100000, 0
+    ],
+    "2020": [
+      767230000, 309962000, 222265000, 168485000, 135942000, 118905000, 104223000, 94645000, 90130000, 80591000,
+      77453000, 74152900, 70993500, 67968600, 65072600, 62300000, 59834100, 57465800, 55191200, 53006600,
+      50908500, 48893500, 46958200, 45099600, 43314400, 41600000, 40302200, 39044800, 37826700, 36646500,
+      35503200, 34395600, 33322500, 32282900, 31275700, 30300000, 29450400, 28624700, 27822100, 27042000,
+      26283800, 25546900, 24830600, 24134400, 23457700, 22800000, 22192000, 21600200, 21024200, 20463500,
+      19917800, 19386700, 18869700, 18366500, 17876700, 17400000, 16860700, 16338000, 15831600, 15340900,
+      14865400, 14404600, 13958100, 13525500, 13106200, 12700000, 12126400, 11578700, 11055800, 10556500,
+      10079700, 9624400, 9189800, 8774700, 8378400, 8000000, 7482700, 6998900, 6546300, 6123000,
+      5727100, 5356800, 5010400, 4686500, 4383400, 4100000, 3481900, 2957000, 2511200, 2132600,
+      1811100, 1538000, 1306200, 1109200, 942000, 800000, 600000, 390000, 180000, 0
+    ],
+    "2023": [
+      1183230000, 478028000, 342780000, 259840000, 209652000, 183377000, 160735000, 145963000, 139001000, 124290000, 119449000, 114360000, 109487000, 104822000, 100356000, 96080000, 92277000, 88624000, 85117000, 81747000, 79121000, 75990000, 72982000, 70093000, 67319000, 64654000, 62637000, 60683000, 58790000, 56955000, 56092000, 54342000, 52647000, 51004000, 49413000, 47872000, 46529000, 45225000, 43957000, 42724000, 41785000, 40614000, 39475000, 38368000, 37292000, 36247000, 35280000, 34339000, 33424000, 32532000, 31439000, 30601000, 29785000, 28991000, 28218000, 27465000, 26614000, 25789000, 24989000, 24215000, 23690000, 22956000, 22244000, 21555000, 20886000, 20239000, 19325000, 18452000, 17619000, 16823000, 16456000, 15712000, 15003000, 14325000, 13678000, 13060000, 12216000, 11426000, 10687000, 9996000, 8591000, 8035000, 7516000, 7030000, 6575000, 6150000, 5223000, 4436000, 3767000, 3199000, 2717000, 2307000, 1959000, 1664000, 1413000, 1200000, 900000, 585000, 270000, 0
+    ],
+    "2025": [
+      1774845000, 693140000, 497031000, 376768000, 303995000, 265897000, 233066000, 211646000, 201551000, 185191000, 177979000, 170396000, 163136000, 156185000, 149530000, 143159000, 137493000, 132050000, 126824000, 121804000, 117891000, 113224000, 108743000, 104439000, 100305000, 96335000, 93329000, 90417000, 87597000, 84864000, 84138000, 81514000, 78970000, 76507000, 74120000, 71807000, 69794000, 67837000, 65935000, 64086000, 62678000, 60921000, 59213000, 57552000, 55939000, 54370000, 52920000, 51509000, 50136000, 48798000, 47159000, 45902000, 44677000, 43486000, 42326000, 41198000, 39921000, 38683000, 37484000, 36322000, 35535000, 34433000, 33366000, 32332000, 31330000, 30359000, 28987000, 27678000, 26428000, 25235000, 24684000, 23569000, 22504000, 21488000, 20517000, 18285000, 17102000, 15997000, 14962000, 13995000, 12027000, 11249000, 10522000, 9842000, 9205000, 8610000, 7312000, 6210000, 5274000, 4478000, 3803000, 3230000, 2743000, 2329000, 1978000, 1680000, 1260000, 819000, 378000, 0
+    ]
+  };
 
   const LABELS = Array.from({length:100},(_,i)=>String(100-i)); // 100 -> 1
-  const CHART_BARS = [...PCT_THRESHOLDS].reverse(); // index 0 is 1st percentile, etc.
-
   const CURRENCY = "Ft";
   const LOCALE = "hu-HU";
 
@@ -102,11 +172,20 @@ input[type=number]{width:100%;padding:6px 8px;border:1px solid #ced4da;border-ra
     return `${CURRENCY} ${Number(n||0).toLocaleString(LOCALE)}`;
   }
 
+  // Alapértelmezett év: 2025
+  let currentYear = "2025";
+  let PCT_THRESHOLDS = PCT_DATA[currentYear].slice();
+
   let chart;
+
+  function getChartBars(){
+    // PCT_THRESHOLDS: 1..100 (gazdag->szegény), grafikonon: 1..100 (szegény->gazdag)
+    return [...PCT_THRESHOLDS].reverse();
+  }
 
   function initChart(){
     const canvas = document.getElementById("percentileChart");
-    if(!canvas || !window.Chart) return;
+    if(!canvas || !window.Chart || !PCT_THRESHOLDS.length) return;
     const ctx = canvas.getContext('2d');
 
     chart = new Chart(ctx,{
@@ -114,8 +193,8 @@ input[type=number]{width:100%;padding:6px 8px;border:1px solid #ced4da;border-ra
       data:{
         labels: LABELS,
         datasets:[{
-          data: CHART_BARS,
-          backgroundColor: "#cfd8dc",
+          data: getChartBars(),
+          backgroundColor: new Array(100).fill("#cfd8dc"),
           borderWidth: 0
         }]
       },
@@ -135,11 +214,11 @@ input[type=number]{width:100%;padding:6px 8px;border:1px solid #ced4da;border-ra
           x:{grid:{display:false},ticks:{autoSkip:true,maxRotation:0}},
           y:{
             beginAtZero:true,
-            suggestedMax: 1700000000,          // 1.7B Ft top
-            max: 1700000000,
+            suggestedMax: 1800000000,   // fix: 1,8 Mrd
+            max: 1800000000,
             ticks:{
-              stepSize: 100000000,             // 100M gridlines
-              callback: (v) => (v/1e6)+"M"     // 100M, 200M, ... 1500M
+              stepSize: 100000000,      // fix: 100M lépték
+              callback: (v) => (v/1e6)+"M"
             }
           }
         }
@@ -147,9 +226,27 @@ input[type=number]{width:100%;padding:6px 8px;border:1px solid #ced4da;border-ra
     });
   }
 
+  function updateChartScale(year){
+    if(!PCT_DATA[year] || !PCT_DATA[year].length || !chart) return;
+    currentYear = year;
+    PCT_THRESHOLDS = PCT_DATA[year].slice();
+
+    chart.data.datasets[0].data = getChartBars();
+
+    // Y-skála fix marad: 0–1.8Mrd, 100M lépés
+    chart.options.scales.y.max = 1800000000;
+    chart.options.scales.y.suggestedMax = 1800000000;
+    chart.options.scales.y.ticks.stepSize = 100000000;
+
+    chart.data.datasets[0].backgroundColor = new Array(100).fill("#cfd8dc");
+    chart.update();
+
+    compute(); // új skálához újraszámoljuk a percentilist
+  }
+
   function highlight(p){
     if(!chart) return;
-    const idx = 100 - p; // bar index (0-based from left)
+    const idx = 100 - p; // 1-es percentilis a jobb szél
     const colors = new Array(100).fill("#cfd8dc");
     if (idx>=0 && idx<colors.length) colors[idx] = "#0d6efd";
     chart.data.datasets[0].backgroundColor = colors;
@@ -186,27 +283,38 @@ input[type=number]{width:100%;padding:6px 8px;border:1px solid #ced4da;border-ra
     document.getElementById("sum-net").textContent   = fmtFt(sumN);
     document.getElementById("nw-ft").textContent     = fmtFt(sumN);
 
-    // percentile (1..100), thresholds are descending from 100->1
+    if (!PCT_THRESHOLDS.length){
+      document.getElementById("pct-chip").textContent = "Percentilis: –";
+      document.getElementById("pct-text").textContent = "Hiányzó percentilis adatok.";
+      return;
+    }
+
+    // Percentilis (1..100) az aktuális év skáláján
     let pct=100;
     for(let i=0;i<PCT_THRESHOLDS.length;i++){
       if(sumN>=PCT_THRESHOLDS[i]){ pct=i+1; break; }
     }
 
-    document.getElementById("pct-chip").textContent = "Top "+pct+"%";
+    document.getElementById("pct-chip").textContent = "Top "+pct+"% ("+currentYear+")";
     document.getElementById("pct-text").textContent =
-      `A nettó becsült vagyonod ${fmtFt(sumN)}, amivel a háztartások ${100-pct}%-ánál vagyonosabb vagy (Top ${pct}%).`;
+      `A nettó becsült vagyonod ${fmtFt(sumN)}, amivel a háztartások ${100-pct}%-ánál vagyonosabb vagy (Top ${pct}%, ${currentYear}-es skála).`;
 
     highlight(pct);
   }
 
-  // Init
-  if (document.readyState === "complete" || document.readyState === "interactive") {
-    initChart(); addProperty(); compute();
-  } else {
-    document.addEventListener("DOMContentLoaded", ()=>{ initChart(); addProperty(); compute(); });
+  function initAll(){
+    addProperty();
+    initChart();
+    compute();
   }
 
-  // Events
+  if (document.readyState === "complete" || document.readyState === "interactive") {
+    initAll();
+  } else {
+    document.addEventListener("DOMContentLoaded", initAll);
+  }
+
+  // Események
   document.body.addEventListener("input",e=>{ if(e.target.matches("input")) compute(); });
   document.addEventListener("click",e=>{
     if(e.target.id==="add-prop"){ addProperty(); }
@@ -214,5 +322,12 @@ input[type=number]{width:100%;padding:6px 8px;border:1px solid #ced4da;border-ra
       e.target.closest("tr").remove(); compute();
     }
   });
+
+  document.addEventListener("change", e => {
+    if (e.target && e.target.id === "scale-year") {
+      updateChartScale(e.target.value);
+    }
+  });
 })();
 </script>
+
