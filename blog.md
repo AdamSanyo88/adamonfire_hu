@@ -25,4 +25,4 @@ permalink: /blog
 <p>Igazam volt abban, hogy a piacok túl magasra szöktek. Az egyetlen probléma az volt, hogy nem számítottam rá, hogy ilyen hirtelen fognak visszaesni. Trump a nagy showjával mindent összeomlasztott 7 nap alatt. Valójában óvatos voltam emiatt, és eladtam... <a href="blog-2"><strong> olvasd tovább</strong></a>.</p>
 <br/>
 <h5>Még 550 nap van hátra</h5> <p>Nemrég készítettem egy számítást a FIRE portfóliómról, és ha minden jól megy, 2026 közepén eljön a "nagy nap", vagyis körülbelül 550 nap múlva. Egyetlen aggodalmam a következő:<p/>
-<p>A piacok még mindig túlértékeltek: az S&P500 6 000 pont felett áll, a Nasdaq-100 pedig 21 500 ponton... <a href="blog-1"><strong> olvasd tovább</strong></a>.</p>
+<p>A piacok még mindig túlértékeltek: az S&P500 6 000 pont felett áll, a Nasdaq-100 pedig 21 500 ponton... <a href="blog-1"><strong> olvasd tovább</strong></a>.</p> 

@@ -29,5 +29,5 @@ permalink: /resources
 <br/>
 <h6><strong><a href="pension">Állami nyugdíjkalkulátor</a></strong> - mennyi lesz az állami nyugdíjad a jelenlegi szabályozás szerint?</h6>
 <br/>
-<h6><strong><a href="inflation">Személyes infláció kalkulátor</a></strong> - milyen magas a személyes inflációd a fogyasztói kosarad összetétele alapján?</h6>
+<h6><strong><a href="inflation">Személyes infláció kalkulátor</a></strong> - milyen magas a személyes inflációd a fogyasztói kosarad összetétele alapján?</h6> 
 
