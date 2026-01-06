@@ -26,7 +26,7 @@ permalink: /consulting
                 <p style="margin:0; color:#475569;">Konzultáció konkrét kérdésekre, döntésekre és következő lépésekre fókuszálva</p>
               </div>
               <div style="text-align:right;">
-                <div style="font-weight:800; font-size:1.35rem; color:#0ea5e9;">40 000 Ft / óra</div>
+                <div style="font-weight:800; font-size:1.25rem; color:#0ea5e9;">40 000 Ft / óra</div>
               </div>
             </div>
 
@@ -49,14 +49,13 @@ permalink: /consulting
                 <p style="margin:0; color:#475569;">Összetettebb, több lépéses együttműködés: célok, stratégia, megvalósítási terv</p>
               </div>
               <div style="text-align:right;">
-                <div style="font-weight:800; font-size:1.15rem; color:#0c4a6e;">Megállapodás szerint (minimum 100 000 Ft)</div>
+                <div style="font-weight:800; font-size:1.25rem; color:#0c4a6e;">Megállapodás szerint (minimum 100 000 Ft)</div>
               </div>
             </div>
 
             <ul style="margin:14px 0 0; padding-left:18px; color:#0f172a; line-height:1.6;">
               <li>Teljes pénzügyi helyzet feltérképezése</li>
-              <li>Komplexebb célhoz kötött stratégia</li>
-              <li>Részletes FIRE / nyugdíjtervezés</li>
+              <li>Komplexebb célhoz kötött stratégia, részletese FIRE / nyugdíjtervezés</li>
               <li>Részletes írásos összefoglaló és akcióterv</li>
             </ul>
 
