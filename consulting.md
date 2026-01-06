@@ -31,9 +31,9 @@ permalink: /consulting
             </div>
 
             <ul style="margin:14px 0 0; padding-left:18px; color:#0f172a; line-height:1.6;">
-              <li>Tanácsadás online formában</li>
-              <li>Fókuszált áttekintés: célok, költségvetés, személyes pénzügyi célok, FIRE-terv</li>
-              <li>Rövid összefoglaló javaslatok és következő lépések</li>
+              <li>- Tanácsadás online formában</li>
+              <li>- Fókuszált áttekintés: célok, költségvetés, személyes pénzügyi célok, FIRE-terv</li>
+              <li>- Rövid összefoglaló javaslatok és következő lépések</li>
             </ul>
 
             <div style="margin-top:16px;">
@@ -54,9 +54,9 @@ permalink: /consulting
             </div>
 
             <ul style="margin:14px 0 0; padding-left:18px; color:#0f172a; line-height:1.6;">
-              <li>Teljes pénzügyi helyzet feltérképezése</li>
-              <li>Komplexebb célhoz kötött stratégia, részletese FIRE / nyugdíjtervezés</li>
-              <li>Részletes írásos összefoglaló és akcióterv</li>
+              <li>- <strong>Teljes</strong> pénzügyi helyzet feltérképezése</li>
+              <li>- <strong>Komplexebb célhoz kötött stratégia</strong>, részletes FIRE / nyugdíjtervezés</li>
+              <li>- <strong>Részletes írásos</strong> összefoglaló és akcióterv</li>
             </ul>
 
             <div style="margin-top:16px;">
