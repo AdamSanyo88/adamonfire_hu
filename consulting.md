@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Tanácsadás
+title: FIRE tanácsadás
 permalink: /consulting
 ---
 
@@ -10,7 +10,7 @@ permalink: /consulting
   <div class="row">
     <div class="col s12">
 
-      <p>Szeretnéd elkezdeni a FIRE utad, vagy szükséged van tanácsra az úton? Válassz a</p>
+      <h5>Szeretnéd elkezdeni a FIRE utad, vagy szükséged van tanácsra az úton? Válassz a lenti csomagok közül.</h5>
       <br/>
 
       <section class="pricing-tiers" style="font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; color:#0f172a; padding:24px;">
@@ -23,11 +23,10 @@ permalink: /consulting
             <div style="display:flex; justify-content:space-between; gap:12px; align-items:flex-start; flex-wrap:wrap;">
               <div>
                 <h3 style="margin:0 0 6px; font-size:1.2rem;">Személyes / online tanácsadás</h3>
-                <p style="margin:0; color:#475569;">Konzultáció konkrét kérdésekre, döntésekre és következő lépésekre fókuszálva.</p>
+                <p style="margin:0; color:#475569;">Konzultáció konkrét kérdésekre, döntésekre és következő lépésekre fókuszálva</p>
               </div>
               <div style="text-align:right;">
-                <div style="font-weight:800; font-size:1.35rem; color:#0ea5e9;">40 000 Ft</div>
-                <div style="color:#64748b; font-size:0.95rem;">/ óra</div>
+                <div style="font-weight:800; font-size:1.35rem; color:#0ea5e9;">40 000 Ft / óra</div>
               </div>
             </div>
 
@@ -38,7 +37,7 @@ permalink: /consulting
             </ul>
 
             <div style="margin-top:16px;">
-              <a href="https://forms.gle/mXezyjvvhXJp2B4u5" class="cta cta1">Érdeklődöm</a>
+              <a href="mailto:adamgoesfire@gmail.com?subject=FIRE tanácsadás" class="cta cta1">Érdeklődöm</a>
             </div>
           </div>
 
@@ -47,11 +46,10 @@ permalink: /consulting
             <div style="display:flex; justify-content:space-between; gap:12px; align-items:flex-start; flex-wrap:wrap;">
               <div>
                 <h3 style="margin:0 0 6px; font-size:1.2rem;">Vagyontervezés</h3>
-                <p style="margin:0; color:#475569;">Összetettebb, több lépéses együttműködés: célok, stratégia, megvalósítási terv.</p>
+                <p style="margin:0; color:#475569;">Összetettebb, több lépéses együttműködés: célok, stratégia, megvalósítási terv</p>
               </div>
               <div style="text-align:right;">
-                <div style="font-weight:800; font-size:1.15rem; color:#0c4a6e;">Megállapodás</div>
-                <div style="color:#64748b; font-size:0.95rem;">szerinti díj</div>
+                <div style="font-weight:800; font-size:1.15rem; color:#0c4a6e;">Megállapodás szerint</div>
               </div>
             </div>
 
@@ -59,11 +57,11 @@ permalink: /consulting
               <li>Teljes pénzügyi helyzet feltérképezése</li>
               <li>Portfólió- és célalapú stratégia</li>
               <li>FIRE / nyugdíjtervezés, mérföldkövek és projekciók</li>
-              <li>Írásos összefoglaló és akcióterv (igény szerint)</li>
+              <li>Részletes írásos összefoglaló és akcióterv</li>
             </ul>
 
             <div style="margin-top:16px;">
-              <a href="https://forms.gle/mXezyjvvhXJp2B4u5" class="cta cta3">Érdeklődöm</a>
+              <a href="mailto:adamgoesfire@gmail.com?subject=FIRE vagyontervezés" class="cta cta3">Érdeklődöm</a>
             </div>
           </div>
         </div>
