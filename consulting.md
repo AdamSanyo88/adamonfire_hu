@@ -37,7 +37,7 @@ permalink: /consulting
             </ul>
 
             <div style="margin-top:16px;">
-              <a href="mailto:adamgoesfire@gmail.com?subject=FIRE tanácsadás" class="cta cta1">Érdeklődöm</a>
+              <a href="mailto:adamgoesfire@gmail.com?subject=FIRE tanácsadás" class="cta cta1">Email küldése</a>
             </div>
           </div>
 
@@ -60,7 +60,7 @@ permalink: /consulting
             </ul>
 
             <div style="margin-top:16px;">
-              <a href="mailto:adamgoesfire@gmail.com?subject=FIRE vagyontervezés" class="cta cta3">Érdeklődöm</a>
+              <a href="mailto:adamgoesfire@gmail.com?subject=FIRE vagyontervezés" class="cta cta3">Email küldése</a>
             </div>
           </div>
         </div>
