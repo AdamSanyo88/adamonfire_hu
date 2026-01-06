@@ -22,7 +22,7 @@ permalink: /consulting
           <div class="tier-card" style="background:#ffffff; border:1px solid #e2e8f0; border-radius:16px; padding:18px; box-shadow:0 6px 18px rgba(15, 23, 42, 0.06);">
             <div style="display:flex; justify-content:space-between; gap:12px; align-items:flex-start; flex-wrap:wrap;">
               <div>
-                <h3 style="margin:0 0 6px; font-size:1.2rem;">Személyes / online tanácsadás</h3>
+                <h3 style="margin:0 0 6px; font-size:1.4rem;">Online tanácsadás</h3>
                 <p style="margin:0; color:#475569;">Konzultáció konkrét kérdésekre, döntésekre és következő lépésekre fókuszálva</p>
               </div>
               <div style="text-align:right;">
@@ -31,9 +31,9 @@ permalink: /consulting
             </div>
 
             <ul style="margin:14px 0 0; padding-left:18px; color:#0f172a; line-height:1.6;">
-              <li>Személyes vagy online formában</li>
-              <li>Fókuszált áttekintés: célok, költségvetés, befektetési irányok, FIRE-terv</li>
-              <li>Gyakorlati javaslatok és következő lépések</li>
+              <li>Tanácsadás online formában</li>
+              <li>Fókuszált áttekintés: célok, költségvetés, személyes pénzügyi célok, FIRE-terv</li>
+              <li>Rövid összefoglaló javaslatok és következő lépések</li>
             </ul>
 
             <div style="margin-top:16px;">
@@ -45,18 +45,18 @@ permalink: /consulting
           <div class="tier-card" style="background:#ffffff; border:1px solid #e2e8f0; border-radius:16px; padding:18px; box-shadow:0 6px 18px rgba(15, 23, 42, 0.06);">
             <div style="display:flex; justify-content:space-between; gap:12px; align-items:flex-start; flex-wrap:wrap;">
               <div>
-                <h3 style="margin:0 0 6px; font-size:1.2rem;">Vagyontervezés</h3>
+                <h3 style="margin:0 0 6px; font-size:1.4rem;">Vagyontervezés</h3>
                 <p style="margin:0; color:#475569;">Összetettebb, több lépéses együttműködés: célok, stratégia, megvalósítási terv</p>
               </div>
               <div style="text-align:right;">
-                <div style="font-weight:800; font-size:1.15rem; color:#0c4a6e;">Megállapodás szerint</div>
+                <div style="font-weight:800; font-size:1.15rem; color:#0c4a6e;">Megállapodás szerint (minimum 100 000 Ft)</div>
               </div>
             </div>
 
             <ul style="margin:14px 0 0; padding-left:18px; color:#0f172a; line-height:1.6;">
               <li>Teljes pénzügyi helyzet feltérképezése</li>
-              <li>Portfólió- és célalapú stratégia</li>
-              <li>FIRE / nyugdíjtervezés, mérföldkövek és projekciók</li>
+              <li>Komplexebb célhoz kötött stratégia</li>
+              <li>Részletes FIRE / nyugdíjtervezés</li>
               <li>Részletes írásos összefoglaló és akcióterv</li>
             </ul>
 
@@ -66,9 +66,7 @@ permalink: /consulting
           </div>
         </div>
 
-        <p style="font-size:0.9em; color:#64748b; margin-top:14px;">
-          Az óradíjas tanácsadás díja: <strong>40,000 Ft / óra</strong>. A vagyontervezés díja a feladat összetettségétől és terjedelmétől függ, <strong>megállapodás szerint</strong>.
-        </p>
+      
 
         <p style="margin-top:10px;">
           Olvasd el a szolgáltatásokhoz kapcsolódó <a href="privacy-policy">adatvédelmi tájékoztatót</a> és az

@@ -12,7 +12,7 @@ permalink: /terms-and-conditions
 
   <h4>1. Szolgáltató adatai</h4>
   
-    <p><strong>Szolgáltató neve:</strong> Sanyó Ádám E.V</p>
+    <p><strong>Szolgáltató neve:</strong> Sanyó Ádám egyéni vállalkozó</p>
     <p><strong>Székhely / levelezési cím:</strong> 1045 Budapest, Chinoin utca 4. 1/4</p>
     <p><strong>Adószám / egyéni vállalkozói nyilvántartási szám:</strong> XXX</p>
     <p><strong>Elérhetőség:</strong> adamgoesfire@gmail.com</p>
@@ -29,10 +29,10 @@ permalink: /terms-and-conditions
 
   <h4>3. Szolgáltatási csomagok</h4>
   
-    <p><strong>Személyes vagy online konzultáció</strong>: 60 perc: 40000 Ft.</p>
+    <p><strong>Személyes vagy online konzultáció</strong>: 60 perc díja 40000 Ft.</p>
 	<p>A szolgáltatás díja tartalmazza a beszélgetés után készített rövid írásos összefoglalót is.</p>
 	
-	<p><strong>Vagyontervezés<strong>: Egyedi ajánlat szerint</p>
+	<p><strong>Vagyontervezés</strong>: Egyedi ajánlat szerint</p>
 	<p>A szolgáltatás célja az, hogy az Ügyfél komplexebb helyzetét megvizsgálva adjon tanácsot.</p>
   
 
