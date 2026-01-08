@@ -31,9 +31,9 @@ permalink: /consulting
             </div>
 
             <ul style="margin:14px 0 0; padding-left:18px; color:#0f172a; line-height:1.6;">
-              <li>- Tanácsadás online formában</li>
-              <li>- Fókuszált áttekintés: célok, költségvetés, személyes pénzügyi célok, FIRE-terv</li>
-              <li>- Rövid összefoglaló javaslatok és következő lépések</li>
+              <li>- Tanácsadás online formában (1 óra)</li>
+              <li>- Pénzügyi és életstratégiai kérdések áttekintése strukturált szemléletben</li>
+              <li>- Rövid, tényszerű írásos összefoglaló a megbeszélt témákról és felvetett szempontokról</li>
             </ul>
 
             <div style="margin-top:16px;">
@@ -46,7 +46,7 @@ permalink: /consulting
             <div style="display:flex; justify-content:space-between; gap:12px; align-items:flex-start; flex-wrap:wrap;">
               <div>
                 <h3 style="margin:0 0 6px; font-size:1.4rem;">Vagyontervezés</h3>
-                <p style="margin:0; color:#475569;">Összetettebb, több lépéses együttműködés: célok, stratégia, megvalósítási terv</p>
+                <p style="margin:0; color:#475569;">Összetettebb együttműködés a pénzügyi, logikai, időbeli és döntési keretek mentén</p>
               </div>
               <div style="text-align:right;">
                 <div style="font-weight:800; font-size:1.25rem; color:#0c4a6e;">Megállapodás szerint (minimum 100 000 Ft)</div>
@@ -54,9 +54,9 @@ permalink: /consulting
             </div>
 
             <ul style="margin:14px 0 0; padding-left:18px; color:#0f172a; line-height:1.6;">
-              <li>- <strong>Teljes</strong> pénzügyi helyzet feltérképezése</li>
-              <li>- <strong>Komplexebb célhoz kötött stratégia</strong>, részletes FIRE / nyugdíjtervezés</li>
-              <li>- <strong>Részletes írásos</strong> összefoglaló és akcióterv</li>
+              <li>- A hosszú távú pénzügyi függetlenséggel kapcsolatos irányok bemutatása több alkalmas beszélgetés keretében</li>
+			  <li>- FIRE- és nyugdíjközeli döntési csomópontok elemzése, lehetséges kockázatok és trade-offok feltárása.</li>
+           <li>- Részletes írásos összefoglaló, amely a feltárt szempontokat és dilemmákat rögzíti, ezzel támogatva a döntéshozatalt.</li>
             </ul>
 
             <div style="margin-top:16px;">
