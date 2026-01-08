@@ -23,7 +23,7 @@ permalink: /consulting
             <div style="display:flex; justify-content:space-between; gap:12px; align-items:flex-start; flex-wrap:wrap;">
               <div>
                 <h3 style="margin:0 0 6px; font-size:1.4rem;">Online tanácsadás</h3>
-                <p style="margin:0; color:#475569;">Konzultáció konkrét kérdésekre, döntésekre és következő lépésekre fókuszálva</p>
+                <p style="margin:0; color:#475569;">Strukturált beszélgetés a felvetett kérdések és dilemmák mentén a döntési helyzetekre fókuszálva</p>
               </div>
               <div style="text-align:right;">
                 <div style="font-weight:800; font-size:1.25rem; color:#0ea5e9;">40 000 Ft / óra</div>
@@ -33,7 +33,7 @@ permalink: /consulting
             <ul style="margin:14px 0 0; padding-left:18px; color:#0f172a; line-height:1.6;">
               <li>- Tanácsadás online formában (1 óra)</li>
               <li>- Pénzügyi és életstratégiai kérdések áttekintése strukturált szemléletben</li>
-              <li>- Rövid, tényszerű írásos összefoglaló a megbeszélt témákról és felvetett szempontokról</li>
+              <li>- Rövid, tényszerű írásos összefoglaló a megbeszélt témákról és az átbeszélt szempontokról</li>
             </ul>
 
             <div style="margin-top:16px;">
