@@ -95,8 +95,8 @@ permalink: /terms-and-conditions
     <p>Az Ügyfél, aki fogyasztónak minősül (azaz magánszemély, nem vállalkozás), jogosult a szerződéstől <strong>14 napon belül indokolás nélkül elállni</strong>.</p>
     <p>Az elállási határidő attól a naptól számítódik, amikor az Ügyfél a szolgáltatás igénybevételére vonatkozó szerződést megkötötte.</p>
     <p>Az elállási jog gyakorlásához az Ügyfélnek egyértelmű nyilatkozatot kell küldenie a Szolgáltató részére e-mailben az adamgoesfire@gmail.com címre küldött nyilatkozattal.</p>
-    <p>Ha az Ügyfél a 14 napos elállási idő alatt kéri a szolgáltatás megkezdését, tudomásul veszi, hogy az elállási jogát elveszíti, amennyiben a szolgáltatás legalább első része - az ingyenes felmérő hívás kivételével - teljesítésre került.</p>
-    <p>Ha az Ügyfél az elállási időszak alatt már igénybe vett coaching alkalmat, akkor az elállás esetén a Szolgáltató jogosult arányos díjra az addig nyújtott szolgáltatásért, továbbá a Fizetési feltételekben meghatározott lemondási díj arányos részére.</p>
+    <p>Ha az Ügyfél a 14 napos elállási idő alatt kéri a szolgáltatás megkezdését, tudomásul veszi, hogy az elállási jogát elveszíti, amennyiben a szolgáltatás legalább egy része (első online vagy személyes konzultáció) teljesítésre került.</p>
+    <p>Ha az Ügyfél az elállási időszak alatt már igénybe vett coaching alkalmat, akkor az elállás esetén a Szolgáltató jogosult arányos díjra az addig nyújtott szolgáltatásért.</p>
   
 <p>Utolsó módosítás: 2026.01.08</p>
 </div>
