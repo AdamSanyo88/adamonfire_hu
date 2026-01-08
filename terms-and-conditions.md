@@ -12,9 +12,9 @@ permalink: /terms-and-conditions
 
   <h4>1. Szolgáltató adatai</h4>
   
-    <p><strong>Szolgáltató neve:</strong> Sanyó Ádám egyéni vállalkozó</p>
+    <p><strong>Szolgáltató neve:</strong> Sanyó Ádám - egyéni vállalkozó</p>
     <p><strong>Székhely / levelezési cím:</strong> 1045 Budapest, Chinoin utca 4. 1/4</p>
-    <p><strong>Adószám / egyéni vállalkozói nyilvántartási szám:</strong> XXX</p>
+    <p><strong>Egyéni vállalkozói nyilvántartási szám:</strong> 61678648</p>
     <p><strong>Elérhetőség:</strong> adamgoesfire@gmail.com</p>
     <p><strong>Weboldal:</strong> adamonfire.hu és adamonfire.eu</p>
   
@@ -98,6 +98,6 @@ permalink: /terms-and-conditions
     <p>Ha az Ügyfél a 14 napos elállási idő alatt kéri a szolgáltatás megkezdését, tudomásul veszi, hogy az elállási jogát elveszíti, amennyiben a szolgáltatás legalább első része - az ingyenes felmérő hívás kivételével - teljesítésre került.</p>
     <p>Ha az Ügyfél az elállási időszak alatt már igénybe vett coaching alkalmat, akkor az elállás esetén a Szolgáltató jogosult arányos díjra az addig nyújtott szolgáltatásért, továbbá a Fizetési feltételekben meghatározott lemondási díj arányos részére.</p>
   
-<p>Utolsó módosítás: 2026.01.06</p>
+<p>Utolsó módosítás: 2026.01.08</p>
 </div>
 </body>
