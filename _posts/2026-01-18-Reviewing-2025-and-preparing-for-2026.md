@@ -43,4 +43,5 @@ permalink: blog-8
 
 <p>Mindenesetre én felkészülten várom ezt az évet is, a tűz ló évét a kínai naptár szerint. Elvileg ez a nagy változások és vakmerő vállalkozások éve, úgyhogy nem is lep meg, hogy így indultak a dolgok. Lényeg, hogy a májusi részvények után, és különösen a magyarországi választások után (ami már csak 12 hétre van) meglátom, hogy hogyan tovább. Egyelőre kivárok és figyelem a történéseket.</p>
 
-
+<br/>  
+<h5><a href="../blog">Vissza az összes bejegyzéshez</a></h5>
