@@ -54,7 +54,7 @@ permalink: /consulting
             </div>
 
             <ul style="margin:14px 0 0; padding-left:18px; color:#0f172a; line-height:1.6;">
-              <li>- A hosszú távú pénzügyi függetlenséggel kapcsolatos irányok bemutatása több alkalmas beszélgetés keretében</li>
+              <li>- A hosszú távú pénzügyi függetlenséggel kapcsolatos irányok bemutatása több alkalmas (igény szerint személyes) beszélgetés keretében</li>
 			  <li>- FIRE- és nyugdíjközeli döntési csomópontok elemzése, lehetséges kockázatok és trade-offok feltárása.</li>
            <li>- Részletes írásos összefoglaló, amely a feltárt szempontokat és dilemmákat rögzíti, ezzel támogatva a döntéshozatalt.</li>
             </ul>
