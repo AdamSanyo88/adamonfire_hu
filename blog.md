@@ -10,6 +10,9 @@ permalink: /blog
     <div class="row">
           <div class="col s12">
 		  <h4>Összes korábbi bejegyzés</h4> 
+<h5>Visszatekintés 2025-re és előretekintés 2026-ra</h5>
+<p>És hát újabb év ért véget, ami azért nagy dologgal zárult; sikeresen elértem a FIRE célomat, a nagyjából 600 ezer eurós vagyont. Ez továbbra is a befizetéseimnek volt köszönhető, ugyanis 2025-ben a dollár esése - és a forint erősödése közben - duplán megütötte az amerikai részvényekre fókuszáló portfóliómat. Igaz, így is csak -3% lett a vége...<a href="blog-8"><strong> olvasd tovább</strong></a>.</p>
+
 <h5>Japán a legjobb hely nyaralásra</h5>
 <p>Japán továbbra is úgy él sokak fejében, hogy egy nagyon drága ország, ahova milliók kellenek ahhoz, hogy valaki elutazzon. Szerencsére a japán gazdaság évtizedek óta gyengélkedik, a japán jen történelmi negatív csúcsokat dönt (például a forinthoz képest idén 13%-ot gyengült, majdnem annyit, mint a dollár), ráadásul mivel 25 évig szinte alig volt infláció, így mára a japán árszínvonal nagyrészt alacsonyabb lett, mint a magyar...<a href="blog-7"><strong> olvasd tovább</strong></a>.</p>
 <h5>Megkaptam a zöld lámpát a FIRE-re</h5>
