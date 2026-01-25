@@ -18,9 +18,9 @@ permalink: /resources
 <h6><a href="https://docs.google.com/spreadsheets/d/1bqick4Vy13FZMrMZ44g9YiPqF8-Wobd7CH5pAhfl2Bc/copy">Portfólió teljesítményének követése</a> (egyszerű, félautomatán kezelhető táblázat)</h6>
 <br/>
 <h5>Prezentációk</h5>
-<h6><a href="https://www.slideshare.net/slideshow/hogyan-epits-vagyont-tapasztalatok-egy-15-eves-fire-ut-vegen/276076087">Hogyan építs vagyont? - FIRE Hungary találkozón bemutatott előadásom, 2025 február</a>.</h6>
+<p><a href="https://www.slideshare.net/slideshow/hogyan-epits-vagyont-tapasztalatok-egy-15-eves-fire-ut-vegen/276076087"><strong>Hogyan építs vagyont? - FIRE Hungary találkozón bemutatott előadásom, 2025 február</a>.</p>
 <br/>
-<h6>10 tévhit a FIRE mozgalommal kapcsolatban, 2025 szeptember</h6>
+<p><strong>10 tévhit a FIRE mozgalommal kapcsolatban, 2025 szeptember</strong></p>
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%;">
   <iframe
     src="https://www.youtube.com/embed/i6TT_x7nPZ4"
@@ -33,7 +33,7 @@ permalink: /resources
 
 <br/>
 
-<h6>Visszatekintés 2025-re, mi várható 2026-ban, 2026 január</h6>
+<p><strong>Visszatekintés 2025-re, mi várható 2026-ban, 2026 január</strong></p>
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%;">
   <iframe
     src="https://www.youtube.com/embed/M3R2zgmog5U"
