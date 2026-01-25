@@ -18,7 +18,7 @@ permalink: /resources
 <h6><a href="https://docs.google.com/spreadsheets/d/1bqick4Vy13FZMrMZ44g9YiPqF8-Wobd7CH5pAhfl2Bc/copy">Portfólió teljesítményének követése</a> (egyszerű, félautomatán kezelhető táblázat)</h6>
 <br/>
 
-<h5>Kalkulátorok</h5>
+<h5>Kalkulátorok</h5> 
 <h6><strong><a href="net-worth">Nettó vagyon kalkulátor</a></strong> - milyen gazdag voltál 2024-ben Magyarországon?</h6>
 <br/>
 <h6><strong><a href="spending">Egyéni fogyasztás kalkulátor</a></strong> - hogyan költesz egy átlag magyar háztartáshoz képest?</h6>
