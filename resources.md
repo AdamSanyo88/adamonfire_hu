@@ -17,33 +17,7 @@ permalink: /resources
 <br/>
 <h6><a href="https://docs.google.com/spreadsheets/d/1bqick4Vy13FZMrMZ44g9YiPqF8-Wobd7CH5pAhfl2Bc/copy">Portfólió teljesítményének követése</a> (egyszerű, félautomatán kezelhető táblázat)</h6>
 <br/>
-<h5>Prezentációk</h5>
-<p><a href="https://www.slideshare.net/slideshow/hogyan-epits-vagyont-tapasztalatok-egy-15-eves-fire-ut-vegen/276076087"><strong>Hogyan építs vagyont? - FIRE Hungary találkozón bemutatott előadásom, 2025 február</strong></a>.</p>
-<br/>
-<p><strong>10 tévhit a FIRE mozgalommal kapcsolatban, 2025 szeptember</strong></p>
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%;">
-  <iframe
-    src="https://www.youtube.com/embed/i6TT_x7nPZ4"
-    title="10 tévhit a FIRE mozgalommal kapcsolatban, 2025 szeptember"
-    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-    allowfullscreen>
-  </iframe>
-</div>
 
-<br/>
-
-<p><strong>Visszatekintés 2025-re, mi várható 2026-ban, 2026 január</strong></p>
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%;">
-  <iframe
-    src="https://www.youtube.com/embed/M3R2zgmog5U"
-    title="Visszatekintés 2025-re, mi várható 2026-ban, 2026 január"
-    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-    allowfullscreen>
-  </iframe>
-</div>
-<br/>
 <h5>Kalkulátorok</h5>
 <h6><strong><a href="net-worth">Nettó vagyon kalkulátor</a></strong> - milyen gazdag voltál 2024-ben Magyarországon?</h6>
 <br/>
@@ -52,4 +26,34 @@ permalink: /resources
 <h6><strong><a href="pension">Állami nyugdíjkalkulátor</a></strong> - mennyi lesz az állami nyugdíjad a jelenlegi szabályozás szerint?</h6>
 <br/>
 <h6><strong><a href="inflation">Személyes infláció kalkulátor</a></strong> - milyen magas a személyes inflációd a fogyasztói kosarad összetétele alapján?</h6> 
+
+<br/>
+
+<h5>Prezentációk</h5>
+<p><a href="https://www.slideshare.net/slideshow/hogyan-epits-vagyont-tapasztalatok-egy-15-eves-fire-ut-vegen/276076087"><strong>Hogyan építs vagyont? (2025 február)</strong></a>.</p>
+<br/>
+<p><strong>10 tévhit a FIRE mozgalommal kapcsolatban (2025 szeptember)</strong></p>
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%;">
+  <iframe
+    src="https://www.youtube.com/embed/i6TT_x7nPZ4"
+    title="10 tévhit a FIRE mozgalommal kapcsolatban"
+    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    allowfullscreen>
+  </iframe>
+</div>
+
+<br/>
+
+<p><strong>Mi történt 2025-ben, mi várható 2026-ban? (2026 január)</strong></p>
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%;">
+  <iframe
+    src="https://www.youtube.com/embed/M3R2zgmog5U"
+    title="Mi történt 2025-ben, mi várható 2026-ban?"
+    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    allowfullscreen>
+  </iframe>
+</div>
+
 
