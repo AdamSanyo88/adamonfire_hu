@@ -30,7 +30,12 @@ permalink: /resources
 <br/>
 
 <h5>Prezentációk</h5>
-<p><a href="https://www.slideshare.net/slideshow/hogyan-epits-vagyont-tapasztalatok-egy-15-eves-fire-ut-vegen/276076087"><strong>Hogyan építs vagyont? (2025 február)</strong></a>.</p>
+<p><strong>Hogyan építs vagyont? (2025 február)</strong>
+<br/>
+  <a href="https://www.slideshare.net/slideshow/hogyan-epits-vagyont-tapasztalatok-egy-15-eves-fire-ut-vegen/276076087">
+    <img src="images/presentation-1.png" alt="Hogyan építs vagyont? (2025 február)" style="max-width:100%; height:auto;">
+  </a>
+</p>
 <br/>
 <p><strong>10 tévhit a FIRE mozgalommal kapcsolatban (2025 szeptember)</strong></p>
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%;">
