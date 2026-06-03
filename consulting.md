@@ -11,7 +11,7 @@ permalink: /consulting
     <div class="col s12">
 
       <h5>Az egyéni tanácsadás lehetősége jelenleg nem elérhető.</h5>
-      
+       
 
     </div>
   </div>
