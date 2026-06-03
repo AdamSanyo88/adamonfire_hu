@@ -10,7 +10,7 @@ permalink: /consulting
   <div class="row">
     <div class="col s12">
 
-      <h5>Az egyéni tanácsadás lehetősége jelenleg nem elérhető.</h5>
+      <h5>Az egyéni tanácsadás lehetősége jelenleg nem elérhető. </h5>
        
 
     </div>
