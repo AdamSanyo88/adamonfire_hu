@@ -7,126 +7,116 @@ layout: default
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'UA-45281172-4');
 </script>
 
-<div class="section no-pad-bot" id="index-banner">
-  <div class="container">
-    <div class="row">
-      <div class="col l3">
-        <a href="../"><img src="images/logo-200x200.png"></a>
+<main class="home-page">
+  <section class="home-hero">
+    <div class="container home-hero-grid">
+      <div class="home-hero-copy">
+        <div class="eyebrow">Pénzügyi függetlenség • FIRE • Befektetések</div>
+        <h1>Adam on FIRE</h1>
+        <p class="hero-lead">Hogyan értem el az anyagi függetlenséget 15 év alatt — adatokkal, tapasztalatokkal és használható eszközökkel.</p>
+        <div class="hero-actions">
+          <a class="button-primary" href="/..blog">Olvasd a blogot</a>
+          <a class="button-secondary" href="/..resources">Nézd meg az eszközöket</a>
+        </div>
       </div>
-      <div class="col l7 offset-l1 center">
-        <h3 class="header center">Adam on FIRE</h3>
-        <h5 class="header center">Hogyan értem el az anyagi függetlenséget 15 év alatt</h5>
-      </div>
-    </div>
-  </div>
-</div>
 
-<style>
-.responsive-iframe {
-  width: 100% !important;
-  min-width: 0 !important;
-  max-width: 100%;
-  border: 0;
-  display: block;
-}
-.mb-4 {
-  margin-bottom: 1.5rem;
-}
-</style>
-
-<!-- MAIN CONTENT CONTAINER -->
-<div class="container">
-  <!-- About Me -->
-  <div class="row">
-    <div class="col s12">
-      <div class="card light-blue lighten-4 mb-4">
-        <div class="card-content">
-          <div class="row" style="margin-bottom:0;">
-            <!-- Text -->
-            <div class="col s12 m9">
-              <span class="card-title">Bemutatkozás</span>
-              <p>Ez a blog a pénzügyi függetlenséghez vezető utamat mutatja be. Megosztom a személyes történetemet, valamint igyekszem útmutatást adok azoknak, akik szeretnének korai nyugdíjba vonulni.</p>
-			  <br/>
-			  <p>Látogasd meg a <a href="../blog">Blogom</a>, ahol részletesen beszámolok a FIRE-utamról.</p>
-			  <br/> <p>Az <a href="../resources">Eszközök</a> alatt részletes információkat találsz a FIRE-höz kapcsolódó tartalmakról, hasznos kalkulátorokról.</p>
-			  <br/>
-            </div>
-            <!-- Image -->
-            <div class="col s12 m3 center-align">
-              <img src="images/adam.png"
-                   alt="About Me" 
-                   class="responsive-img" 
-                   style="max-height:200px; object-fit:cover; border-radius:8px;">
-            </div>
-          </div>
+      <div class="home-hero-visual" aria-hidden="true">
+        <div class="hero-photo-wrap">
+          <div class="hero-glow"></div>
+          <img src="/images/adam.png" alt="" class="hero-photo">
+          <div class="hero-badge hero-badge-top">15 évnyi tapasztalat</div>
+          <div class="hero-badge hero-badge-bottom">FIRE Magyarországon</div>
         </div>
       </div>
     </div>
-  </div>
+  </section>
 
-  <!-- Two-column layout for charts -->
-  <div class="row">
-    <!-- LEFT column: 2 charts stacked -->
-    <div class="col s12 m6">
-      <div class="mb-4">
-	  <div class="mb-4">
-        <h5>A FIRE utam 2015 óta</h5>
-        <iframe class="responsive-iframe" src="https://datawrapper.dwcdn.net/eQxCE" height="500"></iframe>
-      </div>
-        <h5>A portfólióm változása</h5>
-        <iframe class="responsive-iframe" src="https://datawrapper.dwcdn.net/oK5cm" height="800"></iframe>
-      </div>
-    </div>
-
-    <!-- RIGHT column: 1 chart -->
-    <div class="col s12 m6">
-	  <div class="mb-4">
-        <h5>Jelenlegi befektetéseim eszköztípusonként</h5>
-        <iframe class="responsive-iframe" src="https://datawrapper.dwcdn.net/tq0GF" height="500"></iframe>
-      </div>
-	  <div class="mb-4">
-        <h5>Jelenlegi befektetések szektoriális bontásban</h5>
-        <iframe class="responsive-iframe" src="https://datawrapper.dwcdn.net/peTBA" height="800"></iframe>
+  <section class="home-intro section-shell">
+    <div class="container">
+      <div class="intro-card">
+        <div>
+          <div class="section-kicker">Miről szól az oldal?</div>
+          <h2>Egy dokumentált út a pénzügyi függetlenséghez</h2>
+        </div>
+        <div class="intro-copy">
+          <p>Ez a blog a pénzügyi függetlenséghez vezető utamat mutatja be. Megosztom a személyes történetemet, a befektetési tapasztalataimat és azokat a számításokat, amelyek nekem segítettek.</p>
+          <p>A <a href="/..blog">Blogon</a> hosszabb elemzéseket és beszámolókat találsz, az <a href="/..resources">Eszközök</a> oldalon pedig kalkulátorokat, táblázatokat és előadásokat.</p>
+        </div>
       </div>
     </div>
-	
+  </section>
 
-<style>
-  /* Responsive iframe wrapper */
-  .resp-embed {
-    position: relative;
-    width: 100%;
-    /* Fallback for older browsers: 16:9 via padding hack */
-    padding-top: 56.25%;
-    /* Prevent tiny heights on narrow screens */
-    min-height: 320px;
-  }
+  <section class="home-data section-shell">
+    <div class="container">
+      <div class="section-heading">
+        <div>
+          <div class="section-kicker">Adatok</div>
+          <h2>A FIRE utam számokban</h2>
+        </div>
+        <p>A grafikonok folyamatosan frissített képet adnak a portfóliómról.</p>
+      </div>
 
-  .resp-embed > iframe {
-    position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-    border: 0;
-  }
+      <div class="chart-grid">
+        <article class="chart-card">
+          <div class="card-heading">
+            <span class="card-icon"><i class="material-icons">timeline</i></span>
+            <div>
+              <div class="card-label">Haladás</div>
+              <h3>A FIRE utam 2015 óta</h3>
+            </div>
+          </div>
+          <iframe class="responsive-iframe" src="https://datawrapper.dwcdn.net/eQxCE" height="500" title="A FIRE utam 2015 óta" loading="lazy"></iframe>
+        </article>
 
-  /* Use modern aspect-ratio when available, and drop the padding fallback */
-  @supports (aspect-ratio: 1 / 1) {
-    .resp-embed {
-      padding-top: 0;
-      aspect-ratio: 16 / 9;          /* change to 4 / 3 if you prefer */
-      min-height: auto;
-    }
-  }
+        <article class="chart-card">
+          <div class="card-heading">
+            <span class="card-icon"><i class="material-icons">donut_large</i></span>
+            <div>
+              <div class="card-label">Allokáció</div>
+              <h3>Jelenlegi befektetéseim eszköztípusonként</h3>
+            </div>
+          </div>
+          <iframe class="responsive-iframe" src="https://datawrapper.dwcdn.net/tq0GF" height="500" title="Jelenlegi befektetéseim eszköztípusonként" loading="lazy"></iframe>
+        </article>
 
-  /* On very large screens, let it breathe but keep page margins */
-  @media (min-width: 1200px) {
-    .resp-embed { max-width: 100%; }
-  }
-</style>
-  </div>
-</div>
+        <article class="chart-card">
+          <div class="card-heading">
+            <span class="card-icon"><i class="material-icons">show_chart</i></span>
+            <div>
+              <div class="card-label">Portfólió</div>
+              <h3>A portfólióm változása</h3>
+            </div>
+          </div>
+          <iframe class="responsive-iframe" src="https://datawrapper.dwcdn.net/oK5cm" height="800" title="A portfólióm változása" loading="lazy"></iframe>
+        </article>
+
+        <article class="chart-card">
+          <div class="card-heading">
+            <span class="card-icon"><i class="material-icons">pie_chart</i></span>
+            <div>
+              <div class="card-label">Kitettség</div>
+              <h3>Befektetések szektoriális bontásban</h3>
+            </div>
+          </div>
+          <iframe class="responsive-iframe" src="https://datawrapper.dwcdn.net/peTBA" height="800" title="Jelenlegi befektetések szektoriális bontásban" loading="lazy"></iframe>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="home-cta section-shell">
+    <div class="container">
+      <div class="cta-card">
+        <div>
+          <div class="section-kicker section-kicker-light">Következő lépés</div>
+          <h2>Számold ki a saját helyzetedet</h2>
+          <p>Nettó vagyon, fogyasztás, nyugdíj és személyes infláció — egy helyen.</p>
+        </div>
+        <a class="button-light" href="../resources">Kalkulátorok megnyitása</a>
+      </div>
+    </div>
+  </section>
+</main>
