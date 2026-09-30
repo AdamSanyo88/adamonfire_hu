@@ -4,101 +4,28 @@ title: FIRE blog
 permalink: /blog
 ---
 
-<div class="blog-page">
-  <section class="page-hero blog-hero">
-    <span class="eyebrow">FIRE blog</span>
-    <h1>{{ page.title | escape }}</h1>
-    <p>Írások pénzügyi függetlenségről, befektetésekről, utazásról és arról, hogyan alakult az utam a FIRE felé.</p>
-  </section>
+<h1 class="page-title">{{ page.title | escape }}</h1>
+    
+<div class="section">
+    <div class="row">
+          <div class="col s12">
+		  <h4>Összes korábbi bejegyzés</h4> 
+<h5>Visszatekintés 2025-re és előretekintés 2026-ra</h5>
+<p>És hát újabb év ért véget, ami azért nagy dologgal zárult; sikeresen elértem a FIRE célomat, a nagyjából 600 ezer eurós vagyont. Ez továbbra is a befizetéseimnek volt köszönhető, ugyanis 2025-ben a dollár esése - és a forint erősödése közben - duplán megütötte az amerikai részvényekre fókuszáló portfóliómat. Igaz, így is csak -3% lett a vége...<a href="blog-8"><strong> olvasd tovább</strong></a>.</p>
 
-  <section class="blog-section">
-    <div class="section-heading compact-heading">
-      <div>
-        <span class="eyebrow">Archívum</span>
-        <h2>Összes korábbi bejegyzés</h2>
-      </div>
-    </div>
-
-    <div class="blog-grid">
-      <a class="blog-card" href="{{ '/blog-8' | relative_url }}" aria-label="Visszatekintés 2025-re és előretekintés 2026-ra – cikk elolvasása">
-        <div class="blog-card-top">
-          <span class="blog-card-kicker">FIRE &amp; portfólió</span>
-          <span class="blog-card-arrow" aria-hidden="true"><i class="material-icons">arrow_forward</i></span>
-        </div>
-        <h3>Visszatekintés 2025-re és előretekintés 2026-ra</h3>
-        <p>Elértem a nagyjából 600 ezer eurós FIRE-célomat, miközben az erősödő forint és a gyengülő dollár komoly ellenszelet jelentett a portfóliónak.</p>
-        <span class="blog-card-link">Cikk elolvasása</span>
-      </a>
-
-      <a class="blog-card" href="{{ '/blog-7' | relative_url }}" aria-label="Japán a legjobb hely nyaralásra – cikk elolvasása">
-        <div class="blog-card-top">
-          <span class="blog-card-kicker">Utazás</span>
-          <span class="blog-card-arrow" aria-hidden="true"><i class="material-icons">arrow_forward</i></span>
-        </div>
-        <h3>Japán a legjobb hely nyaralásra</h3>
-        <p>Miért lett Japán a gyenge jen és az évtizedekig alacsony infláció miatt jóval megfizethetőbb úti cél, mint sokan gondolják?</p>
-        <span class="blog-card-link">Cikk elolvasása</span>
-      </a>
-
-      <a class="blog-card" href="{{ '/blog-6' | relative_url }}" aria-label="Megkaptam a zöld lámpát a FIRE-re – cikk elolvasása">
-        <div class="blog-card-top">
-          <span class="blog-card-kicker">FIRE</span>
-          <span class="blog-card-arrow" aria-hidden="true"><i class="material-icons">arrow_forward</i></span>
-        </div>
-        <h3>Megkaptam a zöld lámpát a FIRE-re</h3>
-        <p>Hogyan próbáltam külső szemmel is felmérni, hogy a kiadásaim, a diverzifikációm és a portfólióm valóban készen áll-e a FIRE-re.</p>
-        <span class="blog-card-link">Cikk elolvasása</span>
-      </a>
-
-      <a class="blog-card" href="{{ '/blog-5' | relative_url }}" aria-label="Új vizualizációk – cikk elolvasása">
-        <div class="blog-card-top">
-          <span class="blog-card-kicker">Adatok &amp; transzparencia</span>
-          <span class="blog-card-arrow" aria-hidden="true"><i class="material-icons">arrow_forward</i></span>
-        </div>
-        <h3>Új vizualizációk</h3>
-        <p>A FIRE-utam egyik legfontosabb része a transzparencia: új grafikonokkal és részletesebb adatokkal mutatom meg, hogyan alakul a pénzügyi helyzetem.</p>
-        <span class="blog-card-link">Cikk elolvasása</span>
-      </a>
-
-      <a class="blog-card" href="{{ '/blog-4' | relative_url }}" aria-label="Elkezdtem kosarazni – cikk elolvasása">
-        <div class="blog-card-top">
-          <span class="blog-card-kicker">Életmód</span>
-          <span class="blog-card-arrow" aria-hidden="true"><i class="material-icons">arrow_forward</i></span>
-        </div>
-        <h3>Elkezdtem kosarazni</h3>
-        <p>Egy hosszabb betegség után új hobbit kerestem, és végül a kosárlabda lett az a mozgásforma, amely rendszeresen visszahozott a pályára.</p>
-        <span class="blog-card-link">Cikk elolvasása</span>
-      </a>
-
-      <a class="blog-card" href="{{ '/blog-3' | relative_url }}" aria-label="Elkészült a portfóliókövetőm – cikk elolvasása">
-        <div class="blog-card-top">
-          <span class="blog-card-kicker">Portfólió</span>
-          <span class="blog-card-arrow" aria-hidden="true"><i class="material-icons">arrow_forward</i></span>
-        </div>
-        <h3>Elkészült a portfóliókövetőm</h3>
-        <p>A piaci turbulencia megmutatta, hogy szükségem van egy jobb rendszerre: ezért készítettem el a saját, részletes FIRE-portfóliókövetőmet.</p>
-        <span class="blog-card-link">Cikk elolvasása</span>
-      </a>
-
-      <a class="blog-card" href="{{ '/blog-2' | relative_url }}" aria-label="Trump miatt én is pánikoltam – cikk elolvasása">
-        <div class="blog-card-top">
-          <span class="blog-card-kicker">Befektetések</span>
-          <span class="blog-card-arrow" aria-hidden="true"><i class="material-icons">arrow_forward</i></span>
-        </div>
-        <h3>Trump miatt én is pánikoltam</h3>
-        <p>A hirtelen piaci esés engem is döntésre kényszerített. Arról írok, hogyan reagáltam, mit adtam el, és mit tanultam a saját kockázatvállalásomról.</p>
-        <span class="blog-card-link">Cikk elolvasása</span>
-      </a>
-
-      <a class="blog-card" href="{{ '/blog-1' | relative_url }}" aria-label="Még 550 nap van hátra – cikk elolvasása">
-        <div class="blog-card-top">
-          <span class="blog-card-kicker">FIRE</span>
-          <span class="blog-card-arrow" aria-hidden="true"><i class="material-icons">arrow_forward</i></span>
-        </div>
-        <h3>Még 550 nap van hátra</h3>
-        <p>A FIRE céldátum már látható közelségbe került, de a magas részvénypiaci értékeltségek miatt még maradt bennem némi bizonytalanság.</p>
-        <span class="blog-card-link">Cikk elolvasása</span>
-      </a>
-    </div>
-  </section>
-</div>
+<h5>Japán a legjobb hely nyaralásra</h5>
+<p>Japán továbbra is úgy él sokak fejében, hogy egy nagyon drága ország, ahova milliók kellenek ahhoz, hogy valaki elutazzon. Szerencsére a japán gazdaság évtizedek óta gyengélkedik, a japán jen történelmi negatív csúcsokat dönt (például a forinthoz képest idén 13%-ot gyengült, majdnem annyit, mint a dollár), ráadásul mivel 25 évig szinte alig volt infláció, így mára a japán árszínvonal nagyrészt alacsonyabb lett, mint a magyar...<a href="blog-7"><strong> olvasd tovább</strong></a>.</p>
+<h5>Megkaptam a zöld lámpát a FIRE-re</h5>
+<p>Az elmúlt néhány hónapban azon gondolkodtam, hogyan tudnám igazán felmérni a portfólióm FIRE-készültségét. Ismerem a számaimat (a 2 éves kiadáskövetési próbám decemberben ér véget), tudom, hogyan kell diverzifikálni a portfóliómat, de még mindig nem vagyok biztos benne, hogy minden a helyén van-e...<a href="blog-6"><strong> olvasd tovább</strong></a>.</p>
+<br/>
+<h5>Új vizualizációk</h5> <p>Nagyon jó visszajelzéseket kaptam a FIRE közösség néhány tagjától. Többen elmagyarázták nekem, hogy az utam igazi értéke a transzparencia, vagyis hogy számszerűen, részletes magyarázatokkal osztom meg a történetemet, arról is, mit vásároltam... <a href="blog-5"><strong> olvasd tovább</strong></a>.</p>
+<br/>
+<h5>Elkezdtem kosarazni</h5> <p>Két hétig küzdöttem valami Covid-szerű betegséggel, majd újabb két hétbe telt, mire teljesen jól lettem. Miután jobban lettem, sikerült találnom egy új hobbit, ez pedig a kosárlabdázás... <a href="blog-4"><strong> olvasd tovább</strong></a>.</p>
+<br/>
+<h5>Elkészült a portfóliókövetőm</h5><p>Volt egy pozitív hozadéka a teljes vámtarifa-ügynek, és ez pedig a FIRE-felkészültségemhez kapcsolódik. Egészen Trump bejelentéséig és a piaci összeomlásig azt hittem, mindenem megvan, amivel figyelemmel kísérhetem a portfóliómat... <a href="blog-3"><strong> olvasd tovább</strong></a>.</p>
+<br/>
+<h5>Trump miatt én is pánikoltam</h5>
+<p>Igazam volt abban, hogy a piacok túl magasra szöktek. Az egyetlen probléma az volt, hogy nem számítottam rá, hogy ilyen hirtelen fognak visszaesni. Trump a nagy showjával mindent összeomlasztott 7 nap alatt. Valójában óvatos voltam emiatt, és eladtam... <a href="blog-2"><strong> olvasd tovább</strong></a>.</p>
+<br/>
+<h5>Még 550 nap van hátra</h5> <p>Nemrég készítettem egy számítást a FIRE portfóliómról, és ha minden jól megy, 2026 közepén eljön a "nagy nap", vagyis körülbelül 550 nap múlva. Egyetlen aggodalmam a következő:<p/>
+<p>A piacok még mindig túlértékeltek: az S&P500 6 000 pont felett áll, a Nasdaq-100 pedig 21 500 ponton... <a href="blog-1"><strong> olvasd tovább</strong></a>.</p> 
