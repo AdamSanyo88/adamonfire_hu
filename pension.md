@@ -11,11 +11,15 @@ permalink: /pension
   <meta charset="utf-8" />
 <style>
 :root {
-  --bg: #ffffff;
+  --bg: #f6f8fb;
   --card: #ffffff;
-  --muted: #555555;
-  --accent: #007acc;
-  --text: #111111;
+  --muted: #64748b;
+  --accent: #1565c0;
+  --accent-dark: #0d47a1;
+  --accent-soft: #eaf3ff;
+  --text: #172033;
+  --border: #e2e8f0;
+  --success: #0f766e;
 }
 * {
   box-sizing: border-box;
@@ -23,188 +27,306 @@ permalink: /pension
 }
 body {
   margin: 0;
-  background: var(--bg);
+  background: #fff;
   color: var(--text);
 }
 
-/* --- Teljes szélességű tartalom --- */
 .wrap {
   width: 100%;
-  max-width: 100%;
-  margin: 32px auto;
+  max-width: 1180px;
+  margin: 30px auto 56px;
   padding: 0 16px;
 }
 
-h1 {
-  font-size: 28px;
-  margin: 0 0 6px;
+h1 { font-size: 28px; margin: 0 0 6px; }
+p.lead { margin: 0 0 24px; color: var(--muted); }
+
+/* Calculator highlight */
+.calculator-shell {
+  margin-top: 34px;
+  background: linear-gradient(145deg, #f8fbff 0%, #eef5ff 100%);
+  border: 1px solid #d8e7fb;
+  border-radius: 24px;
+  padding: 26px;
+  box-shadow: 0 18px 50px rgba(22, 67, 120, 0.12);
 }
-p.lead {
-  margin: 0 0 24px;
-  color: var(--muted);
+.calculator-heading {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+.calculator-heading h3 { margin: 0 0 6px; font-size: 26px; }
+.calculator-heading p { margin: 0; color: var(--muted); }
+.calculator-badge {
+  display: inline-flex;
+  align-items: center;
+  white-space: nowrap;
+  padding: 7px 12px;
+  border-radius: 999px;
+  background: #fff;
+  border: 1px solid #cfe1f7;
+  color: var(--accent-dark);
+  font-size: 13px;
+  font-weight: 700;
 }
 
+.summary-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(300px, .85fr);
+  gap: 18px;
+  margin-bottom: 18px;
+}
 .card {
   background: var(--card);
-  border-radius: 16px;
-  padding: 20px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  border-radius: 18px;
+  padding: 22px;
+  border: 1px solid var(--border);
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06);
 }
 
-/* --- Egyoszlopos elrendezés minden kijelzőn --- */
-.grid {
+.input-card h5,
+.income-card h5 { margin: 0 0 8px; }
+.step-kicker {
+  display: block;
+  margin-bottom: 6px;
+  color: var(--accent);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+.service-control {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr auto;
+  align-items: center;
   gap: 16px;
+  margin-top: 20px;
 }
-@media (min-width: 900px) {
-  .grid { grid-template-columns: 1fr; }
+.service-slider-wrap { min-width: 0; }
+.service-range-labels {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 7px;
+  color: #94a3b8;
+  font-size: 12px;
 }
-.right .card { position: static; top: auto; }
+#serviceYearsLabel {
+  min-width: 92px;
+  padding: 12px 14px;
+  border-radius: 14px;
+  background: var(--accent-soft);
+  color: var(--accent-dark);
+  text-align: center;
+  font-size: 20px;
+  font-weight: 800;
+  white-space: nowrap;
+}
+#serviceYears {
+  width: 100% !important;
+  margin: 0;
+  appearance: none;
+  background: transparent;
+  height: 22px;
+  padding: 0;
+}
+#serviceYears::-webkit-slider-runnable-track { height: 6px; background: #d6e1ee; border-radius: 999px; }
+#serviceYears::-moz-range-track { height: 6px; background: #d6e1ee; border-radius: 999px; }
+#serviceYears::-webkit-slider-thumb {
+  appearance: none;
+  width: 22px;
+  height: 22px;
+  margin-top: -8px;
+  border-radius: 50%;
+  background: var(--accent);
+  border: 3px solid #fff;
+  box-shadow: 0 2px 8px rgba(21,101,192,.35);
+  cursor: pointer;
+}
+#serviceYears::-moz-range-thumb {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: var(--accent);
+  border: 3px solid #fff;
+  box-shadow: 0 2px 8px rgba(21,101,192,.35);
+  cursor: pointer;
+}
 
-/* --- Táblázat teljes szélességben --- */
-table {
-  width: 100%;
-  border-collapse: collapse;
+.result-card {
+  position: relative;
+  overflow: hidden;
+  color: #fff;
+  border: 0;
+  background: linear-gradient(135deg, var(--accent-dark), #1976d2 60%, #42a5f5);
+  box-shadow: 0 16px 34px rgba(13, 71, 161, .24);
 }
+.result-card::after {
+  content: '';
+  position: absolute;
+  width: 190px;
+  height: 190px;
+  border-radius: 50%;
+  right: -65px;
+  top: -90px;
+  background: rgba(255,255,255,.10);
+}
+.result-label {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 8px;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .07em;
+  opacity: .88;
+}
+.result {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: clamp(34px, 4vw, 48px);
+  line-height: 1.05;
+  font-weight: 850;
+  letter-spacing: -.02em;
+  font-variant-numeric: tabular-nums;
+}
+.result small {
+  font-size: 14px;
+  line-height: 1.4;
+  font-weight: 600;
+  color: rgba(255,255,255,.82);
+}
+.result-divider { border: 0; border-top: 1px solid rgba(255,255,255,.22); margin: 18px 0 14px; }
+.result-card .muted { color: rgba(255,255,255,.82); }
+.result-card #breakdown { line-height: 1.65; }
+.result-card #breakdown strong { color: #fff; }
+
+.income-card { padding: 0; overflow: hidden; }
+.income-head { padding: 22px 22px 16px; }
+.income-head p { margin: 4px 0 0; color: var(--muted); }
+.quick-fill-panel {
+  margin: 0 22px 18px;
+  padding: 16px;
+  border-radius: 14px;
+  background: #f8fafc;
+  border: 1px solid var(--border);
+}
+.inline-label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: 700;
+  color: #334155;
+}
+.btn-group { display: flex; flex-wrap: wrap; gap: 8px; }
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 10px 16px;
+  min-width: 130px;
+  border-radius: 10px;
+  border: 1px solid #cbd5e1;
+  background: #fff;
+  color: #334155;
+  font-weight: 700;
+  font-size: 14px;
+  white-space: nowrap;
+  text-align: center;
+  transition: .18s ease;
+  box-shadow: none;
+}
+.btn:hover { background: var(--accent-soft); border-color: #9cc2ee; color: var(--accent-dark); transform: translateY(-1px); }
+.btn.sm { padding: 8px 11px; font-size: 13px; min-width: auto; }
+#reset { background: #fff; }
+
+.table-wrap {
+  max-height: 58vh;
+  overflow: auto;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  background: #fff;
+}
+table { width: 100%; border-collapse: collapse; }
 th, td {
-  padding: 8px 10px;
-  border-bottom: 1px solid rgba(0,0,0,0.1);
+  padding: 10px 11px;
+  border-bottom: 1px solid #eef2f7;
   text-align: left;
+  vertical-align: middle;
 }
 thead th {
   position: sticky;
   top: 0;
-  background: #f5f5f5;
+  background: #f8fafc;
   z-index: 2;
+  color: #475569;
+  font-size: 12px;
+  line-height: 1.35;
+  font-weight: 800;
 }
-tbody tr:hover { background: rgba(0,0,0,0.03); }
+tbody tr:hover { background: #f8fbff; }
 
-/* --- Űrlapmezők --- */
 input[type="number"] {
-  width: 120px;
-  padding: 6px 8px;
-  border-radius: 8px;
-  border: 1px solid rgba(0,0,0,0.2);
+  width: 100%;
+  min-width: 120px;
+  max-width: 170px;
+  height: 38px;
+  padding: 7px 10px;
+  border-radius: 9px;
+  border: 1px solid #cbd5e1;
   background: #fff;
   color: var(--text);
+  box-shadow: inset 0 1px 2px rgba(15,23,42,.03);
+}
+input[type="number"]:focus {
+  outline: none;
+  border-color: #64a4e8;
+  box-shadow: 0 0 0 3px rgba(21,101,192,.12);
 }
 .muted { color: var(--muted); font-size: 13px; }
-.pill {
-  display: inline-block;
-  padding: 6px 10px;
-  border-radius: 999px;
-  background: rgba(0,122,204,0.1);
-  border: 1px solid rgba(0,122,204,0.3);
-  color: var(--accent);
-  font-weight: 600;
-}
-.result {
-  font-size: 28px;
-  font-weight: 800;
-  letter-spacing: .3px;
-}
-.result small {
-  font-size: 14px;
-  font-weight: 600;
-  color: var(--muted);
-}
-.footer { margin-top: 10px; font-size: 12px; color: var(--muted); }
-.btn {
-  display: inline-block;
-  cursor: pointer;
-  padding: 10px 18px;
-  min-width: 130px;
-  border-radius: 12px;
-  border: 1px solid rgba(0,0,0,0.1);
-  background: #fff;
-  color: var(--text);
-  font-weight: 600;
-  font-size: 14px;
-  white-space: nowrap;
-  text-align: center;
-  transition: background 0.2s, transform 0.1s;
-}
-.btn:hover { background: #f0f0f0; }
-
-/* === QUICK FILL (new) === */
-.btn.sm { padding: 8px 12px; font-size: 13px; min-width: auto; }
-.btn-group { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
-.inline-label { font-weight: 600; margin-right: 6px; white-space: nowrap; }
-
 .mono { font-variant-numeric: tabular-nums; }
-
-/* --- SLIDER compact layout --- */
-.left .row {
+.table-footer {
   display: flex;
   align-items: center;
-  gap: 10px;
-  flex-wrap: nowrap;
-  margin: 6px 0;
-  padding: 0;
-  min-height: 0;
+  gap: 14px;
+  flex-wrap: wrap;
+  padding: 16px 22px 20px;
 }
-label[for="serviceYears"] { white-space: nowrap; }
-#serviceYearsLabel {
-  min-width: 56px;
-  text-align: right;
-  font-weight: 600;
-  white-space: nowrap;
-}
-/* Slider alap */
-#serviceYears {
-  width: 280px !important;
-  flex: 0 0 280px !important;
-  margin: 0 6px;
-  appearance: none;
-  background: transparent;
-  height: 18px;
-  padding: 0;
-  position: relative;
-}
-/* Track */
-#serviceYears::-webkit-slider-runnable-track { height: 4px; background: #ccc; border-radius: 999px; }
-#serviceYears::-moz-range-track { height: 4px; background: #ccc; border-radius: 999px; }
-/* Thumb */
-#serviceYears::-webkit-slider-thumb,
-#serviceYears::-moz-range-thumb {
-  appearance: none;
-  width: 16px; height: 16px; margin-top: -6px;
-  border-radius: 50%; background: var(--accent); cursor: pointer; position: relative; z-index: 2;
-}
-/* Tooltipok tiltása */
-#serviceYears::-webkit-slider-thumb::before,
-#serviceYears::-webkit-slider-thumb::after,
-#serviceYears::-moz-range-thumb::before,
-#serviceYears::-moz-range-thumb::after,
-#serviceYears::before,
-#serviceYears::after { display: none !important; content: none !important; }
-#serviceYears::-ms-tooltip { display: none !important; }
+#serviceInfo { line-height: 1.45; }
 
-/* Mobilon se nőjön meg */
-@media (max-width: 480px) {
-  #serviceYears { width: 240px !important; flex-basis: 240px !important; }
-}
-
-/* Külső lib-féle buborékok tiltása */
+/* Materialize range tooltip suppression */
 #serviceYears + .thumb,
 #serviceYears ~ .thumb,
 #serviceYears + .thumb .value,
 #serviceYears ~ .thumb .value,
-.left .row .thumb,
-.left .row .thumb .value { display: none !important; visibility: hidden !important; opacity: 0 !important; pointer-events: none !important; }
-.range-label, .value, .value-indicator, .mdc-slider__value-indicator, .noUi-tooltip { display: none !important; }
+.thumb .value,
+.range-label, .value, .value-indicator, .mdc-slider__value-indicator, .noUi-tooltip {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
 
-/* Kártyák teljes szélesség használata */
-.left .card, .right .card { width: 100%; height: 100%; }
-
-/* Táblázat biztosan kitöltse a sort */
-table { width: 100%; }
-
-/* Számmezők se lógjanak túl kis kijelzőn */
-input[type="number"] {
-  max-width: 160px;
-  width: 100%;
+@media (max-width: 900px) {
+  .summary-grid { grid-template-columns: 1fr; }
+  .calculator-shell { padding: 18px; border-radius: 20px; }
+  .calculator-heading { flex-direction: column; }
+  .result-card { order: -1; }
+}
+@media (max-width: 560px) {
+  .wrap { padding: 0 10px; }
+  .calculator-shell { padding: 12px; margin-top: 24px; }
+  .card { padding: 17px; }
+  .service-control { grid-template-columns: 1fr; }
+  #serviceYearsLabel { width: 100%; }
+  .income-head { padding: 18px 16px 12px; }
+  .quick-fill-panel { margin: 0 16px 16px; padding: 13px; }
+  .table-footer { padding: 14px 16px 18px; }
+  .btn-group .btn { flex: 1 1 calc(50% - 8px); }
 }
 </style>
 </head>
@@ -228,30 +350,59 @@ input[type="number"] {
 	</ol>
 	<p>Az adatok tájékoztató jellegűek, pontosabb számításra a <a href="https://www.allamkincstar.gov.hu/nyugdij/sajat-jogu-ellatasok/oregsegi-nyugdij/onkiszolgalo-nyugdijkalkulator">Magyar Államkincstár nyugdíjkalkulátora</a> javasolt.</p>
 
-  <div class="grid">
-    <div class="left card">
-      <div class="row" style="margin-bottom:12px">
-        <label for="serviceYears"><h5>1. Szolgálati éveid száma</h5></label>
-        <input id="serviceYears" type="range" min="10" max="50" step="1" value="40" />
-        <strong id="serviceYearsLabel">40 év</strong>
+  <div class="calculator-shell">
+    <div class="calculator-heading">
+      <div>
+        <span class="step-kicker">Interaktív kalkulátor</span>
+        <h3>Számold ki a várható havi nyugdíjad</h3>
+        <p>Add meg a szolgálati idődet és az éves kereseteidet. Az eredmény minden változtatásra automatikusan frissül.</p>
       </div>
+      <span class="calculator-badge">2025-ös adatok alapján</span>
+    </div>
 
-<h5>2. Járulékköteles éves jövedelmek</h5>
+    <div class="summary-grid">
+      <div class="card input-card">
+        <span class="step-kicker">1. lépés</span>
+        <h5>Szolgálati éveid száma</h5>
+        <p class="muted">Állítsd be, összesen hány szolgálati évvel számoljunk.</p>
 
-      <!-- === QUICK FILL (new) === -->
-      <div class="row" style="margin-bottom:12px; align-items:flex-start;">
-        <div class="btn-group" aria-label="Gyors kitöltés gombok a bruttó átlagkereset arányaihoz">
-          <span class="inline-label">Gyors kitöltés a bruttó átlagbérhez viszonyított bérszintekkel:</span>
-          <button class="btn sm" type="button" id="fill40">40% (~minimálbér)</button> 
-          <button class="btn sm" type="button" id="fill60">60% (alsó ~30%)</button>
-          <button class="btn sm" type="button" id="fill80">80% (mediánbér)</button>
-          <button class="btn sm" type="button" id="fill100">100% (átlagbér)</button>
-          <button class="btn sm" type="button" id="fill150">150% (felső 15%)</button>
-          <button class="btn sm" type="button" id="fill275">275% (felső 5%)</button>
+        <div class="service-control">
+          <div class="service-slider-wrap">
+            <input id="serviceYears" type="range" min="10" max="50" step="1" value="40" aria-label="Szolgálati évek száma" />
+            <div class="service-range-labels"><span>10 év</span><span>50 év</span></div>
+          </div>
+          <strong id="serviceYearsLabel">40 év</strong>
         </div>
       </div>
 
-      <div style="max-height:55vh; overflow:auto; border-radius:12px; border:1px solid rgba(0,0,0,.06)">
+      <div class="card result-card">
+        <div class="result-label">Becsült havi nyugdíjad</div>
+        <div class="result" id="result">— <small>havi várható nyugdíj</small></div>
+        <hr class="result-divider" />
+        <div class="muted" id="breakdown"></div>
+      </div>
+    </div>
+
+    <div class="card income-card">
+      <div class="income-head">
+        <span class="step-kicker">2. lépés</span>
+        <h5>Járulékköteles éves jövedelmek</h5>
+        <p>Írd be az egyes évek éves bruttó keresetét, vagy töltsd ki gyorsan egy tipikus bérszint alapján.</p>
+      </div>
+
+      <div class="quick-fill-panel">
+        <span class="inline-label">Gyors kitöltés a bruttó átlagbérhez viszonyítva</span>
+        <div class="btn-group" aria-label="Gyors kitöltés gombok a bruttó átlagkereset arányaihoz">
+          <button class="btn sm" type="button" id="fill40">40% · ~minimálbér</button>
+          <button class="btn sm" type="button" id="fill60">60% · alsó ~30%</button>
+          <button class="btn sm" type="button" id="fill80">80% · mediánbér</button>
+          <button class="btn sm" type="button" id="fill100">100% · átlagbér</button>
+          <button class="btn sm" type="button" id="fill150">150% · felső 15%</button>
+          <button class="btn sm" type="button" id="fill275">275% · felső 5%</button>
+        </div>
+      </div>
+
+      <div class="table-wrap">
         <table>
           <thead>
             <tr>
@@ -270,17 +421,9 @@ input[type="number"] {
         </table>
       </div>
 
-      <div class="row" style="margin-top:12px">
+      <div class="table-footer">
         <button id="reset" class="btn" type="button">Összes mező törlése</button>
         <span id="serviceInfo" class="muted"></span>
-      </div>
-    </div>
-
-    <div class="right">
-      <div class="card">
-        <div class="result" id="result">— <small>havi várható nyugdíj</small></div>
-        <hr style="border:none;border-top:1px solid rgba(0,0,0,.08); margin:14px 0" />
-        <div class="muted" id="breakdown"></div>
       </div>
     </div>
   </div>
