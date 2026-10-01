@@ -6,59 +6,286 @@ permalink: /resources
 
 <h1 class="page-title">{{ page.title | escape }}</h1>
     
-<div class="section">
+<div class="container">
+
+  <h1 class="page-title">Hasznos eszközök</h1>
+
+  <div class="section">
+    <p style="font-size: 1.15rem; margin-bottom: 40px;">
+      Ez az oldal több hasznos linket, kalkulátort és prezentációt mutat be,
+      amelyek segíthetnek a saját FIRE utad megtervezésében.
+    </p>
+  </div>
+
+
+  <!-- TBSZ ÉS PORTFÓLIÓ -->
+  <div class="section">
+    <h4 style="margin-bottom: 25px;">TBSZ és portfóliómenedzsment</h4>
+
     <div class="row">
-          <div class="col s12">
-<p>Ez az oldal több hasznos linket és kalkulátort bemutat, amely hasznos lehet a saját FIRE utad megtervezésében.</p>
 
-<br/>
-<h5>TBSZ- és portfóliómenedzsment</h5>
-<h6><a href="tbsz">Adóoptimalizálás Magyarországon - információ a Tartós Befektetési Számláról (TBSZ)</a></h6>
-<br/>
-<h6><a href="https://docs.google.com/spreadsheets/d/1bqick4Vy13FZMrMZ44g9YiPqF8-Wobd7CH5pAhfl2Bc/copy">Portfólió teljesítményének követése</a> (egyszerű, félautomatán kezelhető táblázat)</h6>
-<br/>
+      <div class="col s12 m6">
+        <a href="tbsz" style="color: inherit;">
+          <div class="card hoverable" style="height: 100%;">
+            <div class="card-content">
+              <span class="card-title">
+                <strong>Tartós Befektetési Számla</strong>
+              </span>
+              <p>
+                Adóoptimalizálás Magyarországon – információ a Tartós
+                Befektetési Számláról (TBSZ).
+              </p>
+            </div>
+            <div class="card-action">
+              Tovább →
+            </div>
+          </div>
+        </a>
+      </div>
 
-<h5>Kalkulátorok</h5> 
-<h6><strong><a href="net-worth">Nettó vagyon kalkulátor</a></strong> - milyen gazdag voltál 2025-ben Magyarországon?</h6>
-<br/>
-<h6><strong><a href="spending">Egyéni fogyasztás kalkulátor</a></strong> - hogyan költesz egy átlag magyar háztartáshoz képest?</h6>
-<br/>
-<h6><strong><a href="pension">Állami nyugdíjkalkulátor</a></strong> - mennyi lesz az állami nyugdíjad a jelenlegi szabályozás szerint?</h6>
-<br/>
-<h6><strong><a href="inflation">Személyes infláció kalkulátor</a></strong> - milyen magas a személyes inflációd a fogyasztói kosarad összetétele alapján?</h6> 
 
-<br/>
+      <div class="col s12 m6">
+        <a href="https://docs.google.com/spreadsheets/d/1bqick4Vy13FZMrMZ44g9YiPqF8-Wobd7CH5pAhfl2Bc/copy"
+           target="_blank"
+           style="color: inherit;">
+          <div class="card hoverable" style="height: 100%;">
+            <div class="card-content">
+              <span class="card-title">
+                <strong>Portfólió teljesítményének követése</strong>
+              </span>
+              <p>
+                Egyszerű, félautomatikusan kezelhető Google Sheets
+                táblázat a befektetési portfóliód követésére.
+              </p>
+            </div>
+            <div class="card-action">
+              Táblázat megnyitása →
+            </div>
+          </div>
+        </a>
+      </div>
 
-<h5>Prezentációk</h5>
-<p><strong>Hogyan építs vagyont? (2025 február)</strong>
-<br/>
-  <a href="https://www.slideshare.net/slideshow/hogyan-epits-vagyont-tapasztalatok-egy-15-eves-fire-ut-vegen/276076087">
-    <img src="images/presentation-1.png" alt="Hogyan építs vagyont? (2025 február)" style="max-width:100%; height:auto;">
-  </a>
-</p>
-<br/>
-<p><strong>10 tévhit a FIRE mozgalommal kapcsolatban (2025 szeptember)</strong></p>
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%;">
-  <iframe
-    src="https://www.youtube.com/embed/i6TT_x7nPZ4"
-    title="10 tévhit a FIRE mozgalommal kapcsolatban"
-    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-    allowfullscreen>
-  </iframe>
-</div>
+    </div>
+  </div>
 
-<br/>
 
-<p><strong>Mi történt 2025-ben, mi várható 2026-ban? (2026 január)</strong></p>
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%;">
-  <iframe
-    src="https://www.youtube.com/embed/M3R2zgmog5U"
-    title="Mi történt 2025-ben, mi várható 2026-ban?"
-    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-    allowfullscreen>
-  </iframe>
+  <!-- KALKULÁTOROK -->
+  <div class="section">
+    <h4 style="margin-bottom: 25px;">Kalkulátorok</h4>
+
+    <div class="row">
+
+      <div class="col s12 m6">
+        <a href="net-worth" style="color: inherit;">
+          <div class="card hoverable">
+            <div class="card-content">
+              <span class="card-title">
+                <strong>Nettó vagyon kalkulátor</strong>
+              </span>
+              <p>
+                Milyen gazdag voltál 2025-ben Magyarországon?
+                Hasonlítsd össze a nettó vagyonodat.
+              </p>
+            </div>
+            <div class="card-action">
+              Kalkulátor megnyitása →
+            </div>
+          </div>
+        </a>
+      </div>
+
+
+      <div class="col s12 m6">
+        <a href="spending" style="color: inherit;">
+          <div class="card hoverable">
+            <div class="card-content">
+              <span class="card-title">
+                <strong>Egyéni fogyasztás kalkulátor</strong>
+              </span>
+              <p>
+                Nézd meg, hogyan költesz egy átlagos magyar
+                háztartáshoz képest.
+              </p>
+            </div>
+            <div class="card-action">
+              Kalkulátor megnyitása →
+            </div>
+          </div>
+        </a>
+      </div>
+
+
+      <div class="col s12 m6">
+        <a href="pension" style="color: inherit;">
+          <div class="card hoverable">
+            <div class="card-content">
+              <span class="card-title">
+                <strong>Állami nyugdíjkalkulátor</strong>
+              </span>
+              <p>
+                Becsüld meg, mennyi lesz az állami nyugdíjad
+                a jelenlegi szabályozás szerint.
+              </p>
+            </div>
+            <div class="card-action">
+              Kalkulátor megnyitása →
+            </div>
+          </div>
+        </a>
+      </div>
+
+
+      <div class="col s12 m6">
+        <a href="inflation" style="color: inherit;">
+          <div class="card hoverable">
+            <div class="card-content">
+              <span class="card-title">
+                <strong>Személyes infláció kalkulátor</strong>
+              </span>
+              <p>
+                Számold ki a saját inflációdat a fogyasztói
+                kosarad összetétele alapján.
+              </p>
+            </div>
+            <div class="card-action">
+              Kalkulátor megnyitása →
+            </div>
+          </div>
+        </a>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- PREZENTÁCIÓK ÉS VIDEÓK -->
+  <div class="section">
+    <h4 style="margin-bottom: 25px;">Prezentációk és videók</h4>
+
+    <div class="row">
+
+      <!-- Presentation -->
+      <div class="col s12 m6">
+        <div class="card hoverable">
+
+          <div class="card-image">
+            <a href="https://www.slideshare.net/slideshow/hogyan-epits-vagyont-tapasztalatok-egy-15-eves-fire-ut-vegen/276076087"
+               target="_blank">
+              <img src="images/presentation-1.png"
+                   alt="Hogyan építs vagyont?">
+            </a>
+          </div>
+
+          <div class="card-content">
+            <span class="card-title">
+              <strong>Hogyan építs vagyont?</strong>
+            </span>
+
+            <p>
+              Tapasztalatok egy 15 éves FIRE út végén.
+              Prezentáció – 2025. február.
+            </p>
+          </div>
+
+          <div class="card-action">
+            <a href="https://www.slideshare.net/slideshow/hogyan-epits-vagyont-tapasztalatok-egy-15-eves-fire-ut-vegen/276076087"
+               target="_blank">
+              Prezentáció megnyitása →
+            </a>
+          </div>
+
+        </div>
+      </div>
+
+
+      <!-- YouTube video 1 -->
+      <div class="col s12 m6">
+        <div class="card hoverable">
+
+          <div class="card-image">
+            <div style="
+              position: relative;
+              padding-bottom: 56.25%;
+              height: 0;
+              overflow: hidden;
+            ">
+              <iframe
+                src="https://www.youtube.com/embed/i6TT_x7nPZ4"
+                title="10 tévhit a FIRE mozgalommal kapcsolatban"
+                style="
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  width: 100%;
+                  height: 100%;
+                  border: 0;
+                "
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen>
+              </iframe>
+            </div>
+          </div>
+
+          <div class="card-content">
+            <span class="card-title">
+              <strong>10 tévhit a FIRE mozgalommal kapcsolatban</strong>
+            </span>
+
+            <p>
+              A FIRE mozgalommal kapcsolatos leggyakoribb
+              félreértések és tévhitek – 2025. szeptember.
+            </p>
+          </div>
+
+        </div>
+      </div>
+
+
+      <!-- YouTube video 2 -->
+      <div class="col s12 m6">
+        <div class="card hoverable">
+
+          <div class="card-image">
+            <div style="
+              position: relative;
+              padding-bottom: 56.25%;
+              height: 0;
+              overflow: hidden;
+            ">
+              <iframe
+                src="https://www.youtube.com/embed/M3R2zgmog5U"
+                title="Mi történt 2025-ben, mi várható 2026-ban?"
+                style="
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  width: 100%;
+                  height: 100%;
+                  border: 0;
+                "
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen>
+              </iframe>
+            </div>
+          </div>
+
+          <div class="card-content">
+            <span class="card-title">
+              <strong>Mi történt 2025-ben, mi várható 2026-ban?</strong>
+            </span>
+
+            <p>
+              Évértékelés és kitekintés a következő évre –
+              2026. január.
+            </p>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
 </div>
 
 
