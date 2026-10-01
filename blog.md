@@ -2,7 +2,7 @@
 layout: page
 title: FIRE blog
 permalink: /blog
-----------------
+---
 
 <h1 class="page-title">{{ page.title | escape }}</h1>
 
