@@ -201,7 +201,7 @@ permalink: /resources
           <div class="card-image">
             <a href="https://www.slideshare.net/slideshow/hogyan-gondolkozz-hosszu-tavban-makrogazdasagi-szempontok-az-elmult-70-evben/287004907"
                target="_blank">
-              <img src="images/presentation-1.png"
+              <img src="images/presentation-2.png"
                    alt="Hogyan gondolkozz hosszú távban?">
             </a>
           </div>
