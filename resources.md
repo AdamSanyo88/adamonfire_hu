@@ -181,12 +181,44 @@ permalink: /resources
 
             <p>
               Tapasztalatok egy 15 éves FIRE út végén.
-              Prezentáció – 2025. február.
+              Prezentáció – 2025. február
             </p>
           </div>
 
           <div class="card-action">
             <a href="https://www.slideshare.net/slideshow/hogyan-epits-vagyont-tapasztalatok-egy-15-eves-fire-ut-vegen/276076087"
+               target="_blank">
+              Prezentáció megnyitása →
+            </a>
+          </div>
+
+        </div>
+      </div>
+
+ <div class="col s12 m6">
+        <div class="card hoverable">
+
+          <div class="card-image">
+            <a href="https://www.slideshare.net/slideshow/hogyan-gondolkozz-hosszu-tavban-makrogazdasagi-szempontok-az-elmult-70-evben/287004907"
+               target="_blank">
+              <img src="images/presentation-1.png"
+                   alt="Hogyan gondolkozz hosszú távban?">
+            </a>
+          </div>
+
+          <div class="card-content">
+            <span class="card-title">
+              <strong>Hogyan gondolkozz hosszú távban?</strong>
+            </span>
+
+            <p>
+              Makrogazdasági szempontok az elmúlt 70 év tőzsdei eseményei alapján
+              Prezentáció – 2026. március
+            </p>
+          </div>
+
+          <div class="card-action">
+            <a href="https://www.slideshare.net/slideshow/hogyan-gondolkozz-hosszu-tavban-makrogazdasagi-szempontok-az-elmult-70-evben/287004907"
                target="_blank">
               Prezentáció megnyitása →
             </a>
