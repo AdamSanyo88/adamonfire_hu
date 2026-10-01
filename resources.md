@@ -8,8 +8,6 @@ permalink: /resources
     
 <div class="container">
 
-  <h1 class="page-title">Hasznos eszközök</h1>
-
   <div class="section">
     <p style="font-size: 1.15rem; margin-bottom: 40px;">
       Ez az oldal több hasznos linket, kalkulátort és prezentációt mutat be,
