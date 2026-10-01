@@ -274,18 +274,29 @@ input[type="number"] {
   width: 100%;
   min-width: 120px;
   max-width: 170px;
-  height: 38px;
+  height: 40px;
   padding: 7px 10px;
   border-radius: 9px;
-  border: 1px solid #cbd5e1;
-  background: #fff;
-  color: var(--text);
-  box-shadow: inset 0 1px 2px rgba(15,23,42,.03);
+  border: 2px solid #90caf9;
+  background: #eaf4ff;
+  color: #0f172a;
+  font-weight: 700;
+  box-shadow: inset 0 1px 2px rgba(15,23,42,.03), 0 1px 3px rgba(21,101,192,.08);
+  transition: background .18s ease, border-color .18s ease, box-shadow .18s ease;
+}
+input[type="number"]::placeholder {
+  color: #6b8fb3;
+  font-weight: 600;
+}
+input[type="number"]:hover {
+  background: #dfefff;
+  border-color: #64a4e8;
 }
 input[type="number"]:focus {
   outline: none;
-  border-color: #64a4e8;
-  box-shadow: 0 0 0 3px rgba(21,101,192,.12);
+  background: #fff8dc;
+  border-color: #f2b134;
+  box-shadow: 0 0 0 4px rgba(242,177,52,.18);
 }
 .muted { color: var(--muted); font-size: 13px; }
 .mono { font-variant-numeric: tabular-nums; }
