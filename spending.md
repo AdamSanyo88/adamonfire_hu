@@ -65,10 +65,30 @@ permalink: /spending
       font-family: inherit !important;
       font-weight: normal !important;
     }
-  </style>
+  
+    /* === Calculator visual refresh === */
+    .calculator-shell{background:linear-gradient(135deg,#eef6ff 0%,#f8fbff 100%);border:1px solid #d7e9ff;border-radius:22px;padding:24px;box-shadow:0 14px 36px rgba(13,110,253,.08)}
+    .calculator-kicker{font-size:.75rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:#0d6efd;margin-bottom:6px}
+    .calculator-shell .card{border:1px solid #e3eaf2;border-radius:16px;overflow:hidden;box-shadow:0 8px 22px rgba(15,23,42,.06)!important}
+    .input-card{border-top:4px solid #0d6efd!important}
+    #monthlyInput{background:#eaf4ff!important;border:2px solid #90c2ff!important;border-radius:10px!important;font-size:1.35rem!important;font-weight:800!important;padding:.75rem 1rem!important}
+    #monthlyInput:focus{background:#fff7d6!important;border-color:#e0a800!important;box-shadow:0 0 0 3px rgba(224,168,0,.14)!important}
+    .calculator-shell .form-check{background:#f8fafc;border:1px solid #e6ebf1;border-radius:10px;padding:.65rem .8rem .65rem 2.3rem;margin-bottom:.5rem!important}
+    .calculator-shell .form-check-input{margin-left:-1.45rem}
+    .spending-table thead th{background:#f1f5f9!important;color:#475569!important;font-size:.75rem;text-transform:uppercase;letter-spacing:.03em}
+    .spending-table tbody tr:not(.category-removed) td:last-child .badge{background:#eaf4ff!important;color:#0756c9!important;border:1px solid #b9d9ff}
+    .spending-table tfoot th{background:#eaf2fb!important;font-weight:800!important}
+    .summary-card{background:linear-gradient(135deg,#0d6efd,#0756c9)!important;color:#fff!important;border:0!important}
+    .summary-card h2,.summary-card li{color:#fff!important}
+    .summary-card .text-muted{color:rgba(255,255,255,.84)!important}
+    @media(max-width:768px){.calculator-shell{padding:14px}}
+
+</style>
 </head>
 <body>
   <div class="container py-4">
+    <div class="calculator-shell">
+      <div class="calculator-kicker">Interaktív kalkulátor</div>
     <p class="text-muted mb-4">
       Add meg a havi költésedet. A kalkulátor a magyar fogyasztói kosár súlyai szerint osztja szét.
       A kijelölt tételek eltávolításra kerülnek, majd a súlyuk arányosan újraelosztódik a maradék kategóriák között. A kalkulátor lakbért nem számol, ezt érdemes kivonni a teljes költségvetésből.
@@ -76,7 +96,7 @@ permalink: /spending
 
     <div class="row g-4 align-items-start">
       <div class="col-md-6">
-        <div class="card shadow-sm mb-4">
+        <div class="card shadow-sm mb-4 summary-card">
           <div class="card-body">
             <h2 class="h6 mb-2">Összefoglaló</h2>
             <ul class="small text-muted mb-0">
@@ -86,7 +106,7 @@ permalink: /spending
           </div>
         </div>
 
-        <div class="card shadow-sm">
+        <div class="card shadow-sm input-card">
           <div class="card-body">
             <label for="monthlyInput" class="form-label">Havi átlagos költés</label>
             <div class="input-group mb-3">
@@ -144,6 +164,7 @@ permalink: /spending
         </div>
         <p class="text-muted small mt-2 mb-0">Megjegyzés: a pénznem tetszőleges; a táblázatban szereplő összegek a megadott havi összegből számolódnak.</p>
       </div>
+    </div>
     </div>
   </div>
 

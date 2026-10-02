@@ -128,11 +128,29 @@ permalink: /inflation
       padding: 0.6rem 1.5rem !important;
     }
   }
-  </style>
+  
+  /* === Calculator visual refresh === */
+  .calculator-shell{background:linear-gradient(135deg,#eef6ff 0%,#f8fbff 100%);border:1px solid #d7e9ff;border-radius:22px;padding:24px;box-shadow:0 14px 36px rgba(13,110,253,.08)}
+  .calculator-kicker{font-size:.75rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:#0d6efd;margin-bottom:6px}
+  .calculator-shell .card{border:1px solid #e3eaf2;border-radius:16px;overflow:hidden;box-shadow:0 8px 22px rgba(15,23,42,.06)!important}
+  .calculator-shell thead th{background:#f1f5f9!important;color:#475569!important;font-size:.78rem;text-transform:uppercase;letter-spacing:.03em;border-bottom:1px solid #dbe3ec}
+  .calculator-shell tbody td{border-color:#edf1f5}
+  .calculator-shell input[type=number]{background:#eaf4ff!important;border:2px solid #90c2ff!important;border-radius:9px!important;font-weight:700!important;color:#0f172a!important;box-shadow:none!important}
+  .calculator-shell input[type=number]:hover{background:#dceeff!important;border-color:#5aa5ff!important}
+  .calculator-shell input[type=number]:focus{background:#fff7d6!important;border-color:#e0a800!important;box-shadow:0 0 0 3px rgba(224,168,0,.14)!important}
+  .result-card{background:linear-gradient(135deg,#0d6efd,#0756c9)!important;color:#fff;border:0!important;position:sticky;top:18px}
+  .result-card h2,.result-card strong,.result-card p{color:#fff!important}
+  .result-card .personal-infl-badge{background:#fff!important;color:#0d6efd!important;box-shadow:0 8px 20px rgba(0,0,0,.16)}
+  .result-card .muted{color:rgba(255,255,255,.82)!important}
+  @media(max-width:991px){.calculator-shell{padding:16px}.result-card{position:static}}
+
+</style>
 </head>
 
 <body>
 <div class="container py-4">
+<div class="calculator-shell">
+  <div class="calculator-kicker">Interaktív kalkulátor</div>
 
   <p class="muted">
     Add meg, mennyit költesz havonta az alábbi kategóriákban.  
@@ -174,7 +192,7 @@ permalink: /inflation
 
     <!-- JOBB OSZLOP: eredmény -->
     <div class="col-lg-5">
-      <div class="card shadow-sm">
+      <div class="card shadow-sm result-card">
         <div class="card-body text-center">
           <h2 class="h6 mb-3">Eredmény</h2>
           <div class="mb-2"><strong>Személyes infláció</strong> (súlyozott átlag)</div>
@@ -189,6 +207,7 @@ permalink: /inflation
     </div>
 
   </div>
+</div>
 </div>
 
 <script>
