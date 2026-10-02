@@ -10,32 +10,235 @@ permalink: /net-worth
 <script defer src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
 
 <style>
-body{background:#f8f9fa;color:#212529;font-family:system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial}
-.container-lg{max-width:1400px}
-input[type=number]{width:100%;padding:6px 8px;border:1px solid #ced4da;border-radius:6px}
-.table th,.table td{vertical-align:middle}
-.table input[disabled]{background:#eee}
-.chart-wrap{height:420px}
-.result strong{font-size:1.25rem}
-.mono{font-variant-numeric: tabular-nums}
+body{
+  background:#f8f9fa;
+  color:#212529;
+  font-family:system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial;
+}
+
+.container-lg{
+  max-width:1400px;
+}
+
+input[type=number]{
+  width:100%;
+  padding:6px 8px;
+  border:1px solid #ced4da;
+  border-radius:6px;
+}
+
+.table th,
+.table td{
+  vertical-align:middle;
+}
+
+.table input[disabled]{
+  background:#eee;
+}
+
+.chart-wrap{
+  height:420px;
+}
+
+.result strong{
+  font-size:1.25rem;
+}
+
+.mono{
+  font-variant-numeric:tabular-nums;
+}
+
 
 /* === Calculator visual refresh === */
-.calculator-shell{background:linear-gradient(135deg,#eef6ff 0%,#f8fbff 100%);border:1px solid #d7e9ff;border-radius:22px;padding:24px;box-shadow:0 14px 36px rgba(13,110,253,.08)}
-.calculator-kicker{font-size:.75rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:#0d6efd;margin-bottom:6px}
-#nw-table{border-radius:16px;overflow:hidden;box-shadow:0 8px 22px rgba(15,23,42,.06);border-color:#e3eaf2}
-#nw-table thead th{background:#f1f5f9!important;color:#475569;font-size:.78rem;text-transform:uppercase;letter-spacing:.03em}
-#nw-table .table-secondary td{background:#eaf2fb!important;color:#23415f;font-weight:800;border-top:8px solid #fff}
-#nw-table input[data-field=value]:not(:disabled){background:#eaf4ff!important;border:2px solid #90c2ff!important;font-weight:700}
-#nw-table input[data-field=debt]:not(:disabled){background:#fff1f1!important;border:2px solid #f0a2a2!important;font-weight:700}
-#nw-table input:not(:disabled):focus{background:#fff7d6!important;border-color:#e0a800!important;box-shadow:0 0 0 3px rgba(224,168,0,.14)!important;outline:0}
-#nw-table input:disabled{background:#f1f3f5!important;border-color:#e2e5e8!important;color:#a0a6ad}
-.net-result-card{display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap;background:linear-gradient(135deg,#0d6efd,#0756c9);color:#fff;border-radius:18px;padding:20px 24px;margin:22px 0;box-shadow:0 12px 28px rgba(13,110,253,.2)}
-.net-result-card .result-label{font-size:.78rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;opacity:.82}
-.net-result-card #nw-ft{display:block;font-size:2.15rem;font-weight:800;line-height:1.15}
-.net-result-card #pct-chip{font-size:1rem;padding:.65rem .9rem;background:#fff!important;color:#0d6efd!important}
-.chart-card{background:#fff;border:1px solid #e3eaf2;border-radius:16px;padding:18px;box-shadow:0 8px 22px rgba(15,23,42,.06)}
-@media(max-width:768px){.calculator-shell{padding:14px}.net-result-card #nw-ft{font-size:1.7rem}}
 
+.calculator-shell{
+  background:linear-gradient(135deg,#eef6ff 0%,#f8fbff 100%);
+  border:1px solid #d7e9ff;
+  border-radius:22px;
+  padding:24px;
+  box-shadow:0 14px 36px rgba(13,110,253,.08);
+}
+
+.calculator-kicker{
+  font-size:.75rem;
+  font-weight:800;
+  letter-spacing:.1em;
+  text-transform:uppercase;
+  color:#0d6efd;
+  margin-bottom:6px;
+}
+
+
+/* === Net worth table === */
+
+#nw-table{
+  border-radius:16px;
+  overflow:hidden;
+  box-shadow:0 8px 22px rgba(15,23,42,.06);
+  border-color:#e3eaf2;
+}
+
+#nw-table thead th{
+  background:#f1f5f9!important;
+  color:#475569;
+  font-size:.78rem;
+  text-transform:uppercase;
+  letter-spacing:.03em;
+}
+
+#nw-table .table-secondary td{
+  background:#eaf2fb!important;
+  color:#23415f;
+  font-weight:800;
+  border-top:8px solid #fff;
+}
+
+
+/* Positive / asset inputs */
+
+#nw-table input[data-field=value]:not(:disabled){
+  background:#eaf4ff!important;
+  border:2px solid #90c2ff!important;
+  font-weight:700;
+}
+
+
+/* Debt inputs */
+
+#nw-table input[data-field=debt]:not(:disabled){
+  background:#fff1f1!important;
+  border:2px solid #f0a2a2!important;
+  font-weight:700;
+}
+
+
+/* Active input */
+
+#nw-table input:not(:disabled):focus{
+  background:#fff7d6!important;
+  border-color:#e0a800!important;
+  box-shadow:0 0 0 3px rgba(224,168,0,.14)!important;
+  outline:0;
+}
+
+
+/* Disabled inputs */
+
+#nw-table input:disabled{
+  background:#f1f3f5!important;
+  border-color:#e2e5e8!important;
+  color:#a0a6ad;
+}
+
+
+/* === Main result card === */
+
+.net-result-card{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:32px;
+
+  background:linear-gradient(135deg,#0d6efd,#0756c9);
+  color:#fff;
+
+  border-radius:18px;
+  padding:24px 28px;
+  margin:22px 0;
+
+  box-shadow:0 12px 28px rgba(13,110,253,.2);
+}
+
+
+/* Left side: net worth result */
+
+.net-result-card > div{
+  flex:1 1 auto;
+  min-width:0;
+}
+
+.net-result-card .result-label{
+  font-size:.78rem;
+  font-weight:800;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+  opacity:.82;
+  margin-bottom:5px;
+}
+
+.net-result-card #nw-ft{
+  display:block;
+  font-size:clamp(1.8rem,3.2vw,2.4rem);
+  font-weight:800;
+  line-height:1.15;
+  white-space:nowrap;
+}
+
+
+/* Right side: percentile */
+
+.net-result-card #pct-chip{
+  flex:0 0 auto;
+
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+
+  min-width:130px;
+
+  font-size:1rem;
+  font-weight:800;
+  line-height:1.2;
+  white-space:nowrap;
+
+  padding:.75rem 1.1rem;
+
+  background:#fff!important;
+  color:#0d6efd!important;
+
+  border-radius:999px;
+
+  box-shadow:0 4px 12px rgba(0,0,0,.12);
+}
+
+
+/* === Chart === */
+
+.chart-card{
+  background:#fff;
+  border:1px solid #e3eaf2;
+  border-radius:16px;
+  padding:18px;
+  box-shadow:0 8px 22px rgba(15,23,42,.06);
+}
+
+
+/* === Mobile === */
+
+@media(max-width:768px){
+
+  .calculator-shell{
+    padding:14px;
+  }
+
+  .net-result-card{
+    flex-direction:column;
+    align-items:flex-start;
+    gap:16px;
+    padding:20px;
+  }
+
+  .net-result-card #nw-ft{
+    font-size:1.7rem;
+    white-space:normal;
+  }
+
+  .net-result-card #pct-chip{
+    align-self:flex-start;
+    min-width:auto;
+  }
+
+}
 </style>
 
 <div class="container py-4">
