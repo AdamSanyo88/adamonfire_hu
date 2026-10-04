@@ -4,12 +4,116 @@ title: Hasznos eszközök
 permalink: /resources
 ---
 
+<style>
+/* ==========================================
+   ADAM ON FIRE - RESOURCES PAGE
+   ========================================== */
+.resources-page {
+  margin-top: 8px;
+}
+
+.resources-page .resources-intro {
+  margin: 8px 0 34px;
+  padding: 22px 26px;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #edf4ff 0%, #e3edff 100%);
+  border: 1px solid #d5e3ff;
+  color: #17345f;
+  font-size: 1.08rem;
+  line-height: 1.7;
+}
+
+.resources-page .section > h4 {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin: 20px 0 26px !important;
+  color: #0d47a1;
+  font-weight: 700;
+}
+
+.resources-page .section > h4::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: #d6e2f7;
+}
+
+.resources-page .card {
+  overflow: hidden;
+  border-radius: 14px;
+  border: 1px solid rgba(255,255,255,.22);
+  background: linear-gradient(135deg, #2f6fd0 0%, #4e86dd 100%);
+  color: #fff;
+  box-shadow: 0 8px 22px rgba(13,71,161,.14);
+  transition: transform .22s ease, box-shadow .22s ease, filter .22s ease;
+}
+
+.resources-page .card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 32px rgba(13,71,161,.22);
+  filter: brightness(.98);
+}
+
+.resources-page .card-content {
+  color: #fff;
+}
+
+.resources-page .card-title,
+.resources-page .card-title strong,
+.resources-page .card-content p {
+  color: #fff !important;
+}
+
+.resources-page .card-title {
+  line-height: 1.3 !important;
+}
+
+.resources-page .card-content p {
+  color: rgba(255,255,255,.90) !important;
+  line-height: 1.65;
+}
+
+.resources-page .card-action {
+  border-top: 1px solid rgba(255,255,255,.20) !important;
+  background: rgba(8,45,104,.14);
+  color: #fff !important;
+  font-weight: 700;
+}
+
+.resources-page .card-action a,
+.resources-page > .section .card-action a {
+  color: #fff !important;
+  text-transform: none !important;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+
+.resources-page .card-image {
+  background: #fff;
+}
+
+.resources-page .card-image img,
+.resources-page .card-image iframe {
+  display: block;
+}
+
+@media only screen and (max-width: 600px) {
+  .resources-page .resources-intro {
+    padding: 18px 20px;
+  }
+  .resources-page .section > h4 {
+    font-size: 1.65rem;
+  }
+}
+</style>
+
 <h1 class="page-title">{{ page.title | escape }}</h1>
     
-<div class="container">
+<div class="container resources-page">
 
   <div class="section">
-    <p style="font-size: 1.15rem; margin-bottom: 40px;">
+    <p class="resources-intro">
       Ez az oldal több hasznos linket, kalkulátort és prezentációt mutat be,
       amelyek segíthetnek a saját FIRE utad megtervezésében.
     </p>

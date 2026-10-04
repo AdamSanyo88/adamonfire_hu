@@ -36,6 +36,75 @@ layout: default
 .mb-4 {
   margin-bottom: 1.5rem;
 }
+
+/* ==========================================
+   ADAM ON FIRE - ABOUT CARD
+   ========================================== */
+.about-fire-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 18px;
+  background: linear-gradient(135deg, #0d47a1 0%, #2962ff 100%) !important;
+  color: #fff;
+  border: 1px solid rgba(255,255,255,.15);
+  box-shadow: 0 14px 34px rgba(13,71,161,.18);
+}
+
+.about-fire-card::after {
+  content: "FIRE";
+  position: absolute;
+  right: -16px;
+  bottom: -52px;
+  font-size: 145px;
+  line-height: 1;
+  font-weight: 900;
+  letter-spacing: -10px;
+  color: rgba(255,255,255,.055);
+  pointer-events: none;
+}
+
+.about-fire-card .card-content {
+  position: relative;
+  z-index: 1;
+  padding: 30px 32px;
+}
+
+.about-fire-card .card-title {
+  margin-bottom: 16px !important;
+  color: #fff;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.about-fire-card p {
+  color: rgba(255,255,255,.92);
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.about-fire-card a {
+  color: #fff !important;
+  font-weight: 700;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+.about-fire-card .about-photo {
+  max-height: 205px;
+  object-fit: cover;
+  border-radius: 14px;
+  border: 3px solid rgba(255,255,255,.34);
+  box-shadow: 0 10px 24px rgba(0,0,0,.14);
+}
+
+@media only screen and (max-width: 600px) {
+  .about-fire-card .card-content { padding: 24px 22px; }
+  .about-fire-card .card-title { font-size: 25px; }
+  .about-fire-card .about-photo { margin-top: 22px; }
+  .about-fire-card::after { font-size: 95px; bottom: -34px; }
+}
+
 </style>
 
 <!-- MAIN CONTENT CONTAINER -->
@@ -43,7 +112,7 @@ layout: default
   <!-- About Me -->
   <div class="row">
     <div class="col s12">
-      <div class="card light-blue lighten-4 mb-4">
+      <div class="card about-fire-card mb-4">
         <div class="card-content">
           <div class="row" style="margin-bottom:0;">
             <!-- Text -->
@@ -59,8 +128,7 @@ layout: default
             <div class="col s12 m3 center-align">
               <img src="images/adam.png"
                    alt="About Me" 
-                   class="responsive-img" 
-                   style="max-height:200px; object-fit:cover; border-radius:8px;">
+                   class="responsive-img about-photo">
             </div>
           </div>
         </div>
