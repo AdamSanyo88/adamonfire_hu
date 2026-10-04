@@ -53,7 +53,7 @@ permalink: /blog
 </div>
 
 <div class="section">
-  <div class="blog-section-title"><h4>Összes korábbi bejegyzés</h4></div>
+  <div class="blog-section-title"><h4>Összes korábbi bejegyzés</h4></div> 
   <div class="row blog-grid">
     <div class="col s12 m6">
       <a href="/blog-7" style="color: inherit;">
