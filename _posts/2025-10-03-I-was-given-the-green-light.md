@@ -4,9 +4,11 @@ title: Megkaptam a zöld lámpát a FIRE-re
 date: 2025-10-03
 permalink: blog-6
 ---
+
 <style>
 /* ==========================================
    ADAM ON FIRE - INDIVIDUAL BLOG POST STYLE
+   Copy this block into any individual blog post.
    ========================================== */
 
 .post-shell {
@@ -207,6 +209,16 @@ permalink: blog-6
 }
 </style>
 
+<div class="post-shell">
+
+  <header class="post-hero">
+    <div class="post-kicker">Adam on FIRE · Blog</div>
+    <h1 class="post-title">{{ page.title | escape }}</h1>
+    <div class="post-date">{{ page.date | date: "%Y. %m. %d." }}</div>
+  </header>
+
+  <article class="post-body">
+
 <p>Az elmúlt néhány hónapban azon gondolkodtam, hogyan tudnám igazán felmérni a portfólióm FIRE-készültségét. Ismerem a számaimat (a 2 éves kiadáskövetési próbám decemberben ér véget), tudom, hogyan kell diverzifikálni a portfóliómat, de még mindig nem vagyok biztos benne, hogy minden a helyén van-e.</p>
 
 <p>Szerencsére tudtam, kihez forduljak, így augusztus elején felvettem a kapcsolatot Karsten Jeske-vel, az Earlyretirementnow blog szerzőjével. Ő örömmel vállalta az esetemet, és szeptember végén beszéltünk egy másfél órás tanácsadás keretében. Addigra sikerült beállítanom egy napi portfólió-értékelő követőt (most már elérhető a honlapon), így valamivel jobban tudtam, hogyan teljesítettem tavaly szeptember óta.</p>
@@ -228,6 +240,14 @@ permalink: blog-6
 <p>A beszélgetés végén azt mondta: „Ádám, úgy tűnik, készen állsz a FIRE-re úgyhogy csak dőlj hátra, és élvezd a korai nyugdíjas létet.”</p>
 
 <p>Köszönöm, Karsten, így is fogok tenni.</p>
-<br/>
-<h5><a href="../blog">Vissza az összes bejegyzéshez</a></h5>
 
+  </article>
+
+  <div class="post-back">
+    <a href="/blog">
+      <span><span class="post-back-arrow">←</span>&nbsp;&nbsp; Vissza az összes bejegyzéshez</span>
+      <span>Blog</span>
+    </a>
+  </div>
+
+</div>
