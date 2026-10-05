@@ -225,7 +225,7 @@ permalink: blog-15
 
 <p>Ebben nagy segítségemre volt az, hogy szeptemberben felléptünk Danival a Brain Baron mint előadók, és tök jó három órás műsort csináltunk az embereknek. Volt két panelbeszélgetésünk Bognár Balázzsal a FIRE Hungary csoport vezetőjével és Németh Ádámmal, aki a <a href="https://www.growy.hu/">Growy.hu portfóliókvetőt</a> fejleszti. A Growy kapcsán majd fogok még valószínűleg blogot írni, mert nagyon örülök ennek az alkalmazásnak, az egyik kedvencem lett, amit mostanában a FIRE modellezéseimhez is használok.</p>
 
-<p><img src="../images/blog-15-pic-3.jpeg" alt="Fellépés a brain baron" style="
+<p><img src="../images/blog-15-pic-3.jpg" alt="Fellépés a brain baron" style="
        max-height: 500px;
        max-width: 100%;
        width: auto;
@@ -243,7 +243,7 @@ permalink: blog-15
 
 <p>Ami még pozitívum - saját portfólió szempontjából -, hogy elkészítettem egy új vizualizációt, amit majd az év végi kiértékeléshez fogok használni. Ez gyakorlatilag megmutatja, mennyi hozamom is volt a portfólióm különböző elemeiből. Egyelőre a szeptemberi állapot enyhén elmarad az idei hozamcélomtól - ami 8-8.5% -, de így is szépen hoztak a részvények - a kötvények és a többi eszközosztály kevésbé.</p>
 
-<p><img src="../images/blog-15-pic-2.png alt="Yearly portfolio gains by investment type" style="
+<p><img src="../images/blog-15-pic-2.png" alt="Yearly portfolio gains by investment type" style="
        max-height: 500px;
        max-width: 100%;
        width: auto;
