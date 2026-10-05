@@ -41,7 +41,7 @@ permalink: /blog
 <div class="blog-header">
   <div class="eyebrow">Adam on FIRE</div>
   <h1>{{ page.title | escape }}</h1>
-  <p>Hogyan is élem a mindennapjaim FIRE-ként? Itt a személyes gondolataim és élményeimet osztom meg veled</p>
+  <p>Hogyan is élem a mindennapjaim FIRE-ként? Itt a személyes gondolataim és élményeimet osztom meg veled.</p>
 </div>
 
 <div class="blog-featured">
