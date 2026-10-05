@@ -237,7 +237,14 @@ permalink: blog-15
 
 <p>És ami miatt gyakrabban nézegetem a piacokat, az a kötvénypiac alakulása. A 10 éves amerikai hozam 5% felett van szeptember eleje óta, és ki tudja, hol van még a vége. Én nagyjából egy éve 4.2%-os árfolyamon vettem 7-10 éves USA kötvény ETF-et, és hát eddig 9% veszteségem van rajta. Ez önmagában nem is gond, inkább az a baj, hogy egy Trump-féle vezető úgyis az inflációt fogja választani a recesszió helyett - tehát az adósság elinflálására fog törekedni -, akkor pedig az 5%-os hozam nem is olyan magas (főleg ha az infláció tényleg elmegy odáig). Szerencsére a FED új elnöke, Kevin Warsh egyelőre elkötelezett az infláció megfékezésében, szóval volt kamatemelés a héten. De tény, hogy az év eleji várakozások, vagyis hogy 3-3.5% lesz a kamat, most már inkább csak vágyálom marad, mert inkább 4-5% között fog stabilizálódni az amerikai alapkamat.</p>
 
-<p><img src="../images/blog-15-pic.png" alt="US 10-year bond rate daily 2026"></p>
+<p><img src="../images/blog-15-pic.png" alt="US 10-year bond rate daily 2026" style="
+       max-height: 500px;
+       max-width: 100%;
+       width: auto;
+       height: auto;
+       display: block;
+       margin: 30px auto;
+       object-fit: contain;"></p>
 
 <p>És ha tényleg velünk maradnak a magasabb kamatok tartósan, akkor a tőzsdén is bajok lehetnek. Hiszen továbbra is minden all-time high közelében, az S&P500 7700 fölött, a Nasdaq-1000 30000 pont fölött (és én már 21000-nél azt írtam, hogy "ez picit magas"), az AI beruházások az amerikai GDP 2-3%-ára rúgnak, és így tovább. Nagyon érdekes azt látni befektetőként, hogy mennyire törékeny helyzetben van a piac, mégis folyamatos a növekedés továbbra is.</p>
 

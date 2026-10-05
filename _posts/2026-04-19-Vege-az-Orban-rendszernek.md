@@ -229,7 +229,14 @@ permalink: blog-11
 
 <p>Ami vicces volt még, hogy választások előtt megkérdeztem Redditen, hogy "Szerintetek mennyit fog erősödni a forint a Tisza győzelmére?", és jött csomó válasz, hogy "már be van árazva". Aztán hopp, 4% erősödés egy hét alatt, és ki tudja, meddig megy még a forint. Tényleg az történt, mint ami a lengyeleknél is 2023 őszén, hogy amint kikapott a lengyel szélsőjobb, és új kormány lett, egyből erősödött a zloty pár százalékot.</p>
 
-<p><img src="../images/blog-11-pic.png" alt="EUR/HUF exchange rate, Feb–Apr 2026"></p>
+<p><img src="../images/blog-11-pic.png" alt="EUR/HUF exchange rate, Feb–Apr 2026" style="
+       max-height: 500px;
+       max-width: 100%;
+       width: auto;
+       height: auto;
+       display: block;
+       margin: 30px auto;
+       object-fit: contain;"></p>
 
 <p>Illetve szeretnék még megosztani egy személyes történetet, amiről nem beszélhettem eddig, de szerencsére most már úgy látom, nincs kockázata ezt megosztani. Amiért kevesebbet foglalkoztam a pénzügyekkel egészen mostanáig, az részben amiatt volt, mert január-februárban egy nem nyilvános projekten dolgoztam. Ez a projekt egy úgynevezett Választási Integritás Szimuláció volt, amiben egy szoros Tisza-győzelmet modelleztünk 25 szakértővel. Borzasztóan élveztem ezt a munkát, ugyanis olyan híres emberekkel, mint például Rácz András dolgozhattam, és 9 órán keresztül egy szimulációs játékban (wargame-ben) teszteltük, hogy különböző szereplők a közéletben miként cselekednének. És a leghihetetlenebb, hogy véletlenül többször megjósolták a szereplők a valóságot - noha nem ez volt a fő feladatuk -, például a hamis zászlós hadművelettel, vagy az MVM által kiküldött kampánylevelekkel. Nagyon örülök annak, hogy ez a szimulációs gyakorlat csak egy kontrafaktuális valóság maradt, de egy ilyen játékot dizájnolni és utána levezetni nagy élmény volt.</p>
 
