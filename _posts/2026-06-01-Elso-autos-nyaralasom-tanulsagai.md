@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Bátor Tábor, FIRE előadások, és a 3-napos munkarend
-date: 2026-05-10
-permalink: blog-12
+title: Az első autós nyaralásom tanulságai
+date: 2026-06-01
+permalink: blog-13
 ---
 
 
@@ -221,17 +221,15 @@ permalink: blog-12
 
   <article class="post-body">
 
-<p>Elég mozgalmasan teltek ezek a hetek is, gyakorlatilag minden héten valami mást csináltam.</p>
+<p>Megvolt az első nyaralás is idén, mert a választások után már nyugodtan mentem el egy hétre itthonról. Egy Salzburgban élő barátunkat látogattuk meg, illetve pár napot Szlovéniában is voltunk, én életemben először jártam itt.</p>
 
-<p>Először is lement a három előadás a 70 éves USA tőzsdetörténelemről. Számomra az volt a meglepő, hogy milyen jó kérdéseket tett fel a hallgatóság, és hát sokat beszéltünk arról, hogy most a Hormuzi-szoros elhozza-e az 1973-as olajválsághoz hasonló helyzetet. Én egyelőre azon az állásponton vagyok, hogy lehetséges, úgyhogy vettem most commodity ETF-et és energy ETF-et is. Bár sajnos mindkettőt valószínűleg lokális csúszon vettem még április 3-4-én (110 dollár közeli olajárnál), úgyhogy egyelőre mindkét pozíció 10% körüli bukóban van. De remélem, az idő engem igazol majd, igaz, akkor meg nagyobb az esélye a recessziónak. Őszintén szólva már nem tudom, minek örüljek ebben a helyzetben.</p>
+<p>Ami továbbra is lenyűgöz, hogy az osztrákok mennyire nyugodtan tudnak élni. Nagy szerencsénk volt az időjárással, mert végig 25-30 fok között volt az idő, pedig előtte lévő héten még esett végig. Megmártóztam a 16.5 fokos Wolfgangsee-ben is, ezzel is megélve az osztrák életérzést. Münchenbe is átugrottunk egy napra kocsival - mert hogy kocsival mentünk -, az annyira nem fogott meg, de lehet, csak nem volt hozzá hangulatom.</p>
 
-<p>A piacok mellett a Bátor Táborral voltam elfoglalva, ugyanis hétvégén megtanítottak arra, hogyan legyek majd íjász önkéntes. Kicsit béna voltam az íjjal, és még mindig nem a legjobb a technikám, de igazából az önkéntességben a legfontosabb, hogy figyeljünk a gyerekekre. Az meg menni fog, mert kb. olyan lesz, mint a bíráskodás amerikaifociban, figyelni kell, és csak néha közbeavatkozni. Ami még mindig nagyon szokatlan, hogy ismeretlenekkel kell egy szobában aludni, ezen a hosszú hétvégés felkészítőn alig tudtam aludni. De elvileg me lehet szokni, csak attól még ez egy egyértelműen új helyzet nekem. Viszont mindenki nagyon aranyos és kedves, tényleg van egy egyedi hangulata és hozzáállása a Bátor Táborosoknak, egy igazi befogadó közösség.</p>
+<p>A legtanulságosabb az autózás volt egyébként, összesen 1700 km-t mentünk 8 nap alatt. És hát én nem szeretek autóban ülni ennyit, ez volt a fő takeaway. Nem azt mondom, hogy soha többet nem akarok autós nyaralást, de amikor 6.5 órát kell menni az M1-esen át Győrig, majd Ausztria, majd ott is megállók, stb., na az nekem sok. Főleg a Győrig tartó rész volt közel 2.5 óra, hát az egy konkrét kínzás volt az egysávos M1-esen. Viszont vicces volt, hogy a győri benzinkúton vettem még egy adagot a 7%-os FIXMÁP-ból, ugyanis pont két órával azelőtt érkezett meg a pénz a számlámra egy utalásból, hogy lejárt volna a határidő. Szóval szépen belockkoltam a 7%-os kamatot még pár millió Ft-tal. Sosem fogom elfelejteni, ahogy állok a benzinkút mellett a telefonomoat nyomogatva, hogy "akkor most csinálok egy kis pénzt". Ez az igazi passzív jövedelem.</p>
 
-<p>Végezetül sikerült meghoznom a nagy döntést... vagyis azt, hogy nem megyek azonnal full FIRE-be. Sokáig rágódtam ezen, és a Tisza választási győzelme után az volt bennem, hogy "na akkor egyből fel is mondok", aztán szerencsére a józan ész győzedelmeskedett a szív fölött. Főnökömmel beszéltem arról, hogy szeretnék többet foglalkozni a személyes projektjeimmel, és hogy heti 3 napban dolgoznék a következő egy évben. Szerencsére nagyon megértő volt, és viszonylag gyorsan, 4 hét alatt sikerült ezt elintéznie. Meg is kaptam a szerződésemet is, úgyhogy június 1-től csak kedd-szerda-csütörtök dolgozom tovább, minden más marad a régiben. Komoly várakozásaim vannak azzal kapcsolatban, hogy mennyit tud majd segíteni ez az új rendszer, mert már az, hogy visszakapom a hétfőt és pénteket saját projektekre, nagy lökést adhat.</p>
+<p>Szlovénia is szép ország egyébként, de itt még inkább éreztem, hogy mennyire kocsihoz van kötve az ember, ha több dolgot meg akar nézni. A kisvasúttal kiépített barlang viszont nagyon jó volt, talán az egyik legjobb része volt az útnak. És megint elszomorodtam azon, hogy mennyire drága is lett Magyarország, konkrétan Ljubljanában és Salzburgban is hasonló árakon tudtunk étteremben enni, mint Pesten a nem belvárosi részeken. 15-16 euró/fő, és most már itthon is ki kell ezt fizetni. Csak ugyebár az osztrákok kétszerannyit, a szlovének meg másfélszerannyit keresnek, mint mi magyarok. És tudom, hogy nekem ez belefér, hogy kifizessem, de attól még sajnálom, hogy a magyar társadalom átlaga mennyire szegény.</p>
 
-
-<p>Szóval köszi, Chris, nagy segítség ez nekem a teljes FIRE felé vezető utam során.</p>
-
+<p>Idén még egy madridi út van tervben - csak pár napra -, aztán remélem, megoldják ezt a Hormuzi-szoros dolgot, mert mennék Ázsiába is, bár félek, az idén elmaradhat.</p>
 
   </article>
 

@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Bátor Tábor, FIRE előadások, és a 3-napos munkarend
-date: 2026-05-10
-permalink: blog-12
+title: Irányvesztés és nyári depresszió
+date: 2026-07-28
+permalink: blog-14
 ---
 
 
@@ -221,16 +221,13 @@ permalink: blog-12
 
   <article class="post-body">
 
-<p>Elég mozgalmasan teltek ezek a hetek is, gyakorlatilag minden héten valami mást csináltam.</p>
+<p>Ez a nyár eddig sajnos nem úgy alakul, ahogy elterveztem. Először is, borzasztóan meleg van. Van, hogy napokig ki sem mentem a lakásból, mert már reggel konkrétan 30 fok felett volt a hőmérséklet. És én szeretem a meleget, de az állandó forróságot már nem. És volt sok tervem arra, hogy majd akkor kint leszek többet, meg elkezdek futni és hasonlók, és ebből nem valósult meg semmi.</p>
 
-<p>Először is lement a három előadás a 70 éves USA tőzsdetörténelemről. Számomra az volt a meglepő, hogy milyen jó kérdéseket tett fel a hallgatóság, és hát sokat beszéltünk arról, hogy most a Hormuzi-szoros elhozza-e az 1973-as olajválsághoz hasonló helyzetet. Én egyelőre azon az állásponton vagyok, hogy lehetséges, úgyhogy vettem most commodity ETF-et és energy ETF-et is. Bár sajnos mindkettőt valószínűleg lokális csúszon vettem még április 3-4-én (110 dollár közeli olajárnál), úgyhogy egyelőre mindkét pozíció 10% körüli bukóban van. De remélem, az idő engem igazol majd, igaz, akkor meg nagyobb az esélye a recessziónak. Őszintén szólva már nem tudom, minek örüljek ebben a helyzetben.</p>
+<p>Emellett a hétfői és pénteki szabadnapjaim is egyelőre inkább szétfolynak, szóval egyáltalán nem érzem magam hatékonyabbnak. Sajnos rá kellett jönnöm, hogy a FIRE önmagában nem ad megváltást, nem leszek tőle aktívabb és boldogabb. Tényleg ki kell találnom, hogy mit is akarok csinálni. Úgyhogy közel 3 év szünet után visszamegyek egy új terapeutához, hogy segítsen kitalálni, mi is lehet a problémám, és hogyan tudnám magam motiválni.</p>
 
-<p>A piacok mellett a Bátor Táborral voltam elfoglalva, ugyanis hétvégén megtanítottak arra, hogyan legyek majd íjász önkéntes. Kicsit béna voltam az íjjal, és még mindig nem a legjobb a technikám, de igazából az önkéntességben a legfontosabb, hogy figyeljünk a gyerekekre. Az meg menni fog, mert kb. olyan lesz, mint a bíráskodás amerikaifociban, figyelni kell, és csak néha közbeavatkozni. Ami még mindig nagyon szokatlan, hogy ismeretlenekkel kell egy szobában aludni, ezen a hosszú hétvégés felkészítőn alig tudtam aludni. De elvileg me lehet szokni, csak attól még ez egy egyértelműen új helyzet nekem. Viszont mindenki nagyon aranyos és kedves, tényleg van egy egyedi hangulata és hozzáállása a Bátor Táborosoknak, egy igazi befogadó közösség.</p>
+<p>De hogy azért ne csak a rossz dolgokról írjak, írok a Bátor Táborról is; megvolt az egy hetes nemzetközi turnusom, vagyis cseh és szlovák gyerekekkel és szüleikkel volt íjászkodás. Az első két nap még mindig nagyon nehéz volt idegenekkel aludni, utána viszont teljesen megszoktam, és egész jól tudtam pihenni is. Viszont tény, hogy napi 15-20 ezer lépéseket lesétálni, állandóan figyelni, és utána még este is aktívnak lenni nekem sok volt. Ezért azt az értékelést kaptam, hogy a vártnál kevésbé voltam aktív, és hogy ezt fejlesztenem kell. Ezzel nem is vitatkoztam, én is éreztem ott, hogy míg más végig pörögte az egy hetet, én már este 22:30-kor mentem aludni.</p>
 
-<p>Végezetül sikerült meghoznom a nagy döntést... vagyis azt, hogy nem megyek azonnal full FIRE-be. Sokáig rágódtam ezen, és a Tisza választási győzelme után az volt bennem, hogy "na akkor egyből fel is mondok", aztán szerencsére a józan ész győzedelmeskedett a szív fölött. Főnökömmel beszéltem arról, hogy szeretnék többet foglalkozni a személyes projektjeimmel, és hogy heti 3 napban dolgoznék a következő egy évben. Szerencsére nagyon megértő volt, és viszonylag gyorsan, 4 hét alatt sikerült ezt elintéznie. Meg is kaptam a szerződésemet is, úgyhogy június 1-től csak kedd-szerda-csütörtök dolgozom tovább, minden más marad a régiben. Komoly várakozásaim vannak azzal kapcsolatban, hogy mennyit tud majd segíteni ez az új rendszer, mert már az, hogy visszakapom a hétfőt és pénteket saját projektekre, nagy lökést adhat.</p>
-
-
-<p>Szóval köszi, Chris, nagy segítség ez nekem a teljes FIRE felé vezető utam során.</p>
+<p>Ami még jó volt a Bátor Táborban, hogy ráébresztett arra, mennyire is könnyű életem van. Látva - főleg a beteg gyerekek szüleit -, hogy nekik ez a néhány nap kikapcsolódás van az év során, nagyon sokkoló volt. Én meg itt azon problémázok, hogy nem találom meg az életem értelmét. Ez aztán az igazi first-world problem. Mindenesetre remélem, hogy a terapeutával fogok tudni dolgozni, és hamarosan jobban látom majd, mi is legyen a post-FIRE célom.</p>
 
 
   </article>
