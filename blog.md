@@ -45,16 +45,64 @@ permalink: /blog
 </div>
 
 <div class="blog-featured">
-  <a class="featured-hitbox" href="/blog-11" aria-label="Vége az Orbán-rendszernek"></a>
-  <div class="featured-label">Legfrissebb bejegyzés · Politika · 2026</div>
-  <h2>Vége az Orbán-rendszernek</h2>
-  <p>141 mandátum, kétharmados Tisza-győzelem és egy korszak vége. Személyes visszatekintés a választásra, a forint reakciójára és egy választási integritási szimuláció kulisszái mögé.</p>
+  <a class="featured-hitbox" href="/blog-15" aria-label="Brain Bar és a kötvénypiacok"></a>
+  <div class="featured-label">Legfrissebb bejegyzés · Befektetés · 2026</div>
+  <h2>Brain Bar és a kötvénypiacok</h2>
+  <p>Brain Bar előadás, 5% fölötti amerikai kötvényhozamok és egy új portfólió-vizualizáció. Gondolatok arról, mit jelenthet a tartósan magas kamatkörnyezet a részvény- és kötvénypiacoknak.</p>
   <div class="featured-link">Olvasd tovább <span class="arrow">→</span></div>
 </div>
 
 <div class="section">
   <div class="blog-section-title"><h4>Összes korábbi bejegyzés</h4></div> 
   <div class="row blog-grid">
+    <div class="col s12 m6">
+      <a href="/blog-14" style="color: inherit;">
+        <div class="card hoverable blog-card">
+          <div class="card-content">
+            <div class="blog-meta"><span class="blog-category">Élet</span><span class="blog-date">2026</span></div>
+            <span class="card-title"><strong>Irányvesztés és nyári depresszió</strong></span>
+            <p>A 3 napos munkahét első hónapjai nem hozták automatikusan a várt szabadságérzést. Gondolatok motivációról, post-FIRE célokról és a Bátor Táborban szerzett tapasztalatokról.</p>
+          </div>
+          <div class="card-action">Olvasd tovább <span class="arrow">→</span></div>
+        </div>
+      </a>
+    </div>
+    <div class="col s12 m6">
+      <a href="/blog-13" style="color: inherit;">
+        <div class="card hoverable blog-card">
+          <div class="card-content">
+            <div class="blog-meta"><span class="blog-category">Utazás</span><span class="blog-date">2026</span></div>
+            <span class="card-title"><strong>Az első autós nyaralásom tanulságai</strong></span>
+            <p>1700 kilométer nyolc nap alatt Ausztriában és Szlovéniában. Mit tanultam az autós utazásról, az árakról és arról, mennyire más élmény így nyaralni?</p>
+          </div>
+          <div class="card-action">Olvasd tovább <span class="arrow">→</span></div>
+        </div>
+      </a>
+    </div>
+    <div class="col s12 m6">
+      <a href="/blog-12" style="color: inherit;">
+        <div class="card hoverable blog-card">
+          <div class="card-content">
+            <div class="blog-meta"><span class="blog-category">FIRE</span><span class="blog-date">2026</span></div>
+            <span class="card-title"><strong>Bátor Tábor, FIRE előadások, és a 3-napos munkarend</strong></span>
+            <p>FIRE-előadások, Bátor Táboros önkéntesség és egy fontos döntés: júniustól heti három nap munka, több idő a saját projektekre és fokozatosabb átmenet a teljes FIRE felé.</p>
+          </div>
+          <div class="card-action">Olvasd tovább <span class="arrow">→</span></div>
+        </div>
+      </a>
+    </div>
+    <div class="col s12 m6">
+      <a href="/blog-11" style="color: inherit;">
+        <div class="card hoverable blog-card">
+          <div class="card-content">
+            <div class="blog-meta"><span class="blog-category">Politika</span><span class="blog-date">2026</span></div>
+            <span class="card-title"><strong>Vége az Orbán-rendszernek</strong></span>
+            <p>141 mandátum, kétharmados Tisza-győzelem és egy korszak vége. Személyes visszatekintés a választásra, a forint reakciójára és egy választási integritási szimuláció kulisszái mögé.</p>
+          </div>
+          <div class="card-action">Olvasd tovább <span class="arrow">→</span></div>
+        </div>
+      </a>
+    </div>
     <div class="col s12 m6">
       <a href="/blog-10" style="color: inherit;">
         <div class="card hoverable blog-card">
