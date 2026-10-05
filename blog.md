@@ -45,16 +45,52 @@ permalink: /blog
 </div>
 
 <div class="blog-featured">
-  <a class="featured-hitbox" href="/blog-8" aria-label="Visszatekintés 2025-re és előretekintés 2026-ra"></a>
-  <div class="featured-label">Legfrissebb bejegyzés · FIRE · 2026</div>
-  <h2>Visszatekintés 2025-re és előretekintés 2026-ra</h2>
-  <p>2025 végére sikerült elérnem a FIRE célomat, a nagyjából 600 ezer eurós vagyont. Visszatekintés a portfólióra, a dollár gyengülésére és arra, mi következik 2026-ban.</p>
+  <a class="featured-hitbox" href="/blog-11" aria-label="Vége az Orbán-rendszernek"></a>
+  <div class="featured-label">Legfrissebb bejegyzés · Politika · 2026</div>
+  <h2>Vége az Orbán-rendszernek</h2>
+  <p>141 mandátum, kétharmados Tisza-győzelem és egy korszak vége. Személyes visszatekintés a választásra, a forint reakciójára és egy választási integritási szimuláció kulisszái mögé.</p>
   <div class="featured-link">Olvasd tovább <span class="arrow">→</span></div>
 </div>
 
 <div class="section">
   <div class="blog-section-title"><h4>Összes korábbi bejegyzés</h4></div> 
   <div class="row blog-grid">
+    <div class="col s12 m6">
+      <a href="/blog-10" style="color: inherit;">
+        <div class="card hoverable blog-card">
+          <div class="card-content">
+            <div class="blog-meta"><span class="blog-category">Politika</span><span class="blog-date">2026</span></div>
+            <span class="card-title"><strong>Beindult a választási szezon</strong></span>
+            <p>Már csak 24 nap van a magyar választásig. Várakozások a kampány hajrájáról, politikai előadásokról és arról, hogyan befolyásolhatja az eredmény a következő éveket.</p>
+          </div>
+          <div class="card-action">Olvasd tovább <span class="arrow">→</span></div>
+        </div>
+      </a>
+    </div>
+    <div class="col s12 m6">
+      <a href="/blog-9" style="color: inherit;">
+        <div class="card hoverable blog-card">
+          <div class="card-content">
+            <div class="blog-meta"><span class="blog-category">TBSZ</span><span class="blog-date">2026</span></div>
+            <span class="card-title"><strong>Az első TBSZ mozgatás tanulságai</strong></span>
+            <p>Hat év befektetés után először kellett lejáró TBSZ-t mozgatnom. Tranzakciós díjak, többnapos újrabefektetés és néhány tanulság a következő transzferhez.</p>
+          </div>
+          <div class="card-action">Olvasd tovább <span class="arrow">→</span></div>
+        </div>
+      </a>
+    </div>
+    <div class="col s12 m6">
+      <a href="/blog-8" style="color: inherit;">
+        <div class="card hoverable blog-card">
+          <div class="card-content">
+            <div class="blog-meta"><span class="blog-category">FIRE</span><span class="blog-date">2026</span></div>
+            <span class="card-title"><strong>Visszatekintés 2025-re és előretekintés 2026-ra</strong></span>
+            <p>2025 végére sikerült elérnem a FIRE célomat, a nagyjából 600 ezer eurós vagyont. Visszatekintés a portfólióra és arra, mi következik 2026-ban.</p>
+          </div>
+          <div class="card-action">Olvasd tovább <span class="arrow">→</span></div>
+        </div>
+      </a>
+    </div>
     <div class="col s12 m6">
       <a href="/blog-7" style="color: inherit;">
         <div class="card hoverable blog-card">
