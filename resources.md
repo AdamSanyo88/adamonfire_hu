@@ -12,15 +12,32 @@ permalink: /resources
   margin-top: 8px;
 }
 
-.resources-page .resources-intro {
-  margin: 8px 0 34px;
-  padding: 22px 26px;
-  border-radius: 14px;
-  background: linear-gradient(135deg, #edf4ff 0%, #e3edff 100%);
-  border: 1px solid #d5e3ff;
-  color: #17345f;
-  font-size: 1.08rem;
-  line-height: 1.7;
+.resources-header {
+  margin: 55px 0 40px;
+}
+
+.resources-header .eyebrow {
+  margin-bottom: 8px;
+  color: #2962ff;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.resources-header h1 {
+  margin: 0;
+  font-size: 48px;
+  font-weight: 700;
+  letter-spacing: -1.5px;
+}
+
+.resources-header p {
+  max-width: 650px;
+  margin-top: 12px;
+  color: #666;
+  font-size: 18px;
+  line-height: 1.6;
 }
 
 .resources-page .section > h4 {
@@ -99,25 +116,31 @@ permalink: /resources
 }
 
 @media only screen and (max-width: 600px) {
-  .resources-page .resources-intro {
-    padding: 18px 20px;
+  .resources-header {
+    margin: 35px 0 30px;
   }
+
+  .resources-header h1 {
+    font-size: 38px;
+  }
+
+  .resources-header p {
+    font-size: 16px;
+  }
+
   .resources-page .section > h4 {
     font-size: 1.65rem;
   }
 }
 </style>
 
-<h1 class="page-title">{{ page.title | escape }}</h1>
-    
-<div class="container resources-page">
+<div class="resources-header">
+  <div class="eyebrow">Adam on FIRE</div>
+  <h1>{{ page.title | escape }}</h1>
+  <p>Hasznos linkek, kalkulátorok, prezentációk és videók, amelyek segíthetnek a saját FIRE-utadat megtervezni és a pénzügyeidet tudatosabban kezelni.</p>
+</div>
 
-  <div class="section">
-    <p class="resources-intro">
-      Ez az oldal több hasznos linket, kalkulátort és prezentációt mutat be,
-      amelyek segíthetnek a saját FIRE utad megtervezésében.
-    </p>
-  </div>
+<div class="container resources-page">
 
 
   <!-- TBSZ ÉS PORTFÓLIÓ -->
