@@ -233,7 +233,15 @@ permalink: blog-15
 
 <p>Ami még pozitívum - saját portfólió szempontjából -, hogy elkészítettem egy új vizualizációt, amit majd az év végi kiértékeléshez fogok használni. Ez gyakorlatilag megmutatja, mennyi hozamom is volt a portfólióm különböző elemeiből. Egyelőre a szeptemberi állapot enyhén elmarad az idei hozamcélomtól - ami 8-8.5% -, de így is szépen hoztak a részvények - a kötvények és a többi eszközosztály kevésbé.</p>
 
-<p><img src="../images/blog-15-pic-2.png" alt="Yearly portfolio gains by investment type"></p>
+<p><img src="../images/blog-15-pic-2.png alt="Yearly portfolio gains by investment type" style="
+       max-height: 500px;
+       max-width: 100%;
+       width: auto;
+       height: auto;
+       display: block;
+       margin: 30px auto;
+       object-fit: contain;
+     "></p>
 
 <p>De még van 3 hónap, jönnek a félidős választások, és lehet, hogy idén is nagy rally lesz ősszel, akárcsak 2024-ben volt Trump győzelem után. Ezúttal mondjuk nem tudom, hogy a piac mit szólnak egy Demokrata győzelemhez (jelenleg majdnem 50-50% az esély, hogy a Demokratáknak meglesz a szenátus is), tartok tőle, hogy a dollár gyengülne ebben az esetben. De persze fontos lenne, hogy Trump és a Republikánus párt kapjon egy pofont, mert amit az amerikai adósságfinanszírozással csinálnak, az nagyon nem lesz jó hosszabb távon.</p>
 
