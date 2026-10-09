@@ -816,7 +816,7 @@ function recalc(){
   const correction=pensionCorrection(finalMonthly);
   const correctedMonthly=correction.value;
   const adjustment=correctedMonthly-finalMonthly;
-  resultEl.innerHTML=`${formatFt(correctedMonthly)} <small>havi várható nyugdíj (tervezett korrekcióval)</small>`;
+  resultEl.innerHTML=`${formatFt(correctedMonthly)} <small>havi várható nyugdíj</small>`;
   serviceLabel.textContent=`${years} év`;
 
   infoEl.textContent=
@@ -833,7 +833,7 @@ function recalc(){
        ? `Tervezett nyugdíjkorrekció: <strong>+${formatFt(adjustment)}</strong>${correction.minimum>0 && correctedMonthly===correction.minimum
           ? `<br/>Garantált minimum alkalmazva: <strong>${formatFt(correction.minimum)}</strong> (a számított összeg: ${formatFt(finalMonthly)})`
           : ''}<br/>Korrigált havi nyugdíj: <strong>${formatFt(correctedMonthly)}</strong>`
-       : 'Tervezett nyugdíjkorrekció: nem szükséges'}`;
+       : 'Kiegészítő nyugdíjkorrekció: nem szükséges'}`;
 }
 
 /* === QUICK FILL logic (new) === */
