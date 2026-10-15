@@ -208,7 +208,7 @@ permalink: /resources
                 <strong>Growy.hu portfóliókövető platform</strong>
               </span>
               <p>
-                Használd a <span style="background-color: #fff3a3; color: black; font-weight: bold; padding: 2px 2px; border-radius: px;">ZSUGA</span> kódot, és 10% kedvezménnyel fizethetsz elő a Growy.hu-ra. Én is ezt használom.
+                Használd a <span style="background-color: #fff3a3; color: black; font-weight: bold; padding: 2px 2px; border-radius: px;">ZSUGA</span> kódot, és 10% kedvezménnyel fizethetsz elő a Growy.hu-n. Én is ezt használom.
               </p>
             </div>
             <div class="card-action">

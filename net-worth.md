@@ -210,6 +210,11 @@ input[type=number]{
   .wealth-tax-result{border:1px solid #d7e9ff;border-radius:12px;background:#fff;padding:14px 20px;margin:-8px 0 22px;display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;}
   .wealth-tax-result strong{font-size:1.3rem;color:#0756c9;}
 
+/* Property acquisition controls */
+.property-acquisition{display:flex;flex-wrap:wrap;gap:7px;align-items:center;margin-top:8px}
+.property-acquisition select{display:block!important;visibility:visible!important;opacity:1!important;position:static!important;width:auto!important;min-width:90px;height:36px!important;padding:5px;border:1px solid #ced4da;border-radius:6px;background:white;color:#212529;appearance:auto!important;-webkit-appearance:menulist!important;cursor:pointer}
+.property-index-note{font-size:.8rem;color:#475569;margin-top:5px}
+.property-index-note.warning{color:#9a3412}
 /* === Chart === */
 
 .chart-card{
@@ -256,12 +261,13 @@ input[type=number]{
      <p>Ez a kalkulátor megmutatja, hogy az MNB adatai alapján mennyi nettó vagyonod van a magyar háztartásokhoz képest. A percentilisek (a teljes lakosság 100 egyenlő részre bontva) a Magyar Nemzeti Bank (MNB) 2014, 2017, 2020, és 2023-as adatai alapján készültek, és módosítva lettek a 2023 és 2026 közötti becsült vagyonnövekedéssel. A számítás tartalmazza az elsődleges lakóingatlan értékét és a 2027-ben bevezetendő vagyonadó számítása alapján a cégértéket is, ezért ezeket mindenképpen vedd bele. A számítás forintban történik. A lenti grafikában több időszak vagyoni szintjeit is megnézheted, és ahhoz hasonlíthatod a vagyonod szintjét (de értelemszerűen a 2026-os táblázat tükrözi a jelenlegi vagyoni szinteket).</p>
   </div>
 
+  <p class="small text-muted">Ingatlanoknál a megadott ár a szerzéskori vételár. A KSH országos, összevont nominális lakásárindexével 2026 I. negyedévére indexáljuk, majd levonjuk a jelenlegi fennálló hitelt. A szerzés éve 2007-től választható. A becslés nem helyettesíti az egyedi piaci értékbecslést. <a href="https://www.ksh.gov.hu/stadat_files/lak/hu/lak0013.html" target="_blank" rel="noopener">KSH forrás</a>.</p>
   <table class="table table-bordered bg-white" id="nw-table">
     <thead class="table-light">
       <tr>
         <th style="width:15%">Kategóriák</th>
         <th>Vagyonelemek</th>
-        <th class="text-end" style="width:15%">Piaci ár (Ft)</th>
+        <th class="text-end" style="width:15%">Szerzéskori ár (Ft)</th>
         <th class="text-end" style="width:15%">Hitel összege (Ft)</th>
         <th class="text-end" style="width:15%">Nettó érték</th>
         <th style="width:4%"></th>
@@ -273,7 +279,7 @@ input[type=number]{
       <tr><td colspan="6"><button class="btn btn-outline-secondary" id="add-prop" type="button">➕ Ingatlan hozzáadása</button></td></tr>
 
       <tr class="table-secondary"><td colspan="6">🏢 Céges részesedés (nem tőzsdei társaság), 500 millió Ft-os tőkéig</td></tr>
-      <tr data-type="business">
+      <tr id="business-template" data-type="business">
         <td>🏢</td>
         <td>
           <div class="fw-semibold mb-2">Cégértékelés a 2027-ben bevezetendő vagyonadó alapján</div>
@@ -284,14 +290,16 @@ input[type=number]{
             <label>2026 adózott eredmény (Ft)<input type="number" data-business="profit2026" step="1" value="0"></label>
             <label>Tulajdoni hányad (%)<input type="number" data-business="ownership" min="0" max="100" step="0.01" value="100"></label>
           </div>
-          <div id="business-detail" class="small text-muted mt-2">Számított hozamérték: Ft 0</div>
+          <div class="business-detail small text-muted mt-2">Számított hozamérték: Ft 0</div>
           <div class="small text-muted mt-1">500 millió Ft vagy magasabb saját tőke esetén a rejtett tartalékok miatt a kalkuláció nem alkalmazható. A 33–50% közötti kisebbségi részesedésre 25%, 33% alatt 30% értékcsökkentés érvényesül. Holdingtársaságokra eltérő szabály vonatkozik.</div>
         </td>
         <td><input type="number" data-field="value" value="0" disabled aria-label="Számított cégérték"></td>
         <td><input type="number" data-field="debt" value="0" disabled></td>
         <td class="text-end mono" data-cell="net">Ft 0</td>
-        <td></td>
+        <td><button class="btn btn-sm btn-outline-danger remove-business" type="button" aria-label="Cég törlése">✖</button></td>
       </tr>
+      <tr id="business-anchor"></tr>
+      <tr><td colspan="6"><button class="btn btn-outline-secondary" id="add-business" type="button">➕ Cég hozzáadása</button></td></tr>
 
       <tr class="table-secondary"><td colspan="6">📊 Befektetések</td></tr>
       <tr data-type="inv"><td>📦</td><td>Nyugdíjpénztár</td>
@@ -530,22 +538,140 @@ input[type=number]{
     chart.update();
   }
 
+  // KSH lakáspiaci árindex, összevont nominális, 2015 éves átlag = 100.
+  // 2010-2020: KSH STADAT lak0013 éves országos összevont tiszta árindex.
+  // 2007-2009: KSH 2007-es bázisú HASZNÁLTLAKÁS-árindexből láncolt becslés,
+  //            a 2010-es országos összevont indexhez illesztve (nem azonos mutató!).
+  // 2021-2026 Q1: KSH lak0036 negyedéves összevont árindex.
+  // 2022 Q2 és 2024 Q3: az előző negyedévi változásból számolt, kerekített érték.
+  // 2007-től használható; 2007–2009 láncolt becslés.
+  const KSH_HOUSE_ANNUAL = Object.freeze({
+    2007: 97.83088235,
+    2008: 99.88970588,
+    2009: 94.22794118,
+    2010: 92.64705882,
+    2011: 90.07352941,
+    2012: 87.13235294,
+    2013: 84.92647059,
+    2014: 88.23529412,
+    2015: 100,
+    2016: 113.60294118,
+    2017: 127.20588235,
+    2018: 145.22058824,
+    2019: 169.48529412,
+    2020: 176.83823529
+  });
+  const KSH_HOUSE_PRICE_INDEX = Object.freeze({
+    "2021-Q1": 192.64705882,
+    "2021-Q2": 201.10294118,
+    "2021-Q3": 208.45588235,
+    "2021-Q4": 216.17647059,
+    "2022-Q1": 237.13235294,
+    "2022-Q2": 250.73529412,
+    "2022-Q3": 258.45588235,
+    "2022-Q4": 254.04411765,
+    "2023-Q1": 264.33823529,
+    "2023-Q2": 266.91176471,
+    "2023-Q3": 268.01470588,
+    "2023-Q4": 272.79411765,
+    "2024-Q1": 294.48529412,
+    "2024-Q2": 300,
+    "2024-Q3": 303.30882353,
+    "2024-Q4": 315.07352941,
+    "2025-Q1": 349.26470588,
+    "2025-Q2": 355.14705882,
+    "2025-Q3": 376.10294118,
+    "2025-Q4": 390.07352941,
+    "2026-Q1": 381.25
+  });
+  // A közös skála 2015=100; az indexálási arányok a bázisváltással nem változnak.
+  const LATEST_HOUSE_PERIOD = "2026-Q1";
+  const LATEST_HOUSE_INDEX = KSH_HOUSE_PRICE_INDEX[LATEST_HOUSE_PERIOD];
+  const latestAcquisitionYear = 2026;
+  // Currency inputs use comma grouping; percentages remain ordinary numeric fields.
+  function moneyNumber(value){
+    const cleaned=String(value??'').replace(/[,\s\u00a0\u202f]/g,'');
+    const n=Number(cleaned);
+    return Number.isFinite(n)?n:0;
+  }
+  function groupMoney(value){
+    const raw=String(value??'').replace(/[^0-9-]/g,'');
+    const negative=raw.startsWith('-')?'-':'';
+    const digits=raw.replace(/-/g,'');
+    return negative+digits.replace(/\B(?=(\d{3})+(?!\d))/g,',');
+  }
+  function formatMoneyInput(input){
+    const before=input.value;
+    const cursor=input.selectionStart??before.length;
+    const count=before.slice(0,cursor).replace(/[^0-9]/g,'').length;
+    input.value=groupMoney(before);
+    let pos=0,seen=0;
+    while(pos<input.value.length && seen<count){if(/\d/.test(input.value[pos]))seen++;pos++;}
+    if(input===document.activeElement && input.setSelectionRange)input.setSelectionRange(pos,pos);
+  }
+  function initMoneyInputs(root=document){
+    root.querySelectorAll('input[data-field="value"],input[data-field="debt"],input[data-business]:not([data-business="ownership"])').forEach(input=>{
+      input.type='text'; input.inputMode='numeric'; input.setAttribute('autocomplete','off');
+      input.value=groupMoney(input.value);
+    });
+  }
+  function propertyValuation(row){
+    const price=Math.max(0,moneyNumber(row.querySelector('[data-field="value"]').value)||0);
+    const year=Number(row.querySelector('[data-acquisition="year"]').value);
+    const quarter=Number(row.querySelector('[data-acquisition="quarter"]').value);
+    const note=row.querySelector('.property-index-note');
+    const period=`${year}-Q${quarter}`;
+    const isAnnual=year>=2007 && year<=2020;
+    const sourceIndex=isAnnual ? KSH_HOUSE_ANNUAL[year] : KSH_HOUSE_PRICE_INDEX[period];
+    if(year<2007 || year>latestAcquisitionYear || quarter<1 || quarter>4 ||
+       (year===2026 && quarter>1)){
+      note.textContent='Érvénytelen szerzési idő: 2007 I. és 2026 I. negyedév között válassz.';
+      note.classList.add('warning');
+      return null;
+    }
+    if(sourceIndex===undefined){
+      note.textContent='Ehhez az időszakhoz nincs indexadat.';
+      note.classList.add('warning');
+      return null;
+    }
+    const result=Math.round(price*LATEST_HOUSE_INDEX/sourceIndex);
+    note.textContent=`${isAnnual ? 'Éves index (a negyedév nem számít)' : 'Negyedéves index'}: ${sourceIndex.toLocaleString('hu-HU')} → ${LATEST_HOUSE_INDEX.toLocaleString('hu-HU')} · Szorzó: ${(LATEST_HOUSE_INDEX/sourceIndex).toFixed(3)} · Indexált érték: ${fmtFt(result)} (2026 I. n.év)${year<=2009 ? ' · 2007–2009: közelítő, használtlakás-indexből láncolt' : ''}`;
+    note.classList.remove('warning');
+    return result;
+  }
   function addProperty(){
     const anchor=document.getElementById("prop-anchor");
     const tr=document.createElement("tr"); tr.dataset.type="prop";
-    tr.innerHTML=`<td>🏠</td><td>Ingatlan</td>
-      <td><input type="number" data-field="value" value="0"></td>
+    tr.innerHTML=`<td>🏠</td><td>Ingatlan
+        <div class="property-acquisition"><span class="small">Szerzés ideje:</span>
+        <select data-acquisition="year" aria-label="Szerzés éve">${Array.from({length:20},(_,i)=>2007+i).map(y=>`<option value="${y}" ${y===2026?'selected':''}>${y}</option>`).join('')}</select>
+        <select data-acquisition="quarter" aria-label="Szerzés negyedéve">${[1,2,3,4].map(q=>`<option value="${q}" ${q===1?'selected':''}>${q}. negyedév</option>`).join('')}</select></div>
+        <div class="property-index-note"></div></td>
+      <td><input type="number" data-field="value" value="0" min="0" aria-label="Szerzéskori ár"></td>
       <td><input type="number" data-field="debt" value="0"></td>
       <td class="text-end mono" data-cell="net">Ft 0</td>
       <td><button class="btn btn-sm btn-outline-danger" type="button">✖</button></td>`;
     anchor.parentNode.insertBefore(tr,anchor);
+    initMoneyInputs(tr);
   }
 
-  function businessValue(){
-    const row=document.querySelector('#rows tr[data-type="business"]');
-    if(!row) return 0;
+  function addBusiness(){
+    const template=document.getElementById('business-template');
+    const row=template.cloneNode(true);
+    row.removeAttribute('id');
+    row.querySelectorAll('input[data-business]').forEach(input=>{
+      input.value=input.dataset.business==='ownership'?'100':'0';
+    });
+    row.querySelector('[data-field="value"]').value='0';
+    row.querySelector('.business-detail').textContent='Számított hozamérték: Ft 0';
+    document.getElementById('business-anchor').before(row);
+    initMoneyInputs(row);
+    compute();
+  }
+
+  function businessValue(row){
     const number=(field)=>{
-      const value=Number(row.querySelector(`[data-business="${field}"]`).value);
+      const value=moneyNumber(row.querySelector(`[data-business="${field}"]`).value);
       return Number.isFinite(value) ? value : 0;
     };
     // Minden adat Ft-ban értendő, nincs ezerforintos átváltás.
@@ -557,8 +683,8 @@ input[type=number]{
     const discount=ownership<33 ? 0.30 : ownership<50 ? 0.25 : 0;
     // A végső részesedésérték legalább nulla, a kijelzés és az összesítés egyezik.
     const value=Math.max(0,Math.round(fullCompanyValue*ownership/100*(1-discount)));
-    row.querySelector('[data-field="value"]').value=value;
-    document.getElementById('business-detail').textContent=
+    row.querySelector('[data-field="value"]').value=groupMoney(value);
+    row.querySelector('.business-detail').textContent=
       `Saját tőke: ${fmtFt(equity)} · Átlagos adózott eredmény: ${fmtFt(average)} · `+
       `Hozamérték: ${fmtFt(yieldValue)} · Teljes cégérték: ${fmtFt(Math.round(fullCompanyValue))} · `+
       `Tulajdoni hányad: ${ownership}% · Kisebbségi értékcsökkentés: ${discount*100}% · `+
@@ -568,15 +694,20 @@ input[type=number]{
 
   function compute(){
     let sumV=0,sumD=0,sumN=0;
-    const computedBusinessValue=businessValue();
     document.querySelectorAll("#rows tr[data-type]").forEach(r=>{
       const t=r.dataset.type;
-      const v=t==="business" ? computedBusinessValue : (+r.querySelector('[data-field="value"]')?.value||0);
-      const d=+r.querySelector('[data-field="debt"]')?.value||0;
+      const rawValue=moneyNumber(r.querySelector('[data-field="value"]')?.value);
+      const indexed=t==="prop" ? propertyValuation(r) : null;
+      const v=t==="business" ? businessValue(r) : t==="prop" ? (indexed===null ? 0 : indexed) : rawValue;
+      const d=moneyNumber(r.querySelector('[data-field="debt"]')?.value);
       let n=0;
-      if(t==="prop") n=v-d;
+      if(t==="prop") n=indexed===null ? 0 : v-d;
       else if(t==="inv"||t==="asset"||t==="business") n=v;
       else if(t==="liab") n=-d;
+      if(t==="prop" && indexed===null){
+        r.querySelector('[data-cell="net"]').textContent='Nincs indexadat';
+        return;
+      }
       sumV+=v; sumD+=d; sumN+=n;
       r.querySelector('[data-cell="net"]').textContent = fmtFt(n);
     });
@@ -609,6 +740,7 @@ input[type=number]{
   }
 
   function initAll(){
+    initMoneyInputs();
     addProperty();
     initChart();
     compute();
@@ -623,14 +755,21 @@ input[type=number]{
   // Események
   document.body.addEventListener("input",e=>{
     if(!e.target.matches("input")) return;
-    if(e.target.matches('[data-business="equity"]') && Number(e.target.value)>=500000001) e.target.value="500000000";
-    if(e.target.matches('[data-business="equity"]') && Number(e.target.value)<0) e.target.value="0";
+    if(e.target.matches('[data-field="value"], [data-field="debt"], [data-business]:not([data-business="ownership"])')) formatMoneyInput(e.target);
+    if(e.target.matches('[data-business="equity"]') && moneyNumber(e.target.value)>=500000000) e.target.value="500,000,000";
+    if(e.target.matches('[data-business="equity"]') && moneyNumber(e.target.value)<0) e.target.value="0";
     if(e.target.matches('[data-business="ownership"]') && Number(e.target.value)>100) e.target.value="100";
     if(e.target.matches('[data-business="ownership"]') && Number(e.target.value)<0) e.target.value="0";
     compute();
   });
   document.addEventListener("click",e=>{
-    if(e.target.id==="add-prop"){ addProperty(); }
+    if(e.target.id==="add-prop"){ addProperty(); compute(); }
+    if(e.target.id==="add-business"){ addBusiness(); }
+    if(e.target.closest('.remove-business')){
+      const row=e.target.closest('tr[data-type="business"]');
+      if(row){row.remove();compute();}
+      return;
+    }
     if(e.target.tagName==="BUTTON" && e.target.closest("tr")?.dataset.type==="prop"){
       e.target.closest("tr").remove(); compute();
     }
@@ -640,6 +779,7 @@ input[type=number]{
     if (e.target && e.target.id === "scale-year") {
       updateChartScale(e.target.value);
     }
+    if(e.target && e.target.matches('[data-acquisition]')) compute();
   });
 })();
 </script>
