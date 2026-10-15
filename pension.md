@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Nyugdíjkalkulátor
-permalink: /pension-test
+permalink: /pension
 ---
 
 <h1 class="page-title">{{ page.title | escape }}</h1>
