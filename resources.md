@@ -157,7 +157,7 @@ permalink: /resources
                 <strong>Tartós Befektetési Számla</strong>
               </span>
               <p>
-                Adóoptimalizálás Magyarországon – információ a Tartós
+                Adóoptimalizálás Magyarországon - információ a Tartós
                 Befektetési Számláról (TBSZ).
               </p>
             </div>
@@ -170,21 +170,20 @@ permalink: /resources
 
 
       <div class="col s12 m6">
-        <a href="https://docs.google.com/spreadsheets/d/1bqick4Vy13FZMrMZ44g9YiPqF8-Wobd7CH5pAhfl2Bc/copy"
+        <a href="https://www.growy.hu/?via=zsugazsonglorok"
            target="_blank"
            style="color: inherit;">
           <div class="card hoverable" style="height: 100%;">
             <div class="card-content">
               <span class="card-title">
-                <strong>Portfólió teljesítményének követése</strong>
+                <strong>Growy.hu portfóliókövető platform</strong>
               </span>
               <p>
-                Egyszerű, félautomatikusan kezelhető Google Sheets
-                táblázat a befektetési portfóliód követésére.
+                Használd a <strong>ZSUGA</strong> kódot, és 10% kedvezménnyel fizethetsz elő a Growy.hu-ra. Én is ezt használom.
               </p>
             </div>
             <div class="card-action">
-              Táblázat megnyitása →
+              Tovább a Growy.hu-ra →
             </div>
           </div>
         </a>
@@ -205,11 +204,11 @@ permalink: /resources
           <div class="card hoverable">
             <div class="card-content">
               <span class="card-title">
-                <strong>Nettó vagyon kalkulátor</strong>
+                <strong>Nettó vagyon és vagyonadó kalkulátor</strong>
               </span>
               <p>
-                Milyen gazdag voltál 2025-ben Magyarországon?
-                Hasonlítsd össze a nettó vagyonodat.
+                Milyen gazdag vagy 2026-ban Magyarországon? Kell-e fizetned vagyonadót?
+                Számold ki a nettó vagyonodat.
               </p>
             </div>
             <div class="card-action">
