@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Nettó vagyon kalkulátor
+title: Nettó vagyon és vagyonadó kalkulátor
 permalink: /net-worth-test
 ---
 
@@ -251,7 +251,7 @@ input[type=number]{
 
 <div class="container py-4">
 <div class="calculator-shell">
-  <div class="calculator-kicker">Interaktív kalkulátor</div>
+  <div class="calculator-kicker">Nettó vagyon és vagyonadó kalkulátor</div>
   <div class="d-flex justify-content-between align-items-center mb-4">
      <p>Ez a kalkulátor megmutatja, hogy az MNB adatai alapján mennyi nettó vagyonod van a magyar háztartásokhoz képest. A percentilisek (a teljes lakosság 100 egyenlő részre bontva) a Magyar Nemzeti Bank (MNB) 2014, 2017, 2020, és 2023-as adatai alapján készültek, és módosítva lettek a 2023 és 2025 közötti becsült vagyonnövekedéssel. A számítás tartalmazza az elsődleges lakóingatlan értékét is, ezért azt mindenképpen vedd bele. A számítás forintban történik (400 Ft-os euró-forint árfolyamot figyelembe véve). A lenti grafikában több időszak vagyoni szintjeit is megnézheted, és ahhoz hasonlíthatod a vagyonod szintjét (de értelemszerűen a 2025-ös táblázat tükrözi a jelenlegi vagyoni szinteket).</p>
   </div>
@@ -272,13 +272,13 @@ input[type=number]{
       <tr id="prop-anchor"></tr>
       <tr><td colspan="6"><button class="btn btn-outline-secondary" id="add-prop" type="button">➕ Ingatlan hozzáadása</button></td></tr>
 
-      <tr class="table-secondary"><td colspan="6">🏢 Céges részesedés (nem tőzsdei társaság)</td></tr>
+      <tr class="table-secondary"><td colspan="6">🏢 Céges részesedés (nem tőzsdei társaság), 500 millió Ft-os tőkéig</td></tr>
       <tr data-type="business">
         <td>🏢</td>
         <td>
-          <div class="fw-semibold mb-2">Cégértékelés a 2027-es vagyonadó-tervezet alapján</div>
+          <div class="fw-semibold mb-2">Cégértékelés a 2027-ben bevezetendő vagyonadó alapján</div>
           <div class="business-input-grid">
-            <label>Saját tőke (Ft)<input type="number" data-business="equity" min="0" max="499999999" step="1" value="0"></label>
+            <label>Saját tőke (Ft)<input type="number" data-business="equity" min="0" max="500000000" step="1" value="0"></label>
             <label>2024 adózott eredmény (Ft)<input type="number" data-business="profit2024" step="1" value="0"></label>
             <label>2025 adózott eredmény (Ft)<input type="number" data-business="profit2025" step="1" value="0"></label>
             <label>2026 adózott eredmény (Ft)<input type="number" data-business="profit2026" step="1" value="0"></label>
@@ -351,7 +351,7 @@ input[type=number]{
   </div>
 
   <div class="wealth-tax-result" role="status" aria-live="polite">
-    <div><div class="fw-semibold">Fizetendő vagyonadó 2027-ben</div><div class="small text-muted">Becsült összeg a 2026. december 31-i nettó vagyon alapján, kedvezmények nélkül; a jogszabály még tervezet.</div></div>
+    <div><div class="fw-semibold">Fizetendő vagyonadó 2027-ben</div><div class="small text-muted">Becsült összeg a 2026. december 31-i nettó vagyon alapján, kedvezmények nélkül</div></div>
     <strong class="mono" id="wealth-tax">Ft 0</strong>
   </div>
 
@@ -604,7 +604,7 @@ input[type=number]{
   // Események
   document.body.addEventListener("input",e=>{
     if(!e.target.matches("input")) return;
-    if(e.target.matches('[data-business="equity"]') && Number(e.target.value)>=500000000) e.target.value="499999999";
+    if(e.target.matches('[data-business="equity"]') && Number(e.target.value)>=500000001) e.target.value="500000000";
     if(e.target.matches('[data-business="equity"]') && Number(e.target.value)<0) e.target.value="0";
     if(e.target.matches('[data-business="ownership"]') && Number(e.target.value)>100) e.target.value="100";
     if(e.target.matches('[data-business="ownership"]') && Number(e.target.value)<0) e.target.value="0";
