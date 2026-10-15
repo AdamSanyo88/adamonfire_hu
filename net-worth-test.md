@@ -449,8 +449,8 @@ input[type=number]{
     return `${CURRENCY} ${Number(n||0).toLocaleString(LOCALE)}`;
   }
 
-  // Alapértelmezett év: 2025
-  let currentYear = "2025";
+  // Alapértelmezett év: 2026
+  let currentYear = "2026";
   let PCT_THRESHOLDS = PCT_DATA[currentYear].slice();
 
   let chart;
