@@ -132,6 +132,35 @@ permalink: /resources
     font-size: 1.65rem;
   }
 }
+
+/* Calculator cards: consistent two-column layout and equal heights */
+.resources-page .calculator-grid {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+.resources-page .calculator-grid > .col {
+  float: none;
+  display: flex;
+  flex-direction: column;
+}
+.resources-page .calculator-grid > .col > a {
+  display: flex;
+  flex: 1;
+  color: inherit;
+}
+.resources-page .calculator-grid .card {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  width: 100%;
+}
+.resources-page .calculator-grid .card-content {
+  flex: 1;
+}
+.resources-page .calculator-grid .card-action {
+  margin-top: auto;
+}
 </style>
 
 <div class="resources-header">
@@ -197,7 +226,7 @@ permalink: /resources
   <div class="section">
     <h4 style="margin-bottom: 25px;">Kalkulátorok</h4>
 
-    <div class="row">
+    <div class="row calculator-grid">
 
       <div class="col s12 m6">
         <a href="net-worth" style="color: inherit;">

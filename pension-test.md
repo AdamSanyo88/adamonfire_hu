@@ -358,8 +358,8 @@ input[type="number"]:focus {
 	<li>A kapott összegeket el kell osztani a teljes szolgálati idővel (napokban számolva). Ezt az összeget utána fel kell szorozni 365-tel, majd osztani 12-vel, így megkapva a havi nettó életpálya átlagkeresetet.</li>
 	<li>Ha az így kapott összeg meghaladja a 372 ezer Ft-ot havonta, akkor degresszálni kell (először 90%-kal, majd 421 ezer Ft felett 80%-kal). </li>
 	<li>Végül az így kapott összeget meg kell szorozni a szolgálati évekre eső szorzóval (20 év után ez 53%, 30 évnél 68%, 40 évnél 80%, stb.). A maximális szolgálati idő 50 év, a minimális 15 év (de a kalkulátor 10-15 év közötti időszakra is tud számítást végezni).</li>
-	<li><strong>Fontos:</strong> 2027. január 1-től a minimálnyugdíj összege 120 ezer Ft. Ha valaki nyugdíja 108 ezer és 146 ezer Ft közé esik, akkor 1000 és 12000 Ft közötti kompenzációt kap azért, hogy nyugdíja elérje a jogszabályban meghatározott minimum összeget.</li>
 	</ol>
+	<p><strong>Fontos:</strong> 2027. január 1-től a minimálnyugdíj összege 120 ezer Ft. Ha valaki nyugdíja 108 ezer és 146 ezer Ft közé esik, akkor 1000 és 12000 Ft közötti kompenzációt kap azért, hogy nyugdíja elérje a jogszabályban meghatározott minimum összeget.</p>
 	<p>Az adatok tájékoztató jellegűek, pontosabb számításra a <a href="https://www.allamkincstar.gov.hu/nyugdij/sajat-jogu-ellatasok/oregsegi-nyugdij/onkiszolgalo-nyugdijkalkulator">Magyar Államkincstár nyugdíjkalkulátora</a> javasolt.</p>
 
   <div class="calculator-shell">

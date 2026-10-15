@@ -49,7 +49,7 @@ permalink: /tbsz
           </tr>
           <tr>
             <td><strong>5 év után</strong></td>
-            <td class="ok"><strong>Adómentes</strong> hozam – sem SZJA, sem szochó nem fizetendő a TBSZ-en elért jövedelem után.</td>
+            <td class="ok"><strong>Adómentes</strong> hozam (sem SZJA, sem szochó nem fizetendő a TBSZ-en elért jövedelem után).</td>
           </tr>
         </tbody>
       </table>
@@ -67,7 +67,6 @@ permalink: /tbsz
           <p><strong>Fegyelmezett megtakarítás:</strong> a gyűjtőév és a lekötés szerkezete támogatja a hosszú távú szemléletet.</p>
           <p><strong>Rugalmasság a végén:</strong> 5 év után adómentes zárás vagy gördítés új TBSZ számlára</p>
 		  <p><strong>FIRE tipp:</strong> Ha 5+1 TBSZ számlát tudsz nyitni 6 egymást követő évben, akkor a 6. évtől kezdve gyakorlatilag teljesen adómentesen tudsz megtakarítani, hiszen a 6. évben az első lejáró TBSZ számlád hozamaiból tudod finanszírozni a következő TBSZ számládat. Így folyamatosan görgetheted magad előtt az adómentesen felhalmozott nyereséged.</p>
-		  <br/>
 		  <p>Ezt a görgetett TBSZ számlás megoldást használom én is a FIRE utam során.</p>
         </div>
       </div>
