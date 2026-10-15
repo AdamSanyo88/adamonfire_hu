@@ -525,17 +525,25 @@ input[type=number]{
   function businessValue(){
     const row=document.querySelector('#rows tr[data-type="business"]');
     if(!row) return 0;
-    const number=(field)=>Number(row.querySelector(`[data-business="${field}"]`).value)||0;
+    const number=(field)=>{
+      const value=Number(row.querySelector(`[data-business="${field}"]`).value);
+      return Number.isFinite(value) ? value : 0;
+    };
+    // Minden adat Ft-ban értendő, nincs ezerforintos átváltás.
     const equity=Math.max(0,Math.min(499999999,number('equity')));
     const ownership=Math.max(0,Math.min(100,number('ownership')));
     const average=(number('profit2024')+number('profit2025')+number('profit2026'))/3;
     const yieldValue=Math.max(0,average)/0.15;
-    const baseValue=Math.max(0,(equity+2*yieldValue)/3)*ownership/100;
+    const fullCompanyValue=(equity+2*yieldValue)/3;
     const discount=ownership<33 ? 0.30 : ownership<50 ? 0.25 : 0;
-    const value=baseValue*(1-discount);
-    row.querySelector('[data-field="value"]').value=Math.round(value);
+    // A végső részesedésérték legalább nulla, a kijelzés és az összesítés egyezik.
+    const value=Math.max(0,Math.round(fullCompanyValue*ownership/100*(1-discount)));
+    row.querySelector('[data-field="value"]').value=value;
     document.getElementById('business-detail').textContent=
-      `Átlagos adózott eredmény: ${fmtFt(average)} · Hozamérték: ${fmtFt(yieldValue)} · Kisebbségi értékcsökkentés: ${discount*100}%`;
+      `Saját tőke: ${fmtFt(equity)} · Átlagos adózott eredmény: ${fmtFt(average)} · `+
+      `Hozamérték: ${fmtFt(yieldValue)} · Teljes cégérték: ${fmtFt(Math.round(fullCompanyValue))} · `+
+      `Tulajdoni hányad: ${ownership}% · Kisebbségi értékcsökkentés: ${discount*100}% · `+
+      `Számított részesedésérték: ${fmtFt(value)}`;
     return value;
   }
 
