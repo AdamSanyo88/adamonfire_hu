@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Nettó vagyon és vagyonadó kalkulátor
-permalink: /net-worth-test
+permalink: /net-worth
 ---
 
 <h1 class="page-title">{{ page.title | escape }}</h1>
@@ -212,7 +212,7 @@ input[type=number]{
 
 /* Property acquisition controls */
 .property-acquisition{display:flex;flex-wrap:wrap;gap:7px;align-items:center;margin-top:8px}
-.property-acquisition select{width:auto;min-width:90px;padding:5px;border:1px solid #ced4da;border-radius:6px;background:white}
+.property-acquisition select{display:block!important;visibility:visible!important;opacity:1!important;position:static!important;width:auto!important;min-width:90px;height:36px!important;padding:5px;border:1px solid #ced4da;border-radius:6px;background:white;color:#212529;appearance:auto!important;-webkit-appearance:menulist!important;cursor:pointer}
 .property-index-note{font-size:.8rem;color:#475569;margin-top:5px}
 .property-index-note.warning{color:#9a3412}
 /* === Chart === */
@@ -586,8 +586,35 @@ input[type=number]{
   const LATEST_HOUSE_PERIOD = "2026-Q1";
   const LATEST_HOUSE_INDEX = KSH_HOUSE_PRICE_INDEX[LATEST_HOUSE_PERIOD];
   const latestAcquisitionYear = 2026;
+  // Currency inputs use comma grouping; percentages remain ordinary numeric fields.
+  function moneyNumber(value){
+    const cleaned=String(value??'').replace(/[,\s\u00a0\u202f]/g,'');
+    const n=Number(cleaned);
+    return Number.isFinite(n)?n:0;
+  }
+  function groupMoney(value){
+    const raw=String(value??'').replace(/[^0-9-]/g,'');
+    const negative=raw.startsWith('-')?'-':'';
+    const digits=raw.replace(/-/g,'');
+    return negative+digits.replace(/\B(?=(\d{3})+(?!\d))/g,',');
+  }
+  function formatMoneyInput(input){
+    const before=input.value;
+    const cursor=input.selectionStart??before.length;
+    const count=before.slice(0,cursor).replace(/[^0-9]/g,'').length;
+    input.value=groupMoney(before);
+    let pos=0,seen=0;
+    while(pos<input.value.length && seen<count){if(/\d/.test(input.value[pos]))seen++;pos++;}
+    if(input===document.activeElement && input.setSelectionRange)input.setSelectionRange(pos,pos);
+  }
+  function initMoneyInputs(root=document){
+    root.querySelectorAll('input[data-field="value"],input[data-field="debt"],input[data-business]:not([data-business="ownership"])').forEach(input=>{
+      input.type='text'; input.inputMode='numeric'; input.setAttribute('autocomplete','off');
+      input.value=groupMoney(input.value);
+    });
+  }
   function propertyValuation(row){
-    const price=Math.max(0,Number(row.querySelector('[data-field="value"]').value)||0);
+    const price=Math.max(0,moneyNumber(row.querySelector('[data-field="value"]').value)||0);
     const year=Number(row.querySelector('[data-acquisition="year"]').value);
     const quarter=Number(row.querySelector('[data-acquisition="quarter"]').value);
     const note=row.querySelector('.property-index-note');
@@ -623,13 +650,14 @@ input[type=number]{
       <td class="text-end mono" data-cell="net">Ft 0</td>
       <td><button class="btn btn-sm btn-outline-danger" type="button">✖</button></td>`;
     anchor.parentNode.insertBefore(tr,anchor);
+    initMoneyInputs(tr);
   }
 
   function businessValue(){
     const row=document.querySelector('#rows tr[data-type="business"]');
     if(!row) return 0;
     const number=(field)=>{
-      const value=Number(row.querySelector(`[data-business="${field}"]`).value);
+      const value=moneyNumber(row.querySelector(`[data-business="${field}"]`).value);
       return Number.isFinite(value) ? value : 0;
     };
     // Minden adat Ft-ban értendő, nincs ezerforintos átváltás.
@@ -641,7 +669,7 @@ input[type=number]{
     const discount=ownership<33 ? 0.30 : ownership<50 ? 0.25 : 0;
     // A végső részesedésérték legalább nulla, a kijelzés és az összesítés egyezik.
     const value=Math.max(0,Math.round(fullCompanyValue*ownership/100*(1-discount)));
-    row.querySelector('[data-field="value"]').value=value;
+    row.querySelector('[data-field="value"]').value=groupMoney(value);
     document.getElementById('business-detail').textContent=
       `Saját tőke: ${fmtFt(equity)} · Átlagos adózott eredmény: ${fmtFt(average)} · `+
       `Hozamérték: ${fmtFt(yieldValue)} · Teljes cégérték: ${fmtFt(Math.round(fullCompanyValue))} · `+
@@ -655,10 +683,10 @@ input[type=number]{
     const computedBusinessValue=businessValue();
     document.querySelectorAll("#rows tr[data-type]").forEach(r=>{
       const t=r.dataset.type;
-      const rawValue=+r.querySelector('[data-field="value"]')?.value||0;
+      const rawValue=moneyNumber(r.querySelector('[data-field="value"]')?.value);
       const indexed=t==="prop" ? propertyValuation(r) : null;
       const v=t==="business" ? computedBusinessValue : t==="prop" ? (indexed===null ? 0 : indexed) : rawValue;
-      const d=+r.querySelector('[data-field="debt"]')?.value||0;
+      const d=moneyNumber(r.querySelector('[data-field="debt"]')?.value);
       let n=0;
       if(t==="prop") n=indexed===null ? 0 : v-d;
       else if(t==="inv"||t==="asset"||t==="business") n=v;
@@ -699,6 +727,7 @@ input[type=number]{
   }
 
   function initAll(){
+    initMoneyInputs();
     addProperty();
     initChart();
     compute();
@@ -713,8 +742,9 @@ input[type=number]{
   // Események
   document.body.addEventListener("input",e=>{
     if(!e.target.matches("input")) return;
-    if(e.target.matches('[data-business="equity"]') && Number(e.target.value)>=500000001) e.target.value="500000000";
-    if(e.target.matches('[data-business="equity"]') && Number(e.target.value)<0) e.target.value="0";
+    if(e.target.matches('[data-field="value"], [data-field="debt"], [data-business]:not([data-business="ownership"])')) formatMoneyInput(e.target);
+    if(e.target.matches('[data-business="equity"]') && moneyNumber(e.target.value)>=500000000) e.target.value="500,000,000";
+    if(e.target.matches('[data-business="equity"]') && moneyNumber(e.target.value)<0) e.target.value="0";
     if(e.target.matches('[data-business="ownership"]') && Number(e.target.value)>100) e.target.value="100";
     if(e.target.matches('[data-business="ownership"]') && Number(e.target.value)<0) e.target.value="0";
     compute();
