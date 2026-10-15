@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Nyugdíjkalkulátor
-permalink: /pension
+permalink: /pension-test
 ---
 
 <h1 class="page-title">{{ page.title | escape }}</h1>
@@ -359,6 +359,7 @@ input[type="number"]:focus {
 	<li>Ha az így kapott összeg meghaladja a 372 ezer Ft-ot havonta, akkor degresszálni kell (először 90%-kal, majd 421 ezer Ft felett 80%-kal). </li>
 	<li>Végül az így kapott összeget meg kell szorozni a szolgálati évekre eső szorzóval (20 év után ez 53%, 30 évnél 68%, 40 évnél 80%, stb.). A maximális szolgálati idő 50 év, a minimális 15 év (de a kalkulátor 10-15 év közötti időszakra is tud számítást végezni).</li>
 	</ol>
+	<p><strong>Fontos:</strong> 2027. január 1-től a minimálnyugdíj összege 120 ezer Ft. Ha valaki nyugdíja 108 ezer és 146 ezer Ft közé esik, akkor 1000 és 12000 Ft közötti kompenzációt kap azért, hogy nyugdíja elérje a jogszabályban meghatározott minimum összeget.</p>
 	<p>Az adatok tájékoztató jellegűek, pontosabb számításra a <a href="https://www.allamkincstar.gov.hu/nyugdij/sajat-jogu-ellatasok/oregsegi-nyugdij/onkiszolgalo-nyugdijkalkulator">Magyar Államkincstár nyugdíjkalkulátora</a> javasolt.</p>
 
   <div class="calculator-shell">
@@ -368,7 +369,7 @@ input[type="number"]:focus {
         <h3>Számold ki a várható havi nyugdíjad</h3>
         <p>Add meg a szolgálati idődet és az éves kereseteidet. Az eredmény minden változtatásra automatikusan frissül.</p>
       </div>
-      <span class="calculator-badge">2026-os számítás</span>
+      <span class="calculator-badge">2027-es számítás</span>
     </div>
 
     <div class="summary-grid">
@@ -442,9 +443,9 @@ input[type="number"]:focus {
 
 <script>
 /* ===== Adatok ===== */
-const YEARS=[1988,1989,1990,1991,1992,1993,1994,1995,1996,1997,1998,1999,2000,2001,2002,2003,2004,2005,2006,2007,2008,2009,2010,2011,2012,2013,2014,2015,2016,2017,2018,2019,2020,2021,2022,2023,2024,2025];
-const YEAR_MULTS=[68.795, 58.849, 48.396, 38.562, 31.788, 27.012, 21.220, 18.843, 16.049, 12.935, 10.925, 9.693, 8.700, 7.489, 6.259, 5.481, 5.181, 4.707, 4.374, 4.244, 3.971, 3.898, 3.648, 3.429, 3.360, 3.202, 3.109, 2.981, 2.768, 2.450, 2.201, 1.976, 1.801, 1.657, 1.410, 1.235, 1.090, 1];
-const ANNUAL_NET=[107616, 126852, 161352, 215208, 267528, 326076, 399708, 466800, 562044, 687600, 813600, 926400, 1051200, 1243200, 1470000, 1646400, 1748400, 1899600, 2054400, 2220000, 2386800, 2397600, 2431200, 2557200, 2676000, 2772000, 2852400, 2972400, 3158400, 3564000, 3958800, 4413600, 4843200, 5265600, 6189192, 7069368, 8008380, 8460000];
+const YEARS=[1988,1989,1990,1991,1992,1993,1994,1995,1996,1997,1998,1999,2000,2001,2002,2003,2004,2005,2006,2007,2008,2009,2010,2011,2012,2013,2014,2015,2016,2017,2018,2019,2020,2021,2022,2023,2024,2025,2026];
+const YEAR_MULTS=[68.795, 58.849, 48.396, 38.562, 31.788, 27.012, 21.220, 18.843, 16.049, 12.935, 10.925, 9.693, 8.700, 7.489, 6.259, 5.481, 5.181, 4.707, 4.374, 4.244, 3.971, 3.898, 3.648, 3.429, 3.360, 3.202, 3.109, 2.981, 2.768, 2.450, 2.201, 1.976, 1.801, 1.657, 1.410, 1.235, 1.090, 1, 1.000];
+const ANNUAL_NET=[107616, 126852, 161352, 215208, 267528, 326076, 399708, 466800, 562044, 687600, 813600, 926400, 1051200, 1243200, 1470000, 1646400, 1748400, 1899600, 2054400, 2220000, 2386800, 2397600, 2431200, 2557200, 2676000, 2772000, 2852400, 2972400, 3158400, 3564000, 3958800, 4413600, 4843200, 5265600, 6189192, 7069368, 8008380, 8460000, 9240000];
 const CONST_TAX_LIMIT=[,,, ,750000,915000,912500,912500,915000,1204500,1565850,1854200,2020320,2197300,2368850,3905500,5307000,6000600,6325450,6748850,7137000,7446000,7453300,7665000,7942200];
 const SERVICE_TABLE={10:33,11:35,12:37,13:39,14:41,15:43,16:45,17:47,18:49,19:51,20:53,21:55,22:57,23:59,24:61,25:63,26:64,27:65,28:66,29:67,30:68,31:69,32:70,33:71,34:72,35:73,36:74,37:75.5,38:77,39:78.5,40:80,41:82,42:84,43:86,44:88,45:90,46:92,47:94,48:96,49:98,50:100};
 
@@ -708,6 +709,20 @@ function progressiveDegression(monthly){
 }
 function formatFt(x){return new Intl.NumberFormat('hu-HU').format(Math.round(x))+' Ft';}
 
+/* ===== Tervezett nyugdijkorrekcio a kiszamitott osszegre ===== */
+function pensionCorrection(amount){
+  if (!Number.isFinite(amount) || amount <= 0) return {value:amount, minimum:0, supplement:0};
+  let supplement=0, minimum=0;
+  if(amount<=108000){minimum=120000;}
+  else if(amount<125000){supplement=12000;}
+  else if(amount<130000){supplement=10000; minimum=137000;}
+  else if(amount<135000){supplement=8000; minimum=140000;}
+  else if(amount<140000){supplement=6000; minimum=143000;}
+  else if(amount<146000){minimum=146000;}
+  const value=Math.max(amount+supplement,minimum);
+  return {value, minimum, supplement};
+}
+
 /* ===== DOM ===== */
 const rowsEl=document.getElementById('rows');
 const serviceRange=document.getElementById('serviceYears');
@@ -799,7 +814,10 @@ function recalc(){
   const monthlyAfterDegression=prog.value;
   const finalMonthly=monthlyAfterDegression*sMult;
 
-  resultEl.innerHTML=`${formatFt(finalMonthly)} <small>havi várható nyugdíj</small>`;
+  const correction=pensionCorrection(finalMonthly);
+  const correctedMonthly=correction.value;
+  const adjustment=correctedMonthly-finalMonthly;
+  resultEl.innerHTML=`${formatFt(correctedMonthly)} <small>havi várható nyugdíj</small>`;
   serviceLabel.textContent=`${years} év`;
 
   infoEl.textContent=
@@ -810,7 +828,13 @@ function recalc(){
      Havi életpálya átlagkereset: <strong>${formatFt(grossMonthlyBeforeDeg)}</strong><br/>
      Degresszió:<br/>- ${prog.parts.join('<br/>- ')}<br/>
      Degresszió utáni havi: <strong>${formatFt(monthlyAfterDegression)}</strong><br/>
-     Szolgálati szorzó: ×<strong>${sMultPct}</strong> → <strong>${formatFt(finalMonthly)}</strong>`;
+     Szolgálati szorzó: ×<strong>${sMultPct}</strong> → <strong>${formatFt(finalMonthly)}</strong><br/>
+     Eredetileg számított havi nyugdíj: <strong>${formatFt(finalMonthly)}</strong><br/>
+     ${adjustment>0
+       ? `Tervezett nyugdíjkorrekció: <strong>+${formatFt(adjustment)}</strong>${correction.minimum>0 && correctedMonthly===correction.minimum
+          ? `<br/>Garantált minimum alkalmazva: <strong>${formatFt(correction.minimum)}</strong> (a számított összeg: ${formatFt(finalMonthly)})`
+          : ''}<br/>Korrigált havi nyugdíj: <strong>${formatFt(correctedMonthly)}</strong>`
+       : 'Kiegészítő nyugdíjkorrekció: nem szükséges'}`;
 }
 
 /* === QUICK FILL logic (new) === */
