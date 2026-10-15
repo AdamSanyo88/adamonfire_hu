@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Nettó vagyon és vagyonadó kalkulátor
-permalink: /net-worth
+permalink: /net-worth-test
 ---
 
 <h1 class="page-title">{{ page.title | escape }}</h1>
