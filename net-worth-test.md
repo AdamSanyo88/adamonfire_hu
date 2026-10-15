@@ -510,9 +510,9 @@ input[type=number]{
 
     chart.data.datasets[0].data = getChartBars();
 
-    // Y-skála fix marad: 0–1.8Mrd, 100M lépés
-    chart.options.scales.y.max = 1800000000;
-    chart.options.scales.y.suggestedMax = 1800000000;
+    // Y-skála fix marad: 0–2Mrd, 100M lépés
+    chart.options.scales.y.max = 2000000000;
+    chart.options.scales.y.suggestedMax = 2000000000;
     chart.options.scales.y.ticks.stepSize = 100000000;
 
     chart.data.datasets[0].backgroundColor = new Array(100).fill("#cfd8dc");
