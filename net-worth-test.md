@@ -279,7 +279,7 @@ input[type=number]{
       <tr><td colspan="6"><button class="btn btn-outline-secondary" id="add-prop" type="button">➕ Ingatlan hozzáadása</button></td></tr>
 
       <tr class="table-secondary"><td colspan="6">🏢 Céges részesedés (nem tőzsdei társaság), 500 millió Ft-os tőkéig</td></tr>
-      <tr data-type="business">
+      <tr id="business-template" data-type="business">
         <td>🏢</td>
         <td>
           <div class="fw-semibold mb-2">Cégértékelés a 2027-ben bevezetendő vagyonadó alapján</div>
@@ -290,14 +290,16 @@ input[type=number]{
             <label>2026 adózott eredmény (Ft)<input type="number" data-business="profit2026" step="1" value="0"></label>
             <label>Tulajdoni hányad (%)<input type="number" data-business="ownership" min="0" max="100" step="0.01" value="100"></label>
           </div>
-          <div id="business-detail" class="small text-muted mt-2">Számított hozamérték: Ft 0</div>
+          <div class="business-detail small text-muted mt-2">Számított hozamérték: Ft 0</div>
           <div class="small text-muted mt-1">500 millió Ft vagy magasabb saját tőke esetén a rejtett tartalékok miatt a kalkuláció nem alkalmazható. A 33–50% közötti kisebbségi részesedésre 25%, 33% alatt 30% értékcsökkentés érvényesül. Holdingtársaságokra eltérő szabály vonatkozik.</div>
         </td>
         <td><input type="number" data-field="value" value="0" disabled aria-label="Számított cégérték"></td>
         <td><input type="number" data-field="debt" value="0" disabled></td>
         <td class="text-end mono" data-cell="net">Ft 0</td>
-        <td></td>
+        <td><button class="btn btn-sm btn-outline-danger remove-business" type="button" aria-label="Cég törlése">✖</button></td>
       </tr>
+      <tr id="business-anchor"></tr>
+      <tr><td colspan="6"><button class="btn btn-outline-secondary" id="add-business" type="button">➕ Cég hozzáadása</button></td></tr>
 
       <tr class="table-secondary"><td colspan="6">📊 Befektetések</td></tr>
       <tr data-type="inv"><td>📦</td><td>Nyugdíjpénztár</td>
@@ -653,9 +655,21 @@ input[type=number]{
     initMoneyInputs(tr);
   }
 
-  function businessValue(){
-    const row=document.querySelector('#rows tr[data-type="business"]');
-    if(!row) return 0;
+  function addBusiness(){
+    const template=document.getElementById('business-template');
+    const row=template.cloneNode(true);
+    row.removeAttribute('id');
+    row.querySelectorAll('input[data-business]').forEach(input=>{
+      input.value=input.dataset.business==='ownership'?'100':'0';
+    });
+    row.querySelector('[data-field="value"]').value='0';
+    row.querySelector('.business-detail').textContent='Számított hozamérték: Ft 0';
+    document.getElementById('business-anchor').before(row);
+    initMoneyInputs(row);
+    compute();
+  }
+
+  function businessValue(row){
     const number=(field)=>{
       const value=moneyNumber(row.querySelector(`[data-business="${field}"]`).value);
       return Number.isFinite(value) ? value : 0;
@@ -670,7 +684,7 @@ input[type=number]{
     // A végső részesedésérték legalább nulla, a kijelzés és az összesítés egyezik.
     const value=Math.max(0,Math.round(fullCompanyValue*ownership/100*(1-discount)));
     row.querySelector('[data-field="value"]').value=groupMoney(value);
-    document.getElementById('business-detail').textContent=
+    row.querySelector('.business-detail').textContent=
       `Saját tőke: ${fmtFt(equity)} · Átlagos adózott eredmény: ${fmtFt(average)} · `+
       `Hozamérték: ${fmtFt(yieldValue)} · Teljes cégérték: ${fmtFt(Math.round(fullCompanyValue))} · `+
       `Tulajdoni hányad: ${ownership}% · Kisebbségi értékcsökkentés: ${discount*100}% · `+
@@ -680,12 +694,11 @@ input[type=number]{
 
   function compute(){
     let sumV=0,sumD=0,sumN=0;
-    const computedBusinessValue=businessValue();
     document.querySelectorAll("#rows tr[data-type]").forEach(r=>{
       const t=r.dataset.type;
       const rawValue=moneyNumber(r.querySelector('[data-field="value"]')?.value);
       const indexed=t==="prop" ? propertyValuation(r) : null;
-      const v=t==="business" ? computedBusinessValue : t==="prop" ? (indexed===null ? 0 : indexed) : rawValue;
+      const v=t==="business" ? businessValue(r) : t==="prop" ? (indexed===null ? 0 : indexed) : rawValue;
       const d=moneyNumber(r.querySelector('[data-field="debt"]')?.value);
       let n=0;
       if(t==="prop") n=indexed===null ? 0 : v-d;
@@ -750,7 +763,13 @@ input[type=number]{
     compute();
   });
   document.addEventListener("click",e=>{
-    if(e.target.id==="add-prop"){ addProperty(); }
+    if(e.target.id==="add-prop"){ addProperty(); compute(); }
+    if(e.target.id==="add-business"){ addBusiness(); }
+    if(e.target.closest('.remove-business')){
+      const row=e.target.closest('tr[data-type="business"]');
+      if(row){row.remove();compute();}
+      return;
+    }
     if(e.target.tagName==="BUTTON" && e.target.closest("tr")?.dataset.type==="prop"){
       e.target.closest("tr").remove(); compute();
     }
