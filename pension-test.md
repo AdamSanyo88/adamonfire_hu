@@ -368,7 +368,7 @@ input[type="number"]:focus {
         <h3>Számold ki a várható havi nyugdíjad</h3>
         <p>Add meg a szolgálati idődet és az éves kereseteidet. Az eredmény minden változtatásra automatikusan frissül.</p>
       </div>
-      <span class="calculator-badge">2026-os számítás</span>
+      <span class="calculator-badge">2027-es számítás</span>
     </div>
 
     <div class="summary-grid">
