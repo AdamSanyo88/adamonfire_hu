@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Hasznos eszközök
-permalink: /resources
+permalink: /resources-test
 ---
 
 <style>
