@@ -65,6 +65,8 @@ permalink: /blog
           </div>
           <div class="card-action">Olvasd tovább <span class="arrow">→</span></div>
         </div>
+      </a>
+    </div>
     <div class="col s12 m6">
       <a href="/blog-14" style="color: inherit;">
         <div class="card hoverable blog-card">
