@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Hasznos eszközök
-permalink: /resources-test
+permalink: /resources
 ---
 
 <style>
@@ -161,25 +161,25 @@ permalink: /resources-test
 .resources-page .calculator-grid .card-action {
   margin-top: auto;
 }
-/* Growy logo and responsive card heading */
-.resources-page .growy-card-heading {
+/* Responsive icons for resource cards */
+.resources-page .resource-card-heading {
   display: flex;
   align-items: center;
   gap: 12px;
 }
-.resources-page .growy-card-heading .growy-logo {
+.resources-page .resource-card-heading .resource-icon {
   width: 42px;
   height: 42px;
   flex: 0 0 42px;
   object-fit: contain;
   border-radius: 9px;
 }
-.resources-page .growy-card-heading strong {
+.resources-page .resource-card-heading strong {
   min-width: 0;
 }
 @media only screen and (max-width: 600px) {
-  .resources-page .growy-card-heading { gap: 9px; }
-  .resources-page .growy-card-heading .growy-logo {
+  .resources-page .resource-card-heading { gap: 9px; }
+  .resources-page .resource-card-heading .resource-icon {
     width: 34px;
     height: 34px;
     flex-basis: 34px;
@@ -207,7 +207,8 @@ permalink: /resources-test
         <a href="tbsz" style="color: inherit;">
           <div class="card hoverable" style="height: 100%;">
             <div class="card-content">
-              <span class="card-title">
+              <span class="card-title resource-card-heading">
+                <img class="resource-icon" src="{{ '/images/tbsz.png' | relative_url }}" alt="" width="42" height="42" loading="lazy">
                 <strong>Tartós Befektetési Számla</strong>
               </span>
               <p>
@@ -229,8 +230,8 @@ permalink: /resources-test
            style="color: inherit;">
           <div class="card hoverable" style="height: 100%;">
             <div class="card-content">
-              <span class="card-title growy-card-heading">
-                <img class="growy-logo" src="{{ '/images/growy-logo.png' | relative_url }}" alt="Growy logó" width="42" height="42" loading="lazy">
+              <span class="card-title resource-card-heading">
+                <img class="resource-icon" src="{{ '/images/growy-logo.png' | relative_url }}" alt="Growy logó" width="42" height="42" loading="lazy">
                 <strong>Growy portfóliókövető platform</strong>
               </span>
               <p>
@@ -258,7 +259,8 @@ permalink: /resources-test
         <a href="net-worth" style="color: inherit;">
           <div class="card hoverable">
             <div class="card-content">
-              <span class="card-title">
+              <span class="card-title resource-card-heading">
+                <img class="resource-icon" src="{{ '/images/net-worth.png' | relative_url }}" alt="" width="42" height="42" loading="lazy">
                 <strong>Nettó vagyon és vagyonadó kalkulátor</strong>
               </span>
               <p>
@@ -278,7 +280,8 @@ permalink: /resources-test
         <a href="spending" style="color: inherit;">
           <div class="card hoverable">
             <div class="card-content">
-              <span class="card-title">
+              <span class="card-title resource-card-heading">
+                <img class="resource-icon" src="{{ '/images/spending.png' | relative_url }}" alt="" width="42" height="42" loading="lazy">
                 <strong>Egyéni fogyasztás kalkulátor</strong>
               </span>
               <p>
@@ -298,7 +301,8 @@ permalink: /resources-test
         <a href="pension" style="color: inherit;">
           <div class="card hoverable">
             <div class="card-content">
-              <span class="card-title">
+              <span class="card-title resource-card-heading">
+                <img class="resource-icon" src="{{ '/images/pension.png' | relative_url }}" alt="" width="42" height="42" loading="lazy">
                 <strong>Állami nyugdíjkalkulátor</strong>
               </span>
               <p>
@@ -318,7 +322,8 @@ permalink: /resources-test
         <a href="inflation" style="color: inherit;">
           <div class="card hoverable">
             <div class="card-content">
-              <span class="card-title">
+              <span class="card-title resource-card-heading">
+                <img class="resource-icon" src="{{ '/images/inflation.png' | relative_url }}" alt="" width="42" height="42" loading="lazy">
                 <strong>Személyes infláció kalkulátor</strong>
               </span>
               <p>

@@ -161,6 +161,31 @@ permalink: /resources
 .resources-page .calculator-grid .card-action {
   margin-top: auto;
 }
+/* Growy logo and responsive card heading */
+.resources-page .growy-card-heading {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.resources-page .growy-card-heading .growy-logo {
+  width: 42px;
+  height: 42px;
+  flex: 0 0 42px;
+  object-fit: contain;
+  border-radius: 9px;
+}
+.resources-page .growy-card-heading strong {
+  min-width: 0;
+}
+@media only screen and (max-width: 600px) {
+  .resources-page .growy-card-heading { gap: 9px; }
+  .resources-page .growy-card-heading .growy-logo {
+    width: 34px;
+    height: 34px;
+    flex-basis: 34px;
+    border-radius: 7px;
+  }
+}
 </style>
 
 <div class="resources-header">
@@ -204,7 +229,8 @@ permalink: /resources
            style="color: inherit;">
           <div class="card hoverable" style="height: 100%;">
             <div class="card-content">
-              <span class="card-title">
+              <span class="card-title growy-card-heading">
+                <img class="growy-logo" src="{{ '/images/growy-logo.png' | relative_url }}" alt="Growy logó" width="42" height="42" loading="lazy">
                 <strong>Growy portfóliókövető platform</strong>
               </span>
               <p>
