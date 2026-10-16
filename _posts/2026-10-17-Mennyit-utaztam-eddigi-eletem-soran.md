@@ -221,7 +221,7 @@ permalink: blog-16
 
   <article class="post-body">
 
-<p>Ez az ősz eddig a visszatekintésről szólt nekem. Miután felléptem a Lightyear Universe '26 rendezvényén Balog Petyával és Bognár Balázzsal, kicsit elfogott a nosztalgia. Ott a színpadon ülve kezdtem el gondolkodni azon, hogy "hogy is kerültem én ide?"</p>
+<p>Ez az ősz eddig a visszatekintésről szólt nekem. Miután felléptem a Lightyear Universe '26 rendezvényén Balog Petyával és Bognár Balázzsal, kicsit elfogott a nosztalgia. Ott a színpadon ülve kezdtem el gondolkodni azon, hogy "hogy is kerültem én ide?"</p> 
 
 <p><img src="../images/blog-16-pic.jpg" alt="A Lightyear rendezvényén" style="
        max-height: 500px;
