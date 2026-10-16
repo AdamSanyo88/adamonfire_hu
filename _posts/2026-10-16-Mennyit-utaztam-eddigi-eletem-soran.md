@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Mennyit utaztam eddigi életem során?
-date: 2026-10-17
+date: 2026-10-16
 permalink: blog-16
 ---
 
