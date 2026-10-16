@@ -242,7 +242,7 @@ permalink: blog-16
 
 
 <p><img src="../images/blog-16-pic-2.png" alt="Külföldi utazásaim 1997 óta" style="
-       max-height: 500px;
+       max-height: 700px;
        max-width: 100%;
        width: auto;
        height: auto;
