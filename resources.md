@@ -205,7 +205,7 @@ permalink: /resources
           <div class="card hoverable" style="height: 100%;">
             <div class="card-content">
               <span class="card-title">
-                <strong>Growy.hu portfóliókövető platform</strong>
+                <strong>Growy portfóliókövető platform</strong>
               </span>
               <p>
                 Használd a <span style="background-color: #fff3a3; color: black; font-weight: bold; padding: 2px 2px; border-radius: px;">ZSUGA</span> kódot, és 10% kedvezménnyel fizethetsz elő a Growy.hu-n. Én is ezt használom.
