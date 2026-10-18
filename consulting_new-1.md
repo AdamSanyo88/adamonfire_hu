@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Pénzügyi konzultáció és Portfóliótükör
-permalink: /consulting_new-1/
+permalink: consulting_new-1
 ---
 
 <h1 class="page-title">{{ page.title | escape }}</h1>
