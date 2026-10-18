@@ -4,19 +4,31 @@ title: Általános szerződési feltételek
 permalink: terms-and-conditions-new
 ---
 
-<h1 class="page-title">{{ page.title | escape }}</h1>
+<div class="aof-page aof-terms">
+<div class="resources-header">
+  <div class="eyebrow">Adam on FIRE</div>
+  <h1>{{ page.title | escape }}</h1>
+  <p>A pénzügyi konzultációk, portfólióelemzések és FIRE-tervezési szolgáltatások igénybevételének feltételei.</p>
+</div>
 
 <div class="container terms-content">
 <style>
-.terms-content{max-width:920px;margin:0 auto;line-height:1.75;}
-.terms-content h2{margin:2.2rem 0 1rem;font-size:1.45rem;}
-.terms-content h3{margin:1.5rem 0 .65rem;font-size:1.15rem;}
-.terms-content p{margin:.65rem 0;}
-.terms-content ul{padding-left:1.5rem;margin:.65rem 0 1.2rem;}
-.terms-content li{margin:.4rem 0;}
-.terms-content .terms-intro{margin-bottom:1.7rem;}
-.terms-content .terms-price{font-weight:700;}
-.terms-content a{text-decoration:underline;}
+/* Shared visual language from the Resources page */
+.aof-page{--aof-blue:#2962ff;--aof-deep:#0d47a1;--aof-border:#d6e2f7;--aof-text:#263445;--aof-muted:#666;color:var(--aof-text);}
+.aof-page *{box-sizing:border-box}
+.aof-page .resources-header{margin:55px 0 40px}
+.aof-page .resources-header .eyebrow{margin-bottom:8px;color:#2962ff;font-size:12px;font-weight:700;letter-spacing:2px;text-transform:uppercase}
+.aof-page .resources-header h1{margin:0;font-size:48px;line-height:1.14;font-weight:700;letter-spacing:-1.5px;color:#202b38}
+.aof-page .resources-header p{max-width:750px;margin-top:12px;color:#666;font-size:18px;line-height:1.6}
+@media(max-width:600px){.aof-page .resources-header{margin:35px 0 30px}.aof-page .resources-header h1{font-size:38px}.aof-page .resources-header p{font-size:16px}}
+
+.aof-terms .terms-content{max-width:920px;margin:0 auto 65px;line-height:1.75;font-size:1rem}
+.aof-terms .terms-content h2{display:flex;align-items:center;gap:16px;margin:42px 0 20px;color:#0d47a1;font-size:1.6rem;line-height:1.35;font-weight:700}
+.aof-terms .terms-content h2::after{content:"";height:1px;flex:1;background:#d6e2f7}
+.aof-terms .terms-content h3{font-size:1.18rem;font-weight:700;color:#204f98;margin:27px 0 12px}
+.aof-terms .terms-content p{margin:10px 0 14px}.aof-terms .terms-content ul{padding-left:25px;margin:10px 0 22px}.aof-terms .terms-content li{margin:7px 0}
+.aof-terms .terms-content a{color:#2962ff;text-decoration:underline}.aof-terms .terms-intro{font-size:1.08rem;margin-bottom:10px}.aof-terms .terms-price{font-weight:700;color:#0d47a1}
+@media(max-width:600px){.aof-terms .terms-content h2{font-size:1.35rem;gap:10px}.aof-terms .terms-content{padding:0 2px}}
 </style>
 <p class="terms-intro"><strong>Adam on FIRE – Pénzügyi konzultáció, Portfóliótükör és FIRE Pénzügyi Térkép</strong></p>
 <p>Hatályos: [dátum]</p>
@@ -125,4 +137,5 @@ permalink: terms-and-conditions-new
 <p>15.3. A jelen ÁSZF nem értelmezhető úgy, hogy felmentést adna bármely kötelező engedélyezési, fogyasztóvédelmi, adatvédelmi vagy egyéb jogszabályi követelmény teljesítése alól.</p>
 <p>Közzététel dátuma: [dátum]</p>
 <p>Utolsó módosítás: [dátum]</p>
+</div>
 </div>
