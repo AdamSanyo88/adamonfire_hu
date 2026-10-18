@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Általános szerződési feltételek
-permalink: /terms-and-conditions
+permalink: /terms-and-conditions-new
 ---
 
 <h1 class="page-title">{{ page.title | escape }}</h1>
