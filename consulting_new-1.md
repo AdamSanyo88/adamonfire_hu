@@ -34,7 +34,7 @@ permalink: consulting_new-1
         </div>
 
         <div class="fc-cards">
-          <article class="fc-card">
+          <article class="fc-card" tabindex="0" role="button" aria-pressed="false" aria-label="Pénzügyi konzultáció kiválasztása">
             <div class="fc-card-top"><span class="fc-kicker">01 · BESZÉLGETÉS</span><h3>Pénzügyi konzultáció</h3><p>Ha egy pénzügyi kérdést vagy élethelyzetet szeretnél átgondolni.</p></div>
             <div class="fc-price">40 000 Ft <span>/ alkalom</span></div>
             <p class="fc-wealth">Vagyonértékhatár: <strong>50 millió Ft-ig</strong></p>
@@ -47,10 +47,10 @@ permalink: consulting_new-1
                 <li>Rövid, legfeljebb 1 oldalas írásos összefoglaló</li>
               </ul>
             </div>
-            <div class="fc-card-bottom"><p><strong>Nem tartalmaz:</strong> tételes portfólióvizsgálatot, külön modellépítést vagy részletes jelentést.</p><a class="fc-cta fc-cta-outline" href="mailto:adamgoesfire@gmail.com?subject=P%C3%A9nz%C3%BCgyi%20konzult%C3%A1ci%C3%B3%20-%2040%20000%20Ft">Ezt választom <span aria-hidden="true">→</span></a></div>
+            <div class="fc-card-bottom"><p><strong>Nem tartalmaz:</strong> tételes portfólióvizsgálatot, külön modellépítést vagy részletes jelentést.</p><a class="fc-cta fc-cta-outline" href="https://docs.google.com/forms/d/e/1FAIpQLScnfbOcL5JYei45RLssW8ukcZKwySogvV-lsordVkxg6xz9Qg/viewform" target="_blank" rel="noopener noreferrer">Konzultációt kérek <span aria-hidden="true">→</span></a></div>
           </article>
 
-          <article class="fc-card fc-featured">
+          <article class="fc-card fc-featured" tabindex="0" role="button" aria-pressed="false" aria-label="Portfóliótükör kiválasztása">
             <div class="fc-featured-label">PORTFÓLIÓVAL RENDELKEZŐKNEK</div>
             <div class="fc-card-top"><span class="fc-kicker">02 · ELEMZÉS</span><h3>Portfóliótükör</h3><p>Ha szeretnéd érteni, milyen kitettségek, átfedések és kockázatok vannak a portfóliódban.</p></div>
             <div class="fc-price">80 000 Ft <span>/ elemzés</span></div>
@@ -65,10 +65,10 @@ permalink: consulting_new-1
                 <li>3–5 oldalas Word/PDF jelentés és 60 perces online eredménymegbeszélés</li>
               </ul>
             </div>
-            <div class="fc-card-bottom"><p><strong>Terjedelem:</strong> legfeljebb 50 befektetési pozíció. Összetettebb megbízásnál előzetes egyedi egyeztetés.</p><a class="fc-cta" href="mailto:adamgoesfire@gmail.com?subject=Portf%C3%B3li%C3%B3t%C3%BCk%C3%B6r%20-%2080%20000%20Ft">Portfólióelemzést kérek <span aria-hidden="true">→</span></a></div>
+            <div class="fc-card-bottom"><p><strong>Terjedelem:</strong> legfeljebb 50 befektetési pozíció. Összetettebb megbízásnál előzetes egyedi egyeztetés.</p><a class="fc-cta" href="https://docs.google.com/forms/d/e/1FAIpQLScnfbOcL5JYei45RLssW8ukcZKwySogvV-lsordVkxg6xz9Qg/viewform" target="_blank" rel="noopener noreferrer">Portfóliótükröt kérek <span aria-hidden="true">→</span></a></div>
           </article>
 
-          <article class="fc-card">
+          <article class="fc-card" tabindex="0" role="button" aria-pressed="false" aria-label="FIRE Pénzügyi Térkép kiválasztása">
             <div class="fc-card-top"><span class="fc-kicker">03 · TELJES PÉNZÜGYI KÉP</span><h3>FIRE Pénzügyi Térkép</h3><p>Ha a befektetéseidet, a kiadásaidat és a pénzügyi szabadságodhoz vezető utat egyben szeretnéd látni.</p></div>
             <div class="fc-price">150 000 Ft <span>/ teljes csomag</span></div>
             <p class="fc-wealth">Vagyonértékhatár: <strong>150 millió Ft felett</strong></p>
@@ -82,7 +82,7 @@ permalink: consulting_new-1
                 <li>8–12 oldalas összefoglaló és 2 × 60 perc online egyeztetés</li>
               </ul>
             </div>
-            <div class="fc-card-bottom"><p><strong>Terjedelem:</strong> egy háztartás pénzügyi helyzete, legfeljebb 75 befektetési pozíció. Összetett vállalkozási vagy ingatlanvagyon esetén külön egyeztetés.</p><a class="fc-cta fc-cta-dark" href="mailto:adamgoesfire@gmail.com?subject=FIRE%20P%C3%A9nz%C3%BCgyi%20T%C3%A9rk%C3%A9p%20-%20150%20000%20Ft">FIRE-tervezést kérek <span aria-hidden="true">→</span></a></div>
+            <div class="fc-card-bottom"><p><strong>Terjedelem:</strong> egy háztartás pénzügyi helyzete, legfeljebb 75 befektetési pozíció. Összetett vállalkozási vagy ingatlanvagyon esetén külön egyeztetés.</p><a class="fc-cta fc-cta-dark" href="https://docs.google.com/forms/d/e/1FAIpQLScnfbOcL5JYei45RLssW8ukcZKwySogvV-lsordVkxg6xz9Qg/viewform" target="_blank" rel="noopener noreferrer">FIRE térképet kérek <span aria-hidden="true">→</span></a></div>
           </article>
         </div>
 
@@ -103,7 +103,7 @@ permalink: consulting_new-1
         <p class="fc-footnote">* Az adatok rendelkezésre állásától és az eszközök beazonosíthatóságától függően. A historikus adatok nem garantálják a jövőbeli teljesítményt.</p>
 
         <div class="fc-heading"><span class="fc-eyebrow">HOGYAN ZAJLIK?</span><h2>Egyszerű, előre látható folyamat</h2></div>
-        <ol class="fc-steps"><li><strong>Jelentkezés</strong><span>Kiválasztod a csomagot, e-mailben röviden megírod, milyen kérdések foglalkoztatnak.</span></li><li><strong>Adatbekérés</strong><span>A választott csomaghoz szükséges kérdőív és – portfólióelemzés esetén – Growy- vagy Excel-export egyeztetése.</span></li><li><strong>Elemzés és ellenőrzés</strong><span>A számításokat összeállítom, az azonosíthatatlan vagy hiányos adatokat külön jelzem.</span></li><li><strong>Online megbeszélés és összefoglaló</strong><span>Átbeszéljük az eredményeket, az értelmezési kereteket és a megválaszolatlan kérdéseket.</span></li></ol>
+        <ol class="fc-steps"><li><strong>Jelentkezés</strong><span>Kiválasztod a csomagot, kitöltöd a jelentkezési kérdőívet, és megadod, milyen kérdések foglalkoztatnak.</span></li><li><strong>Adatbekérés</strong><span>A választott csomaghoz szükséges kérdőív és – portfólióelemzés esetén – Growy- vagy Excel-export egyeztetése.</span></li><li><strong>Elemzés és ellenőrzés</strong><span>A számításokat összeállítom, az azonosíthatatlan vagy hiányos adatokat külön jelzem.</span></li><li><strong>Online megbeszélés és összefoglaló</strong><span>Átbeszéljük az eredményeket, az értelmezési kereteket és a megválaszolatlan kérdéseket.</span></li></ol>
 
         <div class="fc-faq"><h2>Gyakori kérdések</h2>
           <details><summary>Hogyan számít a vagyonérték a csomagválasztásnál?</summary><p>A megrendeléskor megadott becsült összvagyon alapján történik a besorolás. Az 50 és 150 millió Ft-os határérték még az alacsonyabb csomaghoz tartozik. A díj fix, nem a vagyon százaléka.</p></details>
@@ -154,5 +154,38 @@ permalink: consulting_new-1
 .aof-consulting .fc-table th{background:#0d47a1}.aof-consulting .fc-link,.aof-consulting .fc-policies a{color:#2962ff}
 .aof-consulting .fc-note{background:#f5f8ff;border-left-color:#2962ff}.aof-consulting .fc-steps li::before{color:#2962ff}
 @media(max-width:600px){.aof-consulting .fc-hero{padding:22px 20px}.aof-consulting .fc-heading:not(#csomagok) h2{font-size:1.45rem}}
+
+/* Interactive package selection */
+.aof-consulting .fc-card{cursor:pointer;transition:border-color .2s ease,box-shadow .2s ease,transform .2s ease,background-color .2s ease;outline:none}
+.aof-consulting .fc-card:hover{transform:translateY(-3px);box-shadow:0 12px 32px rgba(41,98,255,.14)}
+.aof-consulting .fc-card:focus-visible{outline:3px solid #2962ff;outline-offset:4px}
+.aof-consulting .fc-card.fc-selected,.aof-consulting .fc-card.fc-featured.fc-selected{border:2px solid #2962ff;background:#f5f8ff;box-shadow:0 0 0 4px rgba(41,98,255,.17),0 16px 38px rgba(13,71,161,.18);transform:translateY(-5px);padding:23px}
+@media(max-width:640px){.aof-consulting .fc-card.fc-selected,.aof-consulting .fc-card.fc-featured.fc-selected{padding:19px}}
+@media(prefers-reduced-motion:reduce){.aof-consulting .fc-card{transition:none}}
 </style>
 </div>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  const cards = Array.from(document.querySelectorAll('.aof-consulting .fc-cards .fc-card'));
+  function selectCard(selected) {
+    cards.forEach(function (card) {
+      const active = card === selected;
+      card.classList.toggle('fc-selected', active);
+      card.setAttribute('aria-pressed', String(active));
+    });
+  }
+  cards.forEach(function (card) {
+    card.addEventListener('click', function (event) {
+      if (event.target.closest('a')) { selectCard(card); return; }
+      selectCard(card);
+    });
+    card.addEventListener('keydown', function (event) {
+      if (event.target !== card) return;
+      if (event.key === 'Enter' || event.key === ' ') {
+        event.preventDefault();
+        selectCard(card);
+      }
+    });
+  });
+});
+</script>
