@@ -50,7 +50,7 @@ permalink: consulting_new-1
             <div class="fc-card-bottom"><p><strong>Nem tartalmaz:</strong> tételes portfólióvizsgálatot, külön modellépítést vagy részletes jelentést.</p><a class="fc-cta fc-cta-outline" href="https://docs.google.com/forms/d/e/1FAIpQLScnfbOcL5JYei45RLssW8ukcZKwySogvV-lsordVkxg6xz9Qg/viewform" target="_blank" rel="noopener noreferrer">Konzultációt kérek <span aria-hidden="true">→</span></a></div>
           </article>
 
-          <article class="fc-card fc-featured" tabindex="0" role="button" aria-pressed="false" aria-label="Portfóliótükör kiválasztása">
+          <article class="fc-card" tabindex="0" role="button" aria-pressed="false" aria-label="Portfóliótükör kiválasztása">
             <div class="fc-card-top"><span class="fc-kicker">02 · ELEMZÉS</span><h3>Portfóliótükör</h3><p>Ha szeretnéd érteni, milyen kitettségek, átfedések és kockázatok vannak a portfóliódban.</p></div>
             <div class="fc-price">80 000 Ft <span>/ elemzés</span></div>
             <p class="fc-wealth">Vagyonértékhatár: <strong>50–150 millió Ft</strong></p>
@@ -158,8 +158,8 @@ permalink: consulting_new-1
 .aof-consulting .fc-card{cursor:pointer;transition:border-color .2s ease,box-shadow .2s ease,transform .2s ease,background-color .2s ease;outline:none}
 .aof-consulting .fc-card:hover{transform:translateY(-3px);box-shadow:0 12px 32px rgba(41,98,255,.14)}
 .aof-consulting .fc-card:focus-visible{outline:3px solid #2962ff;outline-offset:4px}
-.aof-consulting .fc-card.fc-selected,.aof-consulting .fc-card.fc-featured.fc-selected{border:2px solid #2962ff;background:#f5f8ff;box-shadow:0 0 0 4px rgba(41,98,255,.17),0 16px 38px rgba(13,71,161,.18);transform:translateY(-5px);padding:23px}
-@media(max-width:640px){.aof-consulting .fc-card.fc-selected,.aof-consulting .fc-card.fc-featured.fc-selected{padding:19px}}
+.aof-consulting .fc-card.fc-selected{border:2px solid #2962ff;background:#f5f8ff;box-shadow:0 0 0 4px rgba(41,98,255,.17),0 16px 38px rgba(13,71,161,.18);transform:translateY(-5px);padding:23px}
+@media(max-width:640px){.aof-consulting .fc-card.fc-selected{padding:19px}}
 @media(prefers-reduced-motion:reduce){.aof-consulting .fc-card{transition:none}}
 </style>
 </div>
