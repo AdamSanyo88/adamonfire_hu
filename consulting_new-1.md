@@ -51,7 +51,6 @@ permalink: consulting_new-1
           </article>
 
           <article class="fc-card fc-featured" tabindex="0" role="button" aria-pressed="false" aria-label="Portfóliótükör kiválasztása">
-            <div class="fc-featured-label">PORTFÓLIÓVAL RENDELKEZŐKNEK</div>
             <div class="fc-card-top"><span class="fc-kicker">02 · ELEMZÉS</span><h3>Portfóliótükör</h3><p>Ha szeretnéd érteni, milyen kitettségek, átfedések és kockázatok vannak a portfóliódban.</p></div>
             <div class="fc-price">80 000 Ft <span>/ elemzés</span></div>
             <p class="fc-wealth">Vagyonértékhatár: <strong>50–150 millió Ft</strong></p>
