@@ -8,7 +8,7 @@ permalink: consulting_new-1
 <div class="resources-header">
   <div class="eyebrow">Adam on FIRE</div>
   <h1>{{ page.title | escape }}</h1>
-  <p>FIRE konzultáció és portfólióelemzés</p>
+  <p></p>
 </div>
 
 <div class="section">
@@ -53,7 +53,7 @@ permalink: consulting_new-1
             <div class="fc-card-top"><h3>Portfóliótükör</h3><p>Ha szeretnéd érteni, milyen kitettségek, átfedések és kockázatok vannak a portfóliódban.</p></div>
             <div class="fc-price">80 000 Ft <span>/ elemzés</span></div>
             <p class="fc-wealth">Vagyonértékhatár: <strong>50–150 millió Ft</strong></p>
-            <div class="fc-includes"><strong>Az alapcsomagon felül:</strong>
+            <div class="fc-includes"><strong>A Konzultációs csomagon felül:</strong>
               <ul>
                 <li>Portfólióadatok feldolgozása exportált adatokból (Growy vagy más forrásból)</li>
                 <li>Eszközosztályok, legnagyobb pozíciók és koncentráció bemutatása</li>
@@ -75,14 +75,14 @@ permalink: consulting_new-1
                 <li>Háztartási kiadások, tartalékok és megtakarítási ráta elemzése (ha van elérhető adat)</li>
 				<li>Hipotetikus piaci stressztesztek bemutatása</li>
                 <li>FIRE- és hosszú távú cashflow-forgatókönyvek modellezése (kivételi rátákkal)</li>
-                <li>5–8 oldalas összefoglaló és igény szerint 2 × 60 perc online egyeztetés</li>
+                <li>5–8 oldalas összefoglaló és igény szerint további 60 perc online egyeztetés (az Konzultációs csomagon felül)</li>
               </ul>
             </div>
             <div class="fc-card-bottom"><p><strong>Terjedelem:</strong> az 5-8 oldalas jelentés a meglévő eszközök számától és a vagyonod kompexitásától függően változhat</p><a class="fc-cta fc-cta-dark" href="https://docs.google.com/forms/d/e/1FAIpQLScnfbOcL5JYei45RLssW8ukcZKwySogvV-lsordVkxg6xz9Qg/viewform" target="_blank" rel="noopener noreferrer">FIRE térképet kérek <span aria-hidden="true">→</span></a></div>
           </article>
         </div>
 
-        <div class="fc-note"><strong>Miért van terjedelmi korlát?</strong> A csomag kiválasztását a megrendeléskor megadott becsült teljes vagyonérték határozza meg (az Ügyfél vagy a vizsgált háztartás összvagyona). Pontosan 50 millió Ft az alapcsomagba, pontosan 150 millió Ft a középső csomagba tartozik. A vagyonérték mellett a befektetési pozíciók száma és összetettsége is korlátozhatja az elemzés terjedelmét; az egyedi igényekről előzetesen egyeztetünk.</div>
+        <div class="fc-note"><strong>Miért van terjedelmi korlát?</strong> A csomag kiválasztását a megrendeléskor megadott becsült teljes vagyonérték határozza meg (a vizsgált összvagyonra vonatkozóan). Pontosan 50 millió Ft az alapcsomagba, pontosan 150 millió Ft a középső csomagba tartozik. A vagyonérték mellett a befektetési pozíciók száma és összetettsége is korlátozhatja az elemzés terjedelmét, az egyedi igényekről előzetesen egyeztetünk.</div>
 
         <div class="fc-heading"><span class="fc-eyebrow">ÁTTEKINTÉS</span><h2>Melyik csomag mit tartalmaz?</h2></div>
         <div class="fc-table-wrap"><table class="fc-table"><thead><tr><th>Szolgáltatás</th><th>Konzultáció<br>40 000 Ft</th><th>Portfóliótükör<br>80 000 Ft</th><th>FIRE Térkép<br>150 000 Ft</th></tr></thead><tbody>
@@ -91,7 +91,7 @@ permalink: consulting_new-1
           <tr><td>Online konzultáció</td><td>60 perc</td><td>60 perc</td><td>2 × 60 perc</td></tr>
           <tr><td>Portfólió-összetétel és koncentráció</td><td>✓</td><td>✓</td><td>✓</td></tr>
           <tr><td>Földrajzi, deviza- és kockázati vizsgálat</td><td>—</td><td>✓*</td><td>✓*</td></tr>
-          <tr><td>Historikus mutatók és stresszteszt</td><td>—</td><td>-</td><td>✓*</td></tr>
+          <tr><td>Historikus mutatók és stresszteszt</td><td>—</td><td>—</td><td>✓*</td></tr>
           <tr><td>Teljes vagyon- és költési kép</td><td>—</td><td>—</td><td>✓</td></tr>
           <tr><td>Nyugdíj, FIRE és cashflow forgatókönyvek</td><td>—</td><td>—</td><td>✓</td></tr>
           <tr><td>Írásos dokumentáció</td><td>1 oldal</td><td>3–5 oldal*</td><td>5–8 oldal*</td></tr>
