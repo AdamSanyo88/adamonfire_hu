@@ -74,8 +74,8 @@ permalink: terms-and-conditions-new
 <p>A számítások lehetséges pénzügyi kimeneteleket és feltételezett pályákat mutatnak be. Nem garantálnak meghatározott pénzügyi függetlenségi dátumot, hozamot, nyugdíjösszeget vagy vagyoni eredményt.</p>
 <h3>4.4. Vagyonértékhatárok és a csomagok közös korlátai</h3>
 <p>A csomagbesorolás alapja az Ügyfél által a megrendeléskor megadott, a vizsgált összvagyonra vonatkozó becsült teljes vagyonérték. Az 50 millió Ft-os és a 150 millió Ft-os határérték az alacsonyabb kategóriába tartozik. A vagyonértékhatárok a csomagok igénybevételi feltételei, nem vagyonarányosan számított díjak. A csomagbesorolás és az esetleges egyedi igények a megrendelés elfogadása előtt egyeztetendők.</p>
-<p>A weboldalon feltüntetett díjak a meghatározott csomag tartalmára vonatkoznak. A további munka, újabb adatkör feldolgozása, módosított modell vagy kiegészítő jelentés külön megállapodás tárgya.</p>
-<p>A Szolgáltató a többletmunkát annak megkezdése előtt ismerteti az Ügyféllel, és ahhoz az Ügyfél jóváhagyását kéri.</p>
+<p>A weboldalon feltüntetett díjak a meghatározott csomag tartalmára vonatkoznak. A további munka, újabb adatkör feldolgozása, vagy kiegészítő jelentés külön megállapodás tárgya, különösen a FIRE Térkép csomag esetében.</p>
+<p>A Szolgáltató a többletmunkát annak megkezdése előtt ismerteti az Ügyféllel, és ahhoz az Ügyfél jóváhagyását kéri. A többletmunka költsége 20 000 Ft/óra.</p>
 <h2>5. Adatok, módszertan és feltételezések</h2>
 <p>5.1. A Szolgáltató az elemzések során az Ügyfél által átadott adatokat, valamint a megbízhatónak ítélt, azonosítható külső adatforrásokat használja fel.</p>
 <p>5.2. Az Ügyfél felel az általa átadott adatok teljességéért, pontosságáért és aktualitásáért. A Szolgáltató a rendelkezésre bocsátott adatok ésszerű ellenőrzését elvégzi a megbízás terjedelmében, de nem vállal teljes körű, független könyvvizsgálati vagy letétkezelői ellenőrzést.</p>
@@ -91,8 +91,8 @@ permalink: terms-and-conditions-new
 <p>6.5. A szolgáltatás teljesítése a vállalt jelentés átadásával és az előírt konzultációk megtartásával valósul meg. A szolgáltatás nem eredménykötelem: a Szolgáltató elemzést és modellezést vállal, nem meghatározott befektetési vagy vagyoni eredményt.</p>
 <h2>7. Díjak és fizetési feltételek</h2>
 <p>7.1. A szolgáltatás díját a megrendelés előtt közölt ajánlat és a weboldalon közzétett árlista határozza meg.</p>
-<p>7.2. A feltüntetett árak adózási kezelését és a fizetendő teljes összeget a Szolgáltató a megrendelés elfogadásakor egyértelműen közli. Az adózási státuszt és az árak áfatartalmára vonatkozó tájékoztatást a közzététel előtt ellenőrizni kell.</p>
-<p>7.3. A Szolgáltató a teljesítésről a vonatkozó jogszabályoknak megfelelő számlát állít ki. A fizetési határidő a számlán vagy az egyedi ajánlatban szerepel.</p>
+<p>7.2. A feltüntetett árak adózási kezelését és a fizetendő teljes összeget a Szolgáltató a megrendelés elfogadásakor egyértelműen közli.</p>
+<p>7.3. A Szolgáltató a teljesítésről a vonatkozó jogszabályoknak megfelelő számlát állít ki. A fizetési határidő a számla kiállítását követően 8 nap.</p>
 <p>7.4. Egyedi ajánlat esetén a szolgáltatás csak az Ügyfél által elfogadott díj és terjedelem szerint végezhető el.</p>
 <h2>8. Időpontmódosítás és lemondás</h2>
 <h3>8.1. Az online konzultáció időpontja előzetes egyeztetéssel módosítható.</h3>
@@ -103,15 +103,13 @@ permalink: terms-and-conditions-new
 <p>9.1. Ha a szerződésre a fogyasztó és a vállalkozás közötti szerződésekről szóló jogszabályok alkalmazandók, a fogyasztót az azokban meghatározott elállási, illetve felmondási jog illeti meg.</p>
 <p>9.2. Amennyiben az adott szerződésre irányadó jogszabály 14 napos elállási vagy felmondási jogot biztosít, a határidő és annak kezdőnapja a jogszabály szerint alakul.</p>
 <p>9.3. Ha az Ügyfél kéri a szolgáltatás megkezdését a vonatkozó elállási vagy felmondási határidő lejárta előtt, a Szolgáltató az ehhez szükséges kifejezett nyilatkozatot beszerzi, és tájékoztatást ad az esetleges arányos díjfizetési kötelezettségről, illetve a jog elvesztésének törvényben meghatározott feltételeiről.</p>
-<p>9.4. A Szolgáltató nem tekinti az elállási vagy felmondási jogot automatikusan elveszettnek pusztán azért, mert a teljesítés megkezdődött.</p>
+<p>9.4. A Szolgáltató nem tekinti az elállási vagy felmondási jogot automatikusan elveszettnek pusztán azért, mert a teljesítés megkezdődött, de a részteljesítés díját, különös tekintettel a portfólióelemzés időköltségét, csak a szolgáltatás megkezdése előtt tudja visszatéríteni.</p>
 <p>9.5. Az elállási vagy felmondási nyilatkozat az 1. pontban megjelölt e-mail-címre küldhető meg. A nyilatkozatnak egyértelműen ki kell fejeznie a szerződéstől való elállási vagy felmondási szándékot.</p>
-<p>9.6. A jelen pont alkalmazását minden szolgáltatástípus esetén az adott szerződésre irányadó jogszabályok alapján kell meghatározni. A fogyasztói szerződésekre vonatkozó általános szabályok alkalmazhatóságát nem lehet kizárólag a szolgáltatás elnevezése alapján megállapítani.</p>
 <h2>10. A Szolgáltató felelőssége</h2>
 <p>10.1. A Szolgáltató a szerződésben vállalt szolgáltatást szakmailag elvárható gondossággal, a megállapodott terjedelemben nyújtja.</p>
 <p>10.2. A Szolgáltató nem garantálja a pénzügyi piacok jövőbeli alakulását, egy meghatározott hozamot, a tőke megőrzését vagy a modellezett pénzügyi célok elérését.</p>
-<p>10.3. Az Ügyfél a jelentésekben szereplő információk és modellek korlátainak figyelembevételével, saját felelősségére hozza meg a szolgáltatáson kívül eső pénzügyi döntéseit. A Szolgáltató nem felel az Ügyfél önálló döntéseinek piaci következményeiért, kivéve, ha a felelősség kizárását vagy korlátozását jogszabály nem engedi.</p>
-<p>10.4. A jelen ÁSZF nem zárja ki és nem korlátozza a Szolgáltató olyan felelősségét, amelynek kizárását vagy korlátozását jogszabály tiltja, így különösen a szándékosan okozott szerződésszegésért való felelősséget, illetve a jogszabály által kötelezően fenntartott fogyasztói jogokat.</p>
-<p>10.5. A Szolgáltató nem felel olyan, ésszerűen nem előrelátható külső adatforrási hibákért, ha azokat a tőle elvárható gondosság mellett sem lehetett felismerni, ugyanakkor köteles a tudomására jutott lényeges hibákról az Ügyfelet tájékoztatni.</p>
+<p>10.3. Az Ügyfél a jelentésekben szereplő információk és modellek korlátainak figyelembevételével, saját felelősségére hozza meg a szolgáltatáson kívül eső pénzügyi döntéseit. A Szolgáltató nem felel az Ügyfél önálló döntéseinek piaci következményeiért.</p>
+<p>10.4. A Szolgáltató nem felel olyan, ésszerűen nem előrelátható külső adatforrási hibákért, ha azokat a tőle elvárható gondosság mellett sem lehetett felismerni, ugyanakkor köteles a tudomására jutott lényeges hibákról az Ügyfelet tájékoztatni.</p>
 <h2>11. A jelentések felhasználása és szellemi tulajdon</h2>
 <p>11.1. A Szolgáltató által készített jelentések és modellek az Ügyfél saját pénzügyi tájékozódását szolgálják.</p>
 <p>11.2. Az Ügyfél a számára átadott dokumentumokat saját céljára felhasználhatja. A dokumentumok kereskedelmi célú továbbértékesítése, nyilvános közzététele vagy más személy számára történő üzletszerű átengedése a Szolgáltató előzetes írásbeli engedélyéhez köthető, a jogszabály által biztosított felhasználási jogok sérelme nélkül.</p>
@@ -119,8 +117,8 @@ permalink: terms-and-conditions-new
 <h2>12. Adatkezelés és titoktartás</h2>
 <p>12.1. A Szolgáltató az Ügyfél személyes adatait és a szolgáltatás során megismert pénzügyi információit a vonatkozó adatvédelmi jogszabályok, különösen az általános adatvédelmi rendelet (GDPR) alapján kezeli.</p>
 <p>12.2. Az adatkezelés célját, jogalapját, időtartamát, a címzetteket, az érintetti jogokat és az adatbiztonsági intézkedéseket a <a href="{{ '/privacy-policy' | relative_url }}">külön adatvédelmi tájékoztató</a> tartalmazza.</p>
-<p>12.3. Az Ügyfélnek lehetőség szerint csak a szükséges portfólió- és pénzügyi adatokat kell megadnia. Nem szükséges jelszót, belépési kódot, teljes banki hozzáférést vagy olyan azonosítót átadnia, amely a pénzügyi számláihoz közvetlen hozzáférést tesz lehetővé.</p>
-<p>12.4. A Szolgáltató az Ügyfél bizalmas pénzügyi adatait nem teszi nyilvánossá, és azokat nem használja fel a megbízás céljától eltérően, kivéve, ha ezt jogszabály vagy az Ügyfél érvényes hozzájárulása lehetővé teszi.</p>
+<p>12.3. Az Ügyfélnek lehetőség szerint csak a szükséges portfólió- és pénzügyi adatokat kell megadnia.</p>
+<p>12.4. A Szolgáltató az Ügyfél bizalmas pénzügyi adatait nem teszi nyilvánossá, és azokat nem használja fel a megbízás céljától eltérően.</p>
 <h2>13. Panaszkezelés és jogérvényesítés</h2>
 <p>13.1. Az Ügyfél a szolgáltatással kapcsolatos panaszát az 1. pontban megadott e-mail-címen vagy postai címen terjesztheti elő.</p>
 <p>13.2. A Szolgáltató a panaszt a vonatkozó jogszabályok szerint megvizsgálja, és a jogszabályban előírt határidőn belül válaszol.</p>
