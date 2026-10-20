@@ -79,8 +79,8 @@ permalink: /about-me
       <div class="small-label">A történetem</div>
       <h2 style="margin-top:12px">Hogyan lettem kisbefektető?</h2>
       <p>Nem pénzügyi szakemberként, hanem a saját megtakarításaimat kezelő magánemberként kezdtem el foglalkozni a befektetésekkel. A 2012 és 2016 között Angliában éltem és dolgoztam, és alkalmazotti jövedelemből kezdtem felépíteni a vagyonomat.</p>
-      <p>Az első 10 millió forint összegyűjtése különösen fontos mérföldkő volt számomra. Ekkor tudatosult bennem, hogy lehet esélyem elérni az anyagi függetlenséget. A kezdeti években hibáztam is: például devizakereskedéssel veszítettem több ezer dollárt. Ezekből a tapasztalatokból tanulva egyre inkább a hosszú távú, diverzifikált és alacsony költségű befektetések felé fordultam, különösen 2020 tavasza után, miután eladtam a lakásom, és ETF-ekbe és állampapírba fektettem a pénzt.</p>
-      <p>2026-ra elértem a pénzügyi függetlenség számomra kitűzött szintjét. A FIRE elérése számomra nem a munka teljes feladását, hanem a döntési szabadságot jelenti: hogy az időmmel és a munkámmal kapcsolatos döntéseket ne kizárólag a pénz határozza meg. Ezért is szeretnék tartalomgyártóként és elemzőként a pénzügyi tudatossággal foglalkozni, továbbá a politika és pénzügy kapcsolatával.</p>
+      <p>Az első 10 millió forint összegyűjtése különösen fontos mérföldkő volt számomra. Ekkor tudatosult bennem, hogy lehet esélyem elérni az anyagi függetlenséget. A kezdeti években hibáztam is, például devizakereskedéssel veszítettem több ezer dollárt. Ezekből a tapasztalatokból tanulva egyre inkább a hosszú távú, diverzifikált és alacsony költségű befektetések felé fordultam, különösen 2020 tavasza után, miután eladtam a lakásom, és ETF-ekbe és állampapírba fektettem a pénzt.</p>
+      <p>2026-ra elértem a pénzügyi függetlenség számomra kitűzött szintjét. A FIRE elérése számomra nem a munka teljes feladását, hanem a döntési szabadságot jelenti. Azt, hogy az időmmel és a munkámmal kapcsolatos döntéseket ne kizárólag a pénz határozza meg. Ezért is szeretnék tartalomgyártóként és elemzőként a pénzügyi tudatossággal foglalkozni, továbbá a politika és pénzügy kapcsolatával.</p>
       <p>Az Adam on FIRE oldalon a saját tapasztalataimat, pénzügyi elemzéseimet és kalkulátoraimat osztom meg. A ZsugaZsonglőrök podcastban pedig a megtakarításokról, befektetésekról, és a gazdaság kérdéseiről beszélgetünk.</p>
     </div>
     <aside class="panel">
@@ -102,7 +102,7 @@ permalink: /about-me
       <details class="timeline-item"><summary aria-label="2020 február: részletek"><span class="timeline-date">2020 február</span><span class="timeline-dot" aria-hidden="true"></span><span class="timeline-year">2020</span></summary><div class="timeline-detail">Eladom a budapesti lakásom, hogy a pénzt befektessem</div></details>
       <details class="timeline-item"><summary aria-label="2023 május: részletek"><span class="timeline-date">2023 május</span><span class="timeline-dot" aria-hidden="true"></span><span class="timeline-year">2023</span></summary><div class="timeline-detail">Kijelölöm a FIRE célom dátumát (2028)</div></details>
       <details class="timeline-item"><summary aria-label="2026 február: részletek"><span class="timeline-date">2026 február</span><span class="timeline-dot" aria-hidden="true"></span><span class="timeline-year">2026</span></summary><div class="timeline-detail">A kedvező piaci körülmények miatt 2026-ra elérem a FIRE-t</div></details>
-      <details class="timeline-item"><summary aria-label="2027 május: részletek"><span class="timeline-date">2027 május</span><span class="timeline-dot" aria-hidden="true"></span><span class="timeline-year">2027</span></summary><div class="timeline-detail">Elkezdem második életem, 17 évnyi multinacionális karrier után</div></details>
+      <details class="timeline-item"><summary aria-label="2027 május: részletek"><span class="timeline-date">2027 május</span><span class="timeline-dot" aria-hidden="true"></span><span class="timeline-year">2027</span></summary><div class="timeline-detail">Elkezdem a "második életem", 17 évnyi multinacionális karrier után</div></details>
     </div></div>
   </section>
 
@@ -130,19 +130,6 @@ permalink: /about-me
     </div>
   </section>
 
-  <section aria-labelledby="video-heading">
-    <h2 id="video-heading">Videók és podcastok</h2>
-    <div class="media-grid">
-      <article class="media-card">
-        <div class="video-wrap"><iframe src="https://www.youtube-nocookie.com/embed/i6TT_x7nPZ4" title="10 tévhit a FIRE mozgalommal kapcsolatban" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
-        <div class="media-body"><div class="kind">ZsugaZsonglőrök · 2025. szeptember</div><h3>10 tévhit a FIRE mozgalommal kapcsolatban</h3><p>Gyakori félreértések és fontos kérdések a pénzügyi függetlenségről.</p></div>
-      </article>
-      <article class="media-card">
-        <div class="video-wrap"><iframe src="https://www.youtube-nocookie.com/embed/M3R2zgmog5U" title="Mi történt 2025-ben, mi várható 2026-ban?" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
-        <div class="media-body"><div class="kind">ZsugaZsonglőrök · 2026. január</div><h3>Mi történt 2025-ben, mi várható 2026-ban?</h3><p>Gazdasági és befektetési évértékelés, kitekintéssel a következő évre.</p></div>
-      </article>
-    </div>
-  </section>
 
   <section aria-labelledby="more-heading">
     <h2 id="more-heading">További tartalmaim</h2>
