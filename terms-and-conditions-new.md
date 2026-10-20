@@ -75,7 +75,7 @@ permalink: terms-and-conditions-new
 <h3>4.4. Vagyonértékhatárok és a csomagok közös korlátai</h3>
 <p>A csomagbesorolás alapja az Ügyfél által a megrendeléskor megadott, a vizsgált összvagyonra vonatkozó becsült teljes vagyonérték. Az 50 millió Ft-os és a 150 millió Ft-os határérték az alacsonyabb kategóriába tartozik. A vagyonértékhatárok a csomagok igénybevételi feltételei, nem vagyonarányosan számított díjak. A csomagbesorolás és az esetleges egyedi igények a megrendelés elfogadása előtt egyeztetendők.</p>
 <p>A weboldalon feltüntetett díjak a meghatározott csomag tartalmára vonatkoznak. A további munka, újabb adatkör feldolgozása, vagy kiegészítő jelentés külön megállapodás tárgya, különösen a FIRE Térkép csomag esetében.</p>
-<p>A Szolgáltató a többletmunkát annak megkezdése előtt ismerteti az Ügyféllel, és ahhoz az Ügyfél jóváhagyását kéri. A többletmunka költsége 20 000 Ft/óra.</p>
+<p>A Szolgáltató a többletmunkát annak megkezdése előtt ismerteti az Ügyféllel, és ahhoz az Ügyfél jóváhagyását kéri. A többletmunka költsége 20 000 Ft/óra, a legkisebb számlázható egység 15 perc (5 000 Ft).</p>
 <h2>5. Adatok, módszertan és feltételezések</h2>
 <p>5.1. A Szolgáltató az elemzések során az Ügyfél által átadott adatokat, valamint a megbízhatónak ítélt, azonosítható külső adatforrásokat használja fel.</p>
 <p>5.2. Az Ügyfél felel az általa átadott adatok teljességéért, pontosságáért és aktualitásáért. A Szolgáltató a rendelkezésre bocsátott adatok ésszerű ellenőrzését elvégzi a megbízás terjedelmében, de nem vállal teljes körű, független könyvvizsgálati vagy letétkezelői ellenőrzést.</p>
