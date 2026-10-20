@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Pénzügyi konzultáció és Portfóliótükör
+title: FIRE konzultáció és portfólióelemzés
 permalink: consulting_new-1
 ---
 
@@ -8,80 +8,77 @@ permalink: consulting_new-1
 <div class="resources-header">
   <div class="eyebrow">Adam on FIRE</div>
   <h1>{{ page.title | escape }}</h1>
-  <p>Pénzügyi edukáció, portfóliódiagnosztika és hosszú távú pénzügyi tervezés, három átlátható csomagban.</p>
+  <p>FIRE konzultáció és portfólióelemzés</p>
 </div>
 
 <div class="section">
   <div class="row">
     <div class="col s12">
-      <section class="fire-consulting" aria-label="Adam on FIRE pénzügyi edukációs szolgáltatások">
+      <section class="fire-consulting" aria-label="Adam on FIRE edukációs szolgáltatások">
         <div class="fc-hero">
-          <h2>Értsd meg a befektetéseidet. Tervezd tudatosabban a pénzügyi szabadságodat.</h2>
-          <p>Portfóliódiagnosztika, pénzügyi modellezés és strukturált beszélgetések. A cél nem az, hogy helyetted döntsek, hanem hogy a döntéseid előtt jobban lásd a lehetőségeket, a költségeket és a kockázatokat.</p>
+          <h2>Ha döntés előtt állsz, konzultálj egy szakértővel. Csak egyszer kell fizetned, hogy utána ne másnak fizess magas költségeket.</h2>
+          <p>A strukturált beszélgetések során a cél nem az, hogy helyetted döntsek, hanem hogy a döntéseid előtt jobban lásd a lehetőségeket, a költségeket és a kockázatokat.</p>
           <a class="fc-link" href="#csomagok">Csomagok és árak <span aria-hidden="true">→</span></a>
         </div>
 
         <div class="fc-intro-grid">
-          <div><strong>Érthető számok</strong><p>Eszközarányok, koncentráció, kockázati forgatókönyvek, pénzáramlások.</p></div>
+          <div><strong>Összefoglaló dokumentum</strong><p>Eszközarányok, koncentráció, diverzifikáció, és forgatókönyvek elemzése (csomagtípustól függően).</p></div>
           <div><strong>Független szemlélet</strong><p>Elemzési és edukációs fókusz, konkrét befektetési termékek értékesítése nélkül.</p></div>
-          <div><strong>Kézzelfogható eredmény</strong><p>A választott csomagtól függően összefoglaló vagy részletes írásos jelentés.</p></div>
+          <div><strong>Kézzelfogható eredmény</strong><p>A választott csomagtól függően különböző mélységű írásos jelentést kapsz.</p></div>
         </div>
 
         <div id="csomagok" class="fc-heading">
           <span class="fc-eyebrow">VÁLASSZ SZOLGÁLTATÁST</span>
           <h2>Három csomag, három különböző mélység</h2>
-          <p>A csomagokat a vizsgált összvagyon értéke alapján különböztetjük meg: 50 millió Ft-ig konzultáció, 50–150 millió Ft között Portfóliótükör, 150 millió Ft felett FIRE Pénzügyi Térkép. A díjak fix csomagárak, nem a vagyon százalékában felszámított díjak.</p>
+          <p>A csomagok maximális vagyonarányhoz vannak kötve (magasabb vagyonnál magasabb a díj): 50 millió Ft-ig Konzultációt, 50–150 millió Ft között Portfóliótükör, 150 millió Ft felett FIRE Pénzügyi Térképet vehetsz igénybe. A díjak fix csomagárak, de egyedi kérések esetén eltérőek lehetnek.</p>
         </div>
 
         <div class="fc-cards">
-          <article class="fc-card" tabindex="0" role="button" aria-pressed="false" aria-label="Pénzügyi konzultáció kiválasztása">
-            <div class="fc-card-top"><span class="fc-kicker">01 · BESZÉLGETÉS</span><h3>Pénzügyi konzultáció</h3><p>Ha egy pénzügyi kérdést vagy élethelyzetet szeretnél átgondolni.</p></div>
+          <article class="fc-card" tabindex="0" role="button" aria-pressed="false" aria-label="Konzultáció kiválasztása">
+            <div class="fc-card-top"><h3>Konzultáció</h3><p>Ha egy pénzügyi kérdést vagy élethelyzetet szeretnél átgondolni.</p></div>
             <div class="fc-price">40 000 Ft <span>/ alkalom</span></div>
             <p class="fc-wealth">Vagyonértékhatár: <strong>50 millió Ft-ig</strong></p>
             <div class="fc-includes"><strong>Mit kapsz?</strong>
               <ul>
                 <li>Rövid előzetes igény- és célfelmérés</li>
                 <li>60 perc online, strukturált edukációs beszélgetés</li>
-                <li>Legfeljebb három előre megadott téma áttekintése</li>
-                <li>Pénzügyi fogalmak, lehetséges forgatókönyvek és döntési szempontok közérthetően</li>
-                <li>Rövid, legfeljebb 1 oldalas írásos összefoglaló</li>
+                <li>Egy adott pénzügyi döntéshelyzet áttekintése</li>
+                <li>Rövid, 1 oldalas írásos összefoglaló a beszélgetésről és a portfóliód alapjairól</li>
               </ul>
             </div>
             <div class="fc-card-bottom"><p><strong>Nem tartalmaz:</strong> tételes portfólióvizsgálatot, külön modellépítést vagy részletes jelentést.</p><a class="fc-cta fc-cta-outline" href="https://docs.google.com/forms/d/e/1FAIpQLScnfbOcL5JYei45RLssW8ukcZKwySogvV-lsordVkxg6xz9Qg/viewform" target="_blank" rel="noopener noreferrer">Konzultációt kérek <span aria-hidden="true">→</span></a></div>
           </article>
 
           <article class="fc-card" tabindex="0" role="button" aria-pressed="false" aria-label="Portfóliótükör kiválasztása">
-            <div class="fc-card-top"><span class="fc-kicker">02 · ELEMZÉS</span><h3>Portfóliótükör</h3><p>Ha szeretnéd érteni, milyen kitettségek, átfedések és kockázatok vannak a portfóliódban.</p></div>
+            <div class="fc-card-top"><h3>Portfóliótükör</h3><p>Ha szeretnéd érteni, milyen kitettségek, átfedések és kockázatok vannak a portfóliódban.</p></div>
             <div class="fc-price">80 000 Ft <span>/ elemzés</span></div>
             <p class="fc-wealth">Vagyonértékhatár: <strong>50–150 millió Ft</strong></p>
             <div class="fc-includes"><strong>Az alapcsomagon felül:</strong>
               <ul>
-                <li>Portfólióadatok feldolgozása Growy-exportból vagy egyeztetett Excelből</li>
+                <li>Portfólióadatok feldolgozása exportált adatokból (Growy vagy más forrásból)</li>
                 <li>Eszközosztályok, legnagyobb pozíciók és koncentráció bemutatása</li>
                 <li>Azonosítható földrajzi és devizakitettségek, valamint indexátfedések vizsgálata</li>
-                <li>Termékköltségek, historikus hozam-/ingadozásmutatók és kamatkockázat, ahol hiteles adat rendelkezésre áll</li>
-                <li>Hipotetikus piaci stresszteszt és az adathiányok áttekintése</li>
+                <li>Termékköltségek, historikus hozam-/ingadozásmutatók és kamatkockázat (ahol van erről adat)</li>
                 <li>3–5 oldalas Word/PDF jelentés és 60 perces online eredménymegbeszélés</li>
               </ul>
             </div>
-            <div class="fc-card-bottom"><p><strong>Terjedelem:</strong> legfeljebb 50 befektetési pozíció. Összetettebb megbízásnál előzetes egyedi egyeztetés.</p><a class="fc-cta" href="https://docs.google.com/forms/d/e/1FAIpQLScnfbOcL5JYei45RLssW8ukcZKwySogvV-lsordVkxg6xz9Qg/viewform" target="_blank" rel="noopener noreferrer">Portfóliótükröt kérek <span aria-hidden="true">→</span></a></div>
+            <div class="fc-card-bottom"><p><strong>Terjedelem:</strong> a 3-5 oldalas jelentés a meglévő eszközök számától és a portfólió kompexitásától függően változhat</p><a class="fc-cta" href="https://docs.google.com/forms/d/e/1FAIpQLScnfbOcL5JYei45RLssW8ukcZKwySogvV-lsordVkxg6xz9Qg/viewform" target="_blank" rel="noopener noreferrer">Portfóliótükröt kérek <span aria-hidden="true">→</span></a></div>
           </article>
 
           <article class="fc-card" tabindex="0" role="button" aria-pressed="false" aria-label="FIRE Pénzügyi Térkép kiválasztása">
-            <div class="fc-card-top"><span class="fc-kicker">03 · TELJES PÉNZÜGYI KÉP</span><h3>FIRE Pénzügyi Térkép</h3><p>Ha a befektetéseidet, a kiadásaidat és a pénzügyi szabadságodhoz vezető utat egyben szeretnéd látni.</p></div>
+            <div class="fc-card-top"><h3>FIRE Pénzügyi Térkép</h3><p>Ha a befektetéseidet, a kiadásaidat és a pénzügyi szabadságodhoz vezető utat egyben szeretnéd látni.</p></div>
             <div class="fc-price">150 000 Ft <span>/ teljes csomag</span></div>
             <p class="fc-wealth">Vagyonértékhatár: <strong>150 millió Ft felett</strong></p>
             <div class="fc-includes"><strong>A Portfóliótükörön felül:</strong>
               <ul>
                 <li>Átfogó vagyonmérleg: megtakarítások, más eszközök és kötelezettségek</li>
-                <li>Háztartási kiadások, tartalékok és megtakarítási ráta elemzése</li>
-                <li>FIRE- és hosszú távú cashflow-forgatókönyvek modellezése</li>
-                <li>Állami nyugdíj és személyes infláció hatásának szemléltetése, ha releváns és van hozzá adat</li>
-                <li>Likviditási igények, nagyobb élethelyzet-változások és pénzügyi kompromisszumok feltérképezése</li>
-                <li>8–12 oldalas összefoglaló és 2 × 60 perc online egyeztetés</li>
+                <li>Háztartási kiadások, tartalékok és megtakarítási ráta elemzése (ha van elérhető adat)</li>
+				<li>Hipotetikus piaci stressztesztek bemutatása</li>
+                <li>FIRE- és hosszú távú cashflow-forgatókönyvek modellezése (kivételi rátákkal)</li>
+                <li>5–8 oldalas összefoglaló és igény szerint 2 × 60 perc online egyeztetés</li>
               </ul>
             </div>
-            <div class="fc-card-bottom"><p><strong>Terjedelem:</strong> egy háztartás pénzügyi helyzete, legfeljebb 75 befektetési pozíció. Összetett vállalkozási vagy ingatlanvagyon esetén külön egyeztetés.</p><a class="fc-cta fc-cta-dark" href="https://docs.google.com/forms/d/e/1FAIpQLScnfbOcL5JYei45RLssW8ukcZKwySogvV-lsordVkxg6xz9Qg/viewform" target="_blank" rel="noopener noreferrer">FIRE térképet kérek <span aria-hidden="true">→</span></a></div>
+            <div class="fc-card-bottom"><p><strong>Terjedelem:</strong> az 5-8 oldalas jelentés a meglévő eszközök számától és a vagyonod kompexitásától függően változhat</p><a class="fc-cta fc-cta-dark" href="https://docs.google.com/forms/d/e/1FAIpQLScnfbOcL5JYei45RLssW8ukcZKwySogvV-lsordVkxg6xz9Qg/viewform" target="_blank" rel="noopener noreferrer">FIRE térképet kérek <span aria-hidden="true">→</span></a></div>
           </article>
         </div>
 
@@ -92,28 +89,28 @@ permalink: consulting_new-1
           <tr><td>Vagyonértékhatár</td><td>50 millió Ft-ig</td><td>50 millió Ft felett, 150 millió Ft-ig</td><td>150 millió Ft felett</td></tr>
           <tr><td>Előzetes cél- és igényfelmérés</td><td>✓</td><td>✓</td><td>✓</td></tr>
           <tr><td>Online konzultáció</td><td>60 perc</td><td>60 perc</td><td>2 × 60 perc</td></tr>
-          <tr><td>Portfólió-összetétel és koncentráció</td><td>—</td><td>✓</td><td>✓</td></tr>
+          <tr><td>Portfólió-összetétel és koncentráció</td><td>✓</td><td>✓</td><td>✓</td></tr>
           <tr><td>Földrajzi, deviza- és kockázati vizsgálat</td><td>—</td><td>✓*</td><td>✓*</td></tr>
-          <tr><td>Historikus mutatók és stresszteszt</td><td>—</td><td>✓*</td><td>✓*</td></tr>
+          <tr><td>Historikus mutatók és stresszteszt</td><td>—</td><td>-</td><td>✓*</td></tr>
           <tr><td>Teljes vagyon- és költési kép</td><td>—</td><td>—</td><td>✓</td></tr>
           <tr><td>Nyugdíj, FIRE és cashflow forgatókönyvek</td><td>—</td><td>—</td><td>✓</td></tr>
-          <tr><td>Írásos dokumentáció</td><td>Max. 1 oldal</td><td>3–5 oldal</td><td>8–12 oldal</td></tr>
+          <tr><td>Írásos dokumentáció</td><td>1 oldal</td><td>3–5 oldal*</td><td>5–8 oldal*</td></tr>
         </tbody></table></div>
-        <p class="fc-footnote">* Az adatok rendelkezésre állásától és az eszközök beazonosíthatóságától függően. A historikus adatok nem garantálják a jövőbeli teljesítményt.</p>
+        <p class="fc-footnote">* Az adatok rendelkezésre állásától és az eszközök beazonosíthatóságától függően.</p>
 
         <div class="fc-heading"><span class="fc-eyebrow">HOGYAN ZAJLIK?</span><h2>Egyszerű, előre látható folyamat</h2></div>
-        <ol class="fc-steps"><li><strong>Jelentkezés</strong><span>Kiválasztod a csomagot, kitöltöd a jelentkezési kérdőívet, és megadod, milyen kérdések foglalkoztatnak.</span></li><li><strong>Adatbekérés</strong><span>A választott csomaghoz szükséges kérdőív és – portfólióelemzés esetén – Growy- vagy Excel-export egyeztetése.</span></li><li><strong>Elemzés és ellenőrzés</strong><span>A számításokat összeállítom, az azonosíthatatlan vagy hiányos adatokat külön jelzem.</span></li><li><strong>Online megbeszélés és összefoglaló</strong><span>Átbeszéljük az eredményeket, az értelmezési kereteket és a megválaszolatlan kérdéseket.</span></li></ol>
+        <ol class="fc-steps"><li><strong>Jelentkezés</strong><span>Kiválasztod a csomagot, kitöltöd a <a href="https://docs.google.com/forms/d/e/1FAIpQLScnfbOcL5JYei45RLssW8ukcZKwySogvV-lsordVkxg6xz9Qg/viewform" target="_blank" rel="noopener noreferrer">jelentkezési kérdőívet</a>, és megadod, milyen kérdések foglalkoztatnak.</span></li><li><strong>Adatbekérés</strong><span>A választott csomaghoz szükséges kérdőív és – portfólióelemzés esetén – Growy- vagy Excel-export egyeztetése.</span></li><li><strong>Elemzés és ellenőrzés</strong><span>A számításokat összeállítom, az azonosíthatatlan vagy hiányos adatokat külön jelzem.</span></li><li><strong>Online megbeszélés és összefoglaló</strong><span>Átbeszéljük az eredményeket, az értelmezési kereteket és a megválaszolatlan kérdéseket.</span></li></ol>
 
         <div class="fc-faq"><h2>Gyakori kérdések</h2>
           <details><summary>Hogyan számít a vagyonérték a csomagválasztásnál?</summary><p>A megrendeléskor megadott becsült összvagyon alapján történik a besorolás. Az 50 és 150 millió Ft-os határérték még az alacsonyabb csomaghoz tartozik. A díj fix, nem a vagyon százaléka.</p></details>
-          <details><summary>Muszáj Growy-t használnom?</summary><p>Nem. A Portfóliótükörhöz a Growy-export megkönnyíti az adatfeldolgozást, de egyeztetett szerkezetű Excel-fájl is megfelelő lehet.</p></details>
-          <details><summary>Milyen befektetések elemezhetők?</summary><p>Elsősorban ETF-ek, részvények, kötvények, befektetési alapok, állampapírok és azonosítható egyéb pénzügyi eszközök. A nehezen árazható vagy összetett konstrukcióknál az elemzés mélysége korlátozott lehet.</p></details>
+          <details><summary>Milyen formátumban küldjem el az adatokat?</summary><p>A Portfóliótükörhöz és a FIRE Pénzügyi Térképhez a Growy-export megkönnyíti az adatfeldolgozást, de egyeztetett szerkezetű Excel-fájl vagy brókerszámláról letöltött PDF is megfelelő lehet. Az adatokat bizalmasan és csak offline kezelem.</p></details>
+          <details><summary>Milyen befektetések elemezhetők?</summary><p>Elsősorban ETF-ek, részvények, kötvények, befektetési alapok, állampapírok és azonosítható egyéb pénzügyi eszközök. A nehezen árazható vagy összetett konstrukcióknál az elemzés mélysége korlátozott lehet, de például ingatlanok esetében modellezés a KSH lakásárindexével megoldható.</p></details>
           <details><summary>Kapok konkrét vételi vagy eladási javaslatot?</summary><p>Nem. A szolgáltatások edukációs, diagnosztikai és forgatókönyv-modellezési célt szolgálnak. Nem tartalmaznak ügyfélre szabott, konkrét pénzügyi eszközök vételére, tartására vagy eladására vonatkozó ajánlásokat.</p></details>
           <details><summary>Mi történik, ha valamelyik adatom hiányzik?</summary><p>A jelentésben megjelölöm az adathiányt és annak következményét. Nem helyettesítem ismeretlen hozamadattal, becsült szórással vagy nem ellenőrzött földrajzi összetétellel.</p></details>
         </div>
 
         <div class="fc-final-cta"><h2>Nem tudod, melyik csomag illik a kérdéseidhez?</h2><p>Írd meg röviden, hogy mit szeretnél megérteni vagy kiszámolni, és egyeztetjük a megfelelő szolgáltatási keretet.</p><a class="fc-cta" href="mailto:adamgoesfire@gmail.com?subject=Adam%20on%20FIRE%20-%20szolg%C3%A1ltat%C3%A1si%20%C3%A9rdekl%C5%91d%C3%A9s">Érdeklődöm e-mailben <span aria-hidden="true">→</span></a></div>
-        <p class="fc-legal"><strong>Fontos:</strong> A fenti szolgáltatások pénzügyi edukációt, objektív portfóliódiagnosztikát és hipotetikus pénzügyi forgatókönyvek bemutatását célozzák. Nem minősülnek személyre szabott befektetési ajánlásnak, befektetési megbízáskezelésnek, vagyonkezelésnek vagy garantált eredmény vállalásának. A szolgáltatási tartalom és szerződéses dokumentumok véglegesítéséhez jogi felülvizsgálat javasolt.</p>
+        <p class="fc-legal"><strong>Fontos:</strong> A fenti szolgáltatások pénzügyi edukációt, objektív portfóliódiagnosztikát és hipotetikus pénzügyi forgatókönyvek bemutatását célozzák. Nem minősülnek személyre szabott befektetési ajánlásnak, befektetési megbízáskezelésnek vagy vagyonkezelésnek.</p>
         <p class="fc-policies">A jelentkezéssel kapcsolatos információkhoz olvasd el az <a href="{{ '/privacy-policy' | relative_url }}">adatvédelmi tájékoztatót</a> és az <a href="{{ '/terms-and-conditions' | relative_url }}">általános szerződési feltételeket</a>.</p>
       </section>
     </div>
