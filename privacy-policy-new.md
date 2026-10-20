@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Adatkezelési tájékoztató
-permalink: privacy-policy
+permalink: privacy-policy-new
 ---
 
 <style>
