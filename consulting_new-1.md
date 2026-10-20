@@ -65,8 +65,8 @@ permalink: consulting_new-1
             <div class="fc-card-bottom"><p><strong>Terjedelem:</strong> a 3-5 oldalas jelentés a meglévő eszközök számától és a portfólió kompexitásától függően változhat</p><a class="fc-cta" href="https://docs.google.com/forms/d/e/1FAIpQLScnfbOcL5JYei45RLssW8ukcZKwySogvV-lsordVkxg6xz9Qg/viewform" target="_blank" rel="noopener noreferrer">Portfóliótükröt kérek <span aria-hidden="true">→</span></a></div>
           </article>
 
-          <article class="fc-card" tabindex="0" role="button" aria-pressed="false" aria-label="FIRE Pénzügyi Térkép kiválasztása">
-            <div class="fc-card-top"><h3>FIRE Pénzügyi Térkép</h3><p>Ha a befektetéseidet, a kiadásaidat és a pénzügyi szabadságodhoz vezető utat egyben szeretnéd látni.</p></div>
+          <article class="fc-card" tabindex="0" role="button" aria-pressed="false" aria-label="FIRE Térkép kiválasztása">
+            <div class="fc-card-top"><h3>FIRE Térkép</h3><p>Ha a befektetéseidet, a kiadásaidat és a pénzügyi szabadságodhoz vezető utat egyben szeretnéd látni.</p></div>
             <div class="fc-price">150 000 Ft <span>/ teljes csomag</span></div>
             <p class="fc-wealth">Vagyonértékhatár: <strong>150 millió Ft felett</strong></p>
             <div class="fc-includes"><strong>A Portfóliótükörön felül:</strong>
@@ -103,7 +103,7 @@ permalink: consulting_new-1
 
         <div class="fc-faq"><h2>Gyakori kérdések</h2>
           <details><summary>Hogyan számít a vagyonérték a csomagválasztásnál?</summary><p>A megrendeléskor megadott becsült összvagyon alapján történik a besorolás. Az 50 és 150 millió Ft-os határérték még az alacsonyabb csomaghoz tartozik. A díj fix, nem a vagyon százaléka.</p></details>
-          <details><summary>Milyen formátumban küldjem el az adatokat?</summary><p>A Portfóliótükörhöz és a FIRE Pénzügyi Térképhez a Growy-export megkönnyíti az adatfeldolgozást, de egyeztetett szerkezetű Excel-fájl vagy brókerszámláról letöltött PDF is megfelelő lehet. Az adatokat bizalmasan és csak offline kezelem.</p></details>
+          <details><summary>Milyen formátumban küldjem el az adatokat?</summary><p>A Portfóliótükörhöz és a FIRE Térképhez a Growy-export megkönnyíti az adatfeldolgozást, de egyeztetett szerkezetű Excel-fájl vagy brókerszámláról letöltött PDF is megfelelő lehet. Az adatokat bizalmasan és csak offline kezelem.</p></details>
           <details><summary>Milyen befektetések elemezhetők?</summary><p>Elsősorban ETF-ek, részvények, kötvények, befektetési alapok, állampapírok és azonosítható egyéb pénzügyi eszközök. A nehezen árazható vagy összetett konstrukcióknál az elemzés mélysége korlátozott lehet, de például ingatlanok esetében modellezés a KSH lakásárindexével megoldható.</p></details>
           <details><summary>Kapok konkrét vételi vagy eladási javaslatot?</summary><p>Nem. A szolgáltatások edukációs, diagnosztikai és forgatókönyv-modellezési célt szolgálnak. Nem tartalmaznak ügyfélre szabott, konkrét pénzügyi eszközök vételére, tartására vagy eladására vonatkozó ajánlásokat.</p></details>
           <details><summary>Mi történik, ha valamelyik adatom hiányzik?</summary><p>A jelentésben megjelölöm az adathiányt és annak következményét. Nem helyettesítem ismeretlen hozamadattal, becsült szórással vagy nem ellenőrzött földrajzi összetétellel.</p></details>

@@ -30,8 +30,8 @@ permalink: terms-and-conditions-new
 .aof-terms .terms-content a{color:#2962ff;text-decoration:underline}.aof-terms .terms-intro{font-size:1.08rem;margin-bottom:10px}.aof-terms .terms-price{font-weight:700;color:#0d47a1}
 @media(max-width:600px){.aof-terms .terms-content h2{font-size:1.35rem;gap:10px}.aof-terms .terms-content{padding:0 2px}}
 </style>
-<p class="terms-intro"><strong>Adam on FIRE – Pénzügyi konzultáció, Portfóliótükör és FIRE Pénzügyi Térkép</strong></p>
-<p>Hatályos: [dátum]</p>
+<p class="terms-intro"><strong>Adam on FIRE – Konzultáció, Portfóliótükör és FIRE Térkép</strong></p>
+<p>Hatályos: [hatálybalépés dátuma]</p>
 <h2>1. A Szolgáltató adatai</h2>
 <p><strong>Szolgáltató neve:</strong> Sanyó Ádám egyéni vállalkozó</p>
 <p><strong>Székhely:</strong> 1045 Budapest, Chinoin utca 4. 1/4.</p>
@@ -47,33 +47,33 @@ permalink: terms-and-conditions-new
 <p>2.4. Az egyedi ajánlat az ÁSZF-ben foglaltakat kizárólag az adott szolgáltatás tekintetében, kifejezett és jogszerű eltérés esetén egészítheti ki vagy módosíthatja.</p>
 <h2>3. A szolgáltatások jellege és célja</h2>
 <p>3.1. A Szolgáltató szolgáltatásainak célja a pénzügyi ismeretek bővítése, a pénzügyi adatok rendszerezése, a portfólió jellemzőinek tényszerű bemutatása és a különböző pénzügyi forgatókönyvek megértésének támogatása.</p>
-<p>3.2. A szolgáltatások kizárólag a megrendelésben meghatározott terjedelemben vehetők igénybe. A Szolgáltató a szolgáltatás tárgyát, módszertanát és korlátait a teljesítés előtt ismerteti az Ügyféllel.</p>
+<p>3.2. A szolgáltatások kizárólag a megrendelésben meghatározott terjedelemben vehetők igénybe. Az elemzések mélysége az adatok elérhetőségétől és az eszközök azonosíthatóságától függ. A Szolgáltató a szolgáltatás tárgyát, módszertanát és korlátait a teljesítés előtt ismerteti az Ügyféllel.</p>
 <p>3.3. A Szolgáltató nem vállal portfóliókezelést, ügyfélmegbízások végrehajtását, értékpapírok vételére vagy eladására irányuló közvetítést, illetve ügyfélpénzek vagy pénzügyi eszközök kezelését.</p>
 <p>3.4. A Szolgáltató a szolgáltatások keretében nem nyújt személyre szabott ajánlást arra vonatkozóan, hogy az Ügyfél meghatározott pénzügyi eszközt megvásároljon, eladjon, megtartson vagy arra ügyletet kössön. Nem határozza meg az Ügyfél számára követendő konkrét értékpapír-összetételt vagy egyedi eszközallokációt.</p>
 <p>3.5. A szolgáltatás elnevezése, az ÁSZF elfogadása és az Ügyfél nyilatkozata önmagában nem határozza meg a tevékenység jogi minősítését. Amennyiben egy konkrét kérés teljesítése engedélyköteles tevékenység végzését igényelné, a Szolgáltató az adott kérést nem teljesíti, hanem szükség esetén megfelelő jogosultsággal rendelkező szolgáltatóhoz irányítja az Ügyfelet.</p>
 <h2>4. A szolgáltatási csomagok</h2>
-<h3>4.1. Pénzügyi konzultáció</h3>
+<h3>4.1. Konzultáció</h3>
 <p class="terms-price">Díj: 40 000 Ft/alkalom.</p>
 <p><strong>Vagyonértékhatár:</strong> legfeljebb 50 millió Ft összvagyon.</p>
 <p>A szolgáltatás tartalma:</p>
-<ul><li>előzetes igény- és célfelmérés</li><li>60 perces online, strukturált edukációs beszélgetés</li><li>legfeljebb három, előzetesen egyeztetett téma áttekintése</li><li>általános pénzügyi fogalmak, lehetséges forgatókönyvek és döntési szempontok bemutatása</li><li>legfeljebb egyoldalas, tényszerű írásos összefoglaló.</li></ul>
+<ul><li>előzetes igény- és célfelmérés</li><li>60 perces online, strukturált edukációs beszélgetés</li><li>egy adott, előzetesen egyeztetett pénzügyi döntéshelyzet áttekintése</li><li>általános pénzügyi fogalmak, lehetséges forgatókönyvek és döntési szempontok bemutatása</li><li>rövid, egyoldalas írásos összefoglaló a beszélgetésről és a portfólió alapjairól.</li></ul>
 <p>A szolgáltatás nem tartalmaz tételes portfólióelemzést, külön modellépítést, részletes jelentést vagy személyre szabott befektetési ajánlást.</p>
 <h3>4.2. Portfóliótükör</h3>
 <p class="terms-price">Díj: 80 000 Ft/elemzés.</p>
 <p><strong>Vagyonértékhatár:</strong> 50 millió Ft felett, legfeljebb 150 millió Ft összvagyon.</p>
 <p>A szolgáltatás tartalma:</p>
-<ul><li>a rendelkezésre bocsátott portfólióadatok feldolgozása</li><li>eszközosztályok, legnagyobb pozíciók és koncentrációk bemutatása</li><li>azonosítható földrajzi, deviza- és indexkitettségek vizsgálata</li><li>elérhető adatok alapján termékköltségek, historikus hozam-, volatilitási és kamatkockázati mutatók bemutatása</li><li>előre meghatározott feltételezéseken alapuló hipotetikus stresszteszt</li><li>a felhasznált adatok és a lényeges adathiányok ismertetése</li><li>3–5 oldalas Word- vagy PDF-jelentés</li><li>60 perces online eredménymegbeszélés.</li></ul>
-<p>A csomag legfeljebb 50 befektetési pozícióra vonatkozik. A korlátokat meghaladó vagy a szokásosnál összetettebb megbízás csak előzetes egyedi megállapodás alapján vállalható.</p>
-<p>A jelentés leíró jellegű: a vizsgált portfólió összetételét, mérhető jellemzőit és feltételezett forgatókönyvek szerinti viselkedését mutatja be. Nem tartalmaz személyre szabott vételi, eladási vagy tartási ajánlást.</p>
-<h3>4.3. FIRE Pénzügyi Térkép</h3>
+<ul><li>a rendelkezésre bocsátott portfólióadatok feldolgozása</li><li>eszközosztályok, legnagyobb pozíciók és koncentrációk bemutatása</li><li>azonosítható földrajzi, deviza- és indexkitettségek vizsgálata</li><li>elérhető adatok alapján termékköltségek, historikus hozam-, volatilitási és kamatkockázati mutatók bemutatása</li><li>a felhasznált adatok és a lényeges adathiányok ismertetése</li><li>3–5 oldalas Word- vagy PDF-jelentés</li><li>60 perces online eredménymegbeszélés.</li></ul>
+<p>A befektetési pozíciók száma és összetettsége befolyásolhatja az elemzés terjedelmét. Az egyedi vagy szokatlanul összetett megbízás feltételeiről a felek előzetesen egyeztetnek.</p>
+<p>A jelentés leíró jellegű: a vizsgált portfólió összetételét, mérhető jellemzőit mutatja be. Nem tartalmaz személyre szabott vételi, eladási vagy tartási ajánlást.</p>
+<h3>4.3. FIRE Térkép</h3>
 <p class="terms-price">Díj: 150 000 Ft/csomag.</p>
 <p><strong>Vagyonértékhatár:</strong> 150 millió Ft feletti összvagyon.</p>
 <p>A szolgáltatás a Portfóliótükörben meghatározottakon felül az alábbiakat tartalmazza:</p>
-<ul><li>átfogó vagyonmérleg készítése a megadott adatok alapján</li><li>megtakarítások, egyéb eszközök és kötelezettségek rendszerezése</li><li>háztartási kiadások és megtakarítási ráta elemzése</li><li>FIRE- és hosszú távú pénzáramlási forgatókönyvek modellezése</li><li>a nyugdíj és a személyes infláció feltételezett hatásainak szemléltetése, amennyiben a szükséges adatok rendelkezésre állnak</li><li>likviditási igények, nagyobb élethelyzet-változások és pénzügyi kompromisszumok áttekintése</li><li>8–12 oldalas összefoglaló</li><li>két, egyenként 60 perces online egyeztetés.</li></ul>
-<p>A szolgáltatás egy háztartás pénzügyi helyzetére és legfeljebb 75 befektetési pozícióra vonatkozik. Összetett vállalkozási vagy ingatlanvagyon, illetve egyéb különleges igény esetén a felek előzetesen egyeztetnek a terjedelemről és a díjról.</p>
+<ul><li>átfogó vagyonmérleg készítése: megtakarítások, egyéb eszközök és kötelezettségek</li><li>háztartási kiadások, tartalékok és megtakarítási ráta elemzése, amennyiben rendelkezésre állnak az adatok</li><li>hipotetikus piaci stressztesztek bemutatása</li><li>FIRE-, nyugdíj- és hosszú távú cashflow-forgatókönyvek modellezése, ideértve a feltételezett kivételi rátákat</li><li>5–8 oldalas írásos összefoglaló, amelynek terjedelme a vizsgált eszközöktől és a vagyon összetettségétől függően változhat</li><li>egy 60 perces online konzultáció és igény szerint további 60 perc online egyeztetés.</li></ul>
+<p>Az elemzés terjedelmét az átadott adatok, a befektetési pozíciók száma és a vagyon összetettsége befolyásolja. Összetett vállalkozási vagy ingatlanvagyon, illetve különleges igény esetén a felek előzetesen egyeztetnek a terjedelemről és az esetleges egyedi díjról.</p>
 <p>A számítások lehetséges pénzügyi kimeneteleket és feltételezett pályákat mutatnak be. Nem garantálnak meghatározott pénzügyi függetlenségi dátumot, hozamot, nyugdíjösszeget vagy vagyoni eredményt.</p>
 <h3>4.4. Vagyonértékhatárok és a csomagok közös korlátai</h3>
-<p>A csomagbesorolás alapja az Ügyfél, illetve a vizsgált háztartás által a megrendeléskor megadott, becsült teljes vagyonérték. Az 50 millió Ft-os és a 150 millió Ft-os határérték az alacsonyabb kategóriába tartozik. A vagyonértékhatárok a csomagok igénybevételi feltételei, nem vagyonarányosan számított díjak. A csomagbesorolás és az esetleges egyedi igények a megrendelés elfogadása előtt egyeztetendők.</p>
+<p>A csomagbesorolás alapja az Ügyfél által a megrendeléskor megadott, a vizsgált összvagyonra vonatkozó becsült teljes vagyonérték. Az 50 millió Ft-os és a 150 millió Ft-os határérték az alacsonyabb kategóriába tartozik. A vagyonértékhatárok a csomagok igénybevételi feltételei, nem vagyonarányosan számított díjak. A csomagbesorolás és az esetleges egyedi igények a megrendelés elfogadása előtt egyeztetendők.</p>
 <p>A weboldalon feltüntetett díjak a meghatározott csomag tartalmára vonatkoznak. A további munka, újabb adatkör feldolgozása, módosított modell vagy kiegészítő jelentés külön megállapodás tárgya.</p>
 <p>A Szolgáltató a többletmunkát annak megkezdése előtt ismerteti az Ügyféllel, és ahhoz az Ügyfél jóváhagyását kéri.</p>
 <h2>5. Adatok, módszertan és feltételezések</h2>
@@ -84,9 +84,9 @@ permalink: terms-and-conditions-new
 <p>5.5. A pénzáramlási és FIRE-modellek a bemeneti adatoktól és a megadott feltételezésektől függnek. Az infláció, a piaci hozamok, az adózás, a kiadások és az élethelyzet idővel eltérhetnek a modellben alkalmazott értékektől.</p>
 <p>5.6. A szolgáltatás nem helyettesíti a jogszabályi nyugdíjjogosultság megállapítására jogosult szerv eljárását, az egyedi adó- vagy jogi szakvéleményt, illetve az engedélyköteles befektetési szolgáltatást.</p>
 <h2>6. A szerződéskötés és a teljesítés menete</h2>
-<p>6.1. Az Ügyfél e-mailben vagy a weboldalon megjelölt egyéb csatornán jelzi igényét. A Szolgáltató tájékoztatást ad a megfelelő csomagról, a szükséges adatokról és az esetleges korlátokról.</p>
+<p>6.1. Az Ügyfél a weboldalon elérhető jelentkezési kérdőíven vagy e-mailben jelzi igényét. A Szolgáltató tájékoztatást ad a megfelelő csomagról, a szükséges adatokról és az esetleges korlátokról.</p>
 <p>6.2. A szerződés a megrendelés írásbeli elfogadásával és a szolgáltatás tartalmának, díjának, valamint teljesítési feltételeinek egyeztetésével jön létre.</p>
-<p>6.3. A Szolgáltató a szükséges adatokat és dokumentumokat az Ügyfél rendelkezésére bocsátott csatornán kéri be. Az Ügyfélnek kizárólag a szolgáltatáshoz szükséges adatokat kell megadnia.</p>
+<p>6.3. A Szolgáltató a jelentkezési kérdőív alapján egyezteti a szükséges adatokat; portfólióelemzésnél Growy-export, Excel-fájl vagy előzetesen elfogadott brókeri PDF is felhasználható. A szükséges adatokat és dokumentumokat az egyeztetett csatornán kéri be. Az Ügyfélnek kizárólag a szolgáltatáshoz szükséges adatokat kell megadnia.</p>
 <p>6.4. A teljesítés kezdő időpontját és a várható átadási határidőt a felek a megrendelés visszaigazolásában rögzítik. Ha az Ügyfél késedelmesen vagy hiányosan adja át a szükséges adatokat, a teljesítési határidő ennek megfelelően módosulhat.</p>
 <p>6.5. A szolgáltatás teljesítése a vállalt jelentés átadásával és az előírt konzultációk megtartásával valósul meg. A szolgáltatás nem eredménykötelem: a Szolgáltató elemzést és modellezést vállal, nem meghatározott befektetési vagy vagyoni eredményt.</p>
 <h2>7. Díjak és fizetési feltételek</h2>
@@ -97,7 +97,7 @@ permalink: terms-and-conditions-new
 <h2>8. Időpontmódosítás és lemondás</h2>
 <h3>8.1. Az online konzultáció időpontja előzetes egyeztetéssel módosítható.</h3>
 <p>8.2. Az Ügyfél a lefoglalt időpontot legalább 24 órával korábban díjmentesen lemondhatja vagy módosíthatja.</p>
-<p>8.3. A 24 órán belüli lemondás vagy a meg nem jelenés esetén a Szolgáltató a ténylegesen felmerült, igazolható költségeket és a jogszerűen érvényesíthető díjigényét érvényesítheti. A fogyasztót megillető kötelező jogok nem korlátozhatók.</p>
+<p>8.3. A 24 órán belüli lemondás vagy a meg nem jelenés esetén a Szolgáltató a ténylegesen felmerült, igazolható költségeket és a jogszerűen érvényesíthető díjigényét érvényesítheti. A fogyasztót megillető kötelező jogok, így különösen az elállási és felmondási jogok nem korlátozhatók.</p>
 <p>8.4. Ha a Szolgáltató nem tudja megtartani a konzultációt, új időpontot ajánl fel, vagy a felek megállapodása és a jogszabályok szerint visszatéríti az érintett szolgáltatás díját.</p>
 <h2>9. Fogyasztói elállás és felmondás</h2>
 <p>9.1. Ha a szerződésre a fogyasztó és a vállalkozás közötti szerződésekről szóló jogszabályok alkalmazandók, a fogyasztót az azokban meghatározott elállási, illetve felmondási jog illeti meg.</p>
@@ -118,13 +118,13 @@ permalink: terms-and-conditions-new
 <p>11.3. A jelentések nem használhatók fel úgy, mintha azok engedéllyel rendelkező befektetési szolgáltató által nyújtott személyre szabott befektetési tanácsadásnak vagy hivatalos pénzügyi szakvéleménynek minősülnének.</p>
 <h2>12. Adatkezelés és titoktartás</h2>
 <p>12.1. A Szolgáltató az Ügyfél személyes adatait és a szolgáltatás során megismert pénzügyi információit a vonatkozó adatvédelmi jogszabályok, különösen az általános adatvédelmi rendelet (GDPR) alapján kezeli.</p>
-<p>12.2. Az adatkezelés célját, jogalapját, időtartamát, a címzetteket, az érintetti jogokat és az adatbiztonsági intézkedéseket külön Adatkezelési Tájékoztató tartalmazza.</p>
+<p>12.2. Az adatkezelés célját, jogalapját, időtartamát, a címzetteket, az érintetti jogokat és az adatbiztonsági intézkedéseket a <a href="{{ '/privacy-policy' | relative_url }}">külön adatvédelmi tájékoztató</a> tartalmazza.</p>
 <p>12.3. Az Ügyfélnek lehetőség szerint csak a szükséges portfólió- és pénzügyi adatokat kell megadnia. Nem szükséges jelszót, belépési kódot, teljes banki hozzáférést vagy olyan azonosítót átadnia, amely a pénzügyi számláihoz közvetlen hozzáférést tesz lehetővé.</p>
 <p>12.4. A Szolgáltató az Ügyfél bizalmas pénzügyi adatait nem teszi nyilvánossá, és azokat nem használja fel a megbízás céljától eltérően, kivéve, ha ezt jogszabály vagy az Ügyfél érvényes hozzájárulása lehetővé teszi.</p>
 <h2>13. Panaszkezelés és jogérvényesítés</h2>
 <p>13.1. Az Ügyfél a szolgáltatással kapcsolatos panaszát az 1. pontban megadott e-mail-címen vagy postai címen terjesztheti elő.</p>
 <p>13.2. A Szolgáltató a panaszt a vonatkozó jogszabályok szerint megvizsgálja, és a jogszabályban előírt határidőn belül válaszol.</p>
-<p>13.3. Fogyasztói jogvita esetén az Ügyfél a lakóhelye vagy tartózkodási helye szerint illetékes békéltető testülethez fordulhat. A Szolgáltató székhelye szerint illetékes testület adatait a honlapon és a szerződéskötést megelőző tájékoztatásban fel kell tüntetni, az aktuális hivatalos adatok ellenőrzését követően.</p>
+<p>13.3. Fogyasztói jogvita esetén az Ügyfél a lakóhelye vagy tartózkodási helye szerint illetékes békéltető testülethez fordulhat. A Szolgáltató székhelye szerint illetékes testület adatait a szerződéskötést megelőző tájékoztatásban az aktuális hivatalos adatok alapján meg kell adni.</p>
 <p>13.4. Az Ügyfél jogosult a jogszabályok szerint illetékes bírósághoz fordulni. A jelen ÁSZF nem zárhatja ki a fogyasztó kötelező jogszabályi illetékességi vagy jogérvényesítési jogait.</p>
 <p>13.5. A Szolgáltató nem állítja, hogy az MNB által engedélyezett befektetési szolgáltató lenne, és nem kelti azt a látszatot, hogy a szolgáltatás engedélyköteles befektetési tanácsadást foglal magában.</p>
 <h2>14. A szerződés módosítása és megszűnése</h2>
