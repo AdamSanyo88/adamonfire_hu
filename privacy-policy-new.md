@@ -29,7 +29,7 @@ permalink: privacy-policy-new
 <div class="resources-header">
   <div class="eyebrow">Adam on FIRE</div>
   <h1>{{ page.title | escape }}</h1>
-  <p>Az Adam on FIRE pénzügyi edukációs, portfólióelemzési és FIRE-tervezési szolgáltatásaihoz kapcsolódó adatkezelés.</p>
+  <p></p>
 </div>
 <div class="container privacy-content">
 
@@ -105,9 +105,9 @@ permalink: privacy-policy-new
       </ul>
 
       <h5>5.1/A. Jelentkezés és előzetes egyeztetés</h5>
-      <ul><li><strong>Cél:</strong> érdeklődések fogadása, az igényelt Konzultáció, Portfóliótükör vagy FIRE Térkép kereteinek és a vagyonérték szerinti csomagbesorolásnak az egyeztetése, ajánlatadás.</li><li><strong>Jogalap:</strong> az érintett kérésére történő szerződéskötést megelőző lépések (GDPR 6. cikk (1) b)); egyéb általános megkeresések esetén az érdeklődés megválaszolásához fűződő jogos érdek (GDPR 6. cikk (1) f)), az érdekmérlegelés figyelembevételével.</li><li><strong>Adatok:</strong> név, e-mail-cím, az önként megadott kapcsolattartási adatok, választott csomag, becsült vagyonkategória, célok, kérdések és a megkeresés tartalma.</li><li><strong>Csatornák:</strong> Google Forms jelentkezési kérdőív és e-mail. A kérdőívbe ne kerüljön jelszó, belépési adat vagy teljes bankszámla-azonosító.</li></ul>
+      <ul><li><strong>Cél:</strong> érdeklődések fogadása, az igényelt Konzultáció, Portfóliótükör vagy FIRE Térkép kereteinek és a vagyonérték szerinti csomagbesorolásnak az egyeztetése, ajánlatadás.</li><li><strong>Jogalap:</strong> az érintett kérésére történő szerződéskötést megelőző lépések (GDPR 6. cikk (1) b)); egyéb általános megkeresések esetén az érdeklődés megválaszolásához fűződő jogos érdek (GDPR 6. cikk (1) f)), az érdekmérlegelés figyelembevételével.</li><li><strong>Adatok:</strong> név, e-mail-cím, az önként megadott kapcsolattartási adatok, választott csomag, becsült vagyonkategória, célok, kérdések és a megkeresés tartalma.</li><li><strong>Csatornák:</strong> Google Forms jelentkezési kérdőív és e-mail.</li></ul>
       <h5>5.1/B. Portfólióelemzés és FIRE-modellezés</h5>
-      <ul><li><strong>Cél:</strong> a megrendelt elemzés, konzultáció és írásos jelentés elkészítése, egyeztetése és átadása.</li><li><strong>Jogalap:</strong> szerződés teljesítése (GDPR 6. cikk (1) b)).</li><li><strong>Adatok:</strong> a vizsgálathoz szükséges portfóliópozíciók, eszköznevek és értékek, devizák, hozam- és költségadatok, becsült összvagyon; FIRE Térkép esetén a megadott ingatlan- és vállalkozásvagyon, kötelezettségek, tartalékok, háztartási bevételek és kiadások, megtakarítási ráta, időtáv és modellezési feltételezések.</li><li><strong>Adatforrások:</strong> ügyfél által átadott Growy-export, Excel, egyeztetett brókeri PDF és egyéb szükséges dokumentum, valamint nyilvános piaci és statisztikai adatok.</li><li><strong>Adatminimalizálás:</strong> lehetőség szerint a számlaazonosítókat és a nem szükséges tranzakciós vagy harmadik személyre vonatkozó adatokat az átadás előtt ki kell takarni. Belépési jelszó vagy számlához hozzáférést biztosító kód átadása nem szükséges.</li></ul>
+      <ul><li><strong>Cél:</strong> a megrendelt elemzés, konzultáció és írásos jelentés elkészítése, egyeztetése és átadása.</li><li><strong>Jogalap:</strong> szerződés teljesítése (GDPR 6. cikk (1) b)).</li><li><strong>Adatok:</strong> a vizsgálathoz szükséges portfóliópozíciók, eszköznevek és értékek, devizák, hozam- és költségadatok, becsült összvagyon; FIRE Térkép esetén a megadott ingatlan- és vállalkozásvagyon, kötelezettségek, tartalékok, háztartási bevételek és kiadások, megtakarítási ráta, időtáv és modellezési feltételezések.</li><li><strong>Adatforrások:</strong> ügyfél által átadott Growy-export, Excel, egyeztetett brókeri PDF és egyéb szükséges dokumentum, valamint nyilvános piaci és statisztikai adatok.</li></ul>
       <h5>5.1/C. Szerződéses kapcsolattartás és jogi igények</h5>
       <ul><li><strong>Cél:</strong> időpont-egyeztetés, a teljesítés igazolása, panaszkezelés és szükség esetén jogi igények érvényesítése vagy védelme.</li><li><strong>Jogalap:</strong> szerződés teljesítése (GDPR 6. cikk (1) b)), jogi kötelezettség (c)), illetve a jogi igények kezeléséhez fűződő jogos érdek (f)), az adott adatkezelési művelettől függően.</li><li><strong>Adatok:</strong> egyeztetések, időpontok, teljesítési és panaszkezelési dokumentumok, kapcsolódó levelezés.</li></ul>
       <h5>5.2. Számlakiállítás</h5>
@@ -156,7 +156,6 @@ permalink: privacy-policy-new
       <h5>6.2. Adatok tárolási módja és időtartama</h5>
       <p>Elektronikus formában, a szolgáltatással kapcsolatos megkeresésről szóló Google Forms adatai és e-mailek a felhőben, egyéb adatok offline, biztonságos és jelszóval védett mappában tárolva.</p>
       <p><strong>Tárolási idő:</strong> a megőrzés a cél és jogalap szerint eltér. A számviteli bizonylatokat a számviteli törvény szerinti legalább 8 évig kell megőrizni. A szerződéses dokumentumok és az igényérvényesítéshez szükséges levelezés megőrzése a vonatkozó elévülési és jogszabályi határidőkhöz igazodik. A hozzájáruláson alapuló hírlevél-adatkezelés a hozzájárulás visszavonásáig tart, a jogszerűség igazolásához szükséges minimális nyilvántartás kivételével.</p>
-      <p><strong>Véglegesítendő megőrzési idők:</strong> a szerződéskötés nélkül lezárult érdeklődések és a portfólióelemzéshez kapott nyers fájlok törlési határidejét az Adatkezelő a tényleges működési gyakorlat alapján, közzététel előtt határozza meg: <strong>[érdeklődések: időtartam]</strong>, <strong>[nyers elemzési fájlok: időtartam / törlési esemény]</strong>. A mentésekre alkalmazott törlési ciklust is rögzíteni kell.</p>
     </section>
 
     <section id="erintetti-jogok">
@@ -232,22 +231,6 @@ permalink: privacy-policy-new
     </section>
 
 
-    <section id="adatfeldolgozok">
-      <h4>12. Adatfeldolgozók, címzettek és adattovábbítás</h4>
-      <p>A jelentkezéshez használt Google Forms és az elektronikus levelezés felhőalapú szolgáltatások; az ilyen szolgáltatók adatfeldolgozói vagy önálló adatkezelői szerepét a konkrét szerződéses konstrukció alapján kell megállapítani. Az elemzésre átvett fájlok a jelenlegi tájékoztatás szerint helyben, hozzáférésvédelemmel kerülnek tárolásra; a Google Forms-adatok és az e-mailek felhőben találhatók.</p>
-      <p><strong>Közzététel előtt kitöltendő szolgáltatói nyilvántartás:</strong> [Google szolgáltatásai és szerződéses szerepe], [levelezőszolgáltató], [online videókonzultáció szolgáltatója], [számlázóprogram és könyvelő, ha van], [webtárhely, analitika és hírlevélküldő, ha alkalmazott]. Minden érintett szolgáltató esetében meg kell adni a szerepet, az adatkezelés célját és – ha releváns – a harmadik országba történő továbbítás tényét és garanciáit.</p>
-      <p>A Growy-export ügyfél általi átadása önmagában nem jelenti azt, hogy az Adatkezelő közvetlen hozzáférést kapna a Growy-fiókhoz. A személyes adatokat az Adatkezelő nem értékesíti, és nem teszi nyilvánossá. Hatósági vagy jogszabályi kötelezettség esetén adattovábbításra sor kerülhet.</p>
-    </section>
-    <section id="biztonsag">
-      <h4>13. Pénzügyi dokumentumok védelme</h4>
-      <p>A szolgáltatás teljesítéséhez szükséges pénzügyi dokumentumokhoz való hozzáférést az Adatkezelő a szükséges személyekre korlátozza. A helyi fájlokat jelszóval védett tárolóban kezeli. Az adattovábbítási csatornákat, a hozzáférések és biztonsági mentések védelmét, valamint a törlési eljárást a ténylegesen alkalmazott technikai intézkedések alapján kell dokumentálni.</p>
-      <p>Az Ügyfélnek nem kell banki vagy brókeri jelszót, kétfaktoros azonosítókódot vagy kereskedési jogosultságot átadnia. A nem szükséges személyazonosítókat és más személyek adatait az átadott dokumentumokból célszerű eltávolítani.</p>
-    </section>
-    <section id="automatizalt-dontes">
-      <h4>14. Automatizált döntéshozatal és különleges adatok</h4>
-      <p>A pénzügyi modellek és számítások a megadott adatokon alapuló szemléltető elemzések. A szolgáltatási dokumentumok nem írnak elő kizárólag automatizált, az érintettre joghatással vagy hasonlóan jelentős hatással járó döntéshozatalt. Ha a gyakorlatban ilyen adatkezelés történne, arról külön tájékoztatás szükséges.</p>
-      <p>A szolgáltatás teljesítéséhez főszabály szerint nincs szükség a GDPR 9. cikke szerinti különleges személyes adatokra (például egészségügyi adatokra). Ilyen adatokat az Ügyfél lehetőség szerint ne adjon át; ha azok kezelése mégis szükségessé válna, annak megfelelő jogalapját és feltételeit külön meg kell vizsgálni.</p>
-      <p>A szolgáltatási feltételek: <a href="{{ '/terms-and-conditions' | relative_url }}">Általános szerződési feltételek</a>.</p>
-    </section>
+   
   </div>
 </div>
