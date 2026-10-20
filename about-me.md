@@ -47,7 +47,7 @@ permalink: /about-me
 
 /* Interactive chronological timeline */
 .about-fire .timeline{position:relative;margin:26px 0 48px;padding:22px 0 12px}
-.about-fire .timeline:before{content:"";position:absolute;left:0;right:0;top:58px;height:4px;background:linear-gradient(90deg,#b6cef9,#2962ff);border-radius:4px}
+.about-fire .timeline:before{content:"";position:absolute;left:0;right:0;top:67px;height:4px;background:linear-gradient(90deg,#b6cef9,#2962ff);border-radius:4px}
 .about-fire .timeline-track{display:grid;grid-template-columns:repeat(8,minmax(0,1fr));gap:4px;position:relative}
 .about-fire .timeline-item{position:relative;min-width:0;text-align:center}
 .about-fire .timeline-item summary{cursor:pointer;list-style:none;display:flex;flex-direction:column;align-items:center;gap:11px;color:#0d47a1;font-weight:700;font-size:13px;outline-offset:5px}
@@ -55,7 +55,6 @@ permalink: /about-me
 .about-fire .timeline-date{height:24px;white-space:nowrap;font-size:12px}
 .about-fire .timeline-dot{width:20px;height:20px;border:4px solid #2962ff;border-radius:50%;background:#fff;z-index:1;transition:transform .2s,background .2s}
 .about-fire .timeline-item[open] .timeline-dot,.about-fire .timeline-item summary:hover .timeline-dot{background:#2962ff;transform:scale(1.15)}
-.about-fire .timeline-year{font-size:13px;color:#0d47a1}
 .about-fire .timeline-detail{position:relative;margin:14px -35px 0;padding:14px;border:1px solid #c8d9f8;border-radius:10px;background:#f3f7ff;box-shadow:0 6px 18px rgba(13,71,161,.08);color:#24324a;font-size:13px;line-height:1.6;z-index:3;text-align:left}
 .about-fire .timeline-item:first-child .timeline-detail{margin-left:0}
 .about-fire .timeline-item:last-child .timeline-detail{margin-right:0}
@@ -64,7 +63,7 @@ permalink: /about-me
 .about-fire .playlist-panel .video-wrap{max-width:100%}
 .about-fire .playlist-info{padding:20px 24px;color:#24324a;line-height:1.7}
 .about-fire .playlist-info strong{color:#0d47a1}
-@media(max-width:800px){.about-fire .timeline:before{left:16px;right:auto;top:0;bottom:0;width:4px;height:auto}.about-fire .timeline-track{display:flex;flex-direction:column;gap:14px}.about-fire .timeline-item{text-align:left;padding-left:0}.about-fire .timeline-item summary{flex-direction:row;gap:12px}.about-fire .timeline-date{order:2;height:auto;min-width:95px}.about-fire .timeline-dot{order:1;flex:none}.about-fire .timeline-year{order:3}.about-fire .timeline-detail,.about-fire .timeline-item:first-child .timeline-detail,.about-fire .timeline-item:last-child .timeline-detail{margin:10px 0 0 34px}}
+@media(max-width:800px){.about-fire .timeline{padding:0 0 0 0}.about-fire .timeline:before{left:8px;right:auto;top:10px;bottom:10px;width:4px;height:auto}.about-fire .timeline-track{display:flex;flex-direction:column;gap:14px}.about-fire .timeline-item{text-align:left;padding-left:0}.about-fire .timeline-item summary{flex-direction:row;gap:12px}.about-fire .timeline-date{order:2;height:auto;min-width:95px}.about-fire .timeline-dot{order:1;flex:none}.about-fire .timeline-detail,.about-fire .timeline-item:first-child .timeline-detail,.about-fire .timeline-item:last-child .timeline-detail{margin:10px 0 0 34px}}
 </style>
 
 <div class="container about-fire">
@@ -78,8 +77,8 @@ permalink: /about-me
     <div class="panel">
       <div class="small-label">A történetem</div>
       <h2 style="margin-top:12px">Hogyan lettem kisbefektető?</h2>
-      <p>Nem pénzügyi szakemberként, hanem a saját megtakarításaimat kezelő magánemberként kezdtem el foglalkozni a befektetésekkel. A 2012 és 2016 között Angliában éltem és dolgoztam, és alkalmazotti jövedelemből kezdtem felépíteni a vagyonomat.</p>
-      <p>Az első 10 millió forint összegyűjtése különösen fontos mérföldkő volt számomra. Ekkor tudatosult bennem, hogy lehet esélyem elérni az anyagi függetlenséget. A kezdeti években hibáztam is, például devizakereskedéssel veszítettem több ezer dollárt. Ezekből a tapasztalatokból tanulva egyre inkább a hosszú távú, diverzifikált és alacsony költségű befektetések felé fordultam, különösen 2020 tavasza után, miután eladtam a lakásom, és ETF-ekbe és állampapírba fektettem a pénzt.</p>
+      <p>Nem pénzügyi szakemberként, hanem a saját megtakarításaimat kezelő magánemberként kezdtem el foglalkozni a befektetésekkel. 2012 és 2016 között Angliában éltem és dolgoztam, és alkalmazotti jövedelemből kezdtem felépíteni a vagyonomat.</p>
+      <p>Az első 10 millió forint összegyűjtése az első 5 évben különösen fontos mérföldkő volt számomra. Ekkor tudatosult bennem, hogy lehet esélyem elérni az anyagi függetlenséget. A kezdeti években hibáztam is, például devizakereskedéssel veszítettem több ezer dollárt. Ezekből a tapasztalatokból tanulva egyre inkább a hosszú távú, diverzifikált és alacsony költségű befektetések felé fordultam, különösen 2020 tavasza után, miután eladtam a lakásom, és ETF-ekbe és állampapírba fektettem a pénzt.</p>
       <p>2026-ra elértem a pénzügyi függetlenség számomra kitűzött szintjét. A FIRE elérése számomra nem a munka teljes feladását, hanem a döntési szabadságot jelenti. Azt, hogy az időmmel és a munkámmal kapcsolatos döntéseket ne kizárólag a pénz határozza meg. Ezért is szeretnék tartalomgyártóként és elemzőként a pénzügyi tudatossággal foglalkozni, továbbá a politika és pénzügy kapcsolatával.</p>
       <p>Az Adam on FIRE oldalon a saját tapasztalataimat, pénzügyi elemzéseimet és kalkulátoraimat osztom meg. A ZsugaZsonglőrök podcastban pedig a megtakarításokról, befektetésekról, és a gazdaság kérdéseiről beszélgetünk.</p>
     </div>
@@ -93,16 +92,16 @@ permalink: /about-me
 
   <section aria-label="Életem fontos mérföldkövei">
     <h2>Életutam idővonalon</h2>
-    <p class="timeline-note">Kattints egy évszámra vagy pontra a mérföldkő részleteiért. A 2027-es esemény terv.</p>
+    <p class="timeline-note">Kattints egy dátumra vagy pontra a mérföldkő részleteiért. A 2027-es esemény terv.</p>
     <div class="timeline"><div class="timeline-track">
-      <details class="timeline-item"><summary aria-label="2010 június: részletek"><span class="timeline-date">2010 június</span><span class="timeline-dot" aria-hidden="true"></span><span class="timeline-year">2010</span></summary><div class="timeline-detail">Elkezdek dolgozni Budapesten</div></details>
-      <details class="timeline-item"><summary aria-label="2012 május: részletek"><span class="timeline-date">2012 május</span><span class="timeline-dot" aria-hidden="true"></span><span class="timeline-year">2012</span></summary><div class="timeline-detail">Angliába költözök, hogy karriert építsek</div></details>
-      <details class="timeline-item"><summary aria-label="2015 február: részletek"><span class="timeline-date">2015 február</span><span class="timeline-dot" aria-hidden="true"></span><span class="timeline-year">2015</span></summary><div class="timeline-detail">Az első 10 millió Ft-om összegyűjtése</div></details>
-      <details class="timeline-item"><summary aria-label="2018 június: részletek"><span class="timeline-date">2018 június</span><span class="timeline-dot" aria-hidden="true"></span><span class="timeline-year">2018</span></summary><div class="timeline-detail">Másoddiplomát szerzek a CEU-n üzleti elemzésből</div></details>
-      <details class="timeline-item"><summary aria-label="2020 február: részletek"><span class="timeline-date">2020 február</span><span class="timeline-dot" aria-hidden="true"></span><span class="timeline-year">2020</span></summary><div class="timeline-detail">Eladom a budapesti lakásom, hogy a pénzt befektessem</div></details>
-      <details class="timeline-item"><summary aria-label="2023 május: részletek"><span class="timeline-date">2023 május</span><span class="timeline-dot" aria-hidden="true"></span><span class="timeline-year">2023</span></summary><div class="timeline-detail">Kijelölöm a FIRE célom dátumát (2028)</div></details>
-      <details class="timeline-item"><summary aria-label="2026 február: részletek"><span class="timeline-date">2026 február</span><span class="timeline-dot" aria-hidden="true"></span><span class="timeline-year">2026</span></summary><div class="timeline-detail">A kedvező piaci körülmények miatt 2026-ra elérem a FIRE-t</div></details>
-      <details class="timeline-item"><summary aria-label="2027 május: részletek"><span class="timeline-date">2027 május</span><span class="timeline-dot" aria-hidden="true"></span><span class="timeline-year">2027</span></summary><div class="timeline-detail">Elkezdem a "második életem", 17 évnyi multinacionális karrier után</div></details>
+      <details class="timeline-item"><summary aria-label="2010 június: részletek"><span class="timeline-date">2010 június</span><span class="timeline-dot" aria-hidden="true"></span></summary><div class="timeline-detail">Elkezdek dolgozni Budapesten</div></details>
+      <details class="timeline-item"><summary aria-label="2012 május: részletek"><span class="timeline-date">2012 május</span><span class="timeline-dot" aria-hidden="true"></span></summary><div class="timeline-detail">Angliába költözök, hogy karriert építsek</div></details>
+      <details class="timeline-item"><summary aria-label="2015 február: részletek"><span class="timeline-date">2015 február</span><span class="timeline-dot" aria-hidden="true"></span></summary><div class="timeline-detail">Az első 10 millió Ft-om összegyűjtése</div></details>
+      <details class="timeline-item"><summary aria-label="2018 június: részletek"><span class="timeline-date">2018 június</span><span class="timeline-dot" aria-hidden="true"></span></summary><div class="timeline-detail">Másoddiplomát szerzek a CEU-n üzleti elemzésből</div></details>
+      <details class="timeline-item"><summary aria-label="2020 február: részletek"><span class="timeline-date">2020 február</span><span class="timeline-dot" aria-hidden="true"></span></summary><div class="timeline-detail">Eladom a budapesti lakásom, hogy a pénzt befektessem</div></details>
+      <details class="timeline-item"><summary aria-label="2023 május: részletek"><span class="timeline-date">2023 május</span><span class="timeline-dot" aria-hidden="true"></span></summary><div class="timeline-detail">Kijelölöm a FIRE célom dátumát (2028)</div></details>
+      <details class="timeline-item"><summary aria-label="2026 február: részletek"><span class="timeline-date">2026 február</span><span class="timeline-dot" aria-hidden="true"></span></summary><div class="timeline-detail">A kedvező piaci körülmények miatt 2026-ra elérem a FIRE-t</div></details>
+      <details class="timeline-item"><summary aria-label="2027 május: részletek"><span class="timeline-date">2027 május</span><span class="timeline-dot" aria-hidden="true"></span></summary><div class="timeline-detail">Elkezdem a "második életem", 17 évnyi multinacionális karrier után</div></details>
     </div></div>
   </section>
 
