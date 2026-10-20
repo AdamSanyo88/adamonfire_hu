@@ -53,23 +53,23 @@ permalink: terms-and-conditions-new
 <p>3.5. A szolgáltatás elnevezése, az ÁSZF elfogadása és az Ügyfél nyilatkozata önmagában nem határozza meg a tevékenység jogi minősítését. Amennyiben egy konkrét kérés teljesítése engedélyköteles tevékenység végzését igényelné, a Szolgáltató az adott kérést nem teljesíti, hanem szükség esetén megfelelő jogosultsággal rendelkező szolgáltatóhoz irányítja az Ügyfelet.</p>
 <h2>4. A szolgáltatási csomagok</h2>
 <h3>4.1. Konzultáció</h3>
-<p class="terms-price">Díj: 40 000 Ft/alkalom.</p>
+<p class="terms-price">Díj: 40 000 Ft</p>
 <p><strong>Vagyonértékhatár:</strong> legfeljebb 50 millió Ft összvagyon.</p>
 <p>A szolgáltatás tartalma:</p>
 <ul><li>előzetes igény- és célfelmérés</li><li>60 perces online, strukturált edukációs beszélgetés</li><li>egy adott, előzetesen egyeztetett pénzügyi döntéshelyzet áttekintése</li><li>általános pénzügyi fogalmak, lehetséges forgatókönyvek és döntési szempontok bemutatása</li><li>rövid, egyoldalas írásos összefoglaló a beszélgetésről és a portfólió alapjairól.</li></ul>
 <p>A szolgáltatás nem tartalmaz tételes portfólióelemzést, külön modellépítést, részletes jelentést vagy személyre szabott befektetési ajánlást.</p>
 <h3>4.2. Portfóliótükör</h3>
-<p class="terms-price">Díj: 80 000 Ft/elemzés.</p>
+<p class="terms-price">Alapdíj: 80 000 Ft</p>
 <p><strong>Vagyonértékhatár:</strong> 50 millió Ft felett, legfeljebb 150 millió Ft összvagyon.</p>
 <p>A szolgáltatás tartalma:</p>
-<ul><li>a rendelkezésre bocsátott portfólióadatok feldolgozása</li><li>eszközosztályok, legnagyobb pozíciók és koncentrációk bemutatása</li><li>azonosítható földrajzi, deviza- és indexkitettségek vizsgálata</li><li>elérhető adatok alapján termékköltségek, historikus hozam-, volatilitási és kamatkockázati mutatók bemutatása</li><li>a felhasznált adatok és a lényeges adathiányok ismertetése</li><li>3–5 oldalas Word- vagy PDF-jelentés</li><li>60 perces online eredménymegbeszélés.</li></ul>
+<ul><li>a rendelkezésre bocsátott portfólióadatok feldolgozása</li><li>eszközosztályok, legnagyobb pozíciók és koncentrációk bemutatása</li><li>azonosítható földrajzi, deviza- és indexkitettségek vizsgálata</li><li>a felhasznált adatok és a lényeges adathiányok ismertetése</li><li>3–5 oldalas összefoglaló jelentés</li><li>Az eredmények átbeszélése a 60 perces konzultáció keretében.</li></ul>
 <p>A befektetési pozíciók száma és összetettsége befolyásolhatja az elemzés terjedelmét. Az egyedi vagy szokatlanul összetett megbízás feltételeiről a felek előzetesen egyeztetnek.</p>
 <p>A jelentés leíró jellegű: a vizsgált portfólió összetételét, mérhető jellemzőit mutatja be. Nem tartalmaz személyre szabott vételi, eladási vagy tartási ajánlást.</p>
 <h3>4.3. FIRE Térkép</h3>
-<p class="terms-price">Díj: 150 000 Ft/csomag.</p>
+<p class="terms-price">Alapdíj: 150 000 Ft</p>
 <p><strong>Vagyonértékhatár:</strong> 150 millió Ft feletti összvagyon.</p>
 <p>A szolgáltatás a Portfóliótükörben meghatározottakon felül az alábbiakat tartalmazza:</p>
-<ul><li>átfogó vagyonmérleg készítése: megtakarítások, egyéb eszközök és kötelezettségek</li><li>háztartási kiadások, tartalékok és megtakarítási ráta elemzése, amennyiben rendelkezésre állnak az adatok</li><li>hipotetikus piaci stressztesztek bemutatása</li><li>FIRE-, nyugdíj- és hosszú távú cashflow-forgatókönyvek modellezése, ideértve a feltételezett kivételi rátákat</li><li>5–8 oldalas írásos összefoglaló, amelynek terjedelme a vizsgált eszközöktől és a vagyon összetettségétől függően változhat</li><li>egy 60 perces online konzultáció és igény szerint további 60 perc online egyeztetés.</li></ul>
+<ul><li>átfogó vagyonmérleg készítése: megtakarítások, egyéb eszközök és kötelezettségek</li><li>háztartási kiadások, tartalékok és megtakarítási ráta elemzése, amennyiben rendelkezésre állnak az adatok</li><li>hipotetikus piaci stressztesztek bemutatása</li><li>FIRE-, nyugdíj- és hosszú távú cashflow-forgatókönyvek modellezése, ideértve a feltételezett kivételi rátákat</li><li>5–8 oldalas írásos összefoglaló, amelynek terjedelme a vizsgált eszközöktől és a vagyon összetettségétől függően változhat</li><li>igény szerint további 60 perc online egyeztetés az alap 60 perces konzultációs csomagon felül.</li></ul>
 <p>Az elemzés terjedelmét az átadott adatok, a befektetési pozíciók száma és a vagyon összetettsége befolyásolja. Összetett vállalkozási vagy ingatlanvagyon, illetve különleges igény esetén a felek előzetesen egyeztetnek a terjedelemről és az esetleges egyedi díjról.</p>
 <p>A számítások lehetséges pénzügyi kimeneteleket és feltételezett pályákat mutatnak be. Nem garantálnak meghatározott pénzügyi függetlenségi dátumot, hozamot, nyugdíjösszeget vagy vagyoni eredményt.</p>
 <h3>4.4. Vagyonértékhatárok és a csomagok közös korlátai</h3>
