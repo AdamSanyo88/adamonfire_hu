@@ -74,7 +74,7 @@ permalink: /about-me
     <p class="lead">Sanyó Ádám vagyok, adatelemző, politikai elemző, kisbefektető, és podcaster.</p>
   </header>
 
-  <section class="intro" aria-label="Bemutatkozás">
+  <section class="intro" aria-label="Bemutatkozás"> 
     <div class="panel">
       <div class="small-label">A történetem</div>
       <h2 style="margin-top:12px">Hogyan lettem kisbefektető?</h2>
