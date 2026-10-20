@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Adatkezelési tájékoztató
-permalink: privacy-policy-new
+permalink: privacy-policy
 ---
 
 <style>
@@ -29,7 +29,7 @@ permalink: privacy-policy-new
 <div class="resources-header">
   <div class="eyebrow">Adam on FIRE</div>
   <h1>{{ page.title | escape }}</h1>
-  <p>Hogyan kezeljük és védjük a személyes adataidat, és milyen jogok illetnek meg az adatkezelés során?</p>
+  <p>Az Adam on FIRE pénzügyi edukációs, portfólióelemzési és FIRE-tervezési szolgáltatásaihoz kapcsolódó adatkezelés.</p>
 </div>
 <div class="container privacy-content">
 
@@ -51,11 +51,11 @@ permalink: privacy-policy-new
       <h5>2.1. Az adatkezelő megnevezése és elérhetőségei</h5>
       <div class="card">
         <ul class="kv-list">
-          <li><strong>Név:</strong> Sanyó Ádám</li>
+          <li><strong>Név:</strong> Sanyó Ádám egyéni vállalkozó</li>
           <li><strong>Székhely:</strong> 1045 Budapest, Chinoin utca 4. 1/4</li>
           <li><strong>Egyéni vállalkozói nyilvántartási száma:</strong> 61678648</li>
-          <li><strong>Adószám:</strong> 91669210-1-41</li>
-          <li><strong>E-mail:</strong> <a href="mailto:adamsanyo@goefire.com">adamsanyo@goesfire.com</a></li>
+          <li><strong>Adószám:</strong> 91669210-1-41 (közzététel előtt ellenőrizendő az ÁSZF-ben még hiányzó adattal)</li>
+          <li><strong>E-mail:</strong> <a href="mailto:adamgoesfire@gmail.com">adamgoesfire@gmail.com</a></li>
         </ul>
       </div>
 
@@ -104,6 +104,12 @@ permalink: privacy-policy-new
         <li><strong>Kezelt adatok köre:</strong> Név, számlázási cím, elérhetőségek (telefonszám, e-mail), a megrendelt szolgáltatáshoz köthető adatok.</li>
       </ul>
 
+      <h5>5.1/A. Jelentkezés és előzetes egyeztetés</h5>
+      <ul><li><strong>Cél:</strong> érdeklődések fogadása, az igényelt Konzultáció, Portfóliótükör vagy FIRE Térkép kereteinek és a vagyonérték szerinti csomagbesorolásnak az egyeztetése, ajánlatadás.</li><li><strong>Jogalap:</strong> az érintett kérésére történő szerződéskötést megelőző lépések (GDPR 6. cikk (1) b)); egyéb általános megkeresések esetén az érdeklődés megválaszolásához fűződő jogos érdek (GDPR 6. cikk (1) f)), az érdekmérlegelés figyelembevételével.</li><li><strong>Adatok:</strong> név, e-mail-cím, az önként megadott kapcsolattartási adatok, választott csomag, becsült vagyonkategória, célok, kérdések és a megkeresés tartalma.</li><li><strong>Csatornák:</strong> Google Forms jelentkezési kérdőív és e-mail. A kérdőívbe ne kerüljön jelszó, belépési adat vagy teljes bankszámla-azonosító.</li></ul>
+      <h5>5.1/B. Portfólióelemzés és FIRE-modellezés</h5>
+      <ul><li><strong>Cél:</strong> a megrendelt elemzés, konzultáció és írásos jelentés elkészítése, egyeztetése és átadása.</li><li><strong>Jogalap:</strong> szerződés teljesítése (GDPR 6. cikk (1) b)).</li><li><strong>Adatok:</strong> a vizsgálathoz szükséges portfóliópozíciók, eszköznevek és értékek, devizák, hozam- és költségadatok, becsült összvagyon; FIRE Térkép esetén a megadott ingatlan- és vállalkozásvagyon, kötelezettségek, tartalékok, háztartási bevételek és kiadások, megtakarítási ráta, időtáv és modellezési feltételezések.</li><li><strong>Adatforrások:</strong> ügyfél által átadott Growy-export, Excel, egyeztetett brókeri PDF és egyéb szükséges dokumentum, valamint nyilvános piaci és statisztikai adatok.</li><li><strong>Adatminimalizálás:</strong> lehetőség szerint a számlaazonosítókat és a nem szükséges tranzakciós vagy harmadik személyre vonatkozó adatokat az átadás előtt ki kell takarni. Belépési jelszó vagy számlához hozzáférést biztosító kód átadása nem szükséges.</li></ul>
+      <h5>5.1/C. Szerződéses kapcsolattartás és jogi igények</h5>
+      <ul><li><strong>Cél:</strong> időpont-egyeztetés, a teljesítés igazolása, panaszkezelés és szükség esetén jogi igények érvényesítése vagy védelme.</li><li><strong>Jogalap:</strong> szerződés teljesítése (GDPR 6. cikk (1) b)), jogi kötelezettség (c)), illetve a jogi igények kezeléséhez fűződő jogos érdek (f)), az adott adatkezelési művelettől függően.</li><li><strong>Adatok:</strong> egyeztetések, időpontok, teljesítési és panaszkezelési dokumentumok, kapcsolódó levelezés.</li></ul>
       <h5>5.2. Számlakiállítás</h5>
       <ul>
         <li><strong>Cél:</strong> A hatályos számviteli jogszabályoknak (pl. 2000. évi C. törvény) való megfelelés.</li>
@@ -144,11 +150,13 @@ permalink: privacy-policy-new
       <ul>
         <li><strong>Elérhetőségi adatok:</strong> e-mail cím, telefonszám, cím.</li>
         <li><strong>Számlázási adatok:</strong> számlázási név, cím, adószám (cégek esetén).</li>
+        <li><strong>Szolgáltatási és pénzügyi adatok:</strong> becsült vagyonkategória, pénzügyi célok, befektetési pozíciók és értékek, portfólióexportok, elemzési feltevések, kiadások, tartalékok és a készített jelentések a választott csomagtól függően.</li>
       </ul>
 
       <h5>6.2. Adatok tárolási módja és időtartama</h5>
       <p>Elektronikus formában, a szolgáltatással kapcsolatos megkeresésről szóló Google Forms adatai és e-mailek a felhőben, egyéb adatok offline, biztonságos és jelszóval védett mappában tárolva.</p>
-      <p><strong>Tárolási idő:</strong> a jogszabályi kötelezettségek és az adatkezelési cél megvalósulásáig, illetve a hozzájárulás visszavonásáig. Ezt követően az adatokat töröljük.</p>
+      <p><strong>Tárolási idő:</strong> a megőrzés a cél és jogalap szerint eltér. A számviteli bizonylatokat a számviteli törvény szerinti legalább 8 évig kell megőrizni. A szerződéses dokumentumok és az igényérvényesítéshez szükséges levelezés megőrzése a vonatkozó elévülési és jogszabályi határidőkhöz igazodik. A hozzájáruláson alapuló hírlevél-adatkezelés a hozzájárulás visszavonásáig tart, a jogszerűség igazolásához szükséges minimális nyilvántartás kivételével.</p>
+      <p><strong>Véglegesítendő megőrzési idők:</strong> a szerződéskötés nélkül lezárult érdeklődések és a portfólióelemzéshez kapott nyers fájlok törlési határidejét az Adatkezelő a tényleges működési gyakorlat alapján, közzététel előtt határozza meg: <strong>[érdeklődések: időtartam]</strong>, <strong>[nyers elemzési fájlok: időtartam / törlési esemény]</strong>. A mentésekre alkalmazott törlési ciklust is rögzíteni kell.</p>
     </section>
 
     <section id="erintetti-jogok">
@@ -165,6 +173,12 @@ permalink: privacy-policy-new
       <h5>7.4. Adathordozhatósághoz való jog</h5>
       <p>Az érintett jogosult arra, hogy az általa rendelkezésre bocsátott adatokat széles körben használt, géppel olvasható formátumban megkapja, illetve kérheti ezek más adatkezelőhöz történő továbbítását.</p>
 
+      <h5>7.4/A. Az adatkezelés korlátozásához való jog</h5>
+      <p>Az érintett a GDPR 18. cikkében meghatározott feltételekkel kérheti az adatkezelés korlátozását.</p>
+      <h5>7.4/B. A hozzájárulás visszavonása</h5>
+      <p>Ha az adatkezelés hozzájáruláson alapul, az bármikor visszavonható; ez nem érinti a visszavonás előtti adatkezelés jogszerűségét.</p>
+      <h5>7.4/C. Kérelmek benyújtása és megválaszolása</h5>
+      <p>Az érintetti kérelmek az <a href="mailto:adamgoesfire@gmail.com">adamgoesfire@gmail.com</a> címen nyújthatók be. Az Adatkezelő indokolatlan késedelem nélkül, főszabály szerint egy hónapon belül válaszol; a GDPR szerinti indokolt esetekben a határidő meghosszabbítható, erről az érintettet tájékoztatja.</p>
       <h5>7.5. Tiltakozáshoz való jog</h5>
       <p>Az érintett bármikor tiltakozhat személyes adatainak kezelése ellen, amennyiben az adatkezelés jogalapja az Adatkezelő jogos érdeke. Az érintett külön jogosult tiltakozni a személyes adatok közvetlen üzletszerzés (direkt marketing) céljából történő kezelése ellen.</p>
     </section>
@@ -211,11 +225,29 @@ permalink: privacy-policy-new
     <section id="zaro">
       <h4>11. Záró rendelkezések</h4>
       <h5>11.1. Az adatkezelési tájékoztató hatálya és módosításának lehetőségei</h5>
-      <p>Jelen Tájékoztató 2026. 01. 08. napjától hatályos.</p>
-      <p>Az Adatkezelő jogosult a Tájékoztató egyoldalú módosítására, különösen a jogszabályi változások, új adatkezelési tevékenységek bevezetése vagy a felügyeleti hatóság ajánlásainak figyelembevétele érdekében. A módosításokat a weboldalon közzétesszük, és a hatálybalépést követően az érintettek elfogadják az új szabályokat a szolgáltatások további használatával.</p>
-      <p><strong>Kelt:</strong> Budapest, 2026.01.08.<br>
+      <p>Jelen Tájékoztató frissített változatának hatálybalépése: [közzétételkor kitöltendő dátum].</p>
+      <p>Az Adatkezelő jogosult a Tájékoztató egyoldalú módosítására, különösen a jogszabályi változások, új adatkezelési tevékenységek bevezetése vagy a felügyeleti hatóság ajánlásainak figyelembevétele érdekében. A módosításokat a weboldalon közzétesszük. A tájékoztató módosítása önmagában nem hoz létre új adatkezelési jogalapot, és nem helyettesíti az esetlegesen szükséges hozzájárulást.</p>
+      <p><strong>Kelt:</strong> Budapest, [közzététel dátuma]<br>
       <strong>Sanyó Ádám</strong></p>
     </section>
 
+
+    <section id="adatfeldolgozok">
+      <h4>12. Adatfeldolgozók, címzettek és adattovábbítás</h4>
+      <p>A jelentkezéshez használt Google Forms és az elektronikus levelezés felhőalapú szolgáltatások; az ilyen szolgáltatók adatfeldolgozói vagy önálló adatkezelői szerepét a konkrét szerződéses konstrukció alapján kell megállapítani. Az elemzésre átvett fájlok a jelenlegi tájékoztatás szerint helyben, hozzáférésvédelemmel kerülnek tárolásra; a Google Forms-adatok és az e-mailek felhőben találhatók.</p>
+      <p><strong>Közzététel előtt kitöltendő szolgáltatói nyilvántartás:</strong> [Google szolgáltatásai és szerződéses szerepe], [levelezőszolgáltató], [online videókonzultáció szolgáltatója], [számlázóprogram és könyvelő, ha van], [webtárhely, analitika és hírlevélküldő, ha alkalmazott]. Minden érintett szolgáltató esetében meg kell adni a szerepet, az adatkezelés célját és – ha releváns – a harmadik országba történő továbbítás tényét és garanciáit.</p>
+      <p>A Growy-export ügyfél általi átadása önmagában nem jelenti azt, hogy az Adatkezelő közvetlen hozzáférést kapna a Growy-fiókhoz. A személyes adatokat az Adatkezelő nem értékesíti, és nem teszi nyilvánossá. Hatósági vagy jogszabályi kötelezettség esetén adattovábbításra sor kerülhet.</p>
+    </section>
+    <section id="biztonsag">
+      <h4>13. Pénzügyi dokumentumok védelme</h4>
+      <p>A szolgáltatás teljesítéséhez szükséges pénzügyi dokumentumokhoz való hozzáférést az Adatkezelő a szükséges személyekre korlátozza. A helyi fájlokat jelszóval védett tárolóban kezeli. Az adattovábbítási csatornákat, a hozzáférések és biztonsági mentések védelmét, valamint a törlési eljárást a ténylegesen alkalmazott technikai intézkedések alapján kell dokumentálni.</p>
+      <p>Az Ügyfélnek nem kell banki vagy brókeri jelszót, kétfaktoros azonosítókódot vagy kereskedési jogosultságot átadnia. A nem szükséges személyazonosítókat és más személyek adatait az átadott dokumentumokból célszerű eltávolítani.</p>
+    </section>
+    <section id="automatizalt-dontes">
+      <h4>14. Automatizált döntéshozatal és különleges adatok</h4>
+      <p>A pénzügyi modellek és számítások a megadott adatokon alapuló szemléltető elemzések. A szolgáltatási dokumentumok nem írnak elő kizárólag automatizált, az érintettre joghatással vagy hasonlóan jelentős hatással járó döntéshozatalt. Ha a gyakorlatban ilyen adatkezelés történne, arról külön tájékoztatás szükséges.</p>
+      <p>A szolgáltatás teljesítéséhez főszabály szerint nincs szükség a GDPR 9. cikke szerinti különleges személyes adatokra (például egészségügyi adatokra). Ilyen adatokat az Ügyfél lehetőség szerint ne adjon át; ha azok kezelése mégis szükségessé válna, annak megfelelő jogalapját és feltételeit külön meg kell vizsgálni.</p>
+      <p>A szolgáltatási feltételek: <a href="{{ '/terms-and-conditions' | relative_url }}">Általános szerződési feltételek</a>.</p>
+    </section>
   </div>
 </div>
