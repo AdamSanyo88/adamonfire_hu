@@ -123,6 +123,27 @@ layout: default
   }
 }
 
+
+/* 2026-os tranzakciok */
+.trades-card { border-radius: 16px; overflow: hidden; border: 1px solid #dbe5f2; box-shadow: 0 8px 25px rgba(13,71,161,.08); background: #fff; }
+.trades-head { padding: 22px 24px 14px; border-top: 4px solid #2962ff; }
+.trades-head h5 { margin: 0 0 8px; color: #0d47a1; font-weight: 700; }
+.trades-head p { margin: 0; color: #526579; }
+.trades-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+.trades-table { width: 100%; min-width: 540px; border-collapse: collapse; }
+.trades-table th { background: #edf3fc; color: #173c72; text-align: left; font-size: 14px; padding: 14px 18px; }
+.trades-table td { padding: 14px 18px; border-bottom: 1px solid #e9eef5; color: #263746; }
+.trades-table tbody tr:nth-child(even) { background: #f8faff; }
+.trades-table tbody tr:hover { background: #eff5ff; }
+.trades-table .percent { text-align: right; white-space: nowrap; font-weight: 700; color: #0d47a1; font-variant-numeric: tabular-nums; }
+.trade-from { color: #a64b1c; font-weight: 600; }
+.trade-to { color: #17633a; font-weight: 600; }
+.trade-arrow { color: #64748b; margin: 0 8px; }
+.reason-box { margin: 18px 24px 10px; padding: 17px 20px; background: #f1f6ff; border-left: 4px solid #2962ff; border-radius: 10px; }
+.reason-box h6 { margin: 0 0 8px; font-weight: 700; color: #0d47a1; }
+.reason-box p { margin: 0; color: #34465a; line-height: 1.65; }
+.trades-note { padding: 12px 24px 18px; color: #65758a; font-size: 13px; }
+@media(max-width:600px) { .trades-head { padding: 18px 16px 12px; } .trades-note { padding: 12px 16px 16px; } .reason-box { margin: 14px 16px 8px; padding: 14px; } }
 </style>
 
 <!-- MAIN CONTENT CONTAINER -->
@@ -215,4 +236,31 @@ layout: default
   }
 </style>
   </div>
+
+  <!-- A havi Excel-allomanyokbol becsult portfoliovaltasok (202601-202611) -->
+  <section class="row" id="atsulyozasok-2026" aria-labelledby="rebalance-title">
+    <div class="col s12"><div class="trades-card mb-4">
+      <div class="trades-head"><h5 id="rebalance-title">2026-os portfóliómat érintő döntéseim</h5>
+        <p>A havi portfólióállományok alapján azonosított jelentősebb változások.</p></div>
+      <div class="trades-scroll" role="region" aria-label="2026-os portfólió-átsúlyozások" tabindex="0">
+        <table class="trades-table"><thead><tr><th>Időszak</th><th>Csökkentett kitettség</th><th>Növelt kitettség</th><th class="percent">Becsült arány*</th></tr></thead><tbody>
+          <tr><td>Október → November</td><td class="trade-from">Több Nasdaq ETF</td><td class="trade-to">Osztalékfókuszú részvény ETF, inflációkövető USA államkötvény (TIPS), rövidlejáratú európai kötvények, arany ETF</td><td class="percent">~6,8%</td></tr>
+          <tr><td>Szeptember → Október</td><td class="trade-from">Árupiaci ETF (ICOM)</td><td class="trade-to">MSCI World</td><td class="percent">~1,2%</td></tr>
+          <tr><td>Augusztus → Szeptember</td><td class="trade-from">Globális technológiai ETF</td><td class="trade-to">MSCI World</td><td class="percent">~3,1%</td></tr>
+          <tr><td>Május → Június</td><td class="trade-from">Félvezető ETF (SMH)</td><td class="trade-to">Energia ETF (XLES) és inflációkövető USA államkötvény (TIPS)</td><td class="percent">~1,2%</td></tr>
+          <tr><td>Március → Április</td><td class="trade-from">Európai részvény ETF</td><td class="trade-to">MSCI World és árupiaci ETF</td><td class="percent">~3,0%</td></tr>
+          <tr><td>Január → Február</td><td class="trade-from">USA S&amp;P 500 ETF és Nasdaq ETF</td><td class="trade-to">FIXMÁP 2031/Q1, OTP CETOP ETF, és USA rövid lejáratú államkötvény</td><td class="percent">~7.0%</td></tr>
+        </tbody></table></div>
+      <aside class="reason-box" aria-label="A portfólióváltozások lehetséges indokai">
+        <h6>Mi állhatott az átsúlyozások mögött?</h6>
+        <p><strong>Október → November</strong> A technológiai ETF-jeimet teljesen leépítettem a túlértékeltség miatti aggodalmaim miatt. Ezt a nagyobb pozíciót négy részre elosztva fektettem be újra a növekedési részvények helyett aranyba, value fókuszú ETF-be, és állampapírokba.</p>
+        <p><strong>Szeptember → Október</strong> Az árupiaci ETF pozíciót részben zártam (minimális elmozdulás után), és helyette MSCI Worldbe forgattam át ezt a tőkét.</p>
+        <p><strong>Augusztus → Szeptember</strong> Az angol nyugdíjszámlámon a 2019 óta tartott Nasdaq ETF-hez tartozó terméket cseréltem egy kevésbé kockázatos MSCI World-höz hasonló alapra.</p>
+        <p><strong>Május → Június</strong> A félvezető ETF eladással egy 100% feletti nyereséges pozíciót zártam. A pénzt energiacégek szektoriális ETF-jébe és inflációkövető USA államkötvénybe mozgattam át. Ez a két pozíció a márciusi vásárlás folytatása további inflációs kockázatra felkészülve.</p>
+		<p><strong>Március → Április</strong> Az energiapiaci kockázatok növekedése miatt az EU-s ETF-emet MSCI Worldre cseréltem és árupiaci (commodity) ETF-et is vettem. Utóbbi a Bloomberg Commodity Indexét követő ETF. Ez egy hosszabb távú inflációs várakozásra is adott befektetés a részemről.
+		<p><strong>Január → Február</strong> Év eleji átsúlyozást végeztem az amerikai pozíciók csökkentését megcélozva. Itt már vártam, hogy a Tisza várhatóan győzni fog a választásokon, ezért több állampapírt és régiós ETF-et is vettem. Az USA állampapíroknál a későbbi esésre játszva vettem rövid lejáratú kötvény ETF-et.</p>
+      </aside>
+      <div class="trades-note">Az áthelyezett pozíciók becsült értéke az adott időszak teljes portfólióértékhez viszonyítva van mérve.</div>
+    </div></div>
+  </section>
 </div>
