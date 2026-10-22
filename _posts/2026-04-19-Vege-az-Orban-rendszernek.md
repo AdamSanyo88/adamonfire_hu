@@ -240,6 +240,15 @@ permalink: blog-11
 
 <p>Illetve szeretnék még megosztani egy személyes történetet, amiről nem beszélhettem eddig, de szerencsére most már úgy látom, nincs kockázata ezt megosztani. Amiért kevesebbet foglalkoztam a pénzügyekkel egészen mostanáig, az részben amiatt volt, mert január-februárban egy nem nyilvános projekten dolgoztam. Ez a projekt egy úgynevezett Választási Integritás Szimuláció volt, amiben egy szoros Tisza-győzelmet modelleztünk 25 szakértővel. Borzasztóan élveztem ezt a munkát, ugyanis olyan híres emberekkel, mint például Rácz András dolgozhattam, és 9 órán keresztül egy szimulációs játékban (wargame-ben) teszteltük, hogy különböző szereplők a közéletben miként cselekednének. És a leghihetetlenebb, hogy véletlenül többször megjósolták a szereplők a valóságot - noha nem ez volt a fő feladatuk -, például a hamis zászlós hadművelettel, vagy az MVM által kiküldött kampánylevelekkel. Nagyon örülök annak, hogy ez a szimulációs gyakorlat csak egy kontrafaktuális valóság maradt, de egy ilyen játékot dizájnolni és utána levezetni nagy élmény volt.</p>
 
+<p><img src="../images/blog-11-2-pic.jpg" alt="Előadásom a francia nagykövetségen" style="
+       max-height: 500px;
+       max-width: 100%;
+       width: auto;
+       height: auto;
+       display: block;
+       margin: 30px auto;
+       object-fit: contain;"></p>
+
 <p>Júliusi kiegészítés: egy rövid podcastot is felvettünk, ahol beszélünk magáról az élményről részletesen, aki kíváncsi, az <a href="https://www.youtube.com/watch?v=7abdM45qLlo"> itt meg tudja nézni.</a></p>
 
 <p>Na és hogy mit hoz a jövő számomra, így egy héttel a választási győzelem után? Még magam sem tudom, annyira sokkban vagyok a Tisza győzelme miatt. Egy biztos, nem kell Bécsbe költöznöm, aminek azért örülök. De nem tudom, hogy mit szeretnék csinálni az új kormány alatt, bár a politikai munka továbbra is vonz. De ez majd kiderül úgyis, van még időm utat választani.</p>
