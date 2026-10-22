@@ -48,7 +48,7 @@ permalink: /blog
   <a class="featured-hitbox" href="/blog-16" aria-label="Mennyit utaztam eddigi életem során?"></a>
   <div class="featured-label">Legfrissebb bejegyzés · Élet · 2026</div>
   <h2>Mennyit utaztam eddigi életem során?</h2>
-  <p>A Lightyear Universe '26 rendevzénye után elővettem a régi feljegyzéseim és kiszámoltam, hány országba jutottam el eddig életem során.</p>
+  <p>A Lightyear Universe '26 rendezvénye után elővettem a régi feljegyzéseim és kiszámoltam, hány országba jutottam el eddig életem során.</p>
   <div class="featured-link">Olvasd tovább <span class="arrow">→</span></div>
 </div>
 
