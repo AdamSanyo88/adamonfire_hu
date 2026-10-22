@@ -299,6 +299,9 @@ input[type="number"]:focus {
   box-shadow: 0 0 0 4px rgba(242,177,52,.18);
 }
 .muted { color: var(--muted); font-size: 13px; }
+input[type="number"].days-input { min-width: 76px; max-width: 92px; }
+input[type="number"].invalid-days { border-color: #dc2626; background: #fef2f2; }
+
 .mono { font-variant-numeric: tabular-nums; }
 .table-footer {
   display: flex;
@@ -347,15 +350,15 @@ input[type="number"]:focus {
 	<h5>Hogyan használd a kalkulátort?</h5>
     <p>Először add meg a <strong>szolgálati éveid számát</strong> (ami megadja, mekkora szorzóval számolódik majd a kereseted). Ezt követően add meg az <strong>éves bruttó kereseteidet minden általad ledolgozott évben</strong>. Csak a munkabérként és prémiumként kapott bejelentett és leadózott jövedelemmel számolj.</p>
 	<p>A kalkulátor figyelembe veszi az adott év <em>valorizációs szorzóját</em>, a <em>szolgálati idő szorzóját</em>, a lépcsőzetes <em>degressziót</em>, és ezek alapján kiszámolja, mi a várható havi nyugdíjad.</p>
-	<p><strong>Fontos:</strong> A kalkulátor nem számol a 2013 előtti éves járulékplafonnal, de a táblázat megmutatja, hogy milyen éves bruttó bér volt a maximum, amelyre nyugdíjjárulékot kellett fizetni. Ennél nagyobb bruttó éves összeget ne adj meg az adott években.</p>
-	<p>Mindig egész éves keresetet adj meg. A kalkulátor folyamatosan újrakalkulálja az átlagos életkeresetet, szóval ha csak pár évet dolgoztál, azt feltételezi, hogy a jövőben is ilyen bérszinten fogsz keresni. Ezért fontos, hogy minden éves adatot adj meg a pontosabb kalkulációhoz.</p>
+	<p><strong>Fontos:</strong> Az 1992–2012 közötti, a táblázatban szereplő éves járulékplafont a kalkulátor automatikusan érvényesíti: a megadott kereset nem haladhatja meg az adott évi plafont. Emellett a kalkulációnál vedd figyelembe, hogy a GYES/GYED időszaka ugyanúgy szolgálati időnek számíthat, mint a munkavállalással töltött idő. Emellett az 1998. január 1-je előtt felsőoktatásban töltött idő is része a szolgálati időnek. A pontos szolgálati idő számítást a nyugdíjbiztosítótól kapott dokumentum tartalmazza.</p>
+	<p>Az adott időszakban ténylegesen megkeresett bruttó összeget add meg, és mellette a figyelembe veendő napok számát (alapértelmezetten 365, szökőévben 366). A kalkulátor a keresetet évesíti az összehasonlításhoz, de a nyugdíjátlag számításánál a tényleges időszak hosszával súlyoz. A kalkulátor folyamatosan újrakalkulálja az átlagos életkeresetet, szóval ha csak pár évet dolgoztál, azt feltételezi, hogy a jövőben is ilyen bérszinten fogsz keresni. Ezért fontos, hogy minden éves adatot adj meg a pontosabb kalkulációhoz.</p>
 	<br/>
 	<h5>Nyugdíjszámítás menete a gyakorlatban</h5>
 	<ol>
 	<li>Az egész élet során szerzett szolgálati évek egész számban, lefelé kerekítve (a törtév elvész).</li>
 	<li>Az 1988 január 1-je óta szerzett jövedelmek nettósított éves értéke (először levonjuk a nyugdíjjárulékot, majd ebből az összegből az adót).</li>
 	<li>A nettó értékeket minden évben fel kell szorozni az éves valorizációs szorzóval. Ez megmutatja, hogy mai áron számolva az akkori kereset mennyit ért. Gyakorlatban a fő szempont az, hogy az adott éves jövedelem az adott év nettó átlagkeresete alatt vagy felett volt-e (ez határozza meg a relatív értékét).</li>
-	<li>A kapott összegeket el kell osztani a teljes szolgálati idővel (napokban számolva). Ezt az összeget utána fel kell szorozni 365-tel, majd osztani 12-vel, így megkapva a havi nettó életpálya átlagkeresetet.</li>
+	<li>A megadott időszakokra számított valorizált kereseteket az időszakok napjaiból számított évhányadok összegével osztjuk (a kalkulátor egyszerűsített becslési módszere). Az évesített átlagot 12-vel osztjuk, így megkapva a havi nettó életpálya átlagkeresetet.</li>
 	<li>Ha az így kapott összeg meghaladja a 372 ezer Ft-ot havonta, akkor degresszálni kell (először 90%-kal, majd 421 ezer Ft felett 80%-kal). </li>
 	<li>Végül az így kapott összeget meg kell szorozni a szolgálati évekre eső szorzóval (20 év után ez 53%, 30 évnél 68%, 40 évnél 80%, stb.). A maximális szolgálati idő 50 év, a minimális 15 év (de a kalkulátor 10-15 év közötti időszakra is tud számítást végezni).</li>
 	</ol>
@@ -399,7 +402,7 @@ input[type="number"]:focus {
       <div class="income-head">
         <span class="step-kicker">2. lépés</span>
         <h5>Járulékköteles éves jövedelmek</h5>
-        <p>Írd be az egyes évek éves bruttó keresetét, vagy töltsd ki gyorsan egy tipikus bérszint alapján.</p>
+        <p>Írd be az adott évben ténylegesen megkeresett bruttó jövedelmet és a hozzá tartozó napok számát. Az évesített érték összevethető az éves átlagbérrel.</p>
       </div>
 
       <div class="quick-fill-panel">
@@ -420,7 +423,9 @@ input[type="number"]:focus {
             <tr>
               <th>Év</th>
               <th>Szorzó</th>
-              <th>Éves bruttó kereset (Ft)</th>
+              <th>Tényleges bruttó kereset (Ft)</th>
+              <th>Napok</th>
+              <th>Évesített bruttó kereset (Ft)</th>
               <th>Valorizált éves kereset</th>
               <th>Éves bruttó átlagkeresetek (irányadó)</th>
               <th>Éves bruttó kereset járulékplafonja</th>
@@ -742,36 +747,69 @@ YEARS.forEach((y,i)=>{
   const tdIn=document.createElement('td');
   const inp=document.createElement('input');
   inp.type='number'; inp.min='0'; inp.step='1000'; inp.placeholder='0'; inp.inputMode='numeric';
+  const limit=CONST_TAX_LIMIT[i];
+  if(Number.isFinite(limit) && limit>0){
+    inp.max=String(limit);
+    inp.title=`Az ${y}. évi megadható maximum: ${formatFt(limit)}`;
+  }
   tdIn.appendChild(inp);
+
+  const tdDays=document.createElement('td');
+  const daysInp=document.createElement('input');
+  const daysInYear=((y%4===0 && y%100!==0) || y%400===0)?366:365;
+  daysInp.type='number'; daysInp.min='1'; daysInp.max=String(daysInYear);
+  daysInp.step='1'; daysInp.value=String(daysInYear);
+  daysInp.inputMode='numeric'; daysInp.setAttribute('aria-label',`${y}. évi napok`);
+  daysInp.className='days-input';
+  tdDays.appendChild(daysInp);
+  const tdAnnual=document.createElement('td'); tdAnnual.className='muted mono'; tdAnnual.textContent='—';
 
   const tdVal=document.createElement('td'); tdVal.className='muted'; tdVal.textContent='—';
 
   const tdGuide=document.createElement('td'); tdGuide.className='muted mono'; tdGuide.textContent=formatFt(ANNUAL_NET[i]||0);
 
   const tdTaxCap=document.createElement('td');
-  const limit=CONST_TAX_LIMIT[i];
   tdTaxCap.className='muted mono'; tdTaxCap.textContent=limit?formatFt(limit):'—';
 
   const tdAfterContr=document.createElement('td'); tdAfterContr.className='muted mono'; tdAfterContr.textContent='—';
   const tdTax=document.createElement('td'); tdTax.className='muted mono'; tdTax.textContent='—';
   const tdFinal=document.createElement('td'); tdFinal.className='muted mono'; tdFinal.textContent='—';
 
-  tr.append(tdY,tdM,tdIn,tdVal,tdGuide,tdTaxCap,tdAfterContr,tdTax,tdFinal);
+  tr.append(tdY,tdM,tdIn,tdDays,tdAnnual,tdVal,tdGuide,tdTaxCap,tdAfterContr,tdTax,tdFinal);
   rowsEl.appendChild(tr);
-  inputs.push({inp, tdVal, tdAfterContr, tdTax, tdFinal});
+  inputs.push({inp, daysInp, daysInYear, limit, tdAnnual, tdVal, tdAfterContr, tdTax, tdFinal});
 });
+
+/* A korabeli éves járulékplafon szigorú érvényesítése. */
+function clampIncome(inp, limit){
+  if(inp.value.trim()==='') return;
+  const value=Number(inp.value);
+  if(!Number.isFinite(value)) {inp.value='';return;}
+  const capped=Math.max(0,Number.isFinite(limit)&&limit>0?Math.min(value,limit):value);
+  if(value!==capped) inp.value=String(capped);
+}
 
 /* ===== Számítás ===== */
 function recalc(){
   let sumValorizalt=0;
   let filledCount=0;
+  let weightedYears=0;
+  let invalidDays=0;
 
-  inputs.forEach(({inp, tdVal, tdAfterContr, tdTax, tdFinal}, i)=>{
+  inputs.forEach(({inp, daysInp, daysInYear, limit, tdAnnual, tdVal, tdAfterContr, tdTax, tdFinal}, i)=>{
+    clampIncome(inp,limit);
     const hasValue=String(inp.value??'').trim()!=='';  // felhasználói beírás
     const raw=parseFloat(inp.value||'0');
 
-    if(hasValue) filledCount+=1;
-    if(raw>0){
+    const days=Number(daysInp.value);
+    const validDays=Number.isInteger(days) && days>=1 && days<=daysInYear;
+    daysInp.setCustomValidity(validDays?'':`1 és ${daysInYear} közötti egész napot adj meg.`);
+    daysInp.classList.toggle('invalid-days',!validDays);
+    if(hasValue && !validDays) invalidDays++;
+    if(hasValue && validDays) {filledCount+=1; weightedYears+=days/daysInYear;}
+    tdAnnual.textContent=hasValue && validDays && Number.isFinite(raw) && raw>=0 ? formatFt(raw*daysInYear/days) : '—';
+    tdAnnual.className=hasValue && validDays?'mono':'muted mono';
+    if(raw>0 && validDays){
       const year=YEARS[i];
 
       // (1) Járulék
@@ -806,8 +844,10 @@ function recalc(){
   const sMult=serviceMultiplier(years);
   const sMultPct=formatPct(sMult);
 
-  const divisor=Math.max(1, filledCount);
-  const avgPerEntered=sumValorizalt/divisor;
+  // A kereset a megadott napokra vonatkozik: évesített átlag = összes jövedelem / összes évhányad.
+  // Így a részévek nem torzítják lefelé az éves kereseti szintet.
+  const divisor=Math.max(1e-12, weightedYears);
+  const avgPerEntered=weightedYears>0?sumValorizalt/divisor:0;
   const grossMonthlyBeforeDeg=avgPerEntered/12;
 
   const prog=progressiveDegression(grossMonthlyBeforeDeg);
@@ -817,14 +857,15 @@ function recalc(){
   const correction=pensionCorrection(finalMonthly);
   const correctedMonthly=correction.value;
   const adjustment=correctedMonthly-finalMonthly;
-  resultEl.innerHTML=`${formatFt(correctedMonthly)} <small>havi várható nyugdíj</small>`;
+  resultEl.innerHTML=invalidDays?`Hibás napérték <small>Javítsd a pirossal jelölt napmezőket.</small>`:`${formatFt(correctedMonthly)} <small>havi várható nyugdíj</small>`;
   serviceLabel.textContent=`${years} év`;
 
   infoEl.textContent=
-    `Szolgálati szorzó: ${sMultPct} | Éves valorizált összes: ${formatFt(sumValorizalt)} | / ${divisor} megadott év = ${formatFt(avgPerEntered)}`;
+    `Szolgálati szorzó: ${sMultPct} | Éves valorizált összes: ${formatFt(sumValorizalt)} | ${weightedYears.toLocaleString('hu-HU',{maximumFractionDigits:3})} évnyi megadott nap | Évesített átlag: ${formatFt(avgPerEntered)}`;
 
   breakdownEl.innerHTML=
     `Összes valorizált kereset (járulék+adó után): <strong>${formatFt(sumValorizalt)}</strong><br/>
+     Megadott időszak: <strong>${weightedYears.toLocaleString('hu-HU',{maximumFractionDigits:3})} év</strong> (${filledCount} érintett naptári év)<br/>
      Havi életpálya átlagkereset: <strong>${formatFt(grossMonthlyBeforeDeg)}</strong><br/>
      Degresszió:<br/>- ${prog.parts.join('<br/>- ')}<br/>
      Degresszió utáni havi: <strong>${formatFt(monthlyAfterDegression)}</strong><br/>
@@ -839,15 +880,16 @@ function recalc(){
 
 /* === QUICK FILL logic (new) === */
 function quickFillByPct(p){
-  inputs.forEach(({inp}, i)=>{
+  inputs.forEach(({inp,limit}, i)=>{
     const base = ANNUAL_NET[i] || 0; // irányadó: Éves bruttó átlagkereset oszlop
     inp.value = base ? Math.round(base * p) : '';
+    clampIncome(inp,limit);
   });
   recalc();
 }
 
 /* Események + init */
-inputs.forEach(({inp})=>inp.addEventListener('input', recalc));
+inputs.forEach(({inp,daysInp,limit})=>{inp.addEventListener('input',()=>{clampIncome(inp,limit);recalc();});daysInp.addEventListener('input',recalc);});
 document.getElementById('serviceYears').addEventListener('input', recalc);
 
 /* Quick fill buttons */
@@ -863,7 +905,7 @@ recalc();
 /* Reset */
 document.getElementById('reset').addEventListener('click',(ev)=>{
   ev.preventDefault();
-  inputs.forEach(({inp})=>{inp.value='';});
+  inputs.forEach(({inp,daysInp,daysInYear})=>{inp.value='';daysInp.value=String(daysInYear);});
   recalc();
 });
 </script>

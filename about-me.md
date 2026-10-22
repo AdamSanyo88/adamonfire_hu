@@ -105,21 +105,6 @@ permalink: /about-me
     </div></div>
   </section>
 
-  <section aria-labelledby="media-heading">
-    <h2 id="media-heading">Médiamegjelenéseim</h2>
-    <div class="media-grid">
-      <article class="media-card">
-        <div class="media-preview"><div class="publisher">Portfolio.hu</div><div class="preview-note">Sajtómegjelenés · 2026. október</div></div>
-        <div class="media-body"><div class="kind">Cikk · Lightyear Universe 2026</div><h3>A befektetés ma már nem a gazdagok kiváltsága</h3><p>Panelbeszélgetés a pénzügyi függetlenségről, a hosszú távú befektetésről és a kisbefektetők tapasztalatairól.</p></div>
-        <div class="media-action"><a href="https://www.portfolio.hu/befektetes/20261009/a-befektetes-ma-mar-nem-a-gazdagok-kivaltsaga-de-fegyelem-es-bizalom-nelkul-nincs-attores-868510" target="_blank" rel="noopener noreferrer">Cikk elolvasása →</a></div>
-      </article>
-      <article class="media-card">
-        <div class="media-preview"><div class="publisher">Ingatlan FM</div><div class="preview-note">Interjú · 2026. június</div></div>
-        <div class="media-body"><div class="kind">Interjú · FIRE</div><h3>Így érhető el az anyagi szabadság alkalmazotti fizetésből is</h3><p>Beszélgetés a vagyonépítésről, az ingatlanok és a tőzsde szerepéről, valamint a pénzügyi szabadságról.</p></div>
-        <div class="media-action"><a href="https://ingatlan.fm/igy-erheto-el-az-anyagi-szabadsag-alkalmazotti-fizetesbol-is-fire/" target="_blank" rel="noopener noreferrer">Interjú megnyitása →</a></div>
-      </article>
-    </div>
-  </section>
 
   <section aria-labelledby="playlist-heading">
     <h2 id="playlist-heading">ZsugaZsonglőrök – lejátszási lista</h2>
@@ -134,7 +119,7 @@ permalink: /about-me
     <h2 id="more-heading">További tartalmaim</h2>
     <div class="panel">
       <p>Ha érdekelnek a hosszú távú befektetések, a pénzügyi függetlenség és a gyakorlati pénzügyi számítások, az alábbi oldalakon további anyagokat találsz.</p>
-      <div class="links"><a class="link-pill" href="{{ '/blog' | relative_url }}">Blogbejegyzések →</a><a class="link-pill" href="{{ '/resources' | relative_url }}">Kalkulátorok és eszközök →</a><a class="link-pill" href="{{ '/consulting' | relative_url }}">Konzultáció →</a></div>
+      <div class="links"><a class="link-pill" href="{{ '/blog' | relative_url }}">Blogbejegyzések →</a><a class="link-pill" href="{{ '/resources' | relative_url }}">Kalkulátorok és eszközök →</a></div>
     </div>
   </section>
 </div>
