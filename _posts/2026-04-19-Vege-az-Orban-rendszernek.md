@@ -141,6 +141,24 @@ permalink: blog-11
   font-style: normal;
 }
 
+
+.post-video {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  margin: 28px 0 34px;
+  overflow: hidden;
+  border-radius: 12px;
+  background: #0b2f67;
+}
+
+.post-video iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
 .post-back {
   border-radius: 0 0 18px 18px;
   background: #164fa8;
@@ -249,7 +267,11 @@ permalink: blog-11
        margin: 30px auto;
        object-fit: contain;"></p>
 
-<p>Júliusi kiegészítés: egy rövid podcastot is felvettünk, ahol beszélünk magáról az élményről részletesen, aki kíváncsi, az <a href="https://www.youtube.com/watch?v=7abdM45qLlo"> itt meg tudja nézni.</a></p>
+<p>Júliusi kiegészítés: egy rövid podcastot is felvettünk, ahol részletesen beszélünk magáról az élményről.</p>
+
+<div class="post-video">
+  <iframe src="https://www.youtube-nocookie.com/embed/7abdM45qLlo" title="Podcast a Választási Integritás Szimulációról" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
 
 <p>Na és hogy mit hoz a jövő számomra, így egy héttel a választási győzelem után? Még magam sem tudom, annyira sokkban vagyok a Tisza győzelme miatt. Egy biztos, nem kell Bécsbe költöznöm, aminek azért örülök. De nem tudom, hogy mit szeretnék csinálni az új kormány alatt, bár a politikai munka továbbra is vonz. De ez majd kiderül úgyis, van még időm utat választani.</p>
 
