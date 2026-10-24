@@ -95,7 +95,6 @@ permalink: /about-me
       <img class="portrait" src="{{ '/images/adam_2.jpg' | relative_url }}" alt="Sanyó Ádám portréja" loading="lazy">
       <div class="small-label">Sanyó Ádám</div>
       <div class="aside-title">Adatelemző, kisbefektető</div>
-      <p>A pénzügyi függetlenséghez vezető utamról és a hosszú távú befektetés tanulságairól írok.</p>
     </aside>
   </section>
 
@@ -118,10 +117,10 @@ permalink: /about-me
     <h2 id="help-heading">Milyen befektető vagyok?</h2>
     <div class="panel">
       <ul class="help-list">
-        <li><strong>Nincs tuti tipp és egyedi részvényválasztás:</strong> Nem vagyok fundamentális elemző, így nem veszek egyedi részvényeket.</li>
-        <li><strong>Makroszemlélet:</strong> Számomra a világ működésének megértése adja a befektetési döntéseket. A politika és a gazdaság kapcsolatát vizsgálom minden átsúlyozás előtt.</li>
-        <li><strong>Közepes kockázati profil fix célsúlyokkal:</strong> Alapvetően közepes-közepesen magas kockázatot vállalok, 50-70% közötti részvénysúlyt tartva a portfóliómban.</li>
-        <li><strong>Évi 8%-os nominális hozamcél:</strong> A FIRE portfólióm fő célja az évi 4-4.5%-os reálhozam elérése. Ezért nincsenek extrém hozamcéljaim. Természetesen magasabb kockázat mellett nagyobb potenciális hozamot is el lehet érni.</li>
+        <li><strong>Nincs tuti tipp és egyedi részvényválasztás:</strong> Nem vagyok fundamentális elemző, így nem veszek egyedi részvényeket, csak ETF-eket és kötvényeket tartok.</li>
+        <li><strong>Makroszemlélet:</strong> Számomra a világ működésének megértése adja a befektetési döntések alapját. A politika és a gazdaság kapcsolatát vizsgálom minden átsúlyozás előtt.</li>
+        <li><strong>Közepes kockázati profil fix célsúlyokkal:</strong> Alapvetően közepes / közepesen magas kockázatot vállalok, 50-70% közötti részvénysúlyt tartva a portfóliómban.</li>
+        <li><strong>Évi 4-4.5%-os reálhozam:</strong> A FIRE portfólióm fő célja a vásárlóerőm fenntartása, amire ez a hozamcél megfelelő. Ezért nincsen extrém magas hozamcélom. Természetesen magasabb kockázat vállalása mellett nagyobb potenciális hozamot is el lehet érni.</li>
       </ul>
     </div>
   </section>
@@ -132,11 +131,11 @@ permalink: /about-me
     <div class="panel">
       <ul class="help-list">
         <li><strong>Új pénzügyi élethelyzet:</strong> Egy új pénzügyi helyzettel szembesülsz (pl. öröklés esetén), és nem tudod, mit tegyél.</li>
-        <li><strong>Nyugdíjtervezés:</strong> Korai nyugdíjra vagy hagyományos nyugdíjra szeretnél felkészülni. Például ki tudjuk számolni a te vagy hozzátartozód nyugdíját, és meg tudjuk becsülni, mekkora egyéb jövedelemre lehet szükséged az életed finanszírozására.</li>
+        <li><strong>Nyugdíjtervezés:</strong> Korai nyugdíjra vagy hagyományos nyugdíjra szeretnél felkészülni. Például ki tudjuk számolni a te vagy hozzátartozód állami nyugdíját, és meg tudjuk becsülni, mekkora egyéb jövedelemre lehet szükséged az kiadásaid finanszírozására.</li>
         <li><strong>Tőzsdei ügyletek adózása:</strong> Adózási kérdésed van tőzsdei kereskedések után. Fontos, hogy nem vagyok adótanácsadó és csak a hagyományos, ellenőrzött tőkepiaci ügyletek esetében tudok segíteni kiszámolni a várható adódat.</li>
         <li><strong>Pénzügyi edukáció és portfólióelemzés:</strong> Pénzügyi edukációs kérdésed van konkrét helyzettel kapcsolatban, például adóoptimalizálás, brókerek összehasonlítása, eszközök teljesítményének vizsgálata, teljes portfóliószerkezet vizsgálata, és hasonlók. Fontos, hogy én csak elemzést nyújtok, a pénzügyi döntéseket neked kell meghozni.</li>
       </ul>
-      <p class="help-contact">Ha kérdésed van, <a href="mailto:adamgoesfire@gmail.com">írj egy emailt, és megbeszéljük, tudok-e segíteni</a>.</p>
+      <p class="help-contact"><strong>Ha kérdésed van, <a href="mailto:adamgoesfire@gmail.com">írj egy emailt, és megbeszéljük, tudok-e segíteni</a>.</strong></p>
     </div>
   </section>
 
