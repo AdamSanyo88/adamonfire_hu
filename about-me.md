@@ -114,6 +114,17 @@ permalink: /about-me
     </div>
   </section>
 
+ <section aria-labelledby="more-heading">
+    <h2 id="more-heading">Milyen témákban tudok neked segíteni?</h2>
+    <div class="panel">
+      <p>Egy új pénzügyi helyzettel szembesülsz (pl. öröklés esetén), és nem tudod, mit tegyél.</p>
+	  <p>Korai nyugdíjra vagy hagyományos nyugdíjra szeretnél felkészülni. Például ki tudjuk számolni a te vagy hozzátartozód nyugdíját, és meg tudjuk becsülni, mekkora egyéb jövedelemre lehet szükséged az életed finanszírozására.</p>
+	  <p>Adózási kérdésed van tőzsdei kereskedések után. Fontos, hogy nem vagyok adótanácsadó és csak a hagyományos, ellenőrzött tőkepiaci ügyletek esetében tudok segíteni kiszámolni a várható adódat.</p>
+      <p>Pénzügyi edukációs kérdésed van konkrét helyzettel kapcsolatban, például adóoptimalizálás, brókerek összehasonlítása, eszközök teljesítményének vizsgálata, teljes portfóliószerkezet vizsgálata, és hasonlók. Fontos, hogy én csak elemzést nyújtok, a pénzügyi döntéseket neked kell meghozni.</p>
+	  <p>Ha kérdésed van, <a href="mailto:adamgoesfire@gmail.com">írj egy emailt, és megbeszéljük, tudok-e segíteni</a>.</p>
+    </div>
+  </section>
+
 
   <section aria-labelledby="more-heading">
     <h2 id="more-heading">További tartalmaim</h2>
