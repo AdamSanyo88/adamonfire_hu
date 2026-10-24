@@ -45,6 +45,15 @@ permalink: /about-me
 @media(max-width:800px){.about-fire .intro{grid-template-columns:1fr}.about-fire .facts{grid-template-columns:1fr 1fr}}
 @media(max-width:600px){.about-fire .hero{margin:35px 0 28px}.about-fire h1{font-size:38px}.about-fire .lead{font-size:16px}.about-fire h2{font-size:23px}.about-fire .panel{padding:20px}.about-fire .facts,.about-fire .media-grid{grid-template-columns:1fr}}
 
+/* Clearly separated service options */
+.about-fire .help-list{list-style:none;margin:0;padding:0;display:grid;gap:13px}
+.about-fire .help-list li{position:relative;margin:0;padding:19px 20px 19px 65px;background:#f5f8ff;border:1px solid var(--line);border-radius:12px;color:var(--ink);line-height:1.75;transition:background .2s,border-color .2s,transform .2s}
+.about-fire .help-list li:before{content:"➜";position:absolute;left:18px;top:19px;width:32px;height:32px;display:flex;align-items:center;justify-content:center;border-radius:9px;background:#e0ebff;color:var(--deep);font-size:20px;font-weight:700}
+.about-fire .help-list li:hover{background:#edf4ff;border-color:#a9c5fb;transform:translateX(3px)}
+.about-fire .help-list strong{color:var(--deep);font-weight:700}
+.about-fire .help-contact{margin-top:20px!important;padding-top:18px;border-top:1px solid var(--line)}
+@media(max-width:600px){.about-fire .help-list li{padding:16px 15px 16px 56px}.about-fire .help-list li:before{left:12px;top:16px}}
+
 /* Interactive chronological timeline */
 .about-fire .timeline{position:relative;margin:26px 0 48px;padding:22px 0 12px}
 .about-fire .timeline:before{content:"";position:absolute;left:0;right:0;top:67px;height:4px;background:linear-gradient(90deg,#b6cef9,#2962ff);border-radius:4px}
@@ -92,7 +101,7 @@ permalink: /about-me
 
   <section aria-label="Életem fontos mérföldkövei">
     <h2>Életutam idővonalon</h2>
-    <p class="timeline-note">Kattints egy dátumra vagy pontra a mérföldkő részleteiért. A 2027-es esemény terv.</p>
+    <p class="timeline-note">Kattints egy-egy dátumra a mérföldkő részleteiért.</p>
     <div class="timeline"><div class="timeline-track">
       <details class="timeline-item"><summary aria-label="2010 június: részletek"><span class="timeline-date">2010 június</span><span class="timeline-dot" aria-hidden="true"></span></summary><div class="timeline-detail">Elkezdek dolgozni Budapesten</div></details>
       <details class="timeline-item"><summary aria-label="2012 május: részletek"><span class="timeline-date">2012 május</span><span class="timeline-dot" aria-hidden="true"></span></summary><div class="timeline-detail">Angliába költözök, hogy karriert építsek</div></details>
@@ -105,26 +114,39 @@ permalink: /about-me
     </div></div>
   </section>
 
+<section aria-labelledby="help-heading">
+    <h2 id="help-heading">Milyen befektető vagyok?</h2>
+    <div class="panel">
+      <ul class="help-list">
+        <li><strong>Nincs tuti tipp és egyedi részvényválasztás:</strong> Nem vagyok fundamentális elemző, így nem veszek egyedi részvényeket.</li>
+        <li><strong>Makroszemlélet:</strong> Számomra a világ működésének megértése adja a befektetési döntéseket. A politika és a gazdaság kapcsolatát vizsgálom minden átsúlyozás előtt.</li>
+        <li><strong>Közepes kockázati profil fix célsúlyokkal:</strong> Alapvetően közepes-közepesen magas kockázatot vállalok, 50-70% közötti részvénysúlyt tartva a portfóliómban.</li>
+        <li><strong>Évi 8%-os nominális hozamcél:</strong> A FIRE portfólióm fő célja az évi 4-4.5%-os reálhozam elérése. Ezért nincsenek extrém hozamcéljaim. Természetesen magasabb kockázat mellett nagyobb potenciális hozamot is el lehet érni.</li>
+      </ul>
+    </div>
+  </section>
+  
 
-  <section aria-labelledby="playlist-heading">
+ <section aria-labelledby="help-heading">
+    <h2 id="help-heading">Milyen témákban tudok neked segíteni?</h2>
+    <div class="panel">
+      <ul class="help-list">
+        <li><strong>Új pénzügyi élethelyzet:</strong> Egy új pénzügyi helyzettel szembesülsz (pl. öröklés esetén), és nem tudod, mit tegyél.</li>
+        <li><strong>Nyugdíjtervezés:</strong> Korai nyugdíjra vagy hagyományos nyugdíjra szeretnél felkészülni. Például ki tudjuk számolni a te vagy hozzátartozód nyugdíját, és meg tudjuk becsülni, mekkora egyéb jövedelemre lehet szükséged az életed finanszírozására.</li>
+        <li><strong>Tőzsdei ügyletek adózása:</strong> Adózási kérdésed van tőzsdei kereskedések után. Fontos, hogy nem vagyok adótanácsadó és csak a hagyományos, ellenőrzött tőkepiaci ügyletek esetében tudok segíteni kiszámolni a várható adódat.</li>
+        <li><strong>Pénzügyi edukáció és portfólióelemzés:</strong> Pénzügyi edukációs kérdésed van konkrét helyzettel kapcsolatban, például adóoptimalizálás, brókerek összehasonlítása, eszközök teljesítményének vizsgálata, teljes portfóliószerkezet vizsgálata, és hasonlók. Fontos, hogy én csak elemzést nyújtok, a pénzügyi döntéseket neked kell meghozni.</li>
+      </ul>
+      <p class="help-contact">Ha kérdésed van, <a href="mailto:adamgoesfire@gmail.com">írj egy emailt, és megbeszéljük, tudok-e segíteni</a>.</p>
+    </div>
+  </section>
+
+<section aria-labelledby="playlist-heading">
     <h2 id="playlist-heading">ZsugaZsonglőrök – lejátszási lista</h2>
     <div class="playlist-panel">
       <div class="video-wrap"><iframe src="https://www.youtube-nocookie.com/embed/videoseries?list=PLHQj57ybEm6qScyR8Eye6lF-Te3c9IKEo" title="ZsugaZsonglőrök – YouTube lejátszási lista" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
       <div class="playlist-info"><strong>ZsugaZsonglőrök – összes epizód</strong><p>A lejátszóban a lista további videói is kiválaszthatók. <a href="https://www.youtube.com/playlist?list=PLHQj57ybEm6qScyR8Eye6lF-Te3c9IKEo" target="_blank" rel="noopener noreferrer">Lejátszási lista megnyitása a YouTube-on →</a></p></div>
     </div>
   </section>
-
- <section aria-labelledby="more-heading">
-    <h2 id="more-heading">Milyen témákban tudok neked segíteni?</h2>
-    <div class="panel">
-      <p>Egy új pénzügyi helyzettel szembesülsz (pl. öröklés esetén), és nem tudod, mit tegyél.</p>
-	  <p>Korai nyugdíjra vagy hagyományos nyugdíjra szeretnél felkészülni. Például ki tudjuk számolni a te vagy hozzátartozód nyugdíját, és meg tudjuk becsülni, mekkora egyéb jövedelemre lehet szükséged az életed finanszírozására.</p>
-	  <p>Adózási kérdésed van tőzsdei kereskedések után. Fontos, hogy nem vagyok adótanácsadó és csak a hagyományos, ellenőrzött tőkepiaci ügyletek esetében tudok segíteni kiszámolni a várható adódat.</p>
-      <p>Pénzügyi edukációs kérdésed van konkrét helyzettel kapcsolatban, például adóoptimalizálás, brókerek összehasonlítása, eszközök teljesítményének vizsgálata, teljes portfóliószerkezet vizsgálata, és hasonlók. Fontos, hogy én csak elemzést nyújtok, a pénzügyi döntéseket neked kell meghozni.</p>
-	  <p>Ha kérdésed van, <a href="mailto:adamgoesfire@gmail.com">írj egy emailt, és megbeszéljük, tudok-e segíteni</a>.</p>
-    </div>
-  </section>
-
 
   <section aria-labelledby="more-heading">
     <h2 id="more-heading">További tartalmaim</h2>
