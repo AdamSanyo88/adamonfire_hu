@@ -51,7 +51,7 @@ permalink: /about-me
 .about-fire .help-list li:before{content:"➜";position:absolute;left:18px;top:19px;width:32px;height:32px;display:flex;align-items:center;justify-content:center;border-radius:9px;background:#e0ebff;color:var(--deep);font-size:20px;font-weight:700}
 .about-fire .help-list li:hover{background:#edf4ff;border-color:#a9c5fb;transform:translateX(3px)}
 .about-fire .help-list strong{color:var(--deep);font-weight:700}
-.about-fire .help-contact{margin-top:20px!important;padding-top:18px;border-top:1px solid var(--line)}
+.about-fire .help-contact{background:#f3f7ff;border-left:4px solid var(--blue);border-radius:8px;padding:16px 20px;margin-top:22px!important}
 @media(max-width:600px){.about-fire .help-list li{padding:16px 15px 16px 56px}.about-fire .help-list li:before{left:12px;top:16px}}
 
 /* Interactive chronological timeline */
