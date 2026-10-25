@@ -133,7 +133,8 @@ permalink: /about-me
         <li><strong>Új pénzügyi élethelyzet:</strong> Egy új pénzügyi helyzettel szembesülsz (pl. öröklés esetén), és nem tudod, mit tegyél.</li>
         <li><strong>Nyugdíjtervezés:</strong> Korai nyugdíjra vagy hagyományos nyugdíjra szeretnél felkészülni. Például ki tudjuk számolni a te vagy hozzátartozód állami nyugdíját, és meg tudjuk becsülni, mekkora egyéb jövedelemre lehet szükséged az kiadásaid finanszírozására.</li>
         <li><strong>Tőzsdei ügyletek adózása:</strong> Adózási kérdésed van tőzsdei kereskedések után. Fontos, hogy nem vagyok adótanácsadó és csak a hagyományos, ellenőrzött tőkepiaci ügyletek esetében tudok segíteni kiszámolni a várható adódat.</li>
-        <li><strong>Pénzügyi edukáció és portfólióelemzés:</strong> Pénzügyi edukációs kérdésed van konkrét helyzettel kapcsolatban, például adóoptimalizálás, brókerek összehasonlítása, eszközök teljesítményének vizsgálata, teljes portfóliószerkezet vizsgálata, és hasonlók. Fontos, hogy én csak elemzést nyújtok, a pénzügyi döntéseket neked kell meghozni.</li>
+        <li><strong>Pénzügyi edukációs kérdések:</strong> Kérdésed van konkrét helyzettel kapcsolatban, például adóoptimalizálás, brókerek összehasonlítása, eszközök teljesítményének vizsgálata, otthoni költségvetés tervezése, és hasonlók.</li>
+		<li>Portfólióelemzés: Teljes portfóliószerkezet vizsgálata, kockázatértékelés, lehetséges alternatívák elemzése különböző piaci környezetre. Fontos, hogy én csak elemzést nyújtok, a pénzügyi döntéseket neked kell meghozni.</li>
       </ul>
       <p class="help-contact"><strong>Ha kérdésed van, <a href="mailto:adamgoesfire@gmail.com">írj egy emailt, és megbeszéljük, tudok-e segíteni</a>.</strong></p>
     </div>
