@@ -270,7 +270,7 @@ thead th {
 }
 tbody tr:hover { background: #f8fbff; }
 
-input[type="number"] {
+input[type="number"], input.gross-input {
   width: 100%;
   min-width: 120px;
   max-width: 170px;
@@ -284,15 +284,15 @@ input[type="number"] {
   box-shadow: inset 0 1px 2px rgba(15,23,42,.03), 0 1px 3px rgba(21,101,192,.08);
   transition: background .18s ease, border-color .18s ease, box-shadow .18s ease;
 }
-input[type="number"]::placeholder {
+input[type="number"]::placeholder, input.gross-input::placeholder {
   color: #6b8fb3;
   font-weight: 600;
 }
-input[type="number"]:hover {
+input[type="number"]:hover, input.gross-input:hover {
   background: #dfefff;
   border-color: #64a4e8;
 }
-input[type="number"]:focus {
+input[type="number"]:focus, input.gross-input:focus {
   outline: none;
   background: #fff8dc;
   border-color: #f2b134;
@@ -746,10 +746,10 @@ YEARS.forEach((y,i)=>{
 
   const tdIn=document.createElement('td');
   const inp=document.createElement('input');
-  inp.type='number'; inp.min='0'; inp.step='1000'; inp.placeholder='0'; inp.inputMode='numeric';
+  inp.type='text'; inp.className='gross-input'; inp.placeholder='0'; inp.inputMode='numeric'; inp.setAttribute('aria-label',`${y}. évi bruttó kereset`);
   const limit=CONST_TAX_LIMIT[i];
   if(Number.isFinite(limit) && limit>0){
-    inp.max=String(limit);
+    inp.dataset.max=String(limit);
     inp.title=`Az ${y}. évi megadható maximum: ${formatFt(limit)}`;
   }
   tdIn.appendChild(inp);
@@ -780,13 +780,22 @@ YEARS.forEach((y,i)=>{
   inputs.push({inp, daysInp, daysInYear, limit, tdAnnual, tdVal, tdAfterContr, tdTax, tdFinal});
 });
 
-/* A korabeli éves járulékplafon szigorú érvényesítése. */
+/* Ezres tagolas a brutto beviteli mezokben. */
+function incomeNumber(inp){
+  const digits=inp.value.replace(/[^0-9]/g,'');
+  return digits==='' ? null : Number(digits);
+}
+function formatIncomeInput(inp){
+  const value=incomeNumber(inp);
+  inp.value=value===null?'':new Intl.NumberFormat('en-US',{useGrouping:true,maximumFractionDigits:0}).format(value).replace(/,/g,' ');
+}
+/* A korabeli eves jarulekplafon szigoru ervenyesitese. */
 function clampIncome(inp, limit){
-  if(inp.value.trim()==='') return;
-  const value=Number(inp.value);
-  if(!Number.isFinite(value)) {inp.value='';return;}
+  const value=incomeNumber(inp);
+  if(value===null){inp.value='';return;}
   const capped=Math.max(0,Number.isFinite(limit)&&limit>0?Math.min(value,limit):value);
-  if(value!==capped) inp.value=String(capped);
+  inp.value=String(capped);
+  formatIncomeInput(inp);
 }
 
 /* ===== Számítás ===== */
@@ -799,7 +808,7 @@ function recalc(){
   inputs.forEach(({inp, daysInp, daysInYear, limit, tdAnnual, tdVal, tdAfterContr, tdTax, tdFinal}, i)=>{
     clampIncome(inp,limit);
     const hasValue=String(inp.value??'').trim()!=='';  // felhasználói beírás
-    const raw=parseFloat(inp.value||'0');
+    const raw=incomeNumber(inp)??0;
 
     const days=Number(daysInp.value);
     const validDays=Number.isInteger(days) && days>=1 && days<=daysInYear;
@@ -889,7 +898,7 @@ function quickFillByPct(p){
 }
 
 /* Események + init */
-inputs.forEach(({inp,daysInp,limit})=>{inp.addEventListener('input',()=>{clampIncome(inp,limit);recalc();});daysInp.addEventListener('input',recalc);});
+inputs.forEach(({inp,daysInp,limit})=>{inp.addEventListener('input',()=>{const pos=inp.selectionStart;const before=inp.value.slice(0,pos).replace(/[^0-9]/g,'').length;clampIncome(inp,limit);let next=0,count=0;while(next<inp.value.length && count<before){if(/[0-9]/.test(inp.value[next]))count++;next++;}inp.setSelectionRange(next,next);recalc();});daysInp.addEventListener('input',recalc);});
 document.getElementById('serviceYears').addEventListener('input', recalc);
 
 /* Quick fill buttons */
