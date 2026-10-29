@@ -46,7 +46,7 @@ permalink: consulting_new-1
                 <li>Rövid összefoglaló a beszélgetésről és a portfóliód alapjairól</li>
               </ul>
             </div>
-            <div class="fc-card-bottom"><p><strong>Nem tartalmaz:</strong> tételes portfólióvizsgálatot, külön modellépítést vagy részletes jelentést.</p><a class="fc-cta fc-cta-outline" href="https://docs.google.com/forms/d/e/1FAIpQLScnfbOcL5JYei45RLssW8ukcZKwySogvV-lsordVkxg6xz9Qg/viewform" target="_blank" rel="noopener noreferrer">Konzultációt kérek <span aria-hidden="true">→</span></a></div>
+            <div class="fc-card-bottom"><p><strong>Nem tartalmaz:</strong> tételes portfólióvizsgálatot, külön modellépítést vagy részletes jelentést.</p><a class="fc-cta fc-cta-outline" href="https://docs.google.com/forms/d/e/1FAIpQLSdpS5ZpJ0vOhfJ8VfNEnf5-9VJYcuCUJJFVwB-RYO-lYxoM-Q/viewform" target="_blank" rel="noopener noreferrer">Konzultációt kérek <span aria-hidden="true">→</span></a></div>
           </article>
 
           <article class="fc-card" tabindex="0" role="button" aria-pressed="false" aria-label="Portfóliótükör kiválasztása">
@@ -62,7 +62,7 @@ permalink: consulting_new-1
                 <li>3–5 oldalas jelentés, amit átbeszélünk a konzultáció során</li>
               </ul>
             </div>
-            <div class="fc-card-bottom"><p><strong>Terjedelem:</strong> a 3-5 oldalas jelentés a meglévő eszközök számától és a portfólió kompexitásától függően változhat</p><a class="fc-cta" href="https://docs.google.com/forms/d/e/1FAIpQLScnfbOcL5JYei45RLssW8ukcZKwySogvV-lsordVkxg6xz9Qg/viewform" target="_blank" rel="noopener noreferrer">Portfóliótükröt kérek <span aria-hidden="true">→</span></a></div>
+            <div class="fc-card-bottom"><p><strong>Terjedelem:</strong> a 3-5 oldalas jelentés a meglévő eszközök számától és a portfólió kompexitásától függően változhat</p><a class="fc-cta" href="https://docs.google.com/forms/d/e/1FAIpQLSdpS5ZpJ0vOhfJ8VfNEnf5-9VJYcuCUJJFVwB-RYO-lYxoM-Q/viewform" target="_blank" rel="noopener noreferrer">Portfóliótükröt kérek <span aria-hidden="true">→</span></a></div>
           </article>
 
           <article class="fc-card" tabindex="0" role="button" aria-pressed="false" aria-label="FIRE Térkép kiválasztása">
@@ -78,7 +78,7 @@ permalink: consulting_new-1
                 <li>5–8 oldalas jelentés és igény szerint további 60 perc online egyeztetés (az Konzultációs csomagon felül)</li>
               </ul>
             </div>
-            <div class="fc-card-bottom"><p><strong>Terjedelem:</strong> az 5-8 oldalas jelentés a meglévő eszközök számától és a vagyonod kompexitásától függően változhat</p><a class="fc-cta fc-cta-dark" href="https://docs.google.com/forms/d/e/1FAIpQLScnfbOcL5JYei45RLssW8ukcZKwySogvV-lsordVkxg6xz9Qg/viewform" target="_blank" rel="noopener noreferrer">FIRE térképet kérek <span aria-hidden="true">→</span></a></div>
+            <div class="fc-card-bottom"><p><strong>Terjedelem:</strong> az 5-8 oldalas jelentés a meglévő eszközök számától és a vagyonod kompexitásától függően változhat</p><a class="fc-cta fc-cta-dark" href="https://docs.google.com/forms/d/e/1FAIpQLSdpS5ZpJ0vOhfJ8VfNEnf5-9VJYcuCUJJFVwB-RYO-lYxoM-Q/viewform" target="_blank" rel="noopener noreferrer">FIRE térképet kérek <span aria-hidden="true">→</span></a></div>
           </article>
         </div>
 
