@@ -124,6 +124,15 @@ layout: default
 }
 
 
+.portfolio-treemap-frame {
+  display: block;
+  width: 100%;
+  min-width: 0;
+  height: 1250px; /* tartalek, amig a belso meret meg nem erkezik */
+  border: 0;
+  background: transparent;
+}
+
 /* 2026-os tranzakciok */
 .trades-card { border-radius: 16px; overflow: hidden; border: 1px solid #dbe5f2; box-shadow: 0 8px 25px rgba(13,71,161,.08); background: #fff; }
 .trades-head { padding: 22px 24px 14px; border-top: 4px solid #2962ff; }
@@ -177,67 +186,28 @@ layout: default
     </div>
   </div>
 
-  <!-- Two-column layout for charts -->
-  <div class="row">
-    <!-- LEFT column: 2 charts stacked -->
-    <div class="col s12 m6">
-      <div class="mb-4">
-	  <div class="mb-4">
-        <h5>A FIRE utam 2015 óta</h5>
-        <iframe class="responsive-iframe" src="https://datawrapper.dwcdn.net/eQxCE" height="500"></iframe>
-      </div>
-        <h5>A portfólióm változása</h5>
-        <iframe class="responsive-iframe" src="https://datawrapper.dwcdn.net/oK5cm" height="800"></iframe>
-      </div>
+  <!-- Teljes szelessegu, reszponziv portfolio treemap -->
+  <section class="row" id="portfolio-terkep" aria-label="Portfólió összetétele">
+    <div class="col s12">
+      <iframe id="portfolio-treemap-frame" class="portfolio-treemap-frame"
+        src="portfolio_treemap_nov-26-magyar_embedded.html"
+        title="Portfólió-összetétel és részletes befektetési adatok"
+        loading="lazy" scrolling="no"></iframe>
     </div>
-
-    <!-- RIGHT column: 1 chart -->
-    <div class="col s12 m6">
-	  <div class="mb-4">
-        <h5>Jelenlegi befektetéseim eszköztípusonként</h5>
-        <iframe class="responsive-iframe" src="https://datawrapper.dwcdn.net/tq0GF" height="500"></iframe>
-      </div>
-	  <div class="mb-4">
-        <h5>Jelenlegi befektetések szektoriális bontásban</h5>
-        <iframe class="responsive-iframe" src="https://datawrapper.dwcdn.net/peTBA" height="800"></iframe>
-      </div>
-    </div>
-	
-
-<style>
-  /* Responsive iframe wrapper */
-  .resp-embed {
-    position: relative;
-    width: 100%;
-    /* Fallback for older browsers: 16:9 via padding hack */
-    padding-top: 56.25%;
-    /* Prevent tiny heights on narrow screens */
-    min-height: 320px;
-  }
-
-  .resp-embed > iframe {
-    position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-    border: 0;
-  }
-
-  /* Use modern aspect-ratio when available, and drop the padding fallback */
-  @supports (aspect-ratio: 1 / 1) {
-    .resp-embed {
-      padding-top: 0;
-      aspect-ratio: 16 / 9;          /* change to 4 / 3 if you prefer */
-      min-height: auto;
-    }
-  }
-
-  /* On very large screens, let it breathe but keep page margins */
-  @media (min-width: 1200px) {
-    .resp-embed { max-width: 100%; }
-  }
-</style>
-  </div>
+  </section>
+  <script>
+  (function () {
+    var frame = document.getElementById('portfolio-treemap-frame');
+    window.addEventListener('message', function (event) {
+      if (event.source !== frame.contentWindow || event.origin !== window.location.origin) return;
+      if (!event.data || event.data.type !== 'portfolio-treemap-height') return;
+      var height = Number(event.data.height);
+      if (Number.isFinite(height) && height > 0 && height < 100000) {
+        frame.style.height = Math.ceil(height + 4) + 'px';
+      }
+    });
+  })();
+  </script>
 
   <!-- A havi Excel-allomanyokbol becsult portfoliovaltasok (202601-202611) -->
   <section class="row" id="atsulyozasok-2026" aria-labelledby="rebalance-title">
