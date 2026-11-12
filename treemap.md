@@ -42,15 +42,62 @@ section { overflow-x: auto; -webkit-overflow-scrolling: touch; }
   reportHeight();
 })();
 </script><div id="treemap-touch-detail" role="status" aria-live="polite" style="display:none;margin:10px 0;padding:10px;border-radius:8px;background:#e7edf5;color:#16243a;font-size:14px"></div>
+<style>
+/* Mobilon a kijelolt mezo reszletei a kepernyo aljan jelennek meg. */
+@media (max-width: 700px) {
+  #treemap-touch-detail.is-active {
+    display: block !important;
+    position: fixed;
+    bottom: calc(12px + env(safe-area-inset-bottom, 0px));
+    left: 12px;
+    right: 12px;
+    z-index: 9999;
+    margin: 0;
+    padding: 14px 44px 14px 16px;
+    border: 1px solid #aebdd1;
+    box-shadow: 0 5px 22px #16243a40;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.4;
+  }
+  .frame .tile { cursor: pointer; }
+}
+#treemap-touch-detail .detail-close {
+  position: absolute;
+  right: 8px;
+  top: 5px;
+  border: 0;
+  background: transparent;
+  color: #16243a;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 4px 8px;
+}
+</style>
 <script>
 (function(){
-  var output=document.getElementById('treemap-touch-detail');
+  var output = document.getElementById('treemap-touch-detail');
+  if (!output) return;
+  var close = document.createElement('button');
+  close.type = 'button';
+  close.className = 'detail-close';
+  close.textContent = '×';
+  close.setAttribute('aria-label', 'Bezárás');
+  close.addEventListener('click', function(){
+    output.classList.remove('is-active');
+    output.style.display = 'none';
+  });
+  output.style.position = 'relative';
+  output.appendChild(close);
   document.querySelectorAll('.frame .tile').forEach(function(tile){
-    tile.addEventListener('click',function(){
-      var title=tile.querySelector('title');
-      if(!title)return;
-      output.textContent=title.textContent;
-      output.style.display='block';
+    tile.addEventListener('click', function(){
+      var title = tile.querySelector('title');
+      if (!title) return;
+      // Az SVG title a teljes befektetesnevet es a portfoliosulyt tartalmazza.
+      output.textContent = title.textContent;
+      output.appendChild(close);
+      output.style.display = 'block';
+      output.classList.add('is-active');
     });
   });
 })();
