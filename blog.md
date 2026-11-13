@@ -45,16 +45,28 @@ permalink: /blog
 </div>
 
 <div class="blog-featured">
-  <a class="featured-hitbox" href="/blog-16" aria-label="Mennyit utaztam eddigi életem során?"></a>
-  <div class="featured-label">Legfrissebb bejegyzés · Élet · 2026</div>
-  <h2>Mennyit utaztam eddigi életem során?</h2>
-  <p>A Lightyear Universe '26 rendezvénye után elővettem a régi feljegyzéseim és kiszámoltam, hány országba jutottam el eddig életem során.</p>
+  <a class="featured-hitbox" href="/blog-17" aria-label="Két év alatt kész a tökéletes portfólió"></a>
+  <div class="featured-label">Legfrissebb bejegyzés · Befektetés · 2026. november 13.</div>
+  <h2>Két év alatt kész a tökéletes portfólió</h2>
+  <p>26 hónap alatt teljesen átalakítottam a befektetési portfóliómat: csökkentettem a technológiai részvények túlsúlyát, növeltem a diverzifikációt, és a hozammaximalizálás helyett a hosszú távú vagyonmegőrzésre helyeztem a hangsúlyt. Megmutatom, honnan indultam, hová jutottam, és mit tanultam a kockázatkezelésről.</p>
   <div class="featured-link">Olvasd tovább <span class="arrow">→</span></div>
 </div>
 
 <div class="section">
   <div class="blog-section-title"><h4>Összes korábbi bejegyzés</h4></div> 
   <div class="row blog-grid">
+    <div class="col s12 m6">
+      <a href="/blog-16" style="color: inherit;">
+        <div class="card hoverable blog-card">
+          <div class="card-content">
+            <div class="blog-meta"><span class="blog-category">Élet</span><span class="blog-date">2026</span></div>
+            <span class="card-title"><strong>Mennyit utaztam eddigi életem során?</strong></span>
+            <p>A Lightyear Universe '26 rendezvénye után elővettem a régi feljegyzéseim és kiszámoltam, hány országba jutottam el eddig életem során.</p>
+          </div>
+          <div class="card-action">Olvasd tovább <span class="arrow">→</span></div>
+        </div>
+      </a>
+    </div>
   <div class="col s12 m6">
       <a href="/blog-15" style="color: inherit;">
         <div class="card hoverable blog-card">
