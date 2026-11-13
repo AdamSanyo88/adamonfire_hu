@@ -240,7 +240,7 @@ permalink: blog-17
 <p>Végül 26 hónap munkájával 2026 novemberére sikerült egy sokkal kiegyensúlyozottabb portfóliót kiépíteni, ami most így néz ki:</p>
 
 
-<p><img src="../images/blog-17-pic-2.png" alt="2026 novemberi állapot" style="
+<p><img src="../images/blog-17-pic-2.png" alt="2026 novemberi állapot" style=" 
        max-height: 700px;
        max-width: 100%;
        width: auto;
