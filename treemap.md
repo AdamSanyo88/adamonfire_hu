@@ -41,69 +41,77 @@ section { overflow-x: auto; -webkit-overflow-scrolling: touch; }
   }
   reportHeight();
 })();
-</script><div id="treemap-touch-detail" role="status" aria-live="polite" style="display:none;margin:10px 0;padding:10px;border-radius:8px;background:#e7edf5;color:#16243a;font-size:14px"></div>
-<style>
-/* Mobilon a kijelolt mezo reszletei a kepernyo aljan jelennek meg. */
-@media (max-width: 700px) {
-  #treemap-touch-detail.is-active {
-    display: block !important;
-    position: fixed;
-    bottom: calc(12px + env(safe-area-inset-bottom, 0px));
-    left: 12px;
-    right: 12px;
-    z-index: 9999;
-    margin: 0;
-    padding: 14px 44px 14px 16px;
-    border: 1px solid #aebdd1;
-    box-shadow: 0 5px 22px #16243a40;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 1.4;
-  }
-  .frame .tile { cursor: pointer; touch-action: manipulation; }
+</script><style>
+/* The tooltip is anchored inside the scrollable chart, not to the iframe viewport. */
+.frame { position: relative; }
+.frame .tile rect { cursor: pointer; }
+.frame .tile { -webkit-tap-highlight-color: transparent; }
+#treemap-touch-detail {
+  display: none; position: absolute; z-index: 30;
+  box-sizing: border-box; max-width: min(310px, 85vw);
+  padding: 12px 38px 12px 14px;
+  border: 1px solid #9aacc4; border-radius: 9px;
+  background: #fff; color: #16243a;
+  box-shadow: 0 4px 18px #16243a55;
+  font: 700 15px/1.4 system-ui,Arial,sans-serif;
+  pointer-events: auto;
 }
-#treemap-touch-detail .detail-close {
-  position: absolute;
-  right: 8px;
-  top: 5px;
-  border: 0;
-  background: transparent;
-  color: #16243a;
-  font-size: 24px;
+#treemap-touch-detail button {
+  position: absolute; top: 4px; right: 5px;
+  border: 0; background: transparent; color: #16243a;
+  font: 24px/1 system-ui,Arial,sans-serif; padding: 3px 7px;
   cursor: pointer;
-  padding: 4px 8px;
 }
 </style>
 <script>
-(function(){
-  var output = document.getElementById('treemap-touch-detail');
-  if (!output) return;
-  document.body.appendChild(output);
+(function () {
+  var frame = document.querySelector('.frame');
+  if (!frame) return;
+  var tooltip = document.createElement('div');
+  tooltip.id = 'treemap-touch-detail';
+  tooltip.setAttribute('role', 'status');
+  tooltip.setAttribute('aria-live', 'polite');
+  var label = document.createElement('span');
   var close = document.createElement('button');
-  close.type = 'button';
-  close.className = 'detail-close';
-  close.textContent = '×';
+  close.type = 'button'; close.textContent = '×';
   close.setAttribute('aria-label', 'Bezárás');
-  close.addEventListener('click', function(){
-    output.classList.remove('is-active');
-    output.style.display = 'none';
-  });
-  output.appendChild(close);
-  document.querySelectorAll('.frame .tile').forEach(function(tile){
-    tile.setAttribute('tabindex', '0');
-    tile.setAttribute('role', 'button');
-    function showDetail(){
-      var title = tile.querySelector('title');
-      if (!title) return;
-      // Az SVG title a teljes befektetesnevet es a portfoliosulyt tartalmazza.
-      output.textContent = title.textContent;
-      output.appendChild(close);
-      output.style.display = 'block';
-      output.classList.add('is-active');
+  tooltip.appendChild(label); tooltip.appendChild(close);
+  frame.appendChild(tooltip);
+  function hide() { tooltip.style.display = 'none'; }
+  close.addEventListener('click', function(e) { e.stopPropagation(); hide(); });
+  function show(tile, clientX, clientY) {
+    var title = tile.querySelector('title');
+    if (!title) return;
+    label.textContent = title.textContent;
+    tooltip.style.display = 'block';
+    var r = frame.getBoundingClientRect();
+    var x = clientX - r.left + frame.scrollLeft + 10;
+    var y = clientY - r.top + frame.scrollTop + 12;
+    var w = tooltip.offsetWidth, h = tooltip.offsetHeight;
+    var minX = frame.scrollLeft + 6;
+    var maxX = frame.scrollLeft + frame.clientWidth - w - 6;
+    x = Math.max(minX, Math.min(x, Math.max(minX,maxX)));
+    if (y + h > frame.scrollTop + frame.clientHeight - 6) {
+      y = clientY - r.top + frame.scrollTop - h - 12;
     }
-    tile.addEventListener('click', showDetail);
-    tile.addEventListener('keydown', function(e){
-      if(e.key === 'Enter' || e.key === ' '){ e.preventDefault(); showDetail(); }
+    y = Math.max(frame.scrollTop + 6, y);
+    tooltip.style.left = x + 'px'; tooltip.style.top = y + 'px';
+  }
+  /* Listen on the actual SVG rectangles: avoids browser SVG title/focus quirks. */
+  var lastTouch = 0;
+  frame.querySelectorAll('.tile').forEach(function(tile) {
+    var rect = tile.querySelector('rect');
+    if (!rect) return;
+    rect.addEventListener('touchend', function(e) {
+      if (e.changedTouches.length !== 1) return;
+      var t = e.changedTouches[0];
+      lastTouch = Date.now();
+      e.preventDefault();
+      show(tile, t.clientX, t.clientY);
+    }, {passive:false});
+    rect.addEventListener('click', function(e) {
+      if (Date.now() - lastTouch < 600) return;
+      show(tile, e.clientX, e.clientY);
     });
   });
 })();
