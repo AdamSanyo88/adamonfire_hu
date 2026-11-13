@@ -60,7 +60,7 @@ section { overflow-x: auto; -webkit-overflow-scrolling: touch; }
     font-weight: 700;
     line-height: 1.4;
   }
-  .frame .tile { cursor: pointer; }
+  .frame .tile { cursor: pointer; touch-action: manipulation; }
 }
 #treemap-touch-detail .detail-close {
   position: absolute;
@@ -78,6 +78,7 @@ section { overflow-x: auto; -webkit-overflow-scrolling: touch; }
 (function(){
   var output = document.getElementById('treemap-touch-detail');
   if (!output) return;
+  document.body.appendChild(output);
   var close = document.createElement('button');
   close.type = 'button';
   close.className = 'detail-close';
@@ -87,10 +88,11 @@ section { overflow-x: auto; -webkit-overflow-scrolling: touch; }
     output.classList.remove('is-active');
     output.style.display = 'none';
   });
-  output.style.position = 'relative';
   output.appendChild(close);
   document.querySelectorAll('.frame .tile').forEach(function(tile){
-    tile.addEventListener('click', function(){
+    tile.setAttribute('tabindex', '0');
+    tile.setAttribute('role', 'button');
+    function showDetail(){
       var title = tile.querySelector('title');
       if (!title) return;
       // Az SVG title a teljes befektetesnevet es a portfoliosulyt tartalmazza.
@@ -98,6 +100,10 @@ section { overflow-x: auto; -webkit-overflow-scrolling: touch; }
       output.appendChild(close);
       output.style.display = 'block';
       output.classList.add('is-active');
+    }
+    tile.addEventListener('click', showDetail);
+    tile.addEventListener('keydown', function(e){
+      if(e.key === 'Enter' || e.key === ' '){ e.preventDefault(); showDetail(); }
     });
   });
 })();
