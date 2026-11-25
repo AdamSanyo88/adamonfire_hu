@@ -186,6 +186,9 @@ layout: default
     </div>
   </div>
 
+
+  <section class="row" id="portfolio-hozam"><div class="col s12"><iframe id="portfolio-return-frame" class="responsive-iframe" src="{{ "/returns-graph.html" | relative_url }}" title="Befektetéseim kumulatív hozama" loading="lazy" style="height:620px" scrolling="no"></iframe></div></section>
+<script>(function(){var f=document.getElementById('portfolio-return-frame');window.addEventListener('message',function(e){if(e.source!==f.contentWindow||e.origin!==location.origin||!e.data||e.data.type!=='portfolio-return-height')return;var h=Number(e.data.height);if(Number.isFinite(h)&&h>0&&h<10000)f.style.height=Math.ceil(h)+'px';});})();</script>
   <!-- Teljes szelessegu, reszponziv portfolio treemap -->
   <section class="row" id="portfolio-terkep" aria-label="Portfólió összetétele">
     <div class="col s12">
