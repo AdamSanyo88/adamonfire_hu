@@ -385,18 +385,31 @@ input[type="number"].invalid-days { border-color: #dc2626; background: #fef2f2; 
 .calculator-shell .wealth-tax-result strong {color:#f2bd79;}
 .calculator-shell #nw-ft {color:#fff;}
 .calculator-shell #sum-net {color:#86cda8;}
+
+/* Homepage palette: explanatory panels */
+.wrap .pension-guide {background:linear-gradient(145deg,#0d47a1 0%,#123b85 48%,#16243a 100%);color:#eaf1ff;border:1px solid #294367;border-radius:18px;padding:24px;margin:0 0 20px;box-shadow:0 14px 34px rgba(13,71,161,.18);}
+.wrap .pension-guide h5 {color:#fff;font-weight:700;margin:0 0 16px;}
+.wrap .pension-guide p,.wrap .pension-guide li {color:#eaf1ff;}
+.wrap .pension-guide strong {color:#fff;}
+.wrap .pension-guide a {color:#b9e0fa;text-decoration:underline;}
+.wrap .pension-guide li {margin-bottom:8px;}
+.wrap .pension-guide p:last-child {margin-bottom:0;}
+@media(max-width:600px){.wrap .pension-guide{padding:16px;}}
 </style>
 </head>
 <body>
   <div class="wrap">
     <br/>
-	<h5>Hogyan használd a kalkulátort?</h5>
+	<section class="pension-guide">
+<h5>Hogyan használd a kalkulátort?</h5>
     <p>Először add meg a <strong>szolgálati éveid számát</strong> (ami megadja, mekkora szorzóval számolódik majd a kereseted). Ezt követően add meg az <strong>éves bruttó kereseteidet minden általad ledolgozott évben</strong>. Csak a munkabérként és prémiumként kapott bejelentett és leadózott jövedelemmel számolj.</p>
 	<p>A kalkulátor figyelembe veszi az adott év <em>valorizációs szorzóját</em>, a <em>szolgálati idő szorzóját</em>, a lépcsőzetes <em>degressziót</em>, és ezek alapján kiszámolja, mi a várható havi nyugdíjad.</p>
 	<p><strong>Fontos:</strong> Az 1992–2012 közötti, a táblázatban szereplő éves járulékplafont a kalkulátor automatikusan érvényesíti: a megadott kereset nem haladhatja meg az adott évi plafont. Emellett a kalkulációnál vedd figyelembe, hogy a GYES/GYED időszaka ugyanúgy szolgálati időnek számíthat, mint a munkavállalással töltött idő. Emellett az 1998. január 1-je előtt felsőoktatásban töltött idő is része a szolgálati időnek. A pontos szolgálati idő számítást a nyugdíjbiztosítótól kapott dokumentum tartalmazza.</p>
 	<p>Az adott időszakban ténylegesen megkeresett bruttó összeget add meg, és mellette a figyelembe veendő napok számát (alapértelmezetten 365, szökőévben 366). A kalkulátor a keresetet évesíti az összehasonlításhoz, de a nyugdíjátlag számításánál a tényleges időszak hosszával súlyoz. A kalkulátor folyamatosan újrakalkulálja az átlagos életkeresetet, szóval ha csak pár évet dolgoztál, azt feltételezi, hogy a jövőben is ilyen bérszinten fogsz keresni. Ezért fontos, hogy minden éves adatot adj meg a pontosabb kalkulációhoz.</p>
 	<br/>
-	<h5>Nyugdíjszámítás menete a gyakorlatban</h5>
+	</section>
+<section class="pension-guide">
+<h5>Nyugdíjszámítás menete a gyakorlatban</h5>
 	<ol>
 	<li>Az egész élet során szerzett szolgálati évek egész számban, lefelé kerekítve (a törtév elvész).</li>
 	<li>Az 1988 január 1-je óta szerzett jövedelmek nettósított éves értéke (először levonjuk a nyugdíjjárulékot, majd ebből az összegből az adót).</li>
@@ -408,6 +421,7 @@ input[type="number"].invalid-days { border-color: #dc2626; background: #fef2f2; 
 	<p><strong>Fontos:</strong> 2027. január 1-től a minimálnyugdíj összege 120 ezer Ft. Ha valaki nyugdíja 108 ezer és 146 ezer Ft közé esik, akkor 1000 és 12000 Ft közötti kompenzációt kap azért, hogy nyugdíja elérje a jogszabályban meghatározott minimum összeget.</p>
 	<p>Az adatok tájékoztató jellegűek, pontosabb számításra a <a href="https://www.allamkincstar.gov.hu/nyugdij/sajat-jogu-ellatasok/oregsegi-nyugdij/onkiszolgalo-nyugdijkalkulator">Magyar Államkincstár nyugdíjkalkulátora</a> javasolt.</p>
 
+</section>
   <div class="calculator-shell">
     <div class="calculator-heading">
       <div>

@@ -131,6 +131,16 @@ permalink: /spending
  .calculator-shell #monthlyInput,.calculator-shell #monthlyInput:hover,.calculator-shell #monthlyInput:focus{background:#162f53!important;color:#fff!important;-webkit-text-fill-color:#fff!important;caret-color:#fff;border-color:#79baff!important;}
 .calculator-shell #monthlyInput:focus{border-color:#f2bd79!important;}
 .calculator-shell .spending-table h2{color:#fff!important;}
+
+/* Homepage palette: explicit table header styling */
+.calculator-shell .spending-table .table > thead > tr > th {
+  --bs-table-bg:#173c72; --bs-table-color:#fff; --bs-table-accent-bg:transparent;
+  --bs-table-bg-state:transparent; --bs-table-bg-type:transparent;
+  background:#173c72 !important; color:#fff !important;
+  -webkit-text-fill-color:#fff; font-weight:700 !important;
+  border-color:#294367 !important; border-bottom:2px solid #79baff !important;
+  box-shadow:none !important;
+}
 </style>
 </head>
 <body>

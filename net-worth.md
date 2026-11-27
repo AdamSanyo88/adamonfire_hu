@@ -301,6 +301,16 @@ input[type=number]{
 .calculator-shell #nw-table input[data-field=debt]:not(:disabled){background:#442c40!important;border-color:#e5a097!important;}
 .calculator-shell #nw-table input[data-field]:focus,.calculator-shell #nw-table input[data-business]:focus{background:#263b55!important;border-color:#f2bd79!important;color:#fff!important;}
 .calculator-shell #nw-table input:disabled{background:#16243a!important;color:#b9cce9!important;-webkit-text-fill-color:#b9cce9!important;opacity:1;}
+
+/* Homepage palette: explicit table header styling */
+.calculator-shell #nw-table > thead > tr > th {
+  --bs-table-bg:#173c72; --bs-table-color:#fff; --bs-table-accent-bg:transparent;
+  --bs-table-bg-state:transparent; --bs-table-bg-type:transparent;
+  background:#173c72 !important; color:#fff !important;
+  -webkit-text-fill-color:#fff; font-weight:700 !important;
+  border-color:#294367 !important; border-bottom:2px solid #79baff !important;
+  box-shadow:none !important;
+}
 </style>
 
 <div class="container py-4">
