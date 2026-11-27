@@ -141,6 +141,25 @@ permalink: /spending
   border-color:#294367 !important; border-bottom:2px solid #79baff !important;
   box-shadow:none !important;
 }
+
+/* White text throughout the spending results table. */
+.calculator-shell .spending-table .table {
+  --bs-table-color:#fff;
+  --bs-table-striped-color:#fff;
+  --bs-table-hover-color:#fff;
+  --bs-table-active-color:#fff;
+}
+.calculator-shell .spending-table .table > tbody > tr > td,
+.calculator-shell .spending-table .table > tfoot > tr > th,
+.calculator-shell .spending-table .table > tbody > tr > td .badge,
+.calculator-shell .spending-table .table > tfoot > tr > th .badge {
+  --bs-table-color:#fff;
+  --bs-table-color-type:#fff;
+  --bs-table-color-state:#fff;
+  color:#fff !important;
+}
+.calculator-shell .spending-table .table > tbody > tr.category-removed {opacity:1;}
+
 </style>
 </head>
 <body>
