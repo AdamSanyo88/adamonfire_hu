@@ -228,6 +228,30 @@ groups.forEach(function(g,i){g.querySelector('.hp-hit').addEventListener('click'
 legends.forEach(function(el,i){el.tabIndex=0;el.setAttribute('role','button');el.setAttribute('aria-pressed','false');el.addEventListener('click',function(){select(i)});keyboard(el,function(){select(i)})});svg.addEventListener('click',function(){hide();if(selected!==-1)select(selected)});scroll.addEventListener('scroll',hide);svg.addEventListener('pointerleave',hide);
 })();</script>
 </div></section>
+<style>
+/* Shared dashboard styling for the sections below performance */
+#portfolio-terkep .portfolio-treemap-frame {border-radius:18px;background:#16243a;box-shadow:0 14px 34px rgba(13,71,161,.22);}
+#atsulyozasok-2026 .trades-card {box-sizing:border-box;background:linear-gradient(145deg,#0d47a1 0%,#123b85 48%,#16243a 100%);border:0;border-radius:18px;padding:24px;color:#fff;box-shadow:0 14px 34px rgba(13,71,161,.22);font:14px system-ui,Arial,sans-serif;}
+#atsulyozasok-2026 .trades-head {padding:0 0 20px;border:0;}
+#atsulyozasok-2026 .trades-head h5 {color:#fff;font-size:26px;letter-spacing:-.6px;line-height:1.2;margin:6px 0 8px;}
+#atsulyozasok-2026 .trades-head p {color:#dbe8ff;}
+#atsulyozasok-2026 .trades-scroll {background:#0b2145;border:1px solid #ffffff26;border-radius:12px;scrollbar-color:#779de8 #0b2145;}
+#atsulyozasok-2026 .trades-table {min-width:650px;background:transparent;}
+#atsulyozasok-2026 .trades-table th {background:#17365e;color:#dbe8ff;border-bottom:1px solid #ffffff26;}
+#atsulyozasok-2026 .trades-table td {color:#eaf1ff;border-bottom:1px solid #ffffff18;vertical-align:middle;line-height:1.5;}
+#atsulyozasok-2026 .trades-table tbody tr:nth-child(even) {background:#ffffff08;}
+#atsulyozasok-2026 .trades-table tbody tr:hover {background:#ffffff12;}
+#atsulyozasok-2026 .trades-table td:first-child {white-space:nowrap;font-weight:700;color:#b9e0fa;}
+#atsulyozasok-2026 .trades-table td.trade-from {color:#E5A097;}
+#atsulyozasok-2026 .trades-table td.trade-to {color:#86CDA8;}
+#atsulyozasok-2026 .trades-table td.percent {color:#79BAFF;font-size:20px;font-weight:800;}
+#atsulyozasok-2026 .reason-box {margin:24px 0 0;padding:0;background:none;border:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;}
+#atsulyozasok-2026 .reason-box h6 {grid-column:1/-1;color:#fff;font-size:20px;margin:0 0 4px;}
+#atsulyozasok-2026 .reason-box p {box-sizing:border-box;background:#ffffff0d;border:1px solid #ffffff26;border-left:3px solid #79BAFF;border-radius:12px;padding:16px;color:#eaf1ff;line-height:1.65;margin:0;}
+#atsulyozasok-2026 .reason-box strong {display:block;color:#79BAFF;margin-bottom:6px;}
+#atsulyozasok-2026 .trades-note {color:#c5d5ef;border-top:1px solid #ffffff26;margin-top:18px;padding:14px 0 0;font-size:12px;}
+@media(max-width:600px){#atsulyozasok-2026 .trades-card{padding:14px}#atsulyozasok-2026 .trades-head h5{font-size:22px}#atsulyozasok-2026 .reason-box{grid-template-columns:1fr}#atsulyozasok-2026 .reason-box p{padding:12px}}
+</style>
   <!-- Teljes szelessegu, reszponziv portfolio treemap -->
   <section class="row" id="portfolio-terkep" aria-label="Portfólió összetétele">
     <div class="col s12">
@@ -271,7 +295,7 @@ legends.forEach(function(el,i){el.tabIndex=0;el.setAttribute('role','button');el
         <p><strong>Szept. → Okt.</strong> Az árupiaci ETF pozíciót részben zártam (minimális elmozdulás után), és helyette MSCI Worldbe forgattam át ezt a tőkét.</p>
         <p><strong>Aug. → Szept.</strong> Az angol nyugdíjszámlámon a 2019 óta tartott Nasdaq ETF-hez tartozó terméket cseréltem egy kevésbé kockázatos MSCI World-höz hasonló alapra.</p>
         <p><strong>Máj. → Jún.</strong> A félvezető ETF eladással egy 100% feletti nyereséges pozíciót zártam. A pénzt energiacégek szektoriális ETF-jébe és inflációkövető USA államkötvénybe mozgattam át. Ez a két pozíció a márciusi vásárlás folytatása további inflációs kockázatra felkészülve.</p>
-		<p><strong>Márc. → Ápr.</strong> Az energiapiaci kockázatok növekedése miatt az EU-s ETF-emet MSCI Worldre cseréltem és árupiaci (commodity) ETF-et is vettem. Utóbbi a Bloomberg Commodity Indexét követő ETF. Ez egy hosszabb távú inflációs várakozásra is adott befektetés a részemről.
+		<p><strong>Márc. → Ápr.</strong> Az energiapiaci kockázatok növekedése miatt az EU-s ETF-emet MSCI Worldre cseréltem és árupiaci (commodity) ETF-et is vettem. Utóbbi a Bloomberg Commodity Indexét követő ETF. Ez egy hosszabb távú inflációs várakozásra is adott befektetés a részemről.</p>
 		<p><strong>Jan. → Feb.</strong> Év eleji átsúlyozást végeztem az amerikai pozíciók csökkentését megcélozva. Itt már vártam, hogy a Tisza várhatóan győzni fog a választásokon, ezért több állampapírt és régiós ETF-et is vettem. Az USA állampapíroknál a későbbi esésre játszva vettem rövid lejáratú kötvény ETF-et.</p>
       </aside>
       <div class="trades-note">* Az áthelyezett pozíciók becsült értéke az adott időszak teljes portfólióértékhez viszonyítva van mérve %-ban.</div>

@@ -115,4 +115,29 @@ section { overflow-x: auto; -webkit-overflow-scrolling: touch; }
     });
   });
 })();
-</script></body></html>
+</script><style>
+/* Adam on FIRE dashboard palette */
+html,body{background:#16243a;color:#eaf1ff;}
+.wrap{box-sizing:border-box;background:linear-gradient(145deg,#0d47a1 0%,#123b85 48%,#16243a 100%);border-radius:18px;padding:24px;font:14px system-ui,Arial,sans-serif;}
+h1{font-size:26px;letter-spacing:-.6px;line-height:1.2;color:#fff;margin:6px 0 8px;}
+h2{font-size:20px;color:#fff;margin:24px 0 12px;}
+p{color:#dbe8ff;}
+.legend{gap:8px;margin:18px 0;}
+.legend span{background:#ffffff0d;border:1px solid #ffffff26;border-radius:7px;padding:6px 9px;color:#eaf1ff;}
+.frame{background:#0b2145;border:1px solid #ffffff26;border-radius:12px;box-shadow:none;scrollbar-color:#779de8 #0b2145;}
+.frame svg>rect[fill="#f8fafc"]{fill:#102b50;stroke:#0b2145;}
+.frame svg>rect[fill="none"]{stroke:#0b2145;}
+.frame svg>text{fill:#eaf1ff;}
+.frame .tile rect{stroke:#0b2145;}
+.frame .tile:hover rect{stroke:#fff;stroke-width:3;}
+section{background:#0b2145;border:1px solid #ffffff26;border-radius:12px;margin-top:20px;padding:16px;box-sizing:border-box;scrollbar-color:#779de8 #0b2145;}
+section h2{margin:0 0 12px;}
+table{background:transparent;color:#eaf1ff;margin-top:0;}
+th{background:#17365e;color:#dbe8ff;}
+th,td{border-bottom:1px solid #ffffff20;padding:12px;}
+tbody tr:nth-child(even){background:#ffffff08;}
+tbody tr:hover{background:#ffffff12;}
+a{color:#79BAFF;text-decoration:underline;text-underline-offset:3px;}
+.note{color:#c5d5ef;font-size:12px;line-height:1.6;}
+@media(max-width:600px){.wrap{padding:14px}h1{font-size:22px}h2{font-size:19px}section{padding:12px}.legend span{font-size:11px;padding:5px 7px}}
+</style></body></html>
