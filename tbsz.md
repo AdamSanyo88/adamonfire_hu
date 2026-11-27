@@ -40,6 +40,33 @@ permalink: /tbsz
 @media(max-width:800px){.tbsz-fire .benefit-grid{grid-template-columns:1fr}}
 @media(max-width:600px){.tbsz-fire .hero{margin:35px 0 28px}.tbsz-fire h1{font-size:38px}.tbsz-fire .lead{font-size:16px}.tbsz-fire .section-heading{font-size:23px}.tbsz-fire .panel{padding:20px}.tbsz-fire .feature-list li{padding:16px 15px 16px 56px}.tbsz-fire .feature-list li:before{left:12px;top:16px}}
 @media(prefers-reduced-motion:reduce){.tbsz-fire .feature-list li{transition:none}.tbsz-fire .feature-list li:hover{transform:none}}
+
+/* Adam on FIRE - homepage palette (colors only) */
+
+.tbsz-fire .panel,.tbsz-fire .playlist-panel {background:linear-gradient(145deg,#0d47a1 0%,#123b85 48%,#16243a 100%);border-color:#294367;color:#eaf1ff;}
+.tbsz-fire .panel p,.tbsz-fire .panel li,.tbsz-fire .playlist-info {color:#eaf1ff;}
+.tbsz-fire .panel h2,.tbsz-fire .panel strong,.tbsz-fire .aside-title,.tbsz-fire .playlist-info strong {color:#fff;}
+.tbsz-fire .panel h2:after {background:#ffffff26;}
+.tbsz-fire .small-label,.tbsz-fire .panel a,.tbsz-fire .playlist-info a {color:#79baff !important;}
+.tbsz-fire .help-list li,.tbsz-fire .feature-list li,.tbsz-fire .fact,.tbsz-fire .benefit,.tbsz-fire .note,.tbsz-fire .important,.tbsz-fire .help-contact,.tbsz-fire .fire-tip {background:#0b2145;border-color:#294367;color:#eaf1ff !important;}
+.tbsz-fire .help-list li:hover,.tbsz-fire .feature-list li:hover {background:#173c72;border-color:#79baff;}
+.tbsz-fire .help-list li:before,.tbsz-fire .feature-list li:before {background:#173c72;color:#79baff;}
+.tbsz-fire .fact strong,.tbsz-fire .fact span {color:#dbe8ff;}
+.tbsz-fire .media-card {background:linear-gradient(145deg,#0d47a1 0%,#123b85 48%,#16243a 100%);}
+.tbsz-fire .media-preview,.tbsz-fire .media-action {background:#0b2145;}
+.tbsz-fire .media-preview .publisher,.tbsz-fire .media-preview .preview-note {color:#dbe8ff;}
+.tbsz-fire .link-pill {background:#173c72;border-color:#79baff;color:#b9e0fa !important;}
+.tbsz-fire .link-pill:hover {background:#245bb8;}
+.tbsz-fire .timeline-detail {background:#0b2145;color:#eaf1ff;border-color:#294367;}
+.tbsz-fire .timeline-dot {background:#dbe8ff;border-color:#2962ff;}
+.tbsz-fire table {background:#0b2145;}
+.tbsz-fire th {background:#173c72;color:#dbe8ff;border-color:#294367;}
+.tbsz-fire td {color:#eaf1ff;border-color:#294367;}
+.tbsz-fire tbody tr:nth-child(even) {background:#142f55;}
+.tbsz-fire .table-scroll {border-color:#294367;}
+.tbsz-fire td.danger {border-left-color:#e5a097;}
+.tbsz-fire td.warn {border-left-color:#f2bd79;}
+.tbsz-fire td.ok {border-left-color:#86cda8;}
 </style>
 <main class="container tbsz-fire">
   <header class="hero">

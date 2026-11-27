@@ -73,6 +73,33 @@ permalink: /about-me
 .about-fire .playlist-info{padding:20px 24px;color:#24324a;line-height:1.7}
 .about-fire .playlist-info strong{color:#0d47a1}
 @media(max-width:800px){.about-fire .timeline{padding:0 0 0 0}.about-fire .timeline:before{left:8px;right:auto;top:10px;bottom:10px;width:4px;height:auto}.about-fire .timeline-track{display:flex;flex-direction:column;gap:14px}.about-fire .timeline-item{text-align:left;padding-left:0}.about-fire .timeline-item summary{flex-direction:row;gap:12px}.about-fire .timeline-date{order:2;height:auto;min-width:95px}.about-fire .timeline-dot{order:1;flex:none}.about-fire .timeline-detail,.about-fire .timeline-item:first-child .timeline-detail,.about-fire .timeline-item:last-child .timeline-detail{margin:10px 0 0 34px}}
+
+/* Adam on FIRE - homepage palette (colors only) */
+
+.about-fire .panel,.about-fire .playlist-panel {background:linear-gradient(145deg,#0d47a1 0%,#123b85 48%,#16243a 100%);border-color:#294367;color:#eaf1ff;}
+.about-fire .panel p,.about-fire .panel li,.about-fire .playlist-info {color:#eaf1ff;}
+.about-fire .panel h2,.about-fire .panel strong,.about-fire .aside-title,.about-fire .playlist-info strong {color:#fff;}
+.about-fire .panel h2:after {background:#ffffff26;}
+.about-fire .small-label,.about-fire .panel a,.about-fire .playlist-info a {color:#79baff !important;}
+.about-fire .help-list li,.about-fire .feature-list li,.about-fire .fact,.about-fire .benefit,.about-fire .note,.about-fire .important,.about-fire .help-contact,.about-fire .fire-tip {background:#0b2145;border-color:#294367;color:#eaf1ff !important;}
+.about-fire .help-list li:hover,.about-fire .feature-list li:hover {background:#173c72;border-color:#79baff;}
+.about-fire .help-list li:before,.about-fire .feature-list li:before {background:#173c72;color:#79baff;}
+.about-fire .fact strong,.about-fire .fact span {color:#dbe8ff;}
+.about-fire .media-card {background:linear-gradient(145deg,#0d47a1 0%,#123b85 48%,#16243a 100%);}
+.about-fire .media-preview,.about-fire .media-action {background:#0b2145;}
+.about-fire .media-preview .publisher,.about-fire .media-preview .preview-note {color:#dbe8ff;}
+.about-fire .link-pill {background:#173c72;border-color:#79baff;color:#b9e0fa !important;}
+.about-fire .link-pill:hover {background:#245bb8;}
+.about-fire .timeline-detail {background:#0b2145;color:#eaf1ff;border-color:#294367;}
+.about-fire .timeline-dot {background:#dbe8ff;border-color:#2962ff;}
+.about-fire table {background:#0b2145;}
+.about-fire th {background:#173c72;color:#dbe8ff;border-color:#294367;}
+.about-fire td {color:#eaf1ff;border-color:#294367;}
+.about-fire tbody tr:nth-child(even) {background:#142f55;}
+.about-fire .table-scroll {border-color:#294367;}
+.about-fire td.danger {border-left-color:#e5a097;}
+.about-fire td.warn {border-left-color:#f2bd79;}
+.about-fire td.ok {border-left-color:#86cda8;}
 </style>
 
 <div class="container about-fire">

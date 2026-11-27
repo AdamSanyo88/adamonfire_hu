@@ -186,6 +186,16 @@ permalink: /resources
     border-radius: 7px;
   }
 }
+
+/* Adam on FIRE - homepage palette (colors only) */
+
+.resources-page .card {background:linear-gradient(145deg,#0d47a1 0%,#123b85 48%,#16243a 100%);border-color:#294367;}
+.resources-page .card-action {background:#0b2145;color:#b9e0fa !important;border-color:#ffffff26 !important;}
+.resources-page .card-action a,.resources-page > .section .card-action a {color:#b9e0fa !important;}
+.resources-page .card-content p {color:#dbe8ff !important;}
+.resources-page .card-image {background:#0b2145;}
+.resources-page .card:hover {filter:brightness(1.08);}
+.resources-page .card-content span[style*="background-color"] {background-color:#f2bd79 !important;color:#16243a !important;}
 </style>
 
 <div class="resources-header">
