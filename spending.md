@@ -126,6 +126,11 @@ permalink: /spending
 .calculator-shell .wealth-tax-result strong {color:#f2bd79;}
 .calculator-shell #nw-ft {color:#fff;}
 .calculator-shell #sum-net {color:#86cda8;}
+
+/* Adam on FIRE palette refinement */
+ .calculator-shell #monthlyInput,.calculator-shell #monthlyInput:hover,.calculator-shell #monthlyInput:focus{background:#162f53!important;color:#fff!important;-webkit-text-fill-color:#fff!important;caret-color:#fff;border-color:#79baff!important;}
+.calculator-shell #monthlyInput:focus{border-color:#f2bd79!important;}
+.calculator-shell .spending-table h2{color:#fff!important;}
 </style>
 </head>
 <body>

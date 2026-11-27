@@ -295,6 +295,12 @@ input[type=number]{
 .calculator-shell .wealth-tax-result strong {color:#f2bd79;}
 .calculator-shell #nw-ft {color:#fff;}
 .calculator-shell #sum-net {color:#86cda8;}
+
+/* Adam on FIRE palette refinement */
+ .calculator-shell #nw-table input[data-field], .calculator-shell #nw-table input[data-business] {background:#162f53!important;color:#fff!important;-webkit-text-fill-color:#fff!important;caret-color:#fff;border-color:#79baff!important;}
+.calculator-shell #nw-table input[data-field=debt]:not(:disabled){background:#442c40!important;border-color:#e5a097!important;}
+.calculator-shell #nw-table input[data-field]:focus,.calculator-shell #nw-table input[data-business]:focus{background:#263b55!important;border-color:#f2bd79!important;color:#fff!important;}
+.calculator-shell #nw-table input:disabled{background:#16243a!important;color:#b9cce9!important;-webkit-text-fill-color:#b9cce9!important;opacity:1;}
 </style>
 
 <div class="container py-4">

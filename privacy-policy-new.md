@@ -24,6 +24,9 @@ permalink: privacy-policy-new
 .aof-privacy .privacy-content .card{background:#f5f8ff;border:1px solid #d6e2f7;border-radius:14px;box-shadow:none;padding:18px 22px;color:#263445;margin:12px 0 20px}
 .aof-privacy .privacy-content .card ul{margin:0}.aof-privacy .privacy-content .tag{background:#e7efff;color:#0d47a1;border-radius:5px;padding:2px 5px}
 @media(max-width:600px){.aof-privacy .privacy-content h4{font-size:1.4rem;gap:10px}.aof-privacy .privacy-content .card{padding:14px}}
+
+/* Adam on FIRE palette refinement */
+ .aof-privacy .privacy-content{background:#16243a;color:#eaf1ff;}.aof-privacy .privacy-content h4{color:#fff;}.aof-privacy .privacy-content h5{color:#79baff;}.aof-privacy .privacy-content h4::after{background:#294367;}.aof-privacy .privacy-content a{color:#79baff;}.aof-privacy .privacy-content .card{background:linear-gradient(145deg,#0d47a1,#123b85 48%,#16243a);color:#fff;border-color:#294367;}.aof-privacy .privacy-content .tag{background:#0b2145;color:#b9e0fa;}
 </style>
 <div class="aof-page aof-privacy">
 <div class="resources-header">

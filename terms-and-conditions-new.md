@@ -29,6 +29,9 @@ permalink: terms-and-conditions-new
 .aof-terms .terms-content p{margin:10px 0 14px}.aof-terms .terms-content ul{padding-left:25px;margin:10px 0 22px}.aof-terms .terms-content li{margin:7px 0}
 .aof-terms .terms-content a{color:#2962ff;text-decoration:underline}.aof-terms .terms-intro{font-size:1.08rem;margin-bottom:10px}.aof-terms .terms-price{font-weight:700;color:#0d47a1}
 @media(max-width:600px){.aof-terms .terms-content h2{font-size:1.35rem;gap:10px}.aof-terms .terms-content{padding:0 2px}}
+
+/* Adam on FIRE palette refinement */
+ .aof-terms .terms-content{background:#16243a;color:#eaf1ff;}.aof-terms .terms-content h2{color:#fff;}.aof-terms .terms-content h3{color:#79baff;}.aof-terms .terms-content h2::after{background:#294367;}.aof-terms .terms-content a{color:#79baff;}.aof-terms .terms-content .terms-price{color:#86cda8;}
 </style>
 <p class="terms-intro"><strong>Adam on FIRE – Konzultáció, Portfóliótükör és FIRE Térkép</strong></p>
 <p>Hatályos: [hatálybalépés dátuma]</p>

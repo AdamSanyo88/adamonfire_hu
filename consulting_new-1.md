@@ -158,6 +158,19 @@ permalink: consulting_new-1
 .aof-consulting .fc-card.fc-selected{border:2px solid #2962ff;background:#f5f8ff;box-shadow:0 0 0 4px rgba(41,98,255,.17),0 16px 38px rgba(13,71,161,.18);transform:translateY(-5px);padding:23px}
 @media(max-width:640px){.aof-consulting .fc-card.fc-selected{padding:19px}}
 @media(prefers-reduced-motion:reduce){.aof-consulting .fc-card{transition:none}}
+
+/* Adam on FIRE palette refinement */
+ .aof-consulting .fc-hero,.aof-consulting .fc-card,.aof-consulting .fc-final-cta{background:linear-gradient(145deg,#0d47a1,#123b85 48%,#16243a)!important;color:#fff; border-color:#294367;}
+.aof-consulting .fc-intro-grid>div,.aof-consulting .fc-steps li,.aof-consulting .fc-note{background:#0b2145;color:#eaf1ff;border-color:#294367;}
+.aof-consulting .fc-hero h2,.aof-consulting .fc-card h3,.aof-consulting .fc-price{color:#fff;}
+.aof-consulting .fc-hero p,.aof-consulting .fc-card p,.aof-consulting .fc-price span,.aof-consulting .fc-intro-grid p,.aof-consulting .fc-steps span{color:#dbe8ff;}
+.aof-consulting .fc-card .fc-wealth,.aof-consulting .fc-steps li::before,.aof-consulting .fc-link,.aof-consulting .fc-steps a{color:#79baff;}
+.aof-consulting .fc-includes{border-color:#ffffff30;}.aof-consulting .fc-includes li::before{color:#86cda8;}
+.aof-consulting .fc-cta-outline,.aof-consulting .fc-cta-dark{background:#0b2145;color:#fff!important;border-color:#79baff;}
+.aof-consulting .fc-final-cta .fc-cta{background:#2962ff;color:#fff!important;}
+.aof-consulting .fc-card.fc-selected{background:linear-gradient(145deg,#2962ff,#123b85 60%,#16243a)!important;border-color:#79baff;}
+.aof-consulting .fc-table-wrap{border-color:#294367;}.aof-consulting .fc-table{background:#0b2145;color:#eaf1ff;}.aof-consulting .fc-table th{background:#123b85;color:#fff;}.aof-consulting .fc-table td{border-color:#294367;color:#eaf1ff;}.aof-consulting .fc-table tbody tr:nth-child(even){background:#162f53;}.aof-consulting .fc-table tbody tr:hover{background:#1b3c68;}
+.aof-consulting .fc-faq details{background:#0b2145;color:#fff;border-color:#294367;}.aof-consulting .fc-faq details p{color:#dbe8ff;}
 </style>
 </div>
 <script>
